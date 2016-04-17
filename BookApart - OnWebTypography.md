@@ -1,6 +1,3 @@
-Good for getting the basic principles, but I highly recommend the book when it comes to developing judgements about typeface quality and preferences. Can do my best here to show how different information comes into play when choosing a typeface, but getting the ability to make informed typeface decisions are best taken from the book itself.
-
-
 ### Why We Should Care about Typography
 * Good typography is invisible, and bad typography is painfully visible.
 * There is no "right or wrong" with typography, merely degrees of appropriateness.
@@ -23,9 +20,9 @@ Good for getting the basic principles, but I highly recommend the book when it c
 * **Counter** - A letter's interior space, enclosed or open. Important for contrast and letter recognizability.
 * **Aperture** - The possible opening in a letter's counter. Important for contrast and letter recognizability.
 * **Uppercase/Lowercase Numerals** - Uppercase numerals are numbers as tall as a typeface's uppercase letters. Lowercase numerals are generally just as tall as lowercase letters, making them more suited for running text.
-* **Serif** - Typefaces with 
-* **Sans-serif** - 
-* **Slab-serif** - 
+* **Serif** - Typefaces with small lines or points at the edges of letters.
+* **Sans-serif** - Typefaces without the small lines or points at the ends found in Serif typefaces.
+* **Slab-serif** -  Typefaces with serifs, but which are blocky instead of pointed.
 * **Tabular Figures** - Numbers with fixed spacing, used in tables
 * **Curly Quotes** - Punctation, such as quotation marks, that have curls. Correct punctuation for quoted text and dialogue.
 * **Dumb Quotes** - Punctiation without curls. Sign of sloppy typography, do not use.
@@ -82,23 +79,33 @@ Good for getting the basic principles, but I highly recommend the book when it c
 * Droid Serif
 * FF Tisa
 * Lucida Grande
+* Garamond
+* PT Sans
+* Merriweather
+* Roboto Slab
+* Noto Sans
+* [Several popular body texts from a Fontdeck blog post](http://blog.fontdeck.com/post/23601339698/body-text-tester)
 
 #### Good Fonts for Headers
 * Montserrat
 * Trebuchet MS
 * Futura
-* Garramond
+* Titillium Web
+* Sanchez
+* Questrial
+* Lusitana
+* Radley
+
 
 #### Resources
 
-* Web Font Loader
-* Google Fonts
+* [Web Font Loader](https://github.com/typekit/webfontloader) gives you added control when using linked fonts via @font-face.
+* [Google Fonts](https://www.google.com/fonts) are hundreds of free, open-source fonts for expanded your site's typeface selection.
 * [Font Library](http://katydecorah.com/font-library/#/) for helping choose appropriate fonts from Google's large selection.
-* Fonts in Use
-* Body Text Tester
-* Fount
-* Identifont
-* FitText
-* Lettering
-* Font-to-Width
-* The Grid System
+* [Fonts in Use](http://fontsinuse.com/) is an online archive of current typography examples, and is great for typography inspiration.
+* [Fount](https://fount.artequalswork.com/) lets you identify the font typeface and basic info of any font you see.
+* [Identifont](http://www.identifont.com/index.html) is a large online font directory for finding finds by appearance or name.
+* [FitText](http://fittextjs.com/) is a jQuery plugin for inflating webtype so it's responsive to parent elements.
+* [Lettering](http://letteringjs.com/) is a jQuery plugin for more precist control of type characteristics.
+* [Gutenberg](http://matejlatin.github.io/Gutenberg/) is a collection of starter Sass files for meaningful, organized web typography.
+* [Font-to-Width](http://font-to-width.com/) is a plugin for snugly fitting big type into containers.
