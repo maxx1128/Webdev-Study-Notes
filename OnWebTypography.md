@@ -1,3 +1,7 @@
+Title: [On Web Typography](https://abookapart.com/products/on-web-typography)
+Author: Jason Santa Maria
+Publisher: A Book Apart
+
 ### Why We Should Care about Typography
 * Good typography is invisible, and bad typography is painfully visible.
 * There is no "right or wrong" with typography, merely degrees of appropriateness.

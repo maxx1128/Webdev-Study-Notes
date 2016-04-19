@@ -1,3 +1,7 @@
+Title: [Front-end Architecture for Design Systems](http://www.amazon.com/Frontend-Architecture-Design-Systems-Sustainable/dp/1491926783)
+Author: Micah Godbolt
+Publisher: O'Reilly
+
 # The Four Pillars of Front-end Architecture
 
 ### Code
