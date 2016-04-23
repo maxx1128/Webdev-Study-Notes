@@ -17,6 +17,7 @@ Publisher: Self-published on Github
 * Creates class bloat on HTML, which hurts speed and debugging
 * With responsive design, creates even MORE bloat as more breakpoints means more classes
 * Utility classes can be too vaguely named, not good for semantics
+    * *I only disagree here when it comes to padding and margins. These are fiddly and change often, so it's often more efficient to use specific utility classes for them instead of editing the CSS. Best if generated in a way for easily editing the spacing units.*
 * Careful with reusing with mixins: more complexity and parameters means more risk. If needed, keep them simple
 
 ### IDs
