@@ -1,6 +1,6 @@
-Title: [Maintainable CSS](http://maintainablecss.com/)
-Author: Adam Silver
-Publisher: Self-published on Github
+* Title: [Maintainable CSS](http://maintainablecss.com/)
+* Author: Adam Silver
+* Publisher: Self-published on Github
 
 ### Intro
 * Maintainable - Can edit one module without affecting others
