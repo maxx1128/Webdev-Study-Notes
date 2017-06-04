@@ -1,3 +1,6 @@
+* Title: [Essentialism](https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382/ref=sr_1_1?s=books&ie=UTF8&qid=1496610494&sr=1-1&keywords=essentialism+the+disciplined+pursuit+of+less)
+* Author: Greg McKeown
+
 ## Choose
 * Choose what makes us human
 * "I choose to," not "I have to"
