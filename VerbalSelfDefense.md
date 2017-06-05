@@ -35,7 +35,11 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
 
 * PSPs -> You don't X
 * Y is the bait, X is the PSP. *Only respond to X!*
- - Responding to Y means you swallow the PSP in X, and the damage is done.
+  - Responding to Y means you swallow the PSP in X, and the damage is done.
+  - Address the general idea expressed in X in Computer mode, or ask for specific of *when* attacker felt this way
+    - Attack: "If you really loved me, you would take out the trash more!"
+    - Response 1: "Isn't it an interesting idea how couples think they need to express affection through things like chores and houswork?"
+    - Response 2: "When did you start feeling I didn't love you?" (Leveller, also not it only addresses X, not Y)
 * Attacker is Blamer Mode
 
 #### "If you _really_ X, you wouldn't want to Y"
