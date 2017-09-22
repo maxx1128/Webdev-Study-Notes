@@ -12,6 +12,12 @@ For adding all untracked changes for the next commit
     - _Untracked_ is new files that haven't been added in the repo.
     - _Unstaged_ is for specific changes made to tracked files. Once a file is tracked, changes made them then are unstaged and won't be included for commits.
 * `git add .` is for all untracked items and unstaged changes
+* `git add --patch`, `git add -p`, will take you through each chunk of changes and decide whether to add them or not. Each hunk gives you several options
+    * `y` to add this hunk and go to the next
+    * `n` to skip this hunk and go to the next
+    * `d` to skip this hunk and all remaining hunks
+    * `s` to split this hunk into smaller ones and continue from there
+    * `e` to manually edit this hunk (VIM ALERT! Use `:quit` to escape from this if needed)
 
 #### `git commit`
 
