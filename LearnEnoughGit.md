@@ -37,6 +37,8 @@ Shows the changes between the last commit and all untracked changes. Also visual
 
 Shows a record of all the commits in a repo
 
+* To show the history of a specific file, use `git log -- <path/to/file>`
+
 ### `git reflog`
 
 Shows a record of all the commands run for this repo
