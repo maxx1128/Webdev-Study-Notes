@@ -26,14 +26,8 @@ For taking all tracked changes and saving them as a single commit. Include the `
 Shows the changes between the last commit and all untracked changes. Also visualizes whether these changes were adding or reducing code.
 
 * `git diff --staged` is the same, but instead for all *tracked* changes.
-
-### `git log`
-
-Shows a record of all the commits in a repo
-
-### `git reflog`
-
-Shows a record of all the commands run for this repo
+* `git log` shows a record of all the commits in a repo
+* `git reflog` shows a record of all the commands run for this repo
 
 ### Rebasing
 

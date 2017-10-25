@@ -107,4 +107,4 @@ Identify and test significant program states. Just testing lines of code isn’t
 
 ### Find Bugs Once
 
-Once a human tester finds a bug, it should be the last time a human tester finds that bug. Automatic tests should check for it from then on.</p>
+Once a human tester finds a bug, it should be the last time a human tester finds that bug. Automatic tests should check for it from then on.
