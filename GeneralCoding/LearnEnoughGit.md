@@ -4,7 +4,7 @@
 
 ### Commands
 
-#### `git add`
+### `git add`
 
 For adding all untracked changes for the next commit
 
@@ -12,14 +12,25 @@ For adding all untracked changes for the next commit
     - _Untracked_ is new files that haven't been added in the repo.
     - _Unstaged_ is for specific changes made to tracked files. Once a file is tracked, changes made them then are unstaged and won't be included for commits.
 * `git add .` is for all untracked items and unstaged changes
+* `git add --patch`, `git add -p`, will take you through each chunk of changes and decide whether to add them or not. Each hunk gives you several options
+    * `y` to add this hunk and go to the next
+    * `n` to skip this hunk and go to the next
+    * `d` to skip this hunk and all remaining hunks
+    * `s` to split this hunk into smaller ones and continue from there
+    * `e` to manually edit this hunk (VIM ALERT! Use `:quit` to escape from this if needed)
 
-#### `git commit`
+### `git commit`
 
 For taking all tracked changes and saving them as a single commit. Include the `-m` option for adding a commit message, as a parameter in quotes.
 
 * `git commit --amend` will add any tracked changes as part of the last included commit. If the last commit was already pushed, the amend will need a force push to take on the remote repo.
 * `git commit -a` commits all changes currently made in existing files.
 * `git commit -am` commits all changes currently made in existing files and takes the argument for adding a message.
+
+### `git reset`
+
+* `git reset HEAD --` removes all staged file changes, but keeps them as unchanged.
+* `git reset --soft <commit>` will take all the commits after the inputted one and undo them. All changes from those commits will be kept and staged. Great for when you accidentally make commits to the wrong branch!
 
 ### `git diff`
 
@@ -28,6 +39,17 @@ Shows the changes between the last commit and all untracked changes. Also visual
 * `git diff --staged` is the same, but instead for all *tracked* changes.
 * `git log` shows a record of all the commits in a repo
 * `git reflog` shows a record of all the commands run for this repo
+
+### `git log`
+
+Shows a record of all the commits in a repo
+
+* To show the history of a specific file, use `git log -- <path/to/file>`
+
+### `git reflog`
+
+Shows a record of all the commands run for this repo
+>>>>>>> 3b2453264589bbe09beb04038c0da2fb12a1381c:LearnEnoughGit.md
 
 ### Rebasing
 
