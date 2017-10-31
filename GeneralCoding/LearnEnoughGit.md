@@ -57,6 +57,10 @@ Tracks the renaming of a file in version control. Renaming it by hand can confus
 
 Also when renaming files, unless the renaming breaks something else in the repo, it's best to keep those changes in a separate commit.
 
+### `git ls-files`
+
+Shows all files in the directory, but limited to ones tracked by git. Can be combined with `grep` as a way to filter through files in the repo.
+
 ### Rebasing
 
 Rebasing it taking a branch that may start from the an older commit of the main branch, and copying them all over to the most recent commit of that branch.
