@@ -51,6 +51,12 @@ Shows a record of all the commits in a repo
 Shows a record of all the commands run for this repo
 >>>>>>> 3b2453264589bbe09beb04038c0da2fb12a1381c:LearnEnoughGit.md
 
+### `git mv`
+
+Tracks the renaming of a file in version control. Renaming it by hand can confuse git's tracking (especially if also naming it at same time), so using `git mv` is a safer bet.
+
+Also when renaming files, unless the renaming breaks something else in the repo, it's best to keep those changes in a separate commit.
+
 ### Rebasing
 
 Rebasing it taking a branch that may start from the an older commit of the main branch, and copying them all over to the most recent commit of that branch.
