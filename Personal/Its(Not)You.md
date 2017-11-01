@@ -73,10 +73,9 @@ Plus, isn't a relationship where both partners freely show each other affection 
 
 ## You Don't Know How to Play the Game
 
-* Marriage, we're told, is a “market.” Which I guess makes us all “commodities.”
-* Lost in all this defensive dating is the fact that what's ultimately being sought is a loving partnership—by both parties.
-* remember: That creep who screwed you over isn't most guys. 
-* isn't it stronger and braver to go into relationships—and first dates—knowing full well you could get hurt, and that you'll also survive?
+Marriage is sold as a "market" and we're "commodities" in it. But that doesn't change the fact that it's a search for a loving partnership, which can't really be compared to a kind of "business venture." It's not an effective way to cover up the fact that dating is often painful, it only makes the hurt more unexpected or tries to normalize it as "a part of the game." Which is a pretty crappy way to frame a search for love.
+
+> Isn't it stronger and braver to go into relationships—and first dates—knowing full well you could get hurt, and that you'll also survive?
 
 ## You Need to Grow Up
 
@@ -126,10 +125,11 @@ Happiness isn't the only marker of success anyway. There's plenty of other virtu
 
 ## You Are the Constant
 
-*  the need to create that personal myth is seductive. Because with the story, you might get an explanation.
-*  when I stepped back and looked at my own tall tales, the ratio of fanciful assumptions to sober facts was pretty high.
-*  You don’t need to do anything different; you don’t need to be anything different. You just need a little luck.
-*  You’re the only one who knows your experience. As imperfect as our analyses may be—as clouded as they are by judgments, worries, and fantasies—they’re still the best we have.
+It's tempting to create a powerful, successful personal story to "justify" that we're worthy of a relationship. But it's just a way of deluding ourselves and puffing up our identities, hiding our flaws instead of accepting ourselves as we are.
+
+> You don’t need to do anything different; you don’t need to be anything different. You just need a little luck.
+
+We all know our own experiences best. We only owe ourselves an answer and a story, we don't owe it to someone else to prove we're "worthy" of them.
 
 ## You Have to Keep Trying!
 
