@@ -1,16 +1,23 @@
 ## Basic Terms
 
 * Router
+* Model
 * Controller
 * View
 * Helper
 * Public/Vendor
 * Asset Pipeline
+* Serializer - a tool that takes data in the rails app and translates it into other formats that can be shared across different languages and apps. For example, taking database info and serializing it for a Javascript front-end that needs it in a JSON API format.
 
 ## Common Commands
 
 * Generating controllers and models
 * Managing the database
+
+* `rails server` serves up the current version of the app locally
+* `rails db:migrate` brings any changes to the database over to the database itself
+* `rails db:seed` populates the local database with all info from the `seeds.rb` file
+* `rails db:reset` cleans out the current local database and then reseeds it with info from the `seeds.rb` file.
 
 ## Routers
 
@@ -22,6 +29,7 @@
 `params[:param_1]` in the controller
 
 `resources :controller`
+
 
 ## Controllers
 
@@ -131,3 +139,21 @@ Risque coders can even use Presenters inside of other Presenters if they want, i
 ## Database
 
 * Seeding - Can use ruby logic to speed up the seeding process and make it simpler
+
+## Models
+
+In relational databases, there are several different types of relationships different models can have:
+
+1. **has_many** for when there's several instances of another model related to one of the selected model
+2. **belongs_to** for when one instance of this model can belong to several other instances of another model
+  * Can also have `polymorphic: true` set if it belongs to multiple different models. A polymorphic association must be declared in both cases to complete it, such as in [this example](https://launchschool.com/blog/understanding-polymorphic-associations-in-rails).
+  ```
+  class TeachingAssistant < ActiveRecord::Base
+    belongs_to :ta_duty, polymorphic: true
+  end
+  
+  class SectionA < ActiveRecord::Base
+    has_many :teaching_assistants, as: :ta_duty
+  end
+
+  ```
