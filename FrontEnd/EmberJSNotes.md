@@ -47,6 +47,11 @@ model(params) {
 }
 ```
 
+You can also grab values set or computed in the controller with the below method. This is great for creating router actions bound to values calculated in the controller, such as calculating if all items in a model have been displayed.
+
+```
+this.controllerFor('<controller_name>').get('<property_name>');
+```
 
 ### Controllers
 
