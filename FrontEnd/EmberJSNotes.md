@@ -6,6 +6,12 @@
 * Modules of functionality and templates that can be reused across the project.
 * Models - Basic models and structure for data objects.
 
+### Basics
+
+Ember was first built on **two-way data-binding,** which has the templates and controllers having two-way conversations at all times. However having them both talk to each other all the time risks making the app overly-complex, and having variables create unexpected results.
+
+The new Ember structure for all this is **data down, actions up.** This means all data flows down from the routes to the views, and actions change the data by moving back up towards the controllers/routers, making data changes, and having those changes flow back down to the views.
+
 ### CLI commands
 
 * `ember new <name>` - Create a new Ember project
@@ -83,6 +89,9 @@ elements: Ember.computed.map('model.elements', function(element) {
 
 ### Templates
 
+#### Inputs
+
+The most basic way to bind an input to a variable is with `{{input value=var}}`, which will then bind the input's text to the `var` variable.
 
 ### Components
 
@@ -102,6 +111,38 @@ export default Ember.Component.extend({
 
 Like controllers, you can also define other calculated properties, such as ones with variables specific to the component.
 
+### Helpers
+
+Basic `{{if}}` helper evaluates the variable/expression inside it and returns based on if it's true or false. A basic example is `{{if var 'TRUE STRING' 'FALSE STRING'}}`. The resulting string for if it's false is optional.
+
+There's also a block version of this helper with the following syntax (the `else` is optional).
+```
+{{#if var}}
+  Show me if true!
+{{else}}
+  Show me if false!
+{{/if}}
+```
+
+The `action` helper is used for triggering interactivity. The first argument is a string that names the action linked to the controller. The controller has an `actions` hash, where functions with those names contain the action's functionality.
+
+```
+// Template
+<button {{action 'buttonClick'}}>Click me!</button>
+
+// Controller
+
+export default Ember.Controller.extend({
+  actions: {
+    buttonClick() {
+      // action code goes here!
+    }
+  }
+});
+
+```
+
+The controller's function can contain arguments. These arguments are added to the helper as additional variables after the first.
 
 ### Connecting an API
 
@@ -110,6 +151,25 @@ Like controllers, you can also define other calculated properties, such as ones 
 * Serializers and Adapters can also be used differently for specific applications or models
 * Make sure the resources being exposed to Ember match the models being used in Ember!
 * The most preferred API format is JSON API, despite the other adapters and serializers that make using other APIs possible. If you can control the API being used, make it JSON API.
+
+#### Using FireBase
+
+1) Set up a FireBase account and a database
+2) Manually add in data to the database
+3) Install `emberfire` through the CLI, `ember install emberfire` or `ember install emberfire@<version#>`
+3) Copy the config info from FireBase and add it to `config/environment`. This may vary depending on the version of Ember Data, and as a consequence what version of Ember Fire is needed.
+4) Generate a model that matches the data structure of what's in FireBase
+5) Use Ember Data to pull data from the database, such as with `return this.store.findAll('items')`
+6) When setting different values to the data, remember to call the `save()` method:
+
+```
+actions: {
+  changeData(object) {
+    Ember.set(object, 'name', newValue);  // Sets it on the browser
+    object.save();                        // Saves changes to the database
+  }
+}
+```
 
 ### Useful add-ons
 
