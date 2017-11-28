@@ -87,6 +87,16 @@ elements: Ember.computed.map('model.elements', function(element) {
 });
 ```
 
+A simpler option for filtering is the `filterBy` option, which doesn't take a function. It simply takes three properties:
+
+1. The array to filter
+2. The property of each item in the array to check for the filter
+3. The value each selected property needs to be included. Otherwise it gets filtered out.
+
+```
+  livingRelatives: Ember.computed.filterBy('model', 'alive', true)
+```
+
 ### Templates
 
 #### Inputs
@@ -143,6 +153,30 @@ export default Ember.Controller.extend({
 ```
 
 The controller's function can contain arguments. These arguments are added to the helper as additional variables after the first.
+
+##### Custom Helpers
+
+Custom helpers can create different ways to evaluate JS in templates. They're very useful for custom logic that can't be put in the template, but also are a chore to put in the controller. An example generating command and helper:
+
+`ember g helper equals`
+
+In the `helpers/equals.js` file, you can define how the params input into the helper will be evaluated. They can evaluate to any output a JS function can, including true/false ones to be used in conditionals.
+
+```
+import Ember from 'ember';
+
+export function equals(params/*, hash*/) {
+  return params[0] == params[1];
+}
+
+export default Ember.Helper.helper(equals);
+```
+
+This will take two arguments, check if they equal each other, and evaluate from there. A good example is using the above helper to control if a button is disabled or not. This button decreases a rating variable, and will disable the button if the rating is zero to keep it from getting any lower.
+
+```
+<button {{action 'updateRating' rating -1}} disabled={{equals rating 0}}>-</button>
+```
 
 ### Connecting an API
 
