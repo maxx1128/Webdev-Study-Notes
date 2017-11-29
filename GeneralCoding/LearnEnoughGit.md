@@ -61,6 +61,16 @@ Also when renaming files, unless the renaming breaks something else in the repo,
 
 Shows all files in the directory, but limited to ones tracked by git. Can be combined with `grep` as a way to filter through files in the repo.
 
+### `git stash`
+
+Takes all untracked changes and "stashes" them away, which mbasically means temporarily removing them. Good for quick operations that can't have untracked files while doing them, like needing to quickly check out a new branch before committing changes in a current one.
+
+* `git stash` will automatically do this for all untracked changes.
+* `git stash list` shows a lit of all stashed changes, labelled by the branch they're on and that branch's most recent commit. Each one has a name in this format: `stash@{#}`, with `#` being a basic reference number.
+* `git stash apply <name>` applies the stashed changes to the current files. If it's the most recent stashed changes under `stash@{0}`, the `<name>` argument isn't needed. Unclean file additions results in merge conflicts you'll need to resolve.
+* `git stash pop <name>` does the same as the above, but removes the stash from the list afterward.
+* `git stash drop <name>` just removes a stash from the list.
+
 ### Rebasing
 
 Rebasing it taking a branch that may start from the an older commit of the main branch, and copying them all over to the most recent commit of that branch.
