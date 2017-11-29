@@ -178,6 +178,13 @@ This will take two arguments, check if they equal each other, and evaluate from 
 <button {{action 'updateRating' rating -1}} disabled={{equals rating 0}}>-</button>
 ```
 
+Custom helpers can also be used as arguments for components, with the following syntax, using parenthesis when inside the component's double brackets.
+
+```
+{{#complex-input 
+    inputShown=(equals rating 0)}}
+```
+
 ### Connecting an API
 
 * **Adapter** - Used to translate the endpoint locations of an API
