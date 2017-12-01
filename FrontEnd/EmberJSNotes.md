@@ -154,6 +154,37 @@ export default Ember.Controller.extend({
 
 The controller's function can contain arguments. These arguments are added to the helper as additional variables after the first.
 
+#### "Link-to" Helper
+
+The `{{link-to}}` helper is an Ember tool included for linking between different pages. It works for both static and dynamic urls, lettings you include as needed parameters.
+
+```
+{{link-to <text> <route path> <route parameter values>...}}
+
+{{link-to "Homepage" home}} // Assumes an existing route called home
+
+{{link-to character.name character.profile character.id}} // Shows the character's name for text, goes to the 'character/:profile' route, and uses the character's id as the argument for :profile
+
+{{link-to character.name character.profile.food character.id character.food}} // Same as the above, but includes an extra argument for a specific character's food
+```
+
+Links that match the route currently being visited (it goes up the path to match, so parent routes are active too) will have the "active" class on them. This can be used to denote the active link with styles, such as bolding it.
+
+The "active" class can be changed like so:
+
+```
+{{link-to "Homepage" home activeClass="custom_active_class"}}
+```
+
+If you need a wrapper around a link to have the active class, use the [Ember Active Link Wrapper](https://github.com/alexspeller/ember-cli-active-link-wrapper) add-on. It can also have a custom active class, and the wrapping tag can be set too.
+
+```
+{{#active-link tagName="div" activeClass="custom_active_class"}}
+  Link below!
+  {{link-to "some page" page.link}}
+{{/active-link}}
+```
+
 ##### Custom Helpers
 
 Custom helpers can create different ways to evaluate JS in templates. They're very useful for custom logic that can't be put in the template, but also are a chore to put in the controller. An example generating command and helper:
