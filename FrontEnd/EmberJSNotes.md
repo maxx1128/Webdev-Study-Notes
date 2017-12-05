@@ -97,6 +97,16 @@ A simpler option for filtering is the `filterBy` option, which doesn't take a fu
   livingRelatives: Ember.computed.filterBy('model', 'alive', true)
 ```
 
+#### transitionToRoute
+
+This is a controller tool to move to different routes after an action. For example, you could have this activate on an "edit" screen to go back to the related "show" screen. Don't forget to pass any needed parameters!
+
+Another good use case: after deleting an item, go to the page with the list of remaining items.
+
+```
+this.transitionToRoute('fighters.fighter', this.get('model.id'));
+```
+
 ### Templates
 
 #### Inputs
