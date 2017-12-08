@@ -149,6 +149,32 @@ export default Ember.Component.extend({
 
 Like controllers, you can also define other calculated properties, such as ones with variables specific to the component.
 
+#### Adding Positional Parameters
+
+When using components that have params, they normally need to be explicitly named to add values to them:
+
+```
+{{svg-icon src=model.src size="medium"}}
+```
+
+However, if one or more parameters is self-explanatory/needed enough that it doesn't need to do this, one can adjust the class so the paramters can be added without them. Add `reopenClass` to the component controller like this:
+
+```
+export default Ember.Component.extend({
+  // Normal functions here
+}).reopenClass({
+  positionalParams: ['src', 'size'] // Must be an array, with the param names as strings in the right order
+});
+```
+
+Now the same component can be used like the below example. Optional params could still be added to this but not be included.
+
+```
+{{svg-icon model.src "medium"}}
+
+{{svg-icon model.src}} // If 'size' is optional
+```
+
 #### Block Components
 
 Block components allow components to accept lines of text as a large argument for the component. They're written with two tags, like so:
@@ -191,30 +217,64 @@ If the block is an optional argument, there's a conditional for if one is used o
 {{/if}}
 ```
 
-#### Adding Positional Parameters
+##### Using Component Variables and Actions in Blocks
 
-When using components that have params, they normally need to be explicitly named to add values to them:
+You can also take values defined in the component and pass them into a block component. That way you can use them in your block HTML for display or logic. First the values being passed must be set in the `{{yield}}` text.
 
 ```
-{{svg-icon src=model.src size="medium"}}
+{{yield 'static string' variable}}
 ```
 
-However, if one or more parameters is self-explanatory/needed enough that it doesn't need to do this, one can adjust the class so the paramters can be added without them. Add `reopenClass` to the component controller like this:
+Then the values will be referenced, in order, in the block statement for the component.
+
+```
+{{#my-component src=model.src as |string var| }}
+  <p>
+    After passing in other arguments the component needs above, block arguments are referenced in the pipes like so.
+  </p>
+
+  <p>
+    Now I can use {{string}} to show that static string, and also use {{var}} to show that dynamic variable (which could be different depending on what's in the 'src' value).
+  </p>
+{{/my-component}}
+```
+
+You can also pass in actions from the component into the block, although it's not as simple. First define said action:
 
 ```
 export default Ember.Component.extend({
-  // Normal functions here
-}).reopenClass({
-  positionalParams: ['src', 'size'] // Must be an array, with the param names as strings in the right order
+  available: true,
+
+  actions: {
+    toggleAvailability(){
+      this.toggleProperty('available');
+    }
+  }
 });
 ```
 
-Now the same component can be used like the below example. Optional params could still be added to this but not be included.
+The component will then need to yield the component itself, using `this`, in addition to anything else being yielded. This example yields a component variable and then the action.
 
 ```
-{{svg-icon model.src "medium"}}
+{{yield available this}}
+```
 
-{{svg-icon model.src}} // If 'size' is optional
+These can then be referenced as arguments for the component block, and used in the block itself. The `action` helper will need the `target` argument to specify the action is in the component controller. Otherwise it will, by default, look for it in the current template's controller.
+
+```
+{{#my-component src=model.src as |available component| }}
+  <h3>
+    {{if available 'Available! Hooray!' 'Sorry, not available :('}}
+  </h3>
+
+  <p>
+    Want to change the availability in this block?
+  </p>
+
+  <p {{action 'toggleAvailability' target='component'}}>
+    Click here!
+  </p>
+{{/my-component}}
 ```
 
 ### Helpers
