@@ -149,6 +149,32 @@ export default Ember.Component.extend({
 
 Like controllers, you can also define other calculated properties, such as ones with variables specific to the component.
 
+#### Adding Positional Parameters
+
+When using components that have params, they normally need to be explicitly named to add values to them:
+
+```
+{{svg-icon src=model.src size="medium"}}
+```
+
+However, if one or more parameters is self-explanatory/needed enough that it doesn't need to do this, one can adjust the class so the paramters can be added without them. Add `reopenClass` to the component controller like this:
+
+```
+export default Ember.Component.extend({
+  // Normal functions here
+}).reopenClass({
+  positionalParams: ['src', 'size'] // Must be an array, with the param names as strings in the right order
+});
+```
+
+Now the same component can be used like the below example. Optional params could still be added to this but not be included.
+
+```
+{{svg-icon model.src "medium"}}
+
+{{svg-icon model.src}} // If 'size' is optional
+```
+
 ### Helpers
 
 Basic `{{if}}` helper evaluates the variable/expression inside it and returns based on if it's true or false. A basic example is `{{if var 'TRUE STRING' 'FALSE STRING'}}`. The resulting string for if it's false is optional.
