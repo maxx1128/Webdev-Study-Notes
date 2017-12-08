@@ -107,6 +107,24 @@ Another good use case: after deleting an item, go to the page with the list of r
 this.transitionToRoute('fighters.fighter', this.get('model.id'));
 ```
 
+#### toggleProperty
+
+In controllers, you can use Ember's `toggleProperty` method to quickly change a boolean value to its opposite. It works for both controller or Ember object values, like so:
+
+```
+actions: {
+  propertyName: false,
+
+  toggleEmberObject(object) {
+    object.toggleProperty('booleanProperty');
+    object.save(); // If using Ember data to connect object to backend data
+  },
+  toggleControllerProp() {
+    this.toggleProperty('propertyName'); // Just needs "this" for controller
+  }
+}
+```
+
 ### Templates
 
 #### Inputs
