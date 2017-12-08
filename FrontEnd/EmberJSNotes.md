@@ -149,6 +149,48 @@ export default Ember.Component.extend({
 
 Like controllers, you can also define other calculated properties, such as ones with variables specific to the component.
 
+#### Block Components
+
+Block components allow components to accept lines of text as a large argument for the component. They're written with two tags, like so:
+
+```
+{{#my-component data=model.item class="class class-two"}}
+  <h3>
+    Header in the block!
+  </h3>
+
+  <p>
+    I'm text that also goes in the component's block.
+  </p>
+{{/my-component}}
+```
+
+In the component template, everything in the block will appear where the `yield` statement is used.
+
+```
+<h2>
+  I'm text part of every instance of this component.
+</h2>
+
+{{yield}}
+```
+
+If the block is an optional argument, there's a conditional for if one is used or not. This can be if a component will use a regular argument (as part of) text if a block isn't used, similar to the `{{link-to}}` helper.
+
+```
+<h2>
+  I'm text part of every instance of this component.
+</h2>
+
+{{#if hasBlock}}
+  {{yield}}
+{{else}}
+  <p>
+    Some default component text with a little dynamic info, like {{data.name}}.
+  </p>
+{{/if}}
+```
+
 #### Adding Positional Parameters
 
 When using components that have params, they normally need to be explicitly named to add values to them:
