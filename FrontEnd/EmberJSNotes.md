@@ -59,6 +59,20 @@ You can also grab values set or computed in the controller with the below method
 this.controllerFor('<controller_name>').get('<property_name>');
 ```
 
+#### Loading Multiple Models
+
+If you need to load multiple models as a single promise object, the `RSVP.hash` tool lets you do this. It accepts a hash, where each value is a promise. This way you can have a promise activate once all the promises are resolved, such as a loading screen being toggled off.
+
+```
+model(params) {
+  return Ember.RSVP.hash({
+    character: this.store.findRecord('character', params.character),
+    teams: this.store.findAll('team')
+  });
+}
+```
+
+
 ### Controllers
 
 `Ember.computed` gives access to different included Ember functions for presenting or manipulating info provided by the router. A simple example:
@@ -402,5 +416,6 @@ actions: {
 ### Useful add-ons
 
 * ember-modal-dialog - Simple way to create basic modals
+* ember-xselect - Ember component for basic select/dropdown items
 * ember-route-action-helper - Lets components trigger actions defined by the route
 * active-model-adapter - Adapter designed to integrate with a Rails API
