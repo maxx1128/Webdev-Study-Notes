@@ -60,7 +60,7 @@ A Presenter are a middleman between the controller and view, if the data returne
 
 Why a Presenter? Because all that extra logic isn't meant for controllers or helpers. Controllers are made for needed data and templates, and should be as simple as possible. Helpers are for frequent, simpler actions - trying to increase their scale for Presenter-logic risks getting sucked into "Helper Hall" or drowning in lots of different helpers. Presenters let you keep all this logic in a single class, so it's easier to organize in a cohesive way.
 
-Good use case for a presenter: your database returns some information, but the view needs the data after lots of calculations have been run. All this logic and math is best abstracted to the presenter.
+Good use case for a presenter: your database returns some information, but the view needs the data after it's been made prettier. This cleanup of info is best abstracted to the presenter.
 
 However, Presenters are separate Ruby objects, and don't have much of the Rails "magic." So there's a few extra steps to setting them up.
 
@@ -112,6 +112,10 @@ Here `data` can be a call to the database, like `Data.all`.
 
 Risque coders can even use Presenters inside of other Presenters if they want, in case there's common abstractions that need to happen between multiple Presenter objects.
 
+## Services
+
+Services are similar to Presenters, but are for more complex business logic and calculations that can't be kept to the model.
+
 ## Tests
 
 * Fixtures
@@ -158,7 +162,40 @@ In relational databases, there are several different types of relationships diff
 
   ```
 
+You can also define methods within models to better manage the data that's returned. For example, if one column returns a boolean that needs to be turned into a related string, the function can do that:
+
+```
+  # In the model:
+  def label
+    if model.boolean "First Label" else "Second Label" end
+  end
+
+  # After calling an instance of the model:
+  model_instance.label
+```
+
+Models use ActiveRecord to pull records from the database, and there's several methods to use for getting it.
+
+* `Model.all` gets all model entries from a database.
+* `Model.find(:id)` gets a specific instance of a model with the given id parameter. After finding it, it can be sent to the view, updated, destroyed, or other things.
+* `Model.all.order()` takes the returned values and reorganizes them. A more specific example is `Model.all.order({ value: :desc })` orders Models in descending order based on the `value` column.
+* `Model.includes(:column)` lets you pull and manage data based on it and any `belongs_to` relationships. An example from one of my apps is filtering a list of budget categories based on if they're an expense, and the dates of the belonging expenses:
+
+```
+  Category.includes(:expenses)
+    .where(expense: @type)
+    .where(expenses: { created_at: @start_date..@end_date })
+```
+
 ## Useful Patterns
+
+#### Adding Extra Classes
+
+Within the app folder, you can add more classes for managing information and objects. However it's important to remember the naming convention to make sure Rails can auto-load them properly.
+
+**Make sure the file's name and class have the same name, but the file is snake-case and the class is camel case.** For example, if you have a Presenter class called `MySuperPresenter`, then the file name must be `my_super_presenter.rb`.
+
+These extra classes can serve different uses for different purposes, such as Presenters and Services, which are also described here.
 
 #### Storing Static Content Data
 
