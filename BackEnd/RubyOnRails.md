@@ -54,22 +54,28 @@ Common, reusable chunks of functionality meant to be used throughout the app. Sh
 
 Easy to use it in other classes with a line like this: `include CategoriesHelper`
 
-## Presenters
+## Extra Rails Patterns
 
-A Presenter are a middleman between the controller and view, if the data returned by the controller needs any extra organization or calculations. Instead of cramming all this extra code into the controllers or helpers, it's best to move it into a presenter.
+Rails has lots of built in folders and functionality magic built in, but it's not limited to that. Like any framework, you can build on it and add extra code to meet your needs. A common way to do this with Rails is adding extra classes to better break specific functionality into different modules.
 
-Why a Presenter? Because all that extra logic isn't meant for controllers or helpers. Controllers are made for needed data and templates, and should be as simple as possible. Helpers are for frequent, simpler actions - trying to increase their scale for Presenter-logic risks getting sucked into "Helper Hall" or drowning in lots of different helpers. Presenters let you keep all this logic in a single class, so it's easier to organize in a cohesive way.
+These need to be grouped into different folders in the `app/` folder, and the naming structure is important. The Class name and the file name must be the same, only with the Class name in camel case and the file name in snake case. For example, the **FakeModelQuery** class must be in the `fake_model_query.rb` file. They can then be used by any other class in the `app/` folder.
 
-Good use case for a presenter: your database returns some information, but the view needs the data after it's been made prettier. This cleanup of info is best abstracted to the presenter.
+There's a few common examples of this:
 
-However, Presenters are separate Ruby objects, and don't have much of the Rails "magic." So there's a few extra steps to setting them up.
+* **Services** are for specific business logic, such as any math or operations to created needed info for a view.
+* **Queries** are for different database requests that are either more complex or are called multiple times.
+* **Presenters** are to get information prepared for the view, such as converting integers into currency.
 
-### Create a Base Presenter
+You can even use the classes from different patterns inside each other. You may have a Service that pulls data from a Query. This Service may also be used in a Presenter. A Controller could then just create a new instance of the Presenter, and everything else would be called as needed.
 
-Similar with controllers and helpers, it's good to make a base presenter class for anything that's shared among all the presenters. For example:
+#### Extra Patterns have no Rails Magic
+
+An important caveat for these patterns is they have none of the included Rails magic by default. So you'll likely need to take a few extra steps to get them working.
+
+First, it's smart to make a base class for each Rails Pattern category. If you have lots of Services, it's good to have a base Service for any common methods used by them all. A common example is including all the application helpers, like so.
 
 ```
-class BasePresenter
+class BaseService
 
   private
 
@@ -77,44 +83,35 @@ class BasePresenter
     ApplicationController.helpers
   end
 end
+```
 
-class OnePresenter < BasePresenter
+You can then have those methods inherited like so:
+
+```
+class SpecificService < BaseService
 end
 ```
 
-This makes all presenters have access to the app's helpers, as long as they're called with the `h.` prefix. Specific helpers for a class can also be added with the normal `include` at the top.
-
-### Delegate Properties
-
-If you're passing in an object with several properties attached, they need to be delegated and initialized.
+Finally, you can then call an instance of the class like this.
 
 ```
-delegate :something,
-         :another_thing, 
-         :third_thing to: :@variable
+let variable = SpecificService.new
 
-  def initialize(variable = nil)
-    @variable = variable
+let variable = SpecificService.new(parameter_1, parameter_2) ## In case it takes parameters
+```
+
+Also if you pass in another object with other methods already defined, like a model pulled from a database, you'll need to delegate those methods to use them again. For example, if you pass in a model and want to use any values or methods without redefining them again, you'll need to delegate them like so:
+
+```
+delegate :id,
+         :property,
+         :another_thing, 
+         :third_thing to: :@model
+
+  def initialize(model = nil)
+    @model = model
   end
 ```
-
-Viola, this values can now be calculated or changed or whatever in the presenter. Methods that rails make otherwise include, like `.each`, will likely need to be redefined in the presenter.
-
-Once it's done, it can be used in the controller like so:
-
-```
-def index
-    @data = OnePresenter.new(data)
-end
-```
-
-Here `data` can be a call to the database, like `Data.all`.
-
-Risque coders can even use Presenters inside of other Presenters if they want, in case there's common abstractions that need to happen between multiple Presenter objects.
-
-## Services
-
-Services are similar to Presenters, but are for more complex business logic and calculations that can't be kept to the model.
 
 ## Tests
 
