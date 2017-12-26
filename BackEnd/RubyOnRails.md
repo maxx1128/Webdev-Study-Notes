@@ -62,7 +62,8 @@ These need to be grouped into different folders in the `app/` folder, and the na
 
 There's a few common examples of this:
 
-* **Services** are for specific business logic, such as any math or operations to created needed info for a view.
+* **Collections** are for extra business logic, such as any math or operations to created needed info for a view.
+* **Services** are for complex operations updating database information or other active functions, such as mailers or jobs.
 * **Queries** are for different database requests that are either more complex or are called multiple times.
 * **Presenters** are to get information prepared for the view, such as converting integers into currency.
 
