@@ -60,12 +60,15 @@ Rails has lots of built in folders and functionality magic built in, but it's no
 
 These need to be grouped into different folders in the `app/` folder, and the naming structure is important. The Class name and the file name must be the same, only with the Class name in camel case and the file name in snake case. For example, the **FakeModelQuery** class must be in the `fake_model_query.rb` file. They can then be used by any other class in the `app/` folder.
 
-There's a few common examples of this:
+There's a [few common examples](https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models) of this:
 
 * **Collections** are for extra business logic, such as any math or operations to created needed info for a view.
-* **Services** are for complex operations updating database information or other active functions, such as mailers or jobs.
-* **Queries** are for different database requests that are either more complex or are called multiple times.
-* **Presenters** are to get information prepared for the view, such as converting integers into currency.
+* **Services/Service Objects** are for complex write operations, such as updating database, mailers, jobs, or others that need to be coordinated together.
+* **Queries/Query Objects** are for different database requests that are either more complex or are called multiple times.
+* **Policy Objects** are similar to Service Objects, but instead of writing they focus on reading. This includes needing to read and validate several objects at once, such as a user's active email or last login time.
+* **Presenters/Decorators/View Objects** are to get information prepared for the view, such as converting integers into currency.
+* **Value Objects** are for returning values based around inputs from others. These are simpler than Collections, with much less logic, such as strings dependent on here a value falls into several ranges.
+* **Form Objects** are for when a form updates several ActiveRecord models, and all these updates can be encapsulated into one class.
 
 You can even use the classes from different patterns inside each other. You may have a Service that pulls data from a Query. This Service may also be used in a Presenter. A Controller could then just create a new instance of the Presenter, and everything else would be called as needed.
 
