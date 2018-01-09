@@ -418,12 +418,96 @@ This will take two arguments, check if they equal each other, and evaluate from 
 <button {{action 'updateRating' rating -1}} disabled={{equals rating 0}}>-</button>
 ```
 
-Custom helpers can also be used as arguments for components, with the following syntax, using parenthesis when inside the component's double brackets.
+Custom helpers can also be used as arguments for components, with the following syntax, using parenthesis when inside the component's double brackets (subexpressions).
 
 ```
 {{#complex-input 
     inputShown=(equals rating 0)}}
 ```
+
+This also works for conditionals in `if` helpers.
+
+```
+{{#if (equals total_score 100)}}
+  You got a perfect score!
+{{else}}
+  No perfect score for you :(
+{{/if}}
+```
+
+Subexpressions can also be stacked.
+
+```
+(equals (rounded test_score) 95) // Rounds a value, then sees if it equals 95
+```
+
+##### Parameters
+
+You can better organize a helper's parameters using ES6 Destructuring, giving them names and defaults. The above one comparing values could be rewritten as this, with the second having a default.
+
+```
+export function equals([value_1, value_2 = 0]) {
+  return value_1 == value_2;
+}
+```
+
+The last parameter in the helper function can be a hash, which is great for having optional arguments. They will be added by name in the helper, and can also have defaults.
+```
+export function equals([value_1, value_2 = 0], {item_1, item_2 = 'Lorem'}) {
+  return value_1 == value_2;
+}
+
+// Example
+// equals(1, 2, item_1 = 'Fake info', item_2 = 777)
+```
+
+##### Returning HTML
+
+Ember has a helper for returning HTML, which can be used in custom helpers like below:
+
+```
+export function heading([text, heading_size = 2], {class}) {
+  return Ember.String.htmlSafe(`
+    <h${heading_size} class='${class}'>
+      ${text}
+    </h${heading_size}>
+  `);
+}
+
+// heading('Header Text', 3, class = "blue-text")
+// heading('More Header Text', class = "red-text")
+```
+
+### Services
+
+Ember Services are objects whose information persists throughout different pages of the application. A common use of this is saving info about if a user is currently logged in and showing this across the site. It can also include lots of [other functionalities](https://guides.emberjs.com/v2.1.0/applications/services/) that must be persisted, such as geolocation, third-party APIs, and server-backed events.
+
+Services can be created with the Ember CLI like most other things. For user sessions, this could be done with `ember g service session`.
+
+A simple version of this service would be:
+
+```
+export default Ember.Service.Extend({
+  current_user: null
+});
+```
+
+Services then need to be injected into controllers to be available in them and the views. Once injected, they can be accessed as normal.
+
+```
+export default Ember.Controller.Extend({
+  session: Ember.inject.service(),
+  mySession: Ember.inject.service('session'), // If the key has a different name than the service, it must be specified like this
+
+  actions: {
+    login(user){
+      this.set('session.current_user', user); // Updating a service value
+    }
+  }
+});
+```
+
+You can then access the service value with `{{ session.current_user }}`.
 
 ### Connecting an API
 
@@ -452,9 +536,12 @@ actions: {
 }
 ```
 
-### Useful add-ons
+### Useful Resources Add-ons
+
+* [Ember Observer](https://emberobserver.com/) - A categorized list of useful ember plugins
 
 * ember-modal-dialog - Simple way to create basic modals
 * ember-xselect - Ember component for basic select/dropdown items
 * ember-route-action-helper - Lets components trigger actions defined by the route
+* ember-truth-helpers - Many helpers for extra comparative and conditional logic operations, such as `equals` and `or`. [Other useful template helpers are here.](https://emberobserver.com/categories/template-helpers)
 * active-model-adapter - Adapter designed to integrate with a Rails API
