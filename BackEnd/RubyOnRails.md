@@ -54,22 +54,32 @@ Common, reusable chunks of functionality meant to be used throughout the app. Sh
 
 Easy to use it in other classes with a line like this: `include CategoriesHelper`
 
-## Presenters
+## Extra Rails Patterns
 
-A Presenter are a middleman between the controller and view, if the data returned by the controller needs any extra organization or calculations. Instead of cramming all this extra code into the controllers or helpers, it's best to move it into a presenter.
+Rails has lots of built in folders and functionality magic built in, but it's not limited to that. Like any framework, you can build on it and add extra code to meet your needs. A common way to do this with Rails is adding extra classes to better break specific functionality into different modules.
 
-Why a Presenter? Because all that extra logic isn't meant for controllers or helpers. Controllers are made for needed data and templates, and should be as simple as possible. Helpers are for frequent, simpler actions - trying to increase their scale for Presenter-logic risks getting sucked into "Helper Hall" or drowning in lots of different helpers. Presenters let you keep all this logic in a single class, so it's easier to organize in a cohesive way.
+These need to be grouped into different folders in the `app/` folder, and the naming structure is important. The Class name and the file name must be the same, only with the Class name in camel case and the file name in snake case. For example, the **FakeModelQuery** class must be in the `fake_model_query.rb` file. They can then be used by any other class in the `app/` folder.
 
-Good use case for a presenter: your database returns some information, but the view needs the data after lots of calculations have been run. All this logic and math is best abstracted to the presenter.
+There's a [few common examples](https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models) of this:
 
-However, Presenters are separate Ruby objects, and don't have much of the Rails "magic." So there's a few extra steps to setting them up.
+* **Collections** are for extra business logic, such as any math or operations to created needed info for a view.
+* **Services/Service Objects** are for complex write operations, such as updating database, mailers, jobs, or others that need to be coordinated together.
+* **Queries/Query Objects** are for different database requests that are either more complex or are called multiple times.
+* **Policy Objects** are similar to Service Objects, but instead of writing they focus on reading. This includes needing to read and validate several objects at once, such as a user's active email or last login time.
+* **Presenters/Decorators/View Objects** are to get information prepared for the view, such as converting integers into currency.
+* **Value Objects** are for returning values based around inputs from others. These are simpler than Collections, with much less logic, such as strings dependent on here a value falls into several ranges.
+* **Form Objects** are for when a form updates several ActiveRecord models, and all these updates can be encapsulated into one class.
 
-### Create a Base Presenter
+You can even use the classes from different patterns inside each other. You may have a Service that pulls data from a Query. This Service may also be used in a Presenter. A Controller could then just create a new instance of the Presenter, and everything else would be called as needed.
 
-Similar with controllers and helpers, it's good to make a base presenter class for anything that's shared among all the presenters. For example:
+#### Extra Patterns have no Rails Magic
+
+An important caveat for these patterns is they have none of the included Rails magic by default. So you'll likely need to take a few extra steps to get them working.
+
+First, it's smart to make a base class for each Rails Pattern category. If you have lots of Services, it's good to have a base Service for any common methods used by them all. A common example is including all the application helpers, like so.
 
 ```
-class BasePresenter
+class BaseService
 
   private
 
@@ -77,40 +87,35 @@ class BasePresenter
     ApplicationController.helpers
   end
 end
+```
 
-class OnePresenter < BasePresenter
+You can then have those methods inherited like so:
+
+```
+class SpecificService < BaseService
 end
 ```
 
-This makes all presenters have access to the app's helpers, as long as they're called with the `h.` prefix. Specific helpers for a class can also be added with the normal `include` at the top.
-
-### Delegate Properties
-
-If you're passing in an object with several properties attached, they need to be delegated and initialized.
+Finally, you can then call an instance of the class like this.
 
 ```
-delegate :something,
-         :another_thing, 
-         :third_thing to: :@variable
+let variable = SpecificService.new
 
-  def initialize(variable = nil)
-    @variable = variable
+let variable = SpecificService.new(parameter_1, parameter_2) ## In case it takes parameters
+```
+
+Also if you pass in another object with other methods already defined, like a model pulled from a database, you'll need to delegate those methods to use them again. For example, if you pass in a model and want to use any values or methods without redefining them again, you'll need to delegate them like so:
+
+```
+delegate :id,
+         :property,
+         :another_thing, 
+         :third_thing to: :@model
+
+  def initialize(model = nil)
+    @model = model
   end
 ```
-
-Viola, this values can now be calculated or changed or whatever in the presenter. Methods that rails make otherwise include, like `.each`, will likely need to be redefined in the presenter.
-
-Once it's done, it can be used in the controller like so:
-
-```
-def index
-    @data = OnePresenter.new(data)
-end
-```
-
-Here `data` can be a call to the database, like `Data.all`.
-
-Risque coders can even use Presenters inside of other Presenters if they want, in case there's common abstractions that need to happen between multiple Presenter objects.
 
 ## Tests
 
@@ -158,7 +163,40 @@ In relational databases, there are several different types of relationships diff
 
   ```
 
+You can also define methods within models to better manage the data that's returned. For example, if one column returns a boolean that needs to be turned into a related string, the function can do that:
+
+```
+  # In the model:
+  def label
+    if model.boolean "First Label" else "Second Label" end
+  end
+
+  # After calling an instance of the model:
+  model_instance.label
+```
+
+Models use ActiveRecord to pull records from the database, and there's several methods to use for getting it.
+
+* `Model.all` gets all model entries from a database.
+* `Model.find(:id)` gets a specific instance of a model with the given id parameter. After finding it, it can be sent to the view, updated, destroyed, or other things.
+* `Model.all.order()` takes the returned values and reorganizes them. A more specific example is `Model.all.order({ value: :desc })` orders Models in descending order based on the `value` column.
+* `Model.includes(:column)` lets you pull and manage data based on it and any `belongs_to` relationships. An example from one of my apps is filtering a list of budget categories based on if they're an expense, and the dates of the belonging expenses:
+
+```
+  Category.includes(:expenses)
+    .where(expense: @type)
+    .where(expenses: { created_at: @start_date..@end_date })
+```
+
 ## Useful Patterns
+
+#### Adding Extra Classes
+
+Within the app folder, you can add more classes for managing information and objects. However it's important to remember the naming convention to make sure Rails can auto-load them properly.
+
+**Make sure the file's name and class have the same name, but the file is snake-case and the class is camel case.** For example, if you have a Presenter class called `MySuperPresenter`, then the file name must be `my_super_presenter.rb`.
+
+These extra classes can serve different uses for different purposes, such as Presenters and Services, which are also described here.
 
 #### Storing Static Content Data
 
