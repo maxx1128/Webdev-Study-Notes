@@ -79,4 +79,4 @@ This is useful if trying to run something locally but it can't start since it's 
 
 * `ps aux` shows all active processes. The second column holds a number that is the process's PID.
 * `ps aux | grep <string>` will show all processes that contain a specific string or number. Great for narrowing down a long list.
-* `kill -9 <PID>` will kill the process with the matching PID
+* `kill <PID>` will kill the process with the matching PID. If this doesn't kill it, try `kill -9 <PID>` instead.
