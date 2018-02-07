@@ -49,7 +49,6 @@ Shows a record of all the commits in a repo
 ### `git reflog`
 
 Shows a record of all the commands run for this repo
->>>>>>> 3b2453264589bbe09beb04038c0da2fb12a1381c:LearnEnoughGit.md
 
 ### `git mv`
 
