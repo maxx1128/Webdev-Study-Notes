@@ -148,3 +148,61 @@ This way we can pass a function and needed parameters to the child component, wh
 on_click={this.decrease_number}
 ```
 Don't include the parenthesis at the end of the function here, or else it will be called on page load. [Here's more info on passing functions to components.](https://reactjs.org/docs/faq-functions.html)
+
+### Wrapping Children Components
+
+Components can also be designed to yield to other HTML or components. For example, one component may create a wrapper around whatever else is passed in.
+
+```
+<Wrapper>
+    <h3>
+      I'm in a burrito!
+    </h3>
+    
+    <Burrito_Component />
+</Wrapper>
+```
+
+The `Wrapper` component would need to do this so it renders what's inside:
+
+```
+render() {
+    <div class="wrapper-class">
+        {this.props.children}
+    </div>
+}
+```
+
+### Lifecycle Hooks
+
+[Lifecycle hooks](
+https://reactjs.org/docs/react-component.html#the-component-lifecycle) are functions that a component will automatically look for and run when rendering or removing a component (referred to as mounting). For example, you can run code right before a component renders by using the `componentWillMount` function, or while it's being removed with the `componentWillUnmount` function.
+
+A common use would be pulling in data from an API, and setting the state before the component renders.
+
+```
+constructor(props) {
+  super(props);
+  this.state = {
+     data: []
+  }
+}
+
+// componentDidMount() also works
+componentWillMount() {
+  fetch('https://jsonplaceholder.typicode.com/comments')
+    .then(response => {
+      return response.json();
+    }).then(json_response => {
+      this.setState({data: json_response})
+    })
+  
+  // This is a shorter version that works the same
+  fetch('https://jsonplaceholder.typicode.com/comments')
+    .then(response => response.json())
+    .then(json_response => this.setState({data: json_response}));
+}
+```
+
+This way data can be pulled from an external source, use promises to wait for the response, and include all the needed data in the render cycle.
+
