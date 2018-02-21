@@ -49,7 +49,6 @@ Shows a record of all the commits in a repo
 ### `git reflog`
 
 Shows a record of all the commands run for this repo
->>>>>>> 3b2453264589bbe09beb04038c0da2fb12a1381c:LearnEnoughGit.md
 
 ### `git mv`
 
@@ -77,16 +76,26 @@ Rebasing it taking a branch that may start from the an older commit of the main 
 
 * Make sure you pull the most recent version of the branch you're rebasing on first!
 * When pushing a rebase, do so with `git push --force`. Rebasing is essentially remaking all the same commits again and overwriting the old ones. To avoid possible conflicts with what others may have pushed, use `git push --force-with-lease`
-* Run `git rebase -i [branch]` for an interactive rebase. This lets you see all the commits to be recommitted on top of the branch and make certain changes. Useful ones include:
+* Run `git rebase -i <branch>` for an interactive rebase. This lets you see all the commits to be recommitted on top of the branch and make certain changes. Useful ones include:
     - Editing changes in a commit
     - Squashing commits into each other. If two or more commits are similar enough to be considered the same, they can be combined into a single one. For example, lots of different commits that all just change the CSS of a single component.
+
+#### Rebasing onto a new branch
+
+The above command only works if you're rebasing on the same command as before. If you want to rebase onto a different branch, use the `--onto` argument.
+
+```
+git rebase < current_parent_branch > --onto < new_parent_branch >
+```
+
+All the current branches commit will be placed on top of the new branch, and any conflicts will be solved like any other git rebase.
 
 #### Rebasing - using fixup to autosquash commits
 
 Some commits may be made [solely to be squashed into other ones later on](https://robots.thoughtbot.com/autosquashing-git-commits). This can be simplified by making them as `fixup` commits. These are commits marked specifically to be squashed, and will automatically do so during a rebase.
 
 * First, track all wanted changes.
-* Run `git commit --fixup [commitID]` for the commit, with `commitID` being the ID of the commit you want it to be squashed into.
+* Run `git commit --fixup <commitID>` for the commit, with `commitID` being the ID of the commit you want it to be squashed into.
 * The changes will be committed with the same message as the commit you chose, but with the works "fixup!" prepended on it.
 * Run a git rebase with `git rebase -i -autosquash [branch]`. All the fixup commits will be moved to the proper place, and when you run the rebase, will be merged automatically.
 
@@ -97,5 +106,5 @@ To quickly find a recent commit when running the `--fixup` option, you can tell 
 #### Undoing a rebase
 
 * Run `git reflog` to find the commit right before the rebase was run, and copy its ID.
-* Run `git reset --hard [commitID]` using that commit's ID bring the repo back to before the rebase.
+* Run `git reset --hard <commitID>` using that commit's ID bring the repo back to before the rebase.
 * Run `git push --force-with-lease` to push that version of the repo to the remote, removing all the rebase changes that had been added after.
