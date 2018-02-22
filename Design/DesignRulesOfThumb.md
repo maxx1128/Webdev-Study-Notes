@@ -9,9 +9,14 @@ Resources:
 ### Never forget C-R-A-P!
 
 * **Contrast**
+    - Don't go halfway with contrast. Either make elements very similar or very different to make their relationships clear.
 * **Repetition**
+    - Establish elements as having the same relationship by using consistent styles between then.
 * **Alignment**
+    - Ensure elements are aligned with each other in a purposeful way to give the layout structure and focus.
+    - Avoid defaulting to center aligned text.
 * **Proximity**
+    - Similar with contrast, don't go halfway. Put elements close or far awy to establish their relationship.
 
 ### Hierarchy
 * Combine different font sizes and colors to establish a hierarchy of importance.
