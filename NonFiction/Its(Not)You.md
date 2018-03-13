@@ -39,7 +39,7 @@ Part of this is a trade-off that there'll be less time for dating and marriage, 
 
 Playing dumb doesn't make dating easier - it helps avoid people who believe two people in a relationship shouldn't be equals.
 
-If someone perceives competency and intelligence as being "intimidating" or "hard to talk to," they're likely not worth it. Plus, career success normally does the opposite speaks **well** for someone's interpersonal skills.
+If someone perceives competency and intelligence as being "intimidating" or "hard to talk to," they're likely not worth it. Plus, career success normally does the opposite and speaks **well** for someone's interpersonal skills.
 
 ## You're Too Desperate, You Need to Be Happy Alone
 
