@@ -39,8 +39,9 @@ WebAssembly - gets native-speed on all different devices and browsers. Very good
 Accessibility - defined as making app usable by people of all abilities, disabilities, and and conditions.
 
 Official Standard - WCAG 2.0. Has three measures: A, AA, and AAA. AA will usually cover most businesses.
-    * Also check for needed compliances with the **Americans With Disabilities Act.**
-    * Community around the #A11Y movement for improving accessibility.
+
+* Also check for needed compliances with the **Americans With Disabilities Act.**
+* Community around the #A11Y movement for improving accessibility.
 
 There's been many advances in bringing disabled people certain senses and abilities back, and Ember should try to do something similar with accessibility solutions (aside from making #A11Y tomsters).
 
@@ -58,48 +59,52 @@ There's been many advances in bringing disabled people certain senses and abilit
         + Clicking all the things (too many click events are bad)
         + Passwords (can't read back entered passwords)
 
-Web Standards here to save the day!
-    * Use semantic HTML5 tags
-    * Link VS Route - Use links for routes, buttons for actions
-    * Keyboard navigation - if your mouse can do it, your keyboard should be able to do it. Don't try to get too fancy
-    * Check color contrast
-    * Add relevant alt text to images
+##### Web Standards here to save the day!
+
+* Use semantic HTML5 tags
+* Link VS Route - Use links for routes, buttons for actions
+* Keyboard navigation - if your mouse can do it, your keyboard should be able to do it. Don't try to get too fancy
+* Check color contrast
+* Add relevant alt text to images
 
 > Don't stop fighting. Fight about the right things, for accessibility. Don't look unaccessible apps and say "this is fine."
 
-Some add-ons exist for this (but not quite enough:
-    * ember-a11y
-    * ember-a11y-testing
-    * ember-a11y-landmarks
-    * a11y-announcer
-    * ember-cli-template-lint
-    * ember-component-attributes (don't need to change existing components)
+##### Some add-ons exist for this (but not quite enough:
+
+* ember-a11y
+* ember-a11y-testing
+* ember-a11y-landmarks
+* a11y-announcer
+* ember-cli-template-lint
+* ember-component-attributes (don't need to change existing components)
 
 > Don't feel bad about knowing how to do this yet. Don't pretend you do.
 
 ### Ember Community
 
-People often make (sub)cultures around tech
-    * subculture: cultural group within a larger culture, with beliefs/interest at variance with the larger culture. Similar yet also distinct.
+People often make (sub)cultures around tech. **Subculture:** a cultural group within a larger culture, with beliefs/interest at variance with the larger culture. Similar yet also distinct.
 
-What of the Ember subculture in JavaScript?
-    * CLI tool is very popular, more-so than with other frameworks
-    * Large selections of add-ons built for almost any use case
-    * Higher number of contributors to main projects
-    * Lots of comments and inputs with RFC changes
+##### What of the Ember subculture in JavaScript?
 
-Ember Subculture's Communication
-    * Steady decline of StackOverflow new questions
-    * Most active in the Slack community (#team-learning, #topic-typescript channels especially) 
+* CLI tool is very popular, more-so than with other frameworks
+* Large selections of add-ons built for almost any use case
+* Higher number of contributors to main projects
+* Lots of comments and inputs with RFC changes
+
+##### Ember Subculture's Communication
+
+* Steady decline of StackOverflow new questions
+* Most active in the Slack community (#team-learning, #topic-typescript channels especially) 
  
 ### Say More - Testing and Test Helpers
 
 [Slides here](https://speakerdeck.com/jgwhite/say-more)
 
-A "What if?" talk about UI Testing
-    * What if accessibility determined access during testing?
-    * Use a less powerful language?
-    * Say more about the application?
+##### A "What if?" talk about UI Testing
+
+* What if accessibility determined access during testing?
+* Use a less powerful language?
+* Say more about the application?
  
 ### Next Generation of Testing
 
@@ -134,27 +139,29 @@ A "What if?" talk about UI Testing
 
 ### Ember's New Filesystem Layout
 
-New filesystem (Module Unification) is still in development, but should be ready soon.
-    * Co-location for related files (similar to pods)
-    * Isolation for single-use components and helpers
-    * Isolation for add-on APIs
-    * Isolation gives opportunities for lazy-loading
+##### New filesystem (Module Unification) is still in development, but should be ready soon.
 
-Basics of new filesystem
-    * `app/` becomes `src/`
-    * `src/` groups related files
-        - `init` for all initializer files
-        - `services` in its own folder
-        - `ui` for routes, components, and partials
-            + Routes will have their controllers and templates with them
-            + Components have their template and controller grouped together
-                * "Local lookup" limits components and helpers to certain directories if placed there
-                * Good for components/helpers only being used in specific routes, or private components
-        - `data` with different models and transforms
-        - Styles can be freely named and placed in the file system
-        - Any file with `-test.js` can live anywhere in the file system 
-    * Namespaces for add-ons
-    * Overall, improved isolation for app code
+* Co-location for related files (similar to pods)
+* Isolation for single-use components and helpers
+* Isolation for add-on APIs
+* Isolation gives opportunities for lazy-loading
+
+##### Basics of new filesystem
+
+* `app/` becomes `src/`
+* `src/` groups related files
+    - `init` for all initializer files
+    - `services` in its own folder
+    - `ui` for routes, components, and partials
+        + Routes will have their controllers and templates with them
+        + Components have their template and controller grouped together
+            * "Local lookup" limits components and helpers to certain directories if placed there
+            * Good for components/helpers only being used in specific routes, or private components
+    - `data` with different models and transforms
+    - Styles can be freely named and placed in the file system
+    - Any file with `-test.js` can live anywhere in the file system 
+* Namespaces for add-ons
+* Overall, improved isolation for app code
 
 Today, this can be used with the CLI Canary with a feature flag
 
@@ -164,74 +171,81 @@ Today, this can be used with the CLI Canary with a feature flag
 
 Two main pieces: **Component Patterns** and **Data Management**
 
-Component Patterns
-    * Design questions to ask
-        - What type of field? (text type, hidden, etc)
-        - Required field?
-        - Dependent on other components?
-        - Do they supply functionality for other components?
-        - Inputs that answer the same for most/all of the above can be abstracted into components
-    * Standardizes API in the application's scope, and UI on app's various form elements
-    * Groupings are reusable without being bound to initial layout
-    * Remember that larger form components can `yield` to several smaller form components
-    * Aim for components to stack together like Tetris pieces - they work together, even if it's not clean
+##### Component Patterns
 
-Data Management
-    * If it's not needed by the view, it shouldn't delay rendering
-    * Questions to ask:
-        - Essential when user lands on the page?
-        - Important to scope of the route?
-        - Concern of the component?
-        - If `no` to all of the above, the component can fetch data (retrieved form the `store` in the component controller)
-    * User can interact with the app sooner
-    * Relative data is in component's scope, so it's easier to use relative to other code
-    * Specific forms can have their own data models to match what's needed in the server-side
-    * Data can be validated anywhere
-        - Is the validation specific to the input type, like password length?
-        - Error messaging generic enough to reuse?
-        - If yes to both of the above, it can be validated on the component level (`ember-cp-validations` to validate computed properties)
+* Design questions to ask
+    - What type of field? (text type, hidden, etc)
+    - Required field?
+    - Dependent on other components?
+    - Do they supply functionality for other components?
+    - Inputs that answer the same for most/all of the above can be abstracted into components
+* Standardizes API in the application's scope, and UI on app's various form elements
+* Groupings are reusable without being bound to initial layout
+* Remember that larger form components can `yield` to several smaller form components
+* Aim for components to stack together like Tetris pieces - they work together, even if it's not clean
 
-Accessibility
-    * Label everything, or use ARIA
-    * Clearly indicate required fields (make sure it doesn't trigger beforehand, or is marked with unclear styles)
-    * Use logical tabbing
-    * Be thorough with success and error messages (bad feedback can cause button mashing)
-        - Use submitted data to give specific feedback, helps reaffirm things to users
+##### Data Management
+
+* If it's not needed by the view, it shouldn't delay rendering
+* Questions to ask:
+    - Essential when user lands on the page?
+    - Important to scope of the route?
+    - Concern of the component?
+    - If `no` to all of the above, the component can fetch data (retrieved form the `store` in the component controller)
+* User can interact with the app sooner
+* Relative data is in component's scope, so it's easier to use relative to other code
+* Specific forms can have their own data models to match what's needed in the server-side
+* Data can be validated anywhere
+    - Is the validation specific to the input type, like password length?
+    - Error messaging generic enough to reuse?
+    - If yes to both of the above, it can be validated on the component level (`ember-cp-validations` to validate computed properties)
+
+#####  Accessibility
+
+* Label everything, or use ARIA
+* Clearly indicate required fields (make sure it doesn't trigger beforehand, or is marked with unclear styles)
+* Use logical tabbing
+* Be thorough with success and error messages (bad feedback can cause button mashing)
+    - Use submitted data to give specific feedback, helps reaffirm things to users
 
 ### Training and Hiring New Devs
 
 Ember has great stability, but this makes it harder to get others excited for the framework as much as others. So how do you hire well for people to work with Ember?
-    * Can't just hire lots of engineers and throw them at an Ember app
-    * Need to ship good user experiences, not just components
-    * Ember's structure and opinions can be hard to adjust to, can be hard to get buy-in and consistent use. Below tips can overcome these obstacles.
 
-Develop a good Ember teaching culture that lasts
-    * Start small - teach Ember in little steps
-        - Slowly scale up their types of tasks
-        - Don't just toss the documentation at them
-        - Pro Ember training likely would have helped in the long run
-    * Scaling up the passion
-        - For newbies, there's lots of good ideas to introduce, but there's a high learning curve and no other opinions to contrast with Ember's. Limit their exposure so they don't think Ember is the perfect code philosophy, and follow-up after first exposures.
-        - For veterans, it's hard to match up with Ember's opinions, even though the learning is faster. Explore things faster to sell them on Ember, don't worry about follow-up as much.
+* Can't just hire lots of engineers and throw them at an Ember app
+* Need to ship good user experiences, not just components
+* Ember's structure and opinions can be hard to adjust to, can be hard to get buy-in and consistent use. Below tips can overcome these obstacles.
 
-Leveraging these things to teach Ember
-    * "I'm Used to React"
-        - Common ideas with components
-        - More structured design patterns
-        - Fuck Webpack
-        - More data structure with Ember Data
-    * "I Used Ember Five Years Ago"
-        - No longer need "brute force" approaches to some problems
-        - New/Deleted API methods
-        - ES5/ES6 related changes
+##### Develop a good Ember teaching culture that lasts
 
-How it Affects Hiring
-    * Working with others is more important that their skillset
-        - Both teachers and students
-        - Positive culture impact > "Culture fit"
-        - Look for: Communication, Empathy, Consistency
-    * Hire Diversely (background and perspectives)
-        - Better representative of communities using the app
+* Start small - teach Ember in little steps
+    - Slowly scale up their types of tasks
+    - Don't just toss the documentation at them
+    - Pro Ember training likely would have helped in the long run
+* Scaling up the passion
+    - For newbies, there's lots of good ideas to introduce, but there's a high learning curve and no other opinions to contrast with Ember's. Limit their exposure so they don't think Ember is the perfect code philosophy, and follow-up after first exposures.
+    - For veterans, it's hard to match up with Ember's opinions, even though the learning is faster. Explore things faster to sell them on Ember, don't worry about follow-up as much.
+
+##### Leveraging these things to teach Ember
+
+* "I'm Used to React"
+    - Common ideas with components
+    - More structured design patterns
+    - Fuck Webpack
+    - More data structure with Ember Data
+* "I Used Ember Five Years Ago"
+    - No longer need "brute force" approaches to some problems
+    - New/Deleted API methods
+    - ES5/ES6 related changes
+
+##### How it Affects Hiring
+
+* Working with others is more important that their skillset
+    - Both teachers and students
+    - Positive culture impact > "Culture fit"
+    - Look for: Communication, Empathy, Consistency
+* Hire Diversely (background and perspectives)
+    - Better representative of communities using the app
 
 Final tip - **have a Style Guide** for constant programmatic reference. Don't just rely on Ember Docs.
 
@@ -244,8 +258,9 @@ Final tip - **have a Style Guide** for constant programmatic reference. Don't ju
 * Different pure JS libraries
 * Best Ember tool for this so far - Liquid Fire
 
-Game-Engine Principles
-    * Separation between app logic and animation layers
-    * Set rules so the motions emerge naturally (one-way data flow with animations)
+##### Game-Engine Principles
+
+* Separation between app logic and animation layers
+* Set rules so the motions emerge naturally (one-way data flow with animations)
 
 Ember Animated - A "Glimmerization" version of Ember Fire
