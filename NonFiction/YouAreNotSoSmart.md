@@ -9,6 +9,10 @@ You know when you're being influenced and how it affects your behavior.
 #### Truth
 You're unaware of the constant nudging you receive from ideas formed in your unconscious mind.
 
+> Priming works only if you aren't aware of it, and those who depend on priming to put food on the table work very hard to keep their influence hidden.
+
+Look for things meant to be flashy or get your attention in certain situations. It may be to keep you distracted from different primers being placed around them that you still see enough to affect you.
+
 ## Confabulation
 
 #### Misconception
@@ -16,6 +20,10 @@ You know when you're lying to yourself.
 
 #### Truth
 You're often ignorant of your motivations, and make up fake narratives to explain your decisions, emotions, and history without knowing it.
+
+> You are always explaining to yourself the motivations for your actions and the causes to the effects in your life, and you make them up without realizing it when you don’t know the answers.
+
+> Who you think you are is sort of like a movie based on true events, which is not necessarily a bad thing. The details may be embellished, but the big picture, the general idea, is probably a good story worth hearing about.
 
 ## Confirmation Bias
 
@@ -25,6 +33,8 @@ Your opinions are the result of years of rational, objective analysis.
 #### Truth
 Your opinions are a result of paying attention to info you believed, and ignoring info that challenged ideas you already had.
 
+> ...there's always someone out there willing to sell eyeballs to advertisers by offering a guaranteed audience of people looking for validation.
+
 ## Hindsight Bias
 
 #### Misconception
@@ -32,6 +42,8 @@ After you learn something new, you remember how you were once ignorant and wrong
 
 #### Truth
 You often look back on things your just learned and assume you knew/believed them all along.
+
+> ...deletion of your old, incorrect assumptions de-clutters your mind. Sure, you are lying to yourself, but it’s for a good cause.
 
 ## Texas Sharpshooter Fallacy
 
@@ -41,6 +53,10 @@ You take randomness into account when determining cause and effect.
 #### Truth
 You tend to ignore random chance when the results seem meaningful, or when you want a random event to have a meaningful cause.
 
+> To accept that things like residential cancer clusters are often just coincidence is deeply unsatisfying. The powerlessness, the feeling you are defenseless to the whims of chance, can be assuaged by singling out an antagonist.
+
+> Your drive to do this is primal. You need order. Order makes it easier to be a person, to navigate this sloppy world.
+
 ## Procrastination
 
 #### Misconception
@@ -48,6 +64,10 @@ You procrastinate because you're lazy and can't manage your time well.
 
 #### Truth
 Procrastination is fueled by weakness in the face of impulses, and a failure to think about your own thinking.
+
+> ...the struggle between should versus want, some people have figured out something crucial: Want never goes away. Procrastination is all about choosing want over should because you don’t have a plan for those times when you can expect to be tempted.
+
+> The trick is to accept that the now-you will not be the person facing those choices, it will be the future-you—a person who can’t be trusted ... Your effort is better spent outsmarting yourself than making empty promises through plugging dates into a calendar or setting deadlines for push-ups.
 
 ## Normalcy Bias
 
@@ -57,6 +77,8 @@ Your fight-or-flight instincts kick in and you panic when disaster strikes.
 #### Truth
 You often become abnormally calm and pretend all is normal in a crisis.
 
+> Normalcy bias is self-soothing through believing everything is just fine. If you can still engage in your normal habits, still see the world as if nothing bad is happening, then your anxiety stays put.
+
 ## Introspection
 
 #### Misconception
@@ -64,6 +86,8 @@ You know why you like the things you like and feel the way you feel.
 
 #### Truth
 The origins of certain emotional states is unavailable to you, and will just make something up when asked to explain.
+
+> Taste is difficult to quantify and put into words, so the explainers focused on other aspects like texture or color or viscosity. None of which in the end made much difference to the non-explainers ... Believing you understand your motivations and desires, your likes and dislikes, is called the introspection illusion.
 
 ## Availability Heuristic
 
@@ -73,6 +97,8 @@ With mass media, you understand how the world works based on statistics and fact
 #### Truth
 You're far more likely to believe something is commonplace when you find an example of it, and less likely to believe something you're never seen/heard of before.
 
+> You don’t think in statistics, you think in examples, in stories.
+
 ## Bystander Effect
 
 #### Misconception
@@ -80,6 +106,8 @@ When someone is hurt, people rush to their aid.
 
 #### Truth
 The more people witness a person in distress, the less likely any one person will help.
+
+> The less you know about a subject, the less you believe there is to know in total. Only once you have some experience do you start to recognize the breadth and depth you have yet to plunder.
 
 ## Dunning Kruger Effect
 
@@ -97,6 +125,8 @@ Some coincidences are so miraculous, they must have meaning.
 #### Truth
 Coincidences are a routine part of life, even "miraculous" ones. Any meaning for them comes from your mind.
 
+> You need a sense of meaning to get out of bed, to push forward against the grain. Just remember that meaning comes only from within.
+
 ## Brand Loyalty
 
 #### Misconception
@@ -104,6 +134,10 @@ You prefer the things you own over the ones you don't because you made rational 
 
 #### Truth
 You prefer things you own because you rationalize your past choices to protect your sense of self.
+
+> if the product is unnecessary, like an iPad, there is a great chance the customer will become a fanboy because he had to choose to spend a big chunk of money on it. It’s the choosing of one thing over another that leads to narratives about why you did it
+
+> If you see yourself as the kind of person who owns Apple computers, or who drives hybrids, or who smokes Camels, you’ve been branded.
 
 ## Argument From Authority
 
