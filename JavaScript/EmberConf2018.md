@@ -237,6 +237,8 @@ Final tip - **have a Style Guide** for constant programmatic reference. Don't ju
 
 ### Living Animation
 
+[Slides here](https://github.com/ef4/living-animation)
+
 * Web Animations API
 * requestAnimationFrame
 * Different pure JS libraries
