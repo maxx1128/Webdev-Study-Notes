@@ -59,7 +59,7 @@ You can also grab values set or computed in the controller with the below method
 this.controllerFor('<controller_name>').get('<property_name>');
 ```
 
-#### Loading Multiple Models
+##### Loading Multiple Models
 
 If you need to load multiple models as a single promise object, the `RSVP.hash` tool lets you do this. It accepts a hash, where each value is a promise. This way you can have a promise activate once all the promises are resolved, such as a loading screen being toggled off.
 
@@ -150,7 +150,7 @@ To input an array of items from an object for a computed property, you can use `
   })
 ```
 
-#### transitionToRoute
+##### transitionToRoute
 
 This is a controller tool to move to different routes after an action. For example, you could have this activate on an "edit" screen to go back to the related "show" screen. Don't forget to pass any needed parameters!
 
@@ -160,7 +160,7 @@ Another good use case: after deleting an item, go to the page with the list of r
 this.transitionToRoute('fighters.fighter', this.get('model.id'));
 ```
 
-#### toggleProperty
+##### toggleProperty
 
 In controllers, you can use Ember's `toggleProperty` method to quickly change a boolean value to its opposite. It works for both controller or Ember object values, like so:
 
@@ -178,9 +178,44 @@ actions: {
 }
 ```
 
+##### Using Properties and Actions from other Controllers
+
+For child or parent controllers, you need to `inject` them into the controller. Then you access them through the namespace you select.
+
+```
+// Application controller
+export default Controller.extend({
+  testInteger: 1,
+
+  actions: {
+    incrementInteger() {
+      this.incrementProperty('testInteger');
+    }
+  }
+});
+
+// Any other controller
+
+export default Controller.extend({
+  app: Ember.inject.controller('application'),
+
+  // All properties can be accessed over "app," such as "app.testInteger"
+
+  actions: {
+    originalIncrementInteger() {
+      this.get('app').send('incrementInteger'); // You can also access the app controllers' actions this way
+    }
+
+    anotherIncrementInteger() {
+      this.incrementProperty('app.testInteger', 2); // Adds two to the parent property
+    }
+  }
+});
+```
+
 ### Templates
 
-#### Inputs
+##### Inputs
 
 The most basic way to bind an input to a variable is with `{{input value=var}}`, which will then bind the input's text to the `var` variable.
 
@@ -202,7 +237,7 @@ export default Ember.Component.extend({
 
 Like controllers, you can also define other calculated properties, such as ones with variables specific to the component.
 
-#### Adding Positional Parameters
+##### Adding Positional Parameters
 
 When using components that have params, they normally need to be explicitly named to add values to them:
 
@@ -228,7 +263,7 @@ Now the same component can be used like the below example. Optional params could
 {{svg-icon model.src}} // If 'size' is optional
 ```
 
-#### Block Components
+##### Block Components
 
 Block components allow components to accept lines of text as a large argument for the component. They're written with two tags, like so:
 
@@ -330,6 +365,41 @@ These can then be referenced as arguments for the component block, and used in t
 {{/my-component}}
 ```
 
+### Pods
+
+Pods are more encapsulated sections of Ember code that have their own controllers, routes, and even nested pods. This makes it easy to encapsulate different sections separate from the main application and reference them.
+
+##### Creating Pods
+
+You'll need to add the directory for your pods in the `config/environment.js` file. It's set with the `podModulePrefix` property, and is set to match with the `modulePrefix`, like so:
+
+```
+let ENV = {
+  modulePrefix: 'pods-practice',
+  podModulePrefix: 'pods-practice/pods',
+  
+  ...
+}
+```
+
+You can then add a basic pod by using the basic `ember generate` command with the `--pod` argument. For example, use `ember g <route|controller> test-pod --pod` to create a pod. You can add or remove the pieces, like routes/templates/controllers, and they'll function properly because Ember.
+
+##### Referencing Pods
+
+Pods can be referenced in two main ways: templates and routes.
+
+Let's say we have a pod in `pods/slide-1`, which has a template and controller. You can have it shown directly through the router like so:
+
+```
+Router.map(function() {
+  this.route('slide-1');
+});
+```
+
+Then just head to `localhost:4200/slide-1` and you'll see it. You can reference it with a `link-to` helper with the same string.
+
+You can also embed a pod directly in another pod or different template, in this case with `{{slide-1}}`. Nested pods would be `{{slide-1/subslide-1}}`. Just know that the controllers or route being carried won't translate as smoothly and may need to have different versions of properties or actions in the controller of the template importing it. So this is best used for pods only carrying different templates.
+
 ### Helpers
 
 Basic `{{if}}` helper evaluates the variable/expression inside it and returns based on if it's true or false. A basic example is `{{if var 'TRUE STRING' 'FALSE STRING'}}`. The resulting string for if it's false is optional.
@@ -363,7 +433,7 @@ export default Ember.Controller.extend({
 
 The controller's function can contain arguments. These arguments are added to the helper as additional variables after the first.
 
-#### "Link-to" Helper
+##### "Link-to" Helper
 
 The `{{link-to}}` helper is an Ember tool included for linking between different pages. It works for both static and dynamic urls, lettings you include as needed parameters.
 
@@ -517,7 +587,7 @@ You can then access the service value with `{{ session.current_user }}`.
 * Make sure the resources being exposed to Ember match the models being used in Ember!
 * The most preferred API format is JSON API, despite the other adapters and serializers that make using other APIs possible. If you can control the API being used, make it JSON API.
 
-#### Using FireBase
+##### Using FireBase
 
 1) Set up a FireBase account and a database
 2) Manually add in data to the database
