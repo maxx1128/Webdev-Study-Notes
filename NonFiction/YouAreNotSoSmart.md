@@ -213,7 +213,7 @@ Beneficiaries of good fortune often do nothing to earn it, and bad people often 
 
 > you want to believe you are smart enough to avoid the same fate.
 
-The just-world fallacy tells them fairness is built into the system, and so they rage when the system artificially unbalances karmic justice.
+> The just-world fallacy tells them fairness is built into the system, and so they rage when the system artificially unbalances karmic justice.
 
 > You aren't in total control of your life, but there is a nice big chunk of your life over which you have complete authority—beat that part to a pulp.
 
