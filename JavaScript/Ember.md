@@ -18,7 +18,8 @@ The new Ember structure for all this is **data down, actions up.** This means al
 * `ember build` - Builds a current project to the `dist` folder
 * `ember serve` - Runs the project's development server
 * `ember test` - Runs project's test
-* `ember generate <"route", "controller", "model", etc> <name>` Generates an additional component, can include a file path as part of the name.
+* `ember generate|g <"route", "controller", "model", etc> <name>` Generates an additional component, can include a file path as part of the name.
+  * To create a route with a parameter, run `ember g route <parent_name>/<parameter_name> --path=':slug'`
 * `ember generate --help` to see all the options for what can be generated.
 
 ### Routes
