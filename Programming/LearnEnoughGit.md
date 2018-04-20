@@ -31,6 +31,7 @@ For taking all tracked changes and saving them as a single commit. Include the `
 
 * `git reset HEAD --` removes all staged file changes, but keeps them as unchanged.
 * `git reset --soft <commit>` will take all the commits after the inputted one and undo them. All changes from those commits will be kept and staged. Great for when you accidentally make commits to the wrong branch!
+* `git reset @{u} --hard` will reset your local branch to match the remote one exactly. This removes **all** changes and commits on your local branch, so don't use it carelessly.
 
 ### `git diff`
 
