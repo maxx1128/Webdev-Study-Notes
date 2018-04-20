@@ -40,8 +40,6 @@ Shows the changes between the last commit and all untracked changes. Also visual
 * `git diff --staged` is the same, but instead for all *tracked* changes
 * `git diff <commit_id> HEAD` shows all changes between the **end of the selected commit** and a current state
     - So to find the different between HEAD and a commit, use the ID of the commit before that one
-* `git log` shows a record of all the commits in a repo
-* `git reflog` shows a record of all the commands run for this repo
 
 ### `git log`
 
