@@ -1,6 +1,16 @@
 * Title: [You Are Not So Smart](https://www.amazon.com/You-Are-Not-So-Smart/dp/1592407366)
 * Author: David McRaney
 
+---
+
+Three main ways we delude ourselves:
+
+1. **Cognitive Biases** are predictable thought/behavior patterns that lead to wrong conclusions. Most serve to puff up your self-image so you feel good enough to keep moving forward.
+2. **Heuristics** are mental shortcuts to solve common problems. They help you preserve mental energy for decisions.
+3. **Fallacies** are ways you make mistakes when using logic. They happen due to our usually limited information.
+
+They suck, but they're fine! They help us handle living in the world and live a happy life. So embrace your inner idiot.
+
 ## Priming
 
 #### Misconception
@@ -9,9 +19,17 @@ You know when you're being influenced and how it affects your behavior.
 #### Truth
 You're unaware of the constant nudging you receive from ideas formed in your unconscious mind.
 
+Our subconscious seems distant but is always pulling and pushing us in different directions. One study showed washing our hands can subconsciously make us feel less guilty for past crimes.
+
+**Priming:** when a stimulus from the past affects the way you behave and think, or the way you perceive more stimulus later on. All perceptions set off a chain of related mental ideas, consciously or subconsciously.
+
 > Priming works only if you aren't aware of it, and those who depend on priming to put food on the table work very hard to keep their influence hidden.
 
-Look for things meant to be flashy or get your attention in certain situations. It may be to keep you distracted from different primers being placed around them that you still see enough to affect you.
+Your attention is normally focused in so many areas at once, there's plenty of chances for priming. You're most vulnerable when your mental autopilot is on, or when you're in unfamiliar circumstances.
+
+Look for things meant to be flashy or get your attention in certain situations. It may be to keep you distracted from different primers being placed around them that you still see enough to affect you. Advertiser and businesses throw lots of media and content at you to prime you to see them favorably.
+
+You can take advantage of priming by building positive environments for yourself. They'll help bring more positive nudges into your life. You can also prime people by making good first impressions, and accepting the power of rituals and rites of passage.
 
 ## Confabulation
 
@@ -20,6 +38,8 @@ You know when you're lying to yourself.
 
 #### Truth
 You're often ignorant of your motivations, and make up fake narratives to explain your decisions, emotions, and history without knowing it.
+
+From the last chapter, our unconscious minds our often out of our understanding but influence us greatly. When we try to explain something our unconscious mind decided on, our mind will often make something up for us.
 
 > You are always explaining to yourself the motivations for your actions and the causes to the effects in your life, and you make them up without realizing it when you don't know the answers.
 
