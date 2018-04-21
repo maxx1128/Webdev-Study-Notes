@@ -31,6 +31,7 @@ For taking all tracked changes and saving them as a single commit. Include the `
 
 * `git reset HEAD --` removes all staged file changes, but keeps them as unchanged.
 * `git reset --soft <commit>` will take all the commits after the inputted one and undo them. All changes from those commits will be kept and staged. Great for when you accidentally make commits to the wrong branch!
+* `git reset @{u} --hard` will reset your local branch to match the remote one exactly. This removes **all** changes and commits on your local branch, so don't use it carelessly.
 
 ### `git diff`
 
@@ -39,8 +40,6 @@ Shows the changes between the last commit and all untracked changes. Also visual
 * `git diff --staged` is the same, but instead for all *tracked* changes
 * `git diff <commit_id> HEAD` shows all changes between the **end of the selected commit** and a current state
     - So to find the different between HEAD and a commit, use the ID of the commit before that one
-* `git log` shows a record of all the commits in a repo
-* `git reflog` shows a record of all the commands run for this repo
 
 ### `git log`
 
