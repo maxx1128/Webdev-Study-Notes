@@ -97,6 +97,45 @@ Can be helpful to think of it as "X _has a disability_" instead of "X _is disabl
 
 ### Environmental Factors
 
+Accessibility affects everyone, not just those with impairments, since environmental factors can affect us all, now and in the future.
+
+##### Legacy Browsers
+
+Many organizations (public or non-profit ones) are stuck with older browsers. Simply checking for basic performance on other browsers is a form of accessibility checking.
+
+This can apply to anyone in a job stuck with older browsers, or temporarily working in a place with them too.
+
+##### Devices
+
+Devices can vary widely in size, touch gestures, browser availability, how the content is presented, or how many people view them at once. Phones, game consoles, web-enabled TVs, smart-watches, VR headsets, etc.
+
+People don't just use mobile "on the go," people access the web at their homes all the time. Don't focus only on what info people may need when traveling for mobile devices.
+
+There's no reliable metrics to measure these kinds of things are device width, everything else is either not widely tracked or could be misled by browsers. The only real option is building for as many sizes and devices as possible, building for the unknown. Tough, but it gives our sites a much longer lifespan.
+
+##### Connectivity
+
+Bad connectivity commonly stems from:
+
+* Lots of people accessing public Internet
+* Lack of access to fast broadband in rural and remote areas
+
+These can affect anyone traveling, and consistently affect the many people with worse Internet than developers. Assuming fast connectivity is dangerous.
+
+##### Languages
+
+The world-wide-web is (obviously) worldwide, so support for multiple languages is important to consider. Professional or automatic translations are potential solutions, but they're respectfully expensive and unreliable.
+
+**Good starting point: Simplify your language!** Content is naturally easier to understand, and makes translations easier too.
+* Double-check character sets for letters, make sure they have characters to use for different languages. Languages can vary greatly in needed characters, not having them can render text unreadable. Do this for webfonts too.
+* Remember that different languages may read the text from either the left or right side. You can change this via CSS or HTML (the `dir` attribute on the body). More specifics on this later.
+* Don't forget that your environment and context greatly affects how you view a site.
+    - High or low light conditions can lower readability. High contrast between text and background helps a lot.
+    - Being in a public space, or any space where loud noises are discouraged, can affect audio. Captions, subtitles, and transcriptions get around this.
+    - Some sites may have specific privacy or stress cases to design for. An example is a domestic abuse site, which always has a button available to hide it in case victims need to hide it from abusive partners.
+
+There are so many factors affecting accessibility that, realistically, it's impossible to plan for them all. That's why the best option is to plan for as many as possible.
+
 # Planning for Accessibility
 
 ### Building Your Team
