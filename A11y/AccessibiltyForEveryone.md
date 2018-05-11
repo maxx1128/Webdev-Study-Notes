@@ -69,7 +69,7 @@ Can be helpful to think of it as "X _has a disability_" instead of "X _is disabl
 
 ### 5 Types of Disability
 
-1. **Visual:** 
+1. **Visual:**
     * Wide spectrum, include near- and far-sightedness, and astigmatism. Some vary from day to day.
     * _Color blindness_ includes not seeing particular colors or distinguishing certain ones. Several different versions causes certain colors to look lighter, makes colors looks similar, or not seeing some colors at all.
         - Designing for these can include ensuring strong color contrast, and not using color to signify meaning.
@@ -246,7 +246,7 @@ Navigation is vital for users to know where they are and how to get where they n
 
 #### Navigation also tells users where they are
 
-Users usually first check the page title to determine where they are. Also checking for an "active" state in the navigation for their current page. 
+Users usually first check the page title to determine where they are. Also checking for an "active" state in the navigation for their current page.
 
 Larger sites may use breadcrumbs to show the relationship between the current page and others they visited. Especially helpful for users with memory issues or other cognitive disorders, as well as helping everyone to some degree.
 
@@ -369,7 +369,7 @@ One of the best ways to make audio/video content accessible is to show transcrip
 * Difficult cognitive processing
 * Non-native speaker of language in the video
 * Overly noisy or quiet environments
-* Low bandwidth for watching videos 
+* Low bandwidth for watching videos
 
 Transcribing videos yourself can be time-consuming, so consider getting professional transcribers if needed. Don't forget notations about action in the video, and ignoring irrelevant info. Speech-to-text software can work, but often only with one speaker.
 
@@ -417,11 +417,11 @@ Labels and inputs should be semantically connected. An input's `id` attribute va
 
 Buttons have default actions, like submit or reset. They can also have several states:
 
-* Active
-* Inactive
-* Hover
-* Focus
-* Disabled
+    * Active
+    * Inactive
+    * Hover
+    * Focus
+    * Disabled
 
 When overriding a button's core styles, follow the set style conventions for each one (such as the disabled button being grayed out and dulled). Make sure each state is clearly identifiable from each other.
 
@@ -441,11 +441,65 @@ However, they currently don't work on Windows screen readers, so don't get too e
 
 _Skip Links_ let users jump right to specific content, usually the main content, to avoid going through complex navigation. One options is to make them one of, if not the, first focus elements on a page, and only show them when focused on. This makes them useful for anyone using keyboard navigation, and hides them from others. If a higher priority, just make them visible on the page.
 
+_Keyboard focus_ is where on the page the keyboard's actions are interpreted by the browser. Make sure it's the same as the _visual focus_, or what you can see on the viewport. Not all browsers support changing the keyboard focus to where the visual focus is when following things like skip links, so you may think you're at the content but still focused on the nav. Be sure to test this, or else your skip links could be useless for keyboard navigators.
+
+_Focus styles_ are styles we see when an element has keyboard focus on it, making them vital for keyboard users. Even if you change them, make sure they're there! _Hover styles_ are the same for hovering, and usually show you can interact with elements.
+
+Don't rely only on hover styles to show interactivity, as visually-impaired or touchscreen users won't see them. Don't rely on noninteractive elements like `div` and `span` for interactions!
+
+#### tabindex
+
+_tabindex_ is a property that controls the order of elements when navigated by keyboard. Standard way to do this is using the same order form the source code, but `tabindex` lets you change this if you want - but due to visual inconsistencies, this isn't a good idea. It's no substitute for semantic HTML.
+
+    * `tabindex="0"` adds elements into the flow of interactive elements. Again, not a good idea.
+    * `tabindex="-1"` removes elements from the tab index. They can still be focused on though. Adding this to a skip link target will let users jump to it without disrupting the usual tab flow.
+
 ### Separating Structure and Style
+
+Two main culprits in non-accessible HTML:
+
+#### 1) WYSIWYG (What You See Is What You Get) Editors
+
+WYSIWYG's output content made in a visual editing interface. The root of their issue lies in how they manipulate content's appearance, but rarely structure - for example, making larger fonts without using a semantic heading tag. They also often make unneeded elements and inline styling to clutter HTML.
+
+#### 2) HTML elements used for CSS Styling
+
+CSS can create a massive disconnect between the markup and visual product. Headers with less emphasis on screenreaders can look larger and more important that ones with higher priority.
+
+__Both issues above are caused by not separating structure from style.__ This keeps HTML accessible and also HTML and CSS easier to maintain. Major style changes only need CSS changes, HTML changes aren't required. This all shows how group knowledge of accessibility is also important for maintaining it. It also ensures sites can be accessed by readers enforcing alternate styles, since semantic HTML helps them translate better.
 
 ### Progressive Enhancement, Graceful Degradation
 
+__Progressive Enhancement__ is giving a base experience for most/all browsers, and layering on top of that baseline for supporting systems. This ensures everyone at least gets a basic, functioning experience. This can be adding CSS that, if not supported, just makes the element look less fancy. Or using native elements for things like video, and layering custom players on them with JS if it's enabled.
+
+Related is __Graceful Degradation__, which instead builds for the most capable browsers and has fallbacks set for less-capable ones. It's often preferred for sites built on complex interactions, and couldn't work without them. A specific list of supported browsers may be used for deciding what to fall back on. Simply blocking older browsers or users with JS disabled is bad practice.
+
+As the range of devices and browsers has grown and become harder to manage, Progressive Enhancement has become more popular in recent years.
+
 ### WAI-ARIA
+
+> Stands for "Web Accessibility Initiative - Accessible Rich Internet Applications." Introduced in 2014.
+
+For complex widgets being used in browser environments intended to read simpler code, WAI-ARIA makes it easier to describe the markup's roles, states, and other properties for assistive tech and semantic HTML.
+
+#### Roles
+
+Adding `role` attributes with values lets you override the implied roles given with semantic HMTL elements. A good use for this is when no semantic HTML element captures its meaning right - for example, using `<div role="alert"></div>` for alerts. There's many other similar roles, such as `dialog`, `status`, and `timer`. Check the W3C site for them all.
+
+Adding some `role` values, like `navigation` or `article`, is redundant with HTML5 semantic elements. But older IE browsers that don't support these elements can make use of them.
+
+States and properties can help give more info to assistive tech, which may or may not be dynamic.
+
+  * `aria-expanded` can tell whether something like a menu is expanded or not, with JS changing the value
+  * `aria-describedby` creates connections between elements so you know where to find more info on it.
+
+_Live regions_ can tell users when something on a page changed without disrupting where they are. Using the `aria-live` attribute determines when and how users should be alerted.
+
+  * `aria-live="off"` means an area isn't live at the moment and shouldn't give updates
+  * `aria-live="polite"`means an area will give an update during the next available time, like when a user is done typing
+  * `aria-live="assertive"` announces updates immediately. Only use it for real important things, like errors.
+
+ARIA doesn't help browser experience the same way semantic HTML does, so it should never be a replacement for it. **Using ARIA on an inaccessible site will not help.**
 
 # Evaluation and Testing
 
