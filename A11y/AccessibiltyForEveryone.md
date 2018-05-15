@@ -503,18 +503,147 @@ ARIA doesn't help browser experience the same way semantic HTML does, so it shou
 
 # Evaluation and Testing
 
+Without tests to confirm your accessibility efforts, the effort is pointless.
+
 ### Making a Plan
+
+A test plan makes sure you get what you need to out of your tests. Can be a set of criteria or a task list to run through. As long as it ensures your accessibility efforts align with your product plan. Should include:
+
+* Testing methods
+* How the methods support reaching accessibility targets
+* Documenting the results
+* Feeding the results back into product improvement
 
 ### Heuristics and Analysis
 
+**Heuristic testing** is testing against existing goals and guidelines, usually by people on the project.
+
+#### Prototype Evaluation
+
+**Heuristic Evaluations** test an interface against guidelines, like the WCAG, and any additional issues. The WCAG 2.0 covers many use cases and is a solid starting point.
+
+**Cognitive Walkthroughs** test the interface against specific tasks. They can emulate specific tools or setups, like using assisstive tech or in different environments (harsh light, loud rooms, etc).
+
+#### Code Reviews
+
+Code reviews are helpful early on. Check for code quality and consistency, as issues with this can leak over to the user experience.
+
+#### Automated Tests
+
+Automated tests aren't enough, but can still ensure certain criteria are met. Criteria focused on user experience can't be programmatically verified.
+
+Best done near the end of production, but with time to make changes if needed. Recommended tool is the Tenon API in the build process. It can also be an education opportunity - not understanding why an accessibility test failed means learning how it did and why it matters.
+
 ### Device and Browser Testing
+
+Accessibility is greatly affected by the wide range of devices and browsers a user may be using. Testing over a wide spectrum, not just your own browser, is crucial.
+
+Due to resource limits, we need to prioritize browsers and devices. Make sure you have good reason for your choices, such as knowing they're very popular with your audience. Should ideally aim to test for:
+
+* Desktop computers on all major OS's
+* Mobile devices on all major OS's
+* Latest versions of all major browsers, for desktop and mobile
+* Assisstive tech such as screen readers
+* Keyboard navigation
+* Popular accessibility settings, such as zoom and screen magnification
+
+Virtual machines (VirtualBox, VMWare) are great for simulating older OS's. But remember that the hardware and keyboard setup will likely be different, and can change the user experience. Make sure all testers know the differences.
+
+[Consider a testing matrix, described in this List Apart article.](https://alistapart.com/article/reframing-accessibility-for-the-web).
 
 ### Validators and Checkers
 
+Validators check your code quality in a straightforward, if limited, way. They're better for quick checks to obvious problems in the front-end. Failing is okay as long as it's for a good reason that doesn't affect things for the user (like missing css prefixes before they're added on automatically).
+
+Well-known validator is the W3C markup validator, or HTML validator. Errors can be tough to understand at first. Also the WemAIM's WAVE accessibility evaluator. Better draws focus to accessibility errors in the context of the page, and has good info. Pages are tested against the WCAG guidelines. You get errors as well as recognitions for what you did right. Local sites can use this with the WAVE toolbar add-on for Chrome and Firefox.
+
+You can use a color contrast checked to make sure your foreground and background colors are legible enough. Some, like Color Oracle, show the colors with different color blindness filters.
+
+Readability Checkers look for ease of reading and reading level, like Hemingway App. Not the same as a person reading it, but give a good, rough overview.
+
+Connection Emulation tools can simulate lowered or throttled internet access.
+
 ### Testing Keyboard Navigation
+
+Keyboard testing is easy, just navigate through your site with your keyboard! Usually uses:
+
+* `tab` to navigate
+* A modifier key like `alt` or `ctrl`
+* Left and right arrow keys
+
+You may need to enable full keyboard access on your browser. Also make sure to test screen readers with and without keyboard usage.
 
 ### Usability Testing
 
+Best to test with actual people who will use your site. You may not be able to test early, since people with some disabilities, or by using some assisstive tech or methods, may not work well enough before working versions are done. Avoid testing too much with your team - they already have knowledge and assumptions about the product that will bias the results.
+
+When finding testers, **aim for people more familiar with needed assisstive tech, not just people who know how to use it.** Cuts through false assumptions you may have about assisstive tech. Just don't categorize users based on those with disabilities. The variety of accessibility needs is so varied that generalization is impossible. We can only test with as many different people as possible each time.
+
+Don't get people with disabilities just for that reason - make sure they're still in your target audience!
+
+When running tests, aim to get a good facilitator. Someone who can get along well with participants without leading them on. People who made the product are unwise here, since they may want their product to succeed and give leading clues that bias the results. Be sure to record it in some way, audio or video, and take notes!
+
+Make test scenarios based on real use cases and essential product tasks. Prepare in advance with questions, and pay attention during the tests!
+
+* What's the user's expectations and prior knowledge?
+* What are their initial reactions, thoughts, and feelings?
+* What's their event flow, or the actions they take, and why?
+* What are they saying and doing? What can we learn from it?
+* What obstacles do they encounter?
+
+Remember that testing is an ongoing process. It stops accessibility from being lost over time, and to find better solutions later on. Consider adding a quick feedback form on your site for continuous user feedback, and making your accessibility policy public. Just don't derail or create entirely new plans due to a few isolated cases of feedback.
+
+Testing is research that happens over time, not evidence of your skill. It can be frustrating to see attempts at change fail, but the serve the goal of getting better.
+
 # Laws and Guidelines
 
+Guidelines matter, but shouldn't be the only reasons for making sites accessible. If they are, consider doing something else with tech. But knowing legal issues around accessibility are helpful, since they're clear precedents of what __not__ to do.
+
+For example, in 2006 in the US it was ruled in **National Federation of the Blind v. Target** that the Americans with Disabilities Act (ADA) requires commercial sites to be accessible for those with disabilities (under the ADA and any state laws). The UK equivalent to this is the Equality Act, where the Royal National Institute for Blind People sued a UK airline due to an inaccessible website.
+
+Most companies in lawsuits like these settle out of court and improve their sites. Not doing so is rarely worth the bad publicity and loss of a market audience.
+
+The most common US law related to accessibility is **Section 508**, a 1998 amendment made to the US Rehabilition Act of 1973. Government sites must give equal info access to federal employees with disabilities, and federal websites must do the same. It also applies to company sites receiving federal funds or are under contract with a federal agency. The new standards recommend sites meet Level A and Level AA of the WCAG 2.0 Guidelines.
+
+### Guidelines
+
+**WCAG 2.0** is one of the most common guidelines followed for accessibility today. They have a broader, tech-independent focus so they're easier to apply to new technology. For example, it says "all functionalities" should be usable by a keyboard (except when certain user movement input is needed). It doesn't limit itself to things like links or forms.
+
+WCAG 2.0 has for base principles, with a "POUR" acronym to remember them by:
+
+1. **Perceivable** - Info and interfaces must be shown in ways all users can perceive (access)
+2. **Operable** - Interfaces and navigations must be operable
+3. **Understandable** - Info and interfaces must be understandable (access and understand)
+4. **Robust** - Content should be robust enough that a wide array of user agents, like assisstive tech, can reliably interpret it
+
+These principles are useful for making accessibility principles easier for people in the company to understand, and should be referred to often.
+
+WCAG 2.0 has three levels:
+
+1. A (minimum)
+2. AA (middle)
+3. AAA (highist)
+
+Most companies that aren't specifically focused on inclusive design go by the AA level, since AAA requirements need much more time and resources most companies can't afford to invest. Beginners may want to start with A and naturally make their way to AA as they consider audience needs. Most A rules wind up also conforming to AA rules, or just need some slight improvement.
+
+If you specifically work with CMS's or anything that lets users upload and edit content, use the **Authoring Tool Accessibility Guidelines, or ATAG.** It makes user-made content more accessible, and the authoring tools for making it are accessible too. It also has A, AA, and AAA levels.
+
+These guidelines are good frameworks and starting points, but aren't a substitute for just caring about accessibility and making sites for our users. Seeing them as just "checklists" makes us more likely to do the bare minimum, which doesn't make for good websites.
+
+# In a Nutshell Recommendations
+
+1. **Be Considerate.** Caring about accessibilty is the best way to integrate it into all your planning, and applying it to everything you need.
+2. **Be Flexible.** Know where you need to make compromises, have constraints, and what lines to draw. Don't just not care at all, or dumb down each part of a site for accessibility. It's fluid, just like the web itself.
+3. **Guidelines are just Guidelines.** You also need to understand your audience and their needs. Guidelines are good for not missing important details, and helping others understand accessibility, but they're not the main reason for it either.
+
+Also, talk about accessibility more! Consider it a constant consideration for how we evaluate new tech.
+
 # Resource List
+
+* A11y Project - Accessibility patterns, checklists, resources
+* Paciello Group - Accessibility news
+* Simply Accessible - Blog of many accessibility experts
+* Inclusive Design Patterns - Book of accessible front-end patterns
+* [All Technology is Assisstive: Six Design Rules on 'Disability.' By Sara Hendron.](https://www.wired.com/2014/10/all-technology-is-assistive/)
+* [5 Powerful Tips And Tricks For Print Style Sheets. By Dudley Storey.](https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/)
+* [Accessibility APIs: A Key To Web Accessibility. By Léonie Watson & Chaals McCathie Nevile.](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)
