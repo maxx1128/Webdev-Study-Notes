@@ -25,6 +25,8 @@ A simple example the article also lists is using it to get the sum of an array
 }, 0);
 ```
 
+Here, the `0` is the default starting value for `acc`. It can be any number, value, or object. If you're iterating to add key/value pairs, for instance, you can set it to `{}`.
+
 You can also use it to return an array based on if items are even or not
 
 ```
