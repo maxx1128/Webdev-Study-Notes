@@ -33,6 +33,22 @@ For taking all tracked changes and saving them as a single commit. Include the `
 * `git reset --soft <commit>` will take all the commits after the inputted one and undo them. All changes from those commits will be kept and staged. Great for when you accidentally make commits to the wrong branch!
 * `git reset @{u} --hard` will reset your local branch to match the remote one exactly. This removes **all** changes and commits on your local branch, so don't use it carelessly.
 
+### `git checkout -f`
+
+If you need to forcibly clear out all changes in the working directory, run this command. Be warned that they'll be gone for good, short of a `reflog` retrieval.
+
+### `git branch`
+
+Create a branch to add commits and new changes, and later merge them into the main branch. This is a great way to add changes freely without affecting a live, or fully accepted, version of the site. You can create a branch off an existing one by:
+
+* Checking out the main branch with `git co <branch_name>`
+* Then check out a new branch with `git co -b <new_branch_name>`
+* Make commits as desired
+* Checkout the main branch again
+* Merge the new branch into this one with `git merge <new_branch_name>`
+
+**Pull Requests** are basically people proposing merging a branch into another one. People can look over all the changes, give feedback, request changes, check tests, and later merge the branch.
+
 ### `git diff`
 
 Shows the changes between the last commit and all untracked changes. Also visualizes whether these changes were adding or reducing code.
@@ -49,7 +65,7 @@ Shows a record of all the commits in a repo
 
 ### `git reflog`
 
-Shows a record of all the commands run for this repo
+Shows a record of all the commands run for this repo. You can get the ID from any of these and go back. It's basically the "catch all, end all" reset if needed. Accidentally lose changes? Use the reflog to get them before they were lost, stash them somewhere, and keep going.
 
 ### `git mv`
 
