@@ -1,4 +1,4 @@
-### Situations where A11y pages benefit everyone
+## Situations where A11y pages benefit everyone
 
 * Stuck in an area with slow or low-quality Internet
     - Lighter page load makes it easier to navigate
