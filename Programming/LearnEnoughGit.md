@@ -47,6 +47,10 @@ Create a branch to add commits and new changes, and later merge them into the ma
 * Checkout the main branch again
 * Merge the new branch into this one with `git merge <new_branch_name>`
 
+#### Sort through lots of branches
+
+`git branch` returns a list of all branches. Some repos will have lots of branches, making finding a specific branch a chore. A good way around this is running `git branch | grep <string>`. This returns a list of branches that contain that string, making it much easier to narrow them down!
+
 **Pull Requests** are basically people proposing merging a branch into another one. People can look over all the changes, give feedback, request changes, check tests, and later merge the branch.
 
 ### `git diff`
