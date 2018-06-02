@@ -29,7 +29,30 @@ Know that many of these can be combined!
 
 ### Aspect Ratio
 
+* Works on screens with a specific ratio between the viewport height and width
+
+```
+@media (aspect-ratio: 11/5) { ... }
+  // Height of 10rem and width of 22rem
+  // Also height of 22rem and width of 10rem
+```
+
 ### Orientation
+
+* For landscape or portrait modes
+  - Landscape: the width is greater than or equal to the height
+  - Portrait: the height is greater than or equal to the width
+* May be paired with `screen` media query to be sage
+
+```
+@media screen and (orientation: landscape) {
+  .layout { flex-direction: row; } // Horizontal layout for more horizontal screens
+}
+
+@media screen and (orientation: portrait) {
+  .layout { flex-direction: column; } // Vertical layout for more vertical screens
+}
+```
 
 ## By Viewport Type
 
@@ -39,15 +62,38 @@ Know that many of these can be combined!
 
 ### Color
 
-### Color-index
+* For screens with color
+* Can be for screens with any color capabilities, or specific bits per color component (way of measuring number of colors)
 
-### Monochrome
+```
+p { color: black } // Default, grayscale devices
+
+@media (color) {
+  p { color: red } // For devices with at least basic colors
+}
+
+@media (min-color: 8) {
+  p { color: #24ba13; } // Devices with 8 bits per color component (larger color variety)
+}
+```
 
 ### Resolution
 
-### Grid?
+* For different display densities (DPI, DPCM, etc)
+* Can be a specific DPI, or a minimum or maximum DPI
+* Great for styling or layout for higher DPI devices
 
-### Scan?
+```
+@media (resolution: 50dpi) { ... } // Only for devices with 50dpi
+
+@media (min-resolution: 300dpi) {
+  .hide-on-high-dpi { display: none } // Hides elements on high DPI devices
+}
+
+@media (max-resolution: 300dpi) {
+  .hide-on-low-dpi { display: none } // Hides elements on low DPI devices
+}
+```
 
 ### Screen
 
@@ -122,6 +168,24 @@ You can use different logic for how CSS should apply all these queries.
 ```
 
 ## @supports
+
+* Targets pages in browsers that support specific features
+* Great for progressive enhancement if you're designing for older browsers
+* Use for CSS features that don't have enough widespread support
+* Needs to check a property and value
+* Older browsers that don't support `@supports` will just skip it. Usually older browsers with less feature support anyway.
+
+```
+.layout {
+  display: block;
+}
+
+@supports (display: grid) {
+  .layout {
+    display: grid;
+  }
+}
+```
 
 -----
 
