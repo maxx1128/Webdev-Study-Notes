@@ -6,13 +6,13 @@
 * Modules of functionality and templates that can be reused across the project.
 * Models - Basic models and structure for data objects.
 
-### Basics
+# Basics
 
 Ember was first built on **two-way data-binding,** which has the templates and controllers having two-way conversations at all times. However having them both talk to each other all the time risks making the app overly-complex, and having variables create unexpected results.
 
 The new Ember structure for all this is **data down, actions up.** This means all data flows down from the routes to the views, and actions change the data by moving back up towards the controllers/routers, making data changes, and having those changes flow back down to the views.
 
-### CLI commands
+# CLI commands
 
 * `ember new <name>` - Create a new Ember project
 * `ember build` - Builds a current project to the `dist` folder
@@ -22,7 +22,7 @@ The new Ember structure for all this is **data down, actions up.** This means al
   * To create a route with a parameter, run `ember g route <parent_name>/<parameter_name> --path=':slug'`
 * `ember generate --help` to see all the options for what can be generated.
 
-### Routes
+# Routes
 
 The `model` function is what's used to get info from the data source and is passed onto the controller. Reference it in the controllers and templates by using the `model` variable.
 
@@ -62,7 +62,7 @@ You can also grab values set or computed in the controller with the below method
 this.controllerFor('<controller_name>').get('<property_name>');
 ```
 
-##### Loading Multiple Models
+## Loading Multiple Models
 
 If you need to load multiple models as a single promise object, the `RSVP.hash` tool lets you do this. It accepts a hash, where each value is a promise. This way you can have a promise activate once all the promises are resolved, such as a loading screen being toggled off.
 
@@ -77,7 +77,7 @@ model(params) {
 }
 ```
 
-### Models
+# Models
 
 Models are how Ember manages properties of data objects. These are most frequently used with data coming from an API or other third-party, and controlled using the `ember-data` add-on. The basic setup of one looks like this:
 
@@ -103,7 +103,7 @@ import { computed } from '@ember/object';
   })
 ```
 
-### Controllers
+# Controllers
 
 `computed` gives access to different included Ember functions for presenting or manipulating info provided by the router. A simple example:
 
@@ -167,7 +167,7 @@ import { computed } from '@ember/object';
   })
 ```
 
-##### transitionToRoute
+## transitionToRoute
 
 This is a controller tool to move to different routes after an action. For example, you could have this activate on an "edit" screen to go back to the related "show" screen. Don't forget to pass any needed parameters!
 
@@ -177,7 +177,7 @@ Another good use case: after deleting an item, go to the page with the list of r
 this.transitionToRoute('fighters.fighter', this.get('model.id'));
 ```
 
-##### toggleProperty
+## toggleProperty
 
 In controllers, you can use Ember's `toggleProperty` method to quickly change a boolean value to its opposite. It works for both controller or Ember object values, like so:
 
@@ -195,7 +195,7 @@ actions: {
 }
 ```
 
-##### Using Properties and Actions from other Controllers
+## Using Properties and Actions from other Controllers
 
 For child or parent controllers, you need to `inject` them into the controller. Then you access them through the namespace you select.
 
@@ -231,13 +231,13 @@ export default Controller.extend({
 });
 ```
 
-### Templates
+# Templates
 
-##### Inputs
+## Inputs
 
 The most basic way to bind an input to a variable is with `{{input value=var}}`, which will then bind the input's text to the `var` variable.
 
-### Components
+# Components
 
 The controllers have a few common, helpful properties.
 
@@ -258,7 +258,7 @@ export default Component.extend({
 
 Like controllers, you can also define other calculated properties, such as ones with variables specific to the component.
 
-##### Adding Positional Parameters
+## Adding Positional Parameters
 
 When using components that have params, they normally need to be explicitly named to add values to them:
 
@@ -286,7 +286,7 @@ Now the same component can be used like the below example. Optional params could
 {{svg-icon model.src}} // If 'size' is optional
 ```
 
-##### Block Components
+## Block Components
 
 Block components allow components to accept lines of text as a large argument for the component. They're written with two tags, like so:
 
@@ -328,7 +328,7 @@ If the block is an optional argument, there's a conditional for if one is used o
 {{/if}}
 ```
 
-##### Using Component Variables and Actions in Blocks
+## Using Component Variables and Actions in Blocks
 
 You can also take values defined in the component and pass them into a block component. That way you can use them in your block HTML for display or logic. First the values being passed must be set in the `{{yield}}` text.
 
@@ -390,11 +390,11 @@ These can then be referenced as arguments for the component block, and used in t
 {{/my-component}}
 ```
 
-### Pods
+# Pods
 
 Pods are more encapsulated sections of Ember code that have their own controllers, routes, and even nested pods. This makes it easy to encapsulate different sections separate from the main application and reference them.
 
-##### Creating Pods
+## Creating Pods
 
 You'll need to add the directory for your pods in the `config/environment.js` file. It's set with the `podModulePrefix` property, and is set to match with the `modulePrefix`, like so:
 
@@ -409,7 +409,7 @@ let ENV = {
 
 You can then add a basic pod by using the basic `ember generate` command with the `--pod` argument. For example, use `ember g <route|controller> test-pod --pod` to create a pod. You can add or remove the pieces, like routes/templates/controllers, and they'll function properly because Ember.
 
-##### Referencing Pods
+## Referencing Pods
 
 Pods can be referenced in two main ways: templates and routes.
 
@@ -425,7 +425,7 @@ Then just head to `localhost:4200/slide-1` and you'll see it. You can reference 
 
 You can also embed a pod directly in another pod or different template, in this case with `{{slide-1}}`. Nested pods would be `{{slide-1/subslide-1}}`. Just know that the controllers or route being carried won't translate as smoothly and may need to have different versions of properties or actions in the controller of the template importing it. So this is best used for pods only carrying different templates.
 
-### Helpers
+# Helpers
 
 Basic `{{if}}` helper evaluates the variable/expression inside it and returns based on if it's true or false. A basic example is `{{if var 'TRUE STRING' 'FALSE STRING'}}`. The resulting string for if it's false is optional.
 
@@ -459,7 +459,7 @@ export default Controller.extend({
 
 The controller's function can contain arguments. These arguments are added to the helper as additional variables after the first.
 
-##### "Link-to" Helper
+## "Link-to" Helper
 
 The `{{link-to}}` helper is an Ember tool included for linking between different pages. It works for both static and dynamic urls, lettings you include as needed parameters.
 
@@ -490,7 +490,7 @@ If you need a wrapper around a link to have the active class, use the [Ember Act
 {{/active-link}}
 ```
 
-##### Custom Helpers
+## Custom Helpers
 
 Custom helpers can create different ways to evaluate JS in templates. They're very useful for custom logic that can't be put in the template, but also are a chore to put in the controller. **If the same logic must be used in a helper and a controller, abstract it to something else, like a service of a pure function.**
 
@@ -539,7 +539,7 @@ Subexpressions can also be stacked.
 (equals (rounded test_score) 95) // Rounds a value, then sees if it equals 95
 ```
 
-##### Parameters
+## Parameters
 
 You can better organize a helper's parameters using ES6 Destructuring, giving them names and defaults. The above one comparing values could be rewritten as this, with the second having a default.
 
@@ -559,7 +559,7 @@ export function equals([value_1, value_2 = 0], {item_1, item_2 = 'Lorem'}) {
 // equals(1, 2, item_1 = 'Fake info', item_2 = 777)
 ```
 
-##### Returning HTML
+## Returning HTML
 
 Ember has a helper for returning HTML, which can be used in custom helpers like below:
 
@@ -580,7 +580,7 @@ export function heading([text, heading_size = 2], {class}) {
 
 
 
-### Services
+# Services
 
 Ember Services are objects whose information persists throughout different pages of the application. A common use of this is saving info about if a user is currently logged in and showing this across the site. It can also include lots of [other functionalities](https://guides.emberjs.com/v2.1.0/applications/services/) that must be persisted, such as geolocation, third-party APIs, and server-backed events.
 
@@ -616,7 +616,7 @@ export default Controller.Extend({
 
 You can then access the service value with `{{ session.current_user }}`.
 
-### Connecting an API
+# Connecting an API
 
 * **Adapter** - Used to translate the endpoint locations of an API
 * **Serializer** - Used to translate the content of an API. The recommended default is the JSONAPI Serializer
@@ -624,7 +624,7 @@ You can then access the service value with `{{ session.current_user }}`.
 * Make sure the resources being exposed to Ember match the models being used in Ember!
 * The most preferred API format is JSON API, despite the other adapters and serializers that make using other APIs possible. If you can control the API being used, make it JSON API.
 
-##### Using FireBase
+## Using FireBase
 
 1) Set up a FireBase account and a database
 2) Manually add in data to the database
@@ -659,7 +659,7 @@ const all_users = this.get('users_who_answered').reduce(function(usernames, user
 }, []);
 ```
 
-### Useful Resources Add-ons
+# Useful Resources
 
 * [Ember Observer](https://emberobserver.com/) - A categorized list of useful ember plugins
 
