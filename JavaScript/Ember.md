@@ -492,7 +492,9 @@ If you need a wrapper around a link to have the active class, use the [Ember Act
 
 ##### Custom Helpers
 
-Custom helpers can create different ways to evaluate JS in templates. They're very useful for custom logic that can't be put in the template, but also are a chore to put in the controller. An example generating command and helper:
+Custom helpers can create different ways to evaluate JS in templates. They're very useful for custom logic that can't be put in the template, but also are a chore to put in the controller. **If the same logic must be used in a helper and a controller, abstract it to something else, like a service of a pure function.**
+
+An example generating command and helper:
 
 `ember g helper equals`
 
@@ -576,6 +578,8 @@ export function heading([text, heading_size = 2], {class}) {
 // heading('More Header Text', class = "red-text")
 ```
 
+
+
 ### Services
 
 Ember Services are objects whose information persists throughout different pages of the application. A common use of this is saving info about if a user is currently logged in and showing this across the site. It can also include lots of [other functionalities](https://guides.emberjs.com/v2.1.0/applications/services/) that must be persisted, such as geolocation, third-party APIs, and server-backed events.
@@ -636,9 +640,23 @@ import { set } from '@ember/object';
 actions: {
   changeData(object) {
     set(object, 'name', newValue);  // Sets it on the browser
-    object.save();                        // Saves changes to the database
+    object.save();                  // Saves changes to the database
   }
 }
+```
+
+Data returned from FireBase will often be in a `promise`, or data that's waiting to be given to the program. This could also show up if using `console.log` on a value shows `getter` and `setter` properties. If that's the case, you'll need to use the `get` object helper to access it once the promise returns the data.
+
+This example has an array of data (`users_who_answered`) given from FireBase. When each item is used while looping through it with `reduce`, `get` is used with the property to get the specific data property value. Note that using `get` requires these two arguments: the promise object, and the property key to return the value of.
+
+```
+import { get } from '@ember/object';
+
+const all_users = this.get('users_who_answered').reduce(function(usernames, user) {
+  usernames.push(get(user, 'user_codename'));
+
+  return usernames;
+}, []);
 ```
 
 ### Useful Resources Add-ons
