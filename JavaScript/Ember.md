@@ -29,7 +29,9 @@ The `model` function is what's used to get info from the data source and is pass
 Get any current parameters in the URL by referencing them in the `model()` function.
 
 ```
-export default Ember.Route.extend({
+import Route from '@ember/routing/route';
+
+export default Route.extend({
   model: function(params) {
 
     let parameter = params.parameter_id; // Defined in the router
@@ -65,8 +67,10 @@ this.controllerFor('<controller_name>').get('<property_name>');
 If you need to load multiple models as a single promise object, the `RSVP.hash` tool lets you do this. It accepts a hash, where each value is a promise. This way you can have a promise activate once all the promises are resolved, such as a loading screen being toggled off.
 
 ```
+import { hash } from 'rsvp';
+
 model(params) {
-  return Ember.RSVP.hash({
+  return hash({
     character: this.store.findRecord('character', params.character),
     teams: this.store.findAll('team')
   });
@@ -78,10 +82,9 @@ model(params) {
 Models are how Ember manages properties of data objects. These are most frequently used with data coming from an API or other third-party, and controlled using the `ember-data` add-on. The basic setup of one looks like this:
 
 ```
-import Ember from 'ember';
 import DS from 'ember-data';
 
-export default Model.extend({
+export default DS.Model.extend({
   name     : DS.attr('string'),
   age      : DS.attr('integer'),
   alive    : DS.attr('boolean'),
@@ -93,18 +96,23 @@ export default Model.extend({
 Models can also use computed properties in case some values must be created using others. The properties put in as arguments, whenever they change, will update the computed properties. Just **don't change any values within computed properties!**
 
 ```
-  full_name: Ember.computed('first_name', 'last_name', function(){
+import { computed } from '@ember/object';
+
+  full_name: computed('first_name', 'last_name', function(){
     return `Hello, my name is ${this.get('first_name')} ${this.get('last_name')}`;
   })
 ```
 
 ### Controllers
 
-`Ember.computed` gives access to different included Ember functions for presenting or manipulating info provided by the router. A simple example:
+`computed` gives access to different included Ember functions for presenting or manipulating info provided by the router. A simple example:
 
 ```
-export default Ember.Controller.extend({
-    multiplied_number: Ember.computed('model.number', function() {
+import { computed } from '@ember/object';
+import Controller from '@ember/controller';
+
+export default Controller.extend({
+    multiplied_number: computed('model.number', function() {
         let number = this.get('model.number');
         let mult = 3;
 
@@ -116,11 +124,13 @@ export default Ember.Controller.extend({
 It also lets you `filter` or `map` results to narrow them down or manipulate large amounts at once.
 
 ```
-english: Ember.computed.filter('model.entries', function(entry) { // Entry is each item in "model.entries"
+import { computed } from '@ember/object';
+
+english: computed.filter('model.entries', function(entry) { // Entry is each item in "model.entries"
     return entry.language == 'english'; // Only returns items that are English
 }),
 
-elements: Ember.computed.map('model.elements', function(element) {
+elements: computed.map('model.elements', function(element) {
 
     return `${element} is an element!`;
 });
@@ -133,20 +143,26 @@ A simpler option for filtering is the `filterBy` option, which doesn't take a fu
 3. The value each selected property needs to be included. Otherwise it gets filtered out.
 
 ```
-  livingRelatives: Ember.computed.filterBy('model', 'alive', true)
+import { filterBy } from '@ember/object/computed';
+
+  livingRelatives: filterBy('model', 'alive', true)
 ```
 
 If you need to return a basic property of another object, you can use the `alias` macro.
 
 ```
+import { alias } from '@ember/object/computed';
+
   members: ["Jeff", "Joe", "John", "Jim", "Jed"],
-  crowd_size: Ember.computed.alias('members.length')
+  crowd_size: alias('members.length')
 ```
 
 To input an array of items from an object for a computed property, you can use `@each`.
 
 ```
-  average_number: Ember.computed('data.@each.number', function(){
+import { computed } from '@ember/object';
+
+  average_number: computed('data.@each.number', function(){
     let length = this.get('data.length');
   })
 ```
@@ -196,9 +212,10 @@ export default Controller.extend({
 });
 
 // Any other controller
+import { inject as controller } from '@ember/service';
 
 export default Controller.extend({
-  app: Ember.inject.controller('application'),
+  app: controller('application'),
 
   // All properties can be accessed over "app," such as "app.testInteger"
 
@@ -225,12 +242,15 @@ The most basic way to bind an input to a variable is with `{{input value=var}}`,
 The controllers have a few common, helpful properties.
 
 ```
-export default Ember.Component.extend({
+import Component from '@ember/component';
+import { computed } from '@ember/object';
+
+export default Component.extend({
     tagName: 'span', // HTML tag around it
     classNames: ['class-name'], // Static class names to use
     classNameBindings: ['dynamic-class'], // Classes using dynamic info
 
-    dynamic-class: Ember.computed('variable', function(){
+    dynamic-class: computed('variable', function(){
         return 'class-start--' + this.get('variable');
     });
 })
@@ -249,7 +269,9 @@ When using components that have params, they normally need to be explicitly name
 However, if one or more parameters is self-explanatory/needed enough that it doesn't need to do this, one can adjust the class so the paramters can be added without them. Add `reopenClass` to the component controller like this:
 
 ```
-export default Ember.Component.extend({
+import Component from '@ember/component';
+
+export default Component.extend({
   // Normal functions here
 }).reopenClass({
   positionalParams: ['src', 'size'] // Must be an array, with the param names as strings in the right order
@@ -331,7 +353,9 @@ Then the values will be referenced, in order, in the block statement for the com
 You can also pass in actions from the component into the block, although it's not as simple. First define said action:
 
 ```
-export default Ember.Component.extend({
+import Component from '@ember/component';
+
+export default Component.extend({
   available: true,
 
   actions: {
@@ -378,7 +402,7 @@ You'll need to add the directory for your pods in the `config/environment.js` fi
 let ENV = {
   modulePrefix: 'pods-practice',
   podModulePrefix: 'pods-practice/pods',
-  
+
   ...
 }
 ```
@@ -421,8 +445,9 @@ The `action` helper is used for triggering interactivity. The first argument is 
 <button {{action 'buttonClick'}}>Click me!</button>
 
 // Controller
+import Controller from '@ember/controller';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   actions: {
     buttonClick() {
       // action code goes here!
@@ -474,13 +499,13 @@ Custom helpers can create different ways to evaluate JS in templates. They're ve
 In the `helpers/equals.js` file, you can define how the params input into the helper will be evaluated. They can evaluate to any output a JS function can, including true/false ones to be used in conditionals.
 
 ```
-import Ember from 'ember';
+import { helper } from '@ember/component/helper';
 
 export function equals(params/*, hash*/) {
   return params[0] == params[1];
 }
 
-export default Ember.Helper.helper(equals);
+export default helper(equals);
 ```
 
 This will take two arguments, check if they equal each other, and evaluate from there. A good example is using the above helper to control if a button is disabled or not. This button decreases a rating variable, and will disable the button if the rating is zero to keep it from getting any lower.
@@ -492,7 +517,7 @@ This will take two arguments, check if they equal each other, and evaluate from 
 Custom helpers can also be used as arguments for components, with the following syntax, using parenthesis when inside the component's double brackets (subexpressions).
 
 ```
-{{#complex-input 
+{{#complex-input
     inputShown=(equals rating 0)}}
 ```
 
@@ -537,8 +562,10 @@ export function equals([value_1, value_2 = 0], {item_1, item_2 = 'Lorem'}) {
 Ember has a helper for returning HTML, which can be used in custom helpers like below:
 
 ```
+import { htmlSafe } from '@ember/string';
+
 export function heading([text, heading_size = 2], {class}) {
-  return Ember.String.htmlSafe(`
+  return htmlSafe(`
     <h${heading_size} class='${class}'>
       ${text}
     </h${heading_size}>
@@ -558,7 +585,9 @@ Services can be created with the Ember CLI like most other things. For user sess
 A simple version of this service would be:
 
 ```
-export default Ember.Service.Extend({
+import Service from '@ember/service';
+
+export default Service.Extend({
   current_user: null
 });
 ```
@@ -566,9 +595,12 @@ export default Ember.Service.Extend({
 Services then need to be injected into controllers to be available in them and the views. Once injected, they can be accessed as normal.
 
 ```
-export default Ember.Controller.Extend({
-  session: Ember.inject.service(),
-  mySession: Ember.inject.service('session'), // If the key has a different name than the service, it must be specified like this
+import Controller from '@ember/controller';
+import { inject as service } from '@ember/service';
+
+export default Controller.Extend({
+  session: service(),
+  mySession: service('session'), // If the key has a different name than the service, it must be specified like this
 
   actions: {
     login(user){
@@ -599,9 +631,11 @@ You can then access the service value with `{{ session.current_user }}`.
 6) When setting different values to the data, remember to call the `save()` method:
 
 ```
+import { set } from '@ember/object';
+
 actions: {
   changeData(object) {
-    Ember.set(object, 'name', newValue);  // Sets it on the browser
+    set(object, 'name', newValue);  // Sets it on the browser
     object.save();                        // Saves changes to the database
   }
 }
