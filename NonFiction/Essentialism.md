@@ -275,7 +275,7 @@ Nonessentialists will underestimate how long a task takes, and this comes back t
 * When you receive a windfall or unexpected benefit, set it aside for a rainy day
 * Starts big projects immediately, even if it's just a little
 * Acknowledge you can't predict the unexpected
-* Rule of thumb: *add a 50% time buffer for activities***
+* Rule of thumb: *add a 50% time buffer for activities*
 
 | Nonessentialist | Essentialist |
 | --------------- |--------------|
@@ -341,7 +341,7 @@ This works due to the power of our habits - nearly 40% of our choices are incons
 
 Essentialists know they can't _multifocus,_ or concentrate on two or more things at the same time.
 
-Don't worry about the future. If it's tough, right it down to get the thoughts out of your head.
+Don't worry about the future. If it's tough, write it down to get the thoughts out of your head.
 
 | Nonessentialist | Essentialist |
 | --------------- |--------------|
