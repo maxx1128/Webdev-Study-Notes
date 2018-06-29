@@ -62,6 +62,22 @@ import { computed } from '@ember/object';
   })
 ```
 
+There's several [other useful functions that can be imported from `@ember/object/computed`](https://emberjs.com/api/ember/release/modules/@ember%2Fobject) for fast, computed values in controllers.
+
+* `and` for doing a logical "and" comparison, that returns true if both values also return true
+* `bool` for returning the dependent boolean of a variable
+* `collect` for returning the values of other dependent properties (ie an array of values from other computed properties)
+* `empty` and `notEmpty` for if a value is null or a type of empty value, like an empty string (or the opposite with `notEmpty`)
+* `gt`, `gte`, `lt`, and `lte` for doing basic greater than and less than calculations, with possible equal to's too
+* `interect` for, when using 2+ arrays as args, returning an array of all values they have in common
+* `max` and `min` for calculating the max or min values in an array
+* `not` for checking if a boolean argument is false (if the variable is `false`, it returns `true`)
+* `or`for doing a logical "or" comparison, that returns true if one value returns true
+* `sort` for organizing an array in descending or ascending order based on one of the properties
+* `sum` for adding up all the values in an array
+* `union` and `uniq` for getting all the unique values in one or more arrays
+* `uniqBy` for arrays of objects, determining uniqueness by a specific key
+
 ## transitionToRoute
 
 This is a controller tool to move to different routes after an action. For example, you could have this activate on an "edit" screen to go back to the related "show" screen. Don't forget to pass any needed parameters!
