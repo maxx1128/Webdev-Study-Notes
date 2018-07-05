@@ -15,7 +15,7 @@ There's no proven connection between self-esteem and how much others like you - 
 
 We shouldn't rely too much on self-esteem, since it depends on success and therefore isn't always entirely in our control.
 
-Self-compassion is more important - focus more on just empathizing without yourself and treating yourself better. Acknowledge your negative feelings and don't try to deny them, accept them as a normal part of life.
+Self-compassion is more important - focus more on just empathizing with yourself and treating yourself better. Acknowledge your negative feelings and don't try to deny them, accept them as a normal part of life.
 
 > [Try] talking to yourself as you would a good friend: “I'm so sorry you're in a bad place today, but these feelings you're having sound pretty normal to me. So why don't you ease up on yourself? We all feel weak or insecure sometimes. You're not alone.”
 
@@ -152,7 +152,7 @@ Meditation is a good way to deal with them - be aware of these thoughts when the
 I can really just use this one quote here:
 
 > How do you know if you’re settling? Easy. You’re settling if you think you’re settling.
-> 
+>
 > Settling isn’t mature—it’s cruel. We all deserve to be loved and desired for who we are, for our essence—not our bank account, not our parenting skills, not because we happened to amble into someone’s life at the biologically optimal time. When you settle for a man, you’re preventing him from finding the woman who will love him for who he truly is. And that’s bad karma.
 
 ## You Don't Really Want a Relationship

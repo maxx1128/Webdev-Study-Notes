@@ -6,7 +6,7 @@
 * Make sure the resources being exposed to Ember match the models being used in Ember!
 * The most preferred API format is JSON API, despite the other adapters and serializers that make using other APIs possible. If you can control the API being used, make it JSON API.
 
-## Using FireBase
+#### Using FireBase
 
 1) Set up a FireBase account and a database
 2) Manually add in data to the database
