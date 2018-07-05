@@ -1,6 +1,6 @@
-General Ruby Notes
+# General Ruby Notes
 
-### Self Methods
+## Self Methods
 
 Ruby classes allow you to define methods as `self`, such as `self.method`. These are methods that can be called from the class directly, not on different instances of the class.
 
@@ -25,7 +25,7 @@ GetFruitCount.mangoes         # wrong
 GetFruitCount.types           # right
 ```
 
-### Variable Scope
+## Variable Scope
 
 * Global variables, available everywhere. Can be defined in classes and still be global, but must have `$` prepended
     - `puts global`
@@ -52,7 +52,7 @@ GetFruitCount.types           # right
     puts NewClass.show_class_var
     ```
 
-### Accessors
+## Accessors
 
 Accessors are ways to quickly make a class's instance variables readable or writable. Instead of having to define specific methods for seeing or editing instance variables, these make the code simpler and more readable.
 
@@ -79,7 +79,7 @@ Here's a [quick reference](http://www.rubyist.net/~slagell/ruby/accessors.html) 
 | attr_accessor :v     | attr_reader :v; attr_writer :v     |
 | attr_accessor :v, :w | attr_accessor :v; attr_accessor :w |
 
-### Structs
+## Structs
 
 Structs are functionally the same as classes, but have lots of default functionality built in to save time. They're useful if you need objects for storing and managing variables, without the full range of class features.
 
@@ -89,9 +89,9 @@ Structs can be used to just store parameters, but can also use methods with thes
 ExampleStruct = Struct.new(:param1, :param2)
 
 ExampleStruct2 = Struct.new(:integer1, :integer2) do
-    def sum
-        integer1 + integer2
-    end
+  def sum
+    integer1 + integer2
+  end
 end
 
 struct_1 = ExampleStruct.new("string1", "string2")
@@ -135,10 +135,3 @@ puts leigh.name           # Leigh Halliday
 puts leigh.address.city   # Toronto
 puts leigh.about          # Leigh Halliday's address is 123 Road Toronto Canada M5E 0A3
 ```
-
-
-
-
-
-
-
