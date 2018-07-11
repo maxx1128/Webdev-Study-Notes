@@ -2,6 +2,7 @@
 
 * Added some notes to [Ember components](./../JavaScript/Ember/Components.md#component-extending) on how to extend them, keeping functionality drier.
 * You can open Visual Studio Code from the command line! [Set it up here.](https://code.visualstudio.com/docs/setup/mac) But if there's common files and folders you keep opening and editing, this makes accessing them real easy.
+* Added initial notes on [aliases in the shell.](./../Programming/bash.md#managing-aliases) The first examples are shortcuts to manage the aliases themselves, for some meta productivity.
 * I haven't emphasized the small wins enough. Hence I started this file to keep a record of my small wins and a visual marker of how much progress I'm making. Visual feedback is a great motivater.
 
 ### 07-10-2018

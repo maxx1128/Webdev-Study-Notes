@@ -1,3 +1,29 @@
+## Managing Aliases
+
+An **alias** is a bash command shortcut. You run the shortcut name, and it executes the longer function you store. It's great to save and quickly use common commands.
+
+Assuming you're using ZSH like me, here's two useful commands to add to your aliases file right now:
+
+```
+alias viewali="cat ~/.oh-my-zsh/custom/aliases.zsh"
+alias editali="cd ~/.oh-my-zsh/custom && vim aliases.zsh"
+```
+
+* Run `viewali` to see your alias list.
+* Run `editali` to edit your alias list.
+
+Another useful alias trick is one that can open a repo while also getting it running locally all at once. For example, here's my current alias that opens my personal site in a code editor while getting the local version up.
+
+```
+alias mysite="cd ~/Documents/gatsby-blog && code . && yarn develop"
+```
+
+* First it navigates to the folder with my site's code
+* Then it uses a [VSC code shortcut](./../LearningProgress/SmallWins.md#07-11-2018) to open up the repo
+* Runs `yarn develop`, which is the repo's script to spin up the site
+
+Viola! One command to get you into working mode.
+
 ## Script Files
 
 Script files end in `*.sh`, and are used to store bash commands. Run the file, and run the command(s) in that file.
