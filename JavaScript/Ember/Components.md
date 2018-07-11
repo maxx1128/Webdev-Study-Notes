@@ -150,3 +150,26 @@ These can then be referenced as arguments for the component block, and used in t
   </p>
 {{/my-component}}
 ```
+
+## Component Extending
+
+You can make a base component and then extend other components off it. If you have a group of components that need to have several functions in common, this lets you have a single source of truth for them all.
+
+```
+// my-base-component.js
+export default Ember.Component.extend({
+   classNames: "my-base-component"
+});
+```
+
+You can then import it and use it as the base for another.
+
+```
+import MyBaseComponent from 'app/components/my-base-component'; // <- import base component
+
+// my-other-component.js
+export default MyBaseComponent.extend({ // <- extend your base component
+});
+```
+
+When you load up the other component, the `classNames` will be defined by default from the base component. You can override it if needed.
