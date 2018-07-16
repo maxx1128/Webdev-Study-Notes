@@ -19,6 +19,25 @@ export default Component.extend({
 
 Like controllers, you can also define other calculated properties, such as ones with variables specific to the component.
 
+### Class Name Bindings
+
+Normal class name bindings can link a class to a parameter. If you want to link multiple classes to a state in this way, you'll need to use it with a computed property.
+
+```
+export default Component.extend({
+  tagName: 'div',
+  classNames: 'element',
+  classNameBindings: ['huge'],
+
+  huge: computed('isHuge', function(){
+    return (this.get('isHuge') ? 'element--huge element--dark' : '');
+
+    // If the `isHuge` attribute is set, those classes will be added. If not, no classes are added.
+    // The second string can have classes so they're added by default if the attirbute is ignored.
+  });
+});
+```
+
 ## Adding Positional Parameters
 
 When using components that have params, they normally need to be explicitly named to add values to them:
