@@ -1,4 +1,12 @@
-## 07-11-2018
+## 07-16-2018
+
+* Posted an article about the Shell introduction I wish I had, and it already got some good reception. ![](./smallWinImages/shell_post_comment.png)
+
+## 07-13-2018
+
+* An easier way to access the DOM for Ember Integration tests is using the QUnit-dom addon. Just install it and you'll have access right away in those tests. [QUnit-dom has many useful helpers for testing the DOM, such as visibility and classes.](https://github.com/simplabs/qunit-dom/blob/master/API.md)
+
+## 07-12-2018
 
 * At work I wrote two new Ember components for an app and also some integration tests. The tests made sure they could have their styles modified properly, and they could pull needed values from a (stubbed) service. I really want to increase my experience with testing, so I was glad to do this right. Next time I'll do a test-driven development approach by writing the failing tests first and then building the component, see how that affects my flow.
 * In other test activities, I read a few Pragmatic Programmer chapters specifically around testing. It keeps driving home how important it is, along with going into the types of testing. The clearest tip: `It ain't code until the tests are run. 'Nuff said.`
