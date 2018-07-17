@@ -1,3 +1,7 @@
+## 07-17-2018
+
+* Turns out when I updated my site's version of Gatsby, all the CSS wasn't being included. I tried to revert it, but the issue remained. I was getting frustrated to the point where I'd get nowhere, and knew I had to walk away from the problem - eventually I'd find the answer. I put my computer at my desk and walked a dozen steps before it hit me. I needed to clear the cache in the build process! I did so, my site got the previous version of Gatsby, and it looked as it should again. Good sign I can recognize when I've reached my "point of no productivity."
+
 ## 07-16-2018
 
 * Posted an article about the Shell introduction I wish I had, and it already got some good reception. ![](./smallWinImages/shell_post_comment.png)
