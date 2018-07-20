@@ -1,3 +1,8 @@
+## 07-20-2018
+
+* First time using sass lint for a project, which is set to phase out scss-lint. Thankfully there's a tool online to automatically convert the configs, so it won't be too hard. It was added to Ember which has an integration that puts it right in the test suite, so it'll be easy and effective to enforce.
+* Resumed watching more of Modular Frontend and Testing on Frontend Masters. Unfortunaly they haven't touched on integration testing and it seems unlikely they will in this one...
+
 ## 07-19-2018
 
 * Today's interesting puzzle was using a little javascript to set an iFrame's height equal to what it would be for its full content. Great for avoiding scrolling windows. The twist was having an asynchronous element in the iframe that changes the height _again_ later.
