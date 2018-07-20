@@ -1,3 +1,10 @@
+## 07-19-2018
+
+* Today's interesting puzzle was using a little javascript to set an iFrame's height equal to what it would be for its full content. Great for avoiding scrolling windows. The twist was having an asynchronous element in the iframe that changes the height _again_ later.
+* Made some basic article components for the events page of the new NewHaven.IO site
+* Finally got around to adding Sass linting to an Ember project at work. Even that's integrated into our test suite. CSS styling WILL be enforced with an iron fist.
+* Got over 200 positive reactions to my recent Shell article! Always great to see people enjoying and finding a good use for things I write. As much as I write for myself, it also feels good to write for others.
+
 ## 07-17-2018
 
 * Turns out when I updated my site's version of Gatsby, all the CSS wasn't being included. I tried to revert it, but the issue remained. I was getting frustrated to the point where I'd get nowhere, and knew I had to walk away from the problem - eventually I'd find the answer. I put my computer at my desk and walked a dozen steps before it hit me. I needed to clear the cache in the build process! I did so, my site got the previous version of Gatsby, and it looked as it should again. Good sign I can recognize when I've reached my "point of no productivity."
