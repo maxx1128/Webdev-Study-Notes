@@ -1,3 +1,12 @@
+## 07-24-2018
+
+* Read through [a helpful article on the JS basics needed to make the most of React.](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#react-javascript) I don't use React much, but anything to build fundamental JS skills is always appreciated. This has been moved from my "Skim" list to me "Extract Notes from" list, to get the most important bits on my repo. I even [saved an Evernote version of it as a backup reference](https://www.evernote.com/shard/s268/sh/4bc948c6-8066-4dea-90b2-ed7b46efe0c5/94a241a004e052048e9c2eb92814e65a) to be safe.
+* Got lots of good notes from that article into my JavaScript folder. I also took the time to break apart some other files and create some broader JS files. Arranging things by general category, not by specific resource, makes it a lot easier to add info while keeping things organized.
+
+## 07-23-2018
+
+* Pushed several updates to my personal site, including a new "Notes" section. It's for musings too long (and relevant) for Twitter yet too short for a blog post. Lots of code excerpts and asides will likely go there later.
+
 ## 07-20-2018
 
 * First time using sass lint for a project, which is set to phase out scss-lint. Thankfully there's a tool online to automatically convert the configs, so it won't be too hard. It was added to Ember which has an integration that puts it right in the test suite, so it'll be easy and effective to enforce.

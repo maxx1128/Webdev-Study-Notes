@@ -1,5 +1,4 @@
-
-### A Basic React Component
+## A Basic React Component
 
 A React component requires the `React` and `React-DOM` dependencies, and then extends from the `React.Component` class.
 
@@ -19,15 +18,15 @@ class Dropdown extends React.Component {
          open: false
       }
    }
-   
+
    // Make sure component functions use arrow functions, needed to change state
    toggleMenu = () => {
       menu_state = this.state.open;
       this.setState({
-         open: !menu_state
+        open: !menu_state
       });
    }
-   
+
    render() {
       const menu = this.props.menu;
       const menu_class = `dropdown ${this.state.open ? 'dropdown--open' : ''}`;
@@ -62,23 +61,23 @@ import Dropdown from './dropdown.js';
 
 let menu_items = [
   {
-     "label": "Item 1",
-     "link": "javascript:void(0);"
+    "label": "Item 1",
+    "link": "javascript:void(0);"
   }, {
-     "label": "Item 2",
-     "link": "javascript:void(0);"
+    "label": "Item 2",
+    "link": "javascript:void(0);"
   }
 ];
 
 ReactDOM.render(
-   <Dropdown
-      label="Dropdown"
-      menu={menu_items}
-   />,
-   document.getElementById("root"));
+  <Dropdown
+    label="Dropdown"
+    menu={menu_items}
+  />,
+  document.getElementById("root"));
 ```
 
-### Passing Functions to Components
+## Passing Functions to Components
 
 There'll likely be times where one component uses another, but the child component needs to trigger a change in the parent's state. This requires:
 
@@ -96,28 +95,28 @@ class Counter extends React.Component {
          number: 0
       }
    }
- 
+
    increase_number = (i) => {
      let number = this.state.number
      this.setState({number: number++});
    }
-   
+
    decrease_number = (i) => {
      let number = this.state.number
      this.setState({number: number--});
    }
-   
+
    render() {
       return (
          <div>
             <p>{this.state.number}</p>
-            
+
             <Button
               label={"Increase by 1"}
               on_click={() => this.increase_number(1)}
             />
-            
-            
+
+
             <Button
               label={"Decrease by 1"}
               on_click={() => this.decrease_number(1)}
@@ -131,7 +130,7 @@ class Counter extends React.Component {
 Then in the Button, we reference this function by the property we passed it as for an `OnClick` event.
 
 ```
-class Button extends React.Component {   
+class Button extends React.Component {
    render() {
       return (
          <button onClick={() => this.props.on_click()}>
@@ -149,7 +148,7 @@ on_click={this.decrease_number}
 ```
 Don't include the parenthesis at the end of the function here, or else it will be called on page load. [Here's more info on passing functions to components.](https://reactjs.org/docs/faq-functions.html)
 
-### Wrapping Children Components
+## Wrapping Children Components
 
 Components can also be designed to yield to other HTML or components. For example, one component may create a wrapper around whatever else is passed in.
 
@@ -158,7 +157,7 @@ Components can also be designed to yield to other HTML or components. For exampl
     <h3>
       I'm in a burrito!
     </h3>
-    
+
     <Burrito_Component />
 </Wrapper>
 ```
@@ -173,7 +172,7 @@ render() {
 }
 ```
 
-### Lifecycle Hooks
+## Lifecycle Hooks
 
 [Lifecycle hooks](
 https://reactjs.org/docs/react-component.html#the-component-lifecycle) are functions that a component will automatically look for and run when rendering or removing a component (referred to as mounting). For example, you can run code right before a component renders by using the `componentWillMount` function, or while it's being removed with the `componentWillUnmount` function.
@@ -196,7 +195,7 @@ componentWillMount() {
     }).then(json_response => {
       this.setState({data: json_response})
     })
-  
+
   // This is a shorter version that works the same
   fetch('https://jsonplaceholder.typicode.com/comments')
     .then(response => response.json())
@@ -205,4 +204,3 @@ componentWillMount() {
 ```
 
 This way data can be pulled from an external source, use promises to wait for the response, and include all the needed data in the render cycle.
-
