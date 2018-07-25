@@ -1,3 +1,15 @@
+## 07-25-2018
+
+* Finally got pa11y testing working on Travis! Pa11y needs a local server to run its tests, so the command comes in two parts: Starting the server in the background, and running the usual `pa11y` command. It throws an exit code at the end, which will either fail or pass Travis in the end based on the results. With this, I can prevent changes to a static site unless they meet accessibility standards. The catch is, due to the server still running, this test should be run last (and not run from the bash script locally).
+
+```
+function a11y_test {
+    echo "testing accessibility"
+    jekyll serve & sleep 10
+    yarn test-pa11y
+}
+```
+
 ## 07-24-2018
 
 * Read through [a helpful article on the JS basics needed to make the most of React.](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#react-javascript) I don't use React much, but anything to build fundamental JS skills is always appreciated. This has been moved from my "Skim" list to me "Extract Notes from" list, to get the most important bits on my repo. I even [saved an Evernote version of it as a backup reference](https://www.evernote.com/shard/s268/sh/4bc948c6-8066-4dea-90b2-ed7b46efe0c5/94a241a004e052048e9c2eb92814e65a) to be safe.
