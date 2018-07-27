@@ -1,3 +1,8 @@
+## 07-27-2018
+
+* I got an RSS feed set up with my personal website using Gatbsy. There's a plugin for doing this but the defaults didn't work for my setup. Thankfully it didn't take long to adjust the GraphQL query and how it compiled to the `.xml` file, so it's now working! The main reason I did was setting up an IFTTT event so that whenever I post something new, I can automatically share it to other platforms like Twitter.
+* Started adding Ember integration tests to an old repo of mine, a quiz to find what Eevee evolution the user is. It's a silly project, but as a whole it's helping my broader understanding of an Ember application. In this case, it'll be my first time writing all the tests for a larger project myself.
+
 ## 07-25-2018
 
 * Finally got pa11y testing working on Travis! Pa11y needs a local server to run its tests, so the command comes in two parts: Starting the server in the background, and running the usual `pa11y` command. It throws an exit code at the end, which will either fail or pass Travis in the end based on the results. With this, I can prevent changes to a static site unless they meet accessibility standards. The catch is, due to the server still running, this test should be run last (and not run from the bash script locally).
