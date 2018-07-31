@@ -1,3 +1,11 @@
+## 07-31-2018
+
+* I abstracted the code for making my site's homepage article links into a new component. Had to look up some references since I hadn't used React in a while, but it was still pretty easy. Hooray for clean code!
+
+## 07-30-2018
+
+* I've started watching the Frontend Masters video on the New JavaScript Tough Parts. So far it's a walkthrough of JS's basic functions, such as Single Thread and the Call Stack, and expanding that into how asynchronous JS works. It's a more fundamental look at things, so it's much appreciated.
+
 ## 07-27-2018
 
 * I got an RSS feed set up with my personal website using Gatbsy. There's a plugin for doing this but the defaults didn't work for my setup. Thankfully it didn't take long to adjust the GraphQL query and how it compiled to the `.xml` file, so it's now working! The main reason I did was setting up an IFTTT event so that whenever I post something new, I can automatically share it to other platforms like Twitter.
