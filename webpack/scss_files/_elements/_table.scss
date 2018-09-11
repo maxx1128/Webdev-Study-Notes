@@ -1,0 +1,24 @@
+table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+
+  overflow: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  th,
+  td {
+    @apply .py-2 .px-3 .border-1 .border-teal-darkest;
+    text-align: left;
+  }
+
+  tr {
+
+  }
+
+  th {
+    @apply .bg-teal-lightest .font-semibold;
+    text-align: center;
+  }
+}

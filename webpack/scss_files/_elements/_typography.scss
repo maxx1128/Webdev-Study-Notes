@@ -1,0 +1,72 @@
+h1 {
+  @apply .text-5xl;
+}
+
+h2 {
+  @apply .text-4xl;
+}
+
+h3 {
+  @apply .text-3xl;
+}
+
+h4 {
+  @apply .text-2xl;
+}
+
+h5 {
+  @apply .text-xl;
+}
+
+h6 {
+  @apply .text-lg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply .mt-8 .mb-4 .leading-tight;
+}
+
+p,
+ol,
+ul,
+small,
+tiny {
+  @apply .mb-5 .leading-normal;
+}
+
+p,
+ol,
+ul {
+  @apply .text-base;
+}
+
+ol,
+ul {
+  @apply .pl-3;
+
+  li {
+    @apply .mb-2;
+
+    & > ul,
+    & > ol {
+      @apply .mt-2;
+    }
+  }
+}
+
+small {
+  @apply .text-sm;
+}
+
+tiny {
+  @apply .text-xs;
+}
+
+a {
+  @apply .text-orange-dark;
+}

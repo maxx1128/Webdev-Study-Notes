@@ -1,0 +1,48 @@
+<head>
+  {% capture title %}
+    {% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}
+  {% endcapture %}
+  {% assign descr = page.descr %}
+  {% capture url %}
+    {{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}
+  {% endcapture %}
+  {% assign image = '/img/avatar.jpg' | prepend: site.baseurl | prepend: site.url %}
+  {% assign favicon = '/img/favicon.ico' | prepend: site.baseurl | prepend: site.url %}
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{title}}</title>
+  <meta name="description" content="{{descr}}" />
+  <link rel="shortcut icon" href="{{favicon}}" />
+  <meta name="thumbnail" content="{{image}}" />
+
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{url}}" />
+  <meta property="og:description" content="{{descr}}" />
+  <meta property="og:summary" content="{{descr}}" />
+  <meta property="og:site_name" content="maxwellantonucci.com" />
+  <meta property="og:image" content="{{image}}" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Maxwell_Dev" />
+  <meta name="twitter:title" content="{{title}}" />
+  <meta name="twitter:description" content="{{descr}}" />
+  <meta name="twitter:summary" content="{{descr}}" />
+  <meta property="twitter:image" content="{{image}}" />
+  <meta name="twitter:creator" content="@Maxwell_Dev" />
+
+  {% if page.url == "/404.html" %}
+    <meta http-equiv="refresh" content="3; url=/">
+  {% endif %}
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <script type="text/javascript" src="{{ '/js/bundle.js' | prepend: site.baseurl }}" charset="utf8" ></script>
+</head>

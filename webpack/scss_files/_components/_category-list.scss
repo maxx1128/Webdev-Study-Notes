@@ -1,0 +1,15 @@
+.category-list__item {
+  transition: box-shadow 0.5s;
+}
+
+@supports (display: grid) {
+  .category-list__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+    grid-gap: 1rem;
+  }
+
+  .category-list__item {
+    margin-bottom: 0;
+  }
+}

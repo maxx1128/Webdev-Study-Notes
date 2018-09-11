@@ -1,0 +1,7 @@
+blockquote {
+  @apply .p-4 .my-6 .bg-teal-darker .text-white .text-lg .font-semibold .border-l-8 .border-teal-light .shadow-md;
+
+  p {
+    @apply .m-0;
+  }
+}
