@@ -4,10 +4,10 @@
   {% endcapture %}
   {% assign descr = page.descr %}
   {% capture url %}
-    {{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}
+    {{ page.url | replace:'index.html','' | prepend: site.baseurl }}
   {% endcapture %}
-  {% assign image = '/img/avatar.jpg' | prepend: site.baseurl | prepend: site.url %}
-  {% assign favicon = '/img/favicon.ico' | prepend: site.baseurl | prepend: site.url %}
+  {% assign image = '/img/avatar.jpg' | prepend: site.baseurl %}
+  {% assign favicon = '/img/favicon.ico' | prepend: site.baseurl %}
 
 
   <meta charset="utf-8" />
@@ -42,7 +42,7 @@
   {% endif %}
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
 
   <script type="text/javascript" src="{{ '/js/bundle.js' | prepend: site.baseurl }}" charset="utf8" ></script>
 </head>
