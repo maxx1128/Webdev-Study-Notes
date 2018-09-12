@@ -2,7 +2,7 @@
   group: accessibility
   descr: Web accessibility is an oft-overlooked yet vital part of the front-end.
 
-- name: CSS
+- name: CSS and Sass
   group: CSS
   descr: Everyone's favorite front-end styling language. Don't diss the cascade.
 

@@ -39,7 +39,7 @@ If there's nothing in an element, you can style it differently or even hide it a
 
 If you want to style items differently if there's a certain amount (such as making them smaller if there's at least five), use the below mixin.
 
-{% highlight css %}
+{% highlight sass %}
 @mixin at-least($min) {
   &:first-child:nth-last-child(n+#{$min}),
   &:first-child:nth-last-child(n+#{$min}) ~ li {
@@ -59,7 +59,7 @@ li {
 
 ## Select Range of Items
 
-{% highlight css %}
+{% highlight sass %}
 // range selector mixin
 @mixin select-range($start, $end){
   &:nth-child(n+#{$start}):nth-child(-n+#{$end}){
@@ -85,7 +85,7 @@ The `mod` query, as the article I'm referencing describes it, applies styles to 
 
 See the full mixin here:
 
-{% highlight css %}
+{% highlight sass %}
 // mod query mixin
 @mixin mod-list($mod, $remainder){
   &:nth-last-child(#{$mod}n+#{$remainder}):first-child,
@@ -111,7 +111,7 @@ li {
 
 Other selectors can also be used within this, to narrow down what items to select when this criteria is met.
 
-{% highlight css %}
+{% highlight sass %}
 li {
   @include mod-list(4, 0) {
     &:first-of-type {
