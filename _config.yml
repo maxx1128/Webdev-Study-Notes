@@ -10,7 +10,7 @@ title: Online Notebook
 description: > # this means to ignore newlines until "baseurl:"
   My one-stop repo for notes on programming, web development, nonfiction, and whatever else I find useful.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "www.notebook.maxwellantonucci.com" # the base hostname & protocol for your site
 
 exclude: [
   'node_modules'
