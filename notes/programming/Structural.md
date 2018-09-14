@@ -2,6 +2,7 @@
 group: programming
 layout: post
 
+incomplete: true
 title: Structural Patterns
 descr: Patterns to combine code modules into more complex objects without falling apart after.
 
@@ -23,23 +24,27 @@ Structural Patterns manage how classes and objects work together to make larger,
 
 Convert one class interface into something another interface expects so they can work together.
 
-### Metaphor
+#### Metaphor
 
 It's like having a plug that doesn't fit into an outlet. An outlet adaptor lets the two work together - you can put the plug into the adaptor, and then put that into the outlet. Otherwise incompatible tech can now work together.
 
-### Uses
+#### Uses
 
 * A certain tool or interface has domain-specific requirements, such as third-party code that can't be changed. Adaptors let the two interact properly.
 
 ## Bridge
 
+Notes coming later
+
 ## Composite
+
+Notes coming later
 
 ## Decorator
 
 Decorators let you add specific functionality to specific object instances (not the class making them as a whole, giving you more flexibility).
 
-### Metaphor
+#### Metaphor
 
 You live in a bare apartment and start decorating it with posters. Some posters look fine on their own, but you want to add more to others - such as adding frames or stickers. Adding these to some posters (not all of them) is like adding a decorator to an object.
 
@@ -47,7 +52,7 @@ You live in a bare apartment and start decorating it with posters. Some posters 
 
 Gives a unified, high-level object to interact with a more complex collection of objects. This makes it easier to use lots of complex functionality under the hood.
 
-### Metaphor
+#### Metaphor
 
 A cash register looks at lots of different things to calculate your final price - discounts, taxes, shipping, sales, etc. But the cashier doesn't deal with all these directly, they just put in the info on their register and it does all the math. The cash register is the facade here, giving a high-level interface to access all the pricing functionality.
 
@@ -55,7 +60,7 @@ A cash register looks at lots of different things to calculate your final price 
 
 Sometimes a program needs a huge number of similar objects, to the point where it takes up too many resources. Flyweights help avoid this by sharing all common properties, and only setting their different intrinsic properties.
 
-### Metaphor
+#### Metaphor
 
 Imagine a deck of cards. Each card has many properties and functions, but ultimately they're all the same. The only differences are their value and suit, so they're the only things that need to be set.
 
@@ -65,6 +70,6 @@ Making cards with the Flyweight patterns means creating them through a Flyweight
 
 A placeholder or gatekeeper that controls access to another object.
 
-### Metaphor
+#### Metaphor
 
 You have a night club with all kinds of fun activities in them. However not everyone can enter it. People must meet certain age, money, and clothing requirements. So the club hires a doorman to make sure only people who meet these requirements can enter. People must interact with the doorman, and the doorman will turn them away or let them enter. Here the club is an object, and the doorman is the proxy controlling access to it and its methods.

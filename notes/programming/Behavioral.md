@@ -2,9 +2,9 @@
 group: programming
 layout: post
 
+incomplete: true
 title: Behavorial Patterns
 descr: Patterns for managing how code acts and interacts with other modules
-incomplete: true
 
 resources:
   - title: Design Patterns, Elements of Reusable Object-Oriented Software
@@ -15,22 +15,44 @@ resources:
 
 ## Chain of Responsibility
 
+Notes coming later
+
 ## Command
+
+Notes coming later
 
 ## Interpreter
 
+Notes coming later
+
 ## Iterator
+
+Notes coming later
 
 ## Mediator
 
+Notes coming later
+
 ## Memento
+
+Notes coming later
 
 ## Observer
 
+Notes coming later
+
 ## State
+
+Notes coming later
 
 ## Strategy
 
+Notes coming later
+
 ## Template Method
 
+Notes coming later
+
 ## Visitor
+
+Notes coming later

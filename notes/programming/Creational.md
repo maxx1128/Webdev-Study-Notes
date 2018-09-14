@@ -2,6 +2,7 @@
 group: programming
 layout: post
 
+incomplete: true
 title: Creational Patterns
 descr: Patterns to create code objects independent of the application
 
@@ -23,7 +24,7 @@ Helps emphasize object composition over class inheritance. Doing this puts more 
 
 For when you need to create collections of related classes and objects. May be a collection of different factories, and the Abstract Factory determines which is used.
 
-### Uses
+#### Uses
 
 * If you have several related objects, and the relationships between them determines which one is needed.
 
@@ -37,7 +38,7 @@ When you need to create a complex object, break the creation of each part needed
 * End with a function that returns the completed Base, possibly checking if all needed properties have been set.
 * Export the Builder class
 
-### Metaphor
+#### Metaphor
 
 When you buy a piece of Ikea furniture, you need to follow lots of specific steps to make it. It takes a certain amount of materials, and some steps give the customer choices in how to make it (such as putting a pullout desk on the left or right). You could also stop building the furniture midway to make lunch or something else.
 
@@ -45,12 +46,12 @@ When you buy a piece of Ikea furniture, you need to follow lots of specific step
 * Each step is another function that creates part of the object
 * You don't need to use all the functions to make the class at once - you could stop and continue later based on other conditions
 
-### Specifics
+#### Specifics
 
 * **Builder**: A class abstract to build the object
 * **Product**: The final object that's built
 
-### Uses
+#### Uses
 
 * Great for complex object construction, since breaking it down to separate function steps makes it easier to manage and control.
 * Separates the object's logic and the creation logic
@@ -60,7 +61,7 @@ When you buy a piece of Ikea furniture, you need to follow lots of specific step
 
 A class that creates different instances of a specific class or object.
 
-### Uses
+#### Uses
 
 * If you have one class, but need to create different instances of it after runtime.
   * Can produce different versions of it based on input arguments
@@ -83,11 +84,11 @@ For when a class can only have a single instance, and be accessed globally.
   * If it already exists, it will reference the previous instance when creating the object
 * All parts of the application can access the Singleton class whenever needed as the single source of truth
 
-### Specifics
+#### Specifics
 
 * **Singleton**: The Singleton class that returns its previous instance or creates one. Nothing else needed really.
 
-### Uses
+#### Uses
 
 * Classes need a single source of truth while still being subclassed
 * Must be easily accessible
