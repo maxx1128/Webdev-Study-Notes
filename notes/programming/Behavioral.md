@@ -17,42 +17,64 @@ resources:
 
 Notes coming later
 
+#### Metaphor
+
 ## Command
 
 Notes coming later
+
+#### Metaphor
 
 ## Interpreter
 
 Notes coming later
 
+#### Metaphor
+
 ## Iterator
 
 Notes coming later
+
+#### Metaphor
 
 ## Mediator
 
 Notes coming later
 
+#### Metaphor
+
 ## Memento
 
 Notes coming later
+
+#### Metaphor
 
 ## Observer
 
 Notes coming later
 
+#### Metaphor
+
 ## State
 
 Notes coming later
+
+#### Metaphor
 
 ## Strategy
 
 Notes coming later
 
+#### Metaphor
+
 ## Template Method
 
 Notes coming later
 
+#### Metaphor
+
 ## Visitor
 
 Notes coming later
+
+#### Metaphor

@@ -28,17 +28,19 @@ Convert one class interface into something another interface expects so they can
 
 It's like having a plug that doesn't fit into an outlet. An outlet adaptor lets the two work together - you can put the plug into the adaptor, and then put that into the outlet. Otherwise incompatible tech can now work together.
 
-#### Uses
-
 * A certain tool or interface has domain-specific requirements, such as third-party code that can't be changed. Adaptors let the two interact properly.
 
 ## Bridge
 
 Notes coming later
 
+#### Metaphor
+
 ## Composite
 
 Notes coming later
+
+#### Metaphor
 
 ## Decorator
 

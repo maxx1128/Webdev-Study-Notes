@@ -24,13 +24,13 @@ Helps emphasize object composition over class inheritance. Doing this puts more 
 
 For when you need to create collections of related classes and objects. May be a collection of different factories, and the Abstract Factory determines which is used.
 
-#### Uses
+Great if you have several related objects, and the relationships between them determines which one is needed.
 
-* If you have several related objects, and the relationships between them determines which one is needed.
+#### Metaphor
 
 ## Builder
 
-When you need to create a complex object, break the creation of each part needed into a separate function or step.
+When you need to create a complex object, break the creation of each part needed into a separate function or step. It's good for complex object construction, since the complexity can be broken into specific steps. This separates the object and creation logic, and gives more control over the flow of how an object is made.
 
 * Start with a constructor Base class that creates aninstance of a Class
 * Make the Builder class that creates an empty instance of the Base class
@@ -46,26 +46,11 @@ When you buy a piece of Ikea furniture, you need to follow lots of specific step
 * Each step is another function that creates part of the object
 * You don't need to use all the functions to make the class at once - you could stop and continue later based on other conditions
 
-#### Specifics
-
-* **Builder**: A class abstract to build the object
-* **Product**: The final object that's built
-
-#### Uses
-
-* Great for complex object construction, since breaking it down to separate function steps makes it easier to manage and control.
-* Separates the object's logic and the creation logic
-* Can create different, specific object instances as needed
-
 ## Factory Method
 
-A class that creates different instances of a specific class or object.
+A class that creates different instances of a specific class or object. Useful if you have one class, but need to create different instances of it after runtime. You can make different versions of a class object based on the parameters you choose. This structure helps separate the class/object's own logic, and the needed steps/parameters needed to make the right instances of it.
 
-#### Uses
-
-* If you have one class, but need to create different instances of it after runtime.
-  * Can produce different versions of it based on input arguments
-  * Can predetermine the arguments used with the different versions in advance
+#### Metaphor
 
 ## Prototype
 
@@ -74,6 +59,8 @@ Creating a specific class instance, and cloning it as needed.
 * Each instance specifies the type of prototype needed when creating a new object
 * The application clones the needed prototype when requested
   * The Prototype can apply needed changes too
+
+#### Metaphor
 
 ## Singleton
 
@@ -84,11 +71,4 @@ For when a class can only have a single instance, and be accessed globally.
   * If it already exists, it will reference the previous instance when creating the object
 * All parts of the application can access the Singleton class whenever needed as the single source of truth
 
-#### Specifics
-
-* **Singleton**: The Singleton class that returns its previous instance or creates one. Nothing else needed really.
-
-#### Uses
-
-* Classes need a single source of truth while still being subclassed
-* Must be easily accessible
+#### Metaphor
