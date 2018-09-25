@@ -26,6 +26,9 @@ new Vue({
 
 #### Example
 
+<p data-height="265" data-theme-id="0" data-slug-hash="Mqyazo" data-default-tab="js,result" data-user="max1128" data-pen-title="Vue Template" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/max1128/pen/Mqyazo/">Vue Template</a> by Maxwell Antonucci (<a href="https://codepen.io/max1128">@max1128</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 {% highlight javascript %}
 new Vue({
   el: '#vuePen',

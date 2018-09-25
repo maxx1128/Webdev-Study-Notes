@@ -17,7 +17,8 @@ module.exports = {
           extensions: ['html']
         }
       ],
-      content: ['./_site/*.html', './_site/**/*.html', './_site/**/**/*.html']
+      content: ['./_site/*.html', './_site/**/*.html', './_site/**/**/*.html'],
+      whitelist: ['cp_embed_iframe']
     })
   ]
 }
