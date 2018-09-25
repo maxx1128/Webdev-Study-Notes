@@ -2,7 +2,6 @@
 group: programming
 layout: post
 
-incomplete: true
 title: Creational Patterns
 descr: Patterns to create code objects independent of the application
 

@@ -2,7 +2,6 @@
 group: programming
 layout: post
 
-incomplete: true
 title: Structural Patterns
 descr: Patterns to combine code modules into more complex objects without falling apart after.
 

@@ -2,7 +2,6 @@
 group: programming
 layout: post
 
-incomplete: true
 title: Behavorial Patterns
 descr: Patterns for managing how code acts and interacts with other modules
 
