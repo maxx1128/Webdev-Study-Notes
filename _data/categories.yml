@@ -46,6 +46,10 @@
   group: rubyonrails
   descr: All that wondrousness in a more wondrous-ful app framework.
 
+- name: Soft Skills
+  group: softskills
+  descr: Non-programming skills still important to a successful career and life.
+
 - name: Vue.JS
   group: vue
   descr: A lightweight yet powerful JavaScript framework that'll hopefully replace Angular completely someday.
