@@ -2,8 +2,8 @@
 group: programming
 layout: post
 
-title: Learn Enough Command Line to be Dangerous
-descr: Useful command line notes for beginning programmers
+title: Command Line
+descr: Command line, the backbone of all front-end coding
 
 resources:
   - title: Learn Enough Command Line to be Dangerous

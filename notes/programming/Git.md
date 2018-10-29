@@ -2,13 +2,13 @@
 group: programming
 layout: post
 
-title: Learn Enough Git to be Dangerous
-descr: Useful git commands for beginning programmers
+title: Git
+descr: Using one of the most popular version control systems
 
 resources:
-  - title: Learn Enough Command Line to be Dangerous
+  - title: Learn Enough Git to be Dangerous
     author: Michael Hartl
-    link: https://www.learnenough.com/command-line-tutorial
+    link: https://www.learnenough.com/git-tutorial
     publisher: LearnEnough.org
 ---
 
