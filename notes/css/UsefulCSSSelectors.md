@@ -18,19 +18,70 @@ resources:
       author:  Chris Coyier
       link: https://css-tricks.com/useful-nth-child-recipies/
       publisher: CSS Tricks
+    - title: Level up your CSS selector skills
+      author:  David Gwyer
+      link: https://blog.logrocket.com/level-up-your-css-selector-skills-5d7bb45ddd37
+      publisher: LogRocket
 ---
 
 This is a list of useful Sass/CSS code for selecting elements based on many different factors, like state and number of siblings.
+
+## General Sibling Selector
+
+This selects all sibling elements after the indicated one by using a `~` symbol. Compare it to the direct sibling selector, `+`, which only selects the sibling right next to it.
+
+{% highlight css %}
+.first-element + div { ... }
+// Only the div right next to the first element
+
+.first-element ~ div { ... }
+// All divs that come after the first element
+{% endhighlight %}
+
+## Attribute Selectors
+
+You can style elements based on if an attribute is there, regardless of any value.
+
+{% highlight css %}
+a[href] { ... }
+// Target all anchors with an href
+
+a:not([href]) { ... }
+// Targets all anchors without an href
+{% endhighlight %}
+
+There's also several selectors that target the attribute's values in different ways. They look for different kinds of partial matches, making them more flexible and can be fine-tuned as needed.
+
+{% highlight css %}
+div[class^="size"] { ... }
+// Targets divs with class names that start with "size"
+
+div[class|="size"] { ... }
+// Targets divs with class names that start with "size"
+// OR the selected attribute is a dash-separated like (like size-large-landscape) and the value is first in that list
+
+img[src$=".jpeg"] { ... }
+// Targets all images with src attributes ending in .jpeg
+// In other words, this targets all jpeg images
+
+img[src*="large"] { ... }
+// Targets images with sources that have "large" ANYWHERE in them
+// So *= searches with for the value anywhere in the attribute
+
+div[class~="large"] { ... }
+// If the attribute has a list of space-separated values, this looks if one of the values matches the selector's value
+// In other words, this looks if "large" is one of the div's classes. It looks for a whole name match, not if it's contained as part of a larger name
+{% endhighlight %}
 
 ## Select Empty Elements
 
 If there's nothing in an element, you can style it differently or even hide it altogether
 
 {% highlight css %}
-.div:empty { ... }
+div:empty { ... }
 
 // You can use the inverse too
-.div:not(:empty) { ... }
+div:not(:empty) { ... }
 {% endhighlight %}
 
 > Don't put content in here with psuedo elements! It's not accessible.
