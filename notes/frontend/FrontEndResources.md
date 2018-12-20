@@ -6,6 +6,8 @@ title: Front-end Resources
 descr: Front-end is always fun, but there's tons to learn. Here's some big links to cover even more.
 ---
 
+### General
+
 * [The Front-end Development Handbook](https://frontendmasters.com/books/front-end-handbook/2018/){:target="_blank", :rel="noopener"}
   * A digital textbook touching on all the major aspects of a front-end developer's career path, skill sets, salary, and useful resources. A personal favorite of mine!
 * [Modern Dev Spellbook](https://github.com/dexteryy/spellbook-of-modern-webdev){:target="_blank", :rel="noopener"}
@@ -16,3 +18,10 @@ descr: Front-end is always fun, but there's tons to learn. Here's some big links
   * A library of tutorials for building usable, customizable, and accessible front-end components
 * [Alligator.IO](https://alligator.io/){:target="_blank", :rel="noopener"}
   * An archive of useful posts, tricks, and tutorials for all things front-end
+
+### Images
+
+* [Undraw](https://undraw.co/){:target="_blank", :rel="noopener"}
+  * Open-source, stylish, SVG illustrations for virtually every topic and occasion.
+* [StockSnap.io](https://stocksnap.io/){:target="_blank", :rel="noopener"}
+  * Open-source stock photos
