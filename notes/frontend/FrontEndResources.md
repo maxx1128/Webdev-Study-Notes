@@ -25,3 +25,5 @@ descr: Front-end is always fun, but there's tons to learn. Here's some big links
   * Open-source, stylish, SVG illustrations for virtually every topic and occasion.
 * [StockSnap.io](https://stocksnap.io/){:target="_blank", :rel="noopener"}
   * Open-source stock photos
+* [Remove Background Image](https://www.remove.bg/){:target="_blank", :rel="noopener"}
+  * Quickly and easily remove the background from photos of people
