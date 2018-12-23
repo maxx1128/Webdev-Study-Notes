@@ -3,7 +3,7 @@ group: ruby
 layout: post
 
 title: Operators
-descr: Controlling the Flow of Logic and Info
+descr: Controlling the Flow of Logic
 
 resources:
   - title: Eloquent Ruby
@@ -33,18 +33,6 @@ If you need a simple "if, else" statement for something, use the ternary operato
 
 {% highlight ruby %}
 greeting = name ? "Hello #{name}" : "What's your name?"
-{% endhighlight %}
-
-### Looping
-
-Use `each` instead of `for`, since `for` basically calls the `each` method itself, creating an avoidable inefficiency.
-
-{% highlight ruby %}
-list = ["item one", "item two", "item three"]
-
-list.each do |item|
-    puts item
-end
 {% endhighlight %}
 
 ### Case Statements
