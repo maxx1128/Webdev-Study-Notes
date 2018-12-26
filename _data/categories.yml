@@ -46,6 +46,10 @@
   group: rubyonrails
   descr: All that wondrousness in a more wondrous-ful app framework.
 
+- name: Sonic Pi
+  group: sonicpi
+  descr: Turning Ruby code into synthesized music.
+
 - name: Soft Skills
   group: softskills
   descr: Non-programming skills still important to a successful career and life.
