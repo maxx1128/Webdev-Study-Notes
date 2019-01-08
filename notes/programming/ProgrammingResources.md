@@ -12,3 +12,8 @@ descr: Some large resources to better learn programming or computer science as a
   * Several free, online books with fundamental knowledge on everything from the command line to JavaScript and Ruby
 * [Crash Course Computer Science](https://www.youtube.com/playlist?list=PLME-KWdxI8dcaHSzzRsNuOLXtM2Ep_C7a){:target="_blank", :rel="noopener"}
   * The folks at crash course dedicate an entire series to how modern computing got to where it is today
+
+### Miscellaneous
+
+* [So You Just Learned](https://github.com/sublimemarch/so-you-just-learned){:target="_blank", :rel="noopener"}
+  * So you learned there's systemic problems around gender, race, and other areas with the tech industry. What now? Great article resource for educating yourself.

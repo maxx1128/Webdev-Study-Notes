@@ -18,6 +18,8 @@ descr: Front-end is always fun, but there's tons to learn. Here's some big links
   * A library of tutorials for building usable, customizable, and accessible front-end components
 * [Alligator.IO](https://alligator.io/){:target="_blank", :rel="noopener"}
   * An archive of useful posts, tricks, and tutorials for all things front-end
+* [Dev Doodles](https://www.instagram.com/dev_doodles/){:target="_blank", :rel="noopener"}
+  * A charming collection of illustrated explainations for different front-end coding concepts
 
 ### Images
 
@@ -27,3 +29,8 @@ descr: Front-end is always fun, but there's tons to learn. Here's some big links
   * Open-source stock photos
 * [Remove Background Image](https://www.remove.bg/){:target="_blank", :rel="noopener"}
   * Quickly and easily remove the background from photos of people
+
+### Styling
+
+* [The New Defaults](https://dudleystorey.github.io/thenewdefaults/){:target="_blank", :rel="noopener"}
+  * A large collection of pleasant, standard color swatches and hex codes for building palettes

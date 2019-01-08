@@ -2,7 +2,7 @@
 group: ember
 layout: post
 
-title: Resources
+title: Ember Resources
 descr: Large resources for learning more about Ember
 ---
 
