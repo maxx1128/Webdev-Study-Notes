@@ -6,6 +6,28 @@ title: Object Methods
 descr: Useful ways to find and organize data in objects
 ---
 
+## For X in Obj
+
+Loops through all the properties and values of an object, in case all need to be looked at.
+
+{% highlight javascript %}
+const RWBY_colors = {
+  ruby: 'red',
+  yang: 'yellow',
+  blake: 'black',
+  weiss: 'white'
+}
+
+for (let character in RWBY_colors) {
+  console.log(`${character} has a color of ${RWBY_colors[character]}`)
+}
+
+// ruby has a color of red
+// yang has a color of yellow
+// blake has a color of black
+// weiss has a color of white
+{% endhighlight %}
+
 ## Object.values()
 
 Creates an array of all the object's values
