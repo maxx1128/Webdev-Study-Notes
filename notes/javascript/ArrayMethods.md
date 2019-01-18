@@ -75,6 +75,20 @@ let alpha_user_mentioned = usernames.some(user => (user === 'name_alpha'));
 // false
 {% endhighlight %}
 
+## .find()
+
+Checks if any item in an array passes a condition or test. It returns the first one that satisfies it, not searching anymore and returning the entire object. Very similar to `.filter`.
+
+{% highlight javascript %}
+let numbers = [4, 12, 8, 6, 1, 66];
+
+let large_number = numbers.find(num => num > 10);
+// 12
+
+let small_number = numbers.find(num => num < 10);
+// 4
+{% endhighlight %}
+
 ## .every()
 
 Same as `.some()` but only returns true if _all_ array items pass the condition.
