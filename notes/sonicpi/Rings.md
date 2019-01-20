@@ -27,6 +27,10 @@ These are tools for better accessing, adjusting, and using values from rings
 * `.reflect` - same as mirror but doesn't duplicate middle value
 * `.scale(2)` - returns a new ring with all elements multiplied by 2 (assumes ring contains numbers only)
 
+### Rests
+
+If you're making a ring by hand and want to include some rests, put in `:r` to not play anything for that note. In this example, `ring :e3, :e3, :r, :g3, :r, :r, :r, :a3`, it will play two notes, rest, play another note, then rest for three notes before the last.
+
 ### .look
 
 `.look` is a slightly different version of `.tick`. While `.tick` increases the ring index, `.look` plays the current ring note without increasing the index.
