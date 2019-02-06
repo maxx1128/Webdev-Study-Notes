@@ -29,8 +29,14 @@ descr: Front-end is always fun, but there's tons to learn. Here's some big links
   * Open-source stock photos
 * [Remove Background Image](https://www.remove.bg/){:target="_blank", :rel="noopener"}
   * Quickly and easily remove the background from photos of people
+* [Hero Patterns](https://www.heropatterns.com/){:target="_blank", :rel="noopener"}
+  * SVG backgrounds and textures that can be added to a website with only CSS
+* [Cool Backgrounds](https://coolbackgrounds.io/){:target="_blank", :rel="noopener"}
+  * Generate stylish, workable backgrounds quickly from a variety of sources
 
-### Styling
+### Colors
 
 * [The New Defaults](https://dudleystorey.github.io/thenewdefaults/){:target="_blank", :rel="noopener"}
   * A large collection of pleasant, standard color swatches and hex codes for building palettes
+* [CloudFlare Accessible Color Palette Generator](https://cloudflare.design/color/){:target="_blank", :rel="noopener"}
+  * Generate accessible color schemes from random colors, generates colors, colors pulled from images, and more!
