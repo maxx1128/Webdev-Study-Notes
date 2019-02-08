@@ -33,6 +33,10 @@ descr: Front-end is always fun, but there's tons to learn. Here's some big links
   * SVG backgrounds and textures that can be added to a website with only CSS
 * [Cool Backgrounds](https://coolbackgrounds.io/){:target="_blank", :rel="noopener"}
   * Generate stylish, workable backgrounds quickly from a variety of sources
+* FreePik](https://www.freepik.com/){:target="_blank", :rel="noopener"}
+  * Vectors, stock photos, PSDs, and more
+* [Vecteezy](https://www.vecteezy.com/){:target="_blank", :rel="noopener"}
+  * Free vector art
 
 ### Colors
 
