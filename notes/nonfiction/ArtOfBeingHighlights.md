@@ -9,7 +9,7 @@ descr: Notes and quotes from Erich Fromm's (awesome) book on psychology and huma
 resources:
   - title: The Art of Being
     author: Eric Fromm
-    link: https://www.amazon.com/Art-Being-Erich-Fromm-1994-09-01/dp/B01NGZRGXZ/ref=sr_1_2?s=books&ie=UTF8&qid=1535831378&sr=1-2&keywords=The+Art+of+Being+Fromm
+    link: https://www.amazon.com/Art-Being-Erich-Fromm-1994-09-01/dp/B01NGZRGXZ/ref=sr_1_2?s=books
     publisher: Bloomsbury Academic
 ---
 
