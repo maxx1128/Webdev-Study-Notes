@@ -131,38 +131,9 @@ There's a sweet spot of plot threads, characters, and events. This balance is di
 
 ## Style - The Basics
 
-* Don't misuse or overuse long vocabulary words. Simpler is better.
-* Show, don't tell. Readers can tell a crying character is sad.
-* Avoid cliches.
-
 ### Words and Phrases
 
-* _The Puffer Fish, or flaunting your vocabulary_ - Complex writing is just showing off, and pull the reader from the book's world. Only use tougher words when it's the best way to express the idea.
-* _The Crepuscular Handbag, or flaunting someone else's vocabulary_ - Don't use words you yourself don't know. Know exactly what all the words you write mean. If your vocabulary sucks, read more books.
-* _The Crepitating Parasol, or tripping over your own cleverness_ - Don't try too hard to use clever puns and language. The harder you try, the most likely you are to mess it up. Good writing doesn't need flashy theatrics or prose.
-
-**Tip:** Even a humurous or intelligent piece of writing may not fit into your novel. If it's good but doesn't serve your novel's needs, don't include it.
-
-* _Are Sticks and Stones Still an Option? Mangling common expressions_ - Messing up idioms reliant on culture is also horrible. Google the damn things!
-* _Breeding Contempt, or relying too much on cliches_ - A few uses of cliches is forgiveable. Too much and it drains your writing of meaning, and confuse metaphor with literal meaning. Save them for familiar or unsurprising events.
-* _It's Important!! Punctuating hysterically_ - Avoid excessed dashes and exclaimation marks (especially the latter). Only use them sparingly in dialogue. Save them for immediate physical danger or great surprise.
-  * Use italics infrequently
-  * Use all caps very rarely/never
-  * Never use bold
-
 ### Sentences and Paragraphs
-
-* _The Minimalist, where synopses take the place of writing_ - Don't be overly terse. While some details have more details, there should still be enough to bring the story to life. Significant events should play out in real time with vivid detail. Get a healthy balance of events and description.
-* _The List of Ingredients, or lists substitute for description_ - Don't mistake an inventory list for description. Focus on the items that make a scene unique, not all of them, and give them moderate seasonings of detail.
-* _The Redundant Tautology, or the author repeating themselves_ - Do not repeat points or restate them in flowery ways to reinforce them. Mention it later in the story if it needed, but not a few sentences later. Don't use redundant descriptors either.
-* _The Legal Brief, or where the language of officialdom predominates_ - Avoid legelese, officialese, or psychobabble. Any meaning behind writing can be smashed by bluntly writing it out like a law report.
-* _Mouth-Watering World-Class Prose, or writing like an advertisement_ - Advertising writing forces all the biggest details into as small a space as possible, it only has seconds to do its job. This belongs inside a book cover flap, not the book itself. Avoid brand names.
-* _Hello I Must be Going, where time is poorly handled_ - Don't warp time, with long-lasting events happening between two fast ones. The less important a scene is, the fewer lines you can write it in - important scenes of a few moments may be many paragraphs. Unneeded scenes can be referenced with an "After X, they..."
-* _The Penis-like Sausage, or inappropriate metaphors_ - Accurate metaphors shouldn't distract from the drama or mood you aim for. Metaphors shouldn't need so much context it pulls them from the story.
-* _Linearity Shrugged, or the novel happening in no particular order_ - Plot events, and sentences, must flow in a logical order. Make sure all paragraphs events are on the same topic.
-* _Gibberish for Art's Sake, or indecipherable lyricism baffles the reader_ - Fancy-sounding prose is pointless if it's also difficult to understand, no matter how many other writers pulled it off. The average reader should be able to understand it.
-* _The Unruly Zit, or the author that read too much Bukowski_ - Save gross details for gross moments that are meant to repulse the reader (like torture). Grossness isn't funny.
-* _Ya Hadda Be There, or the author assuming the reader understands something_ - Don't convey things solely from character reactions. You also need to show what the character is reacting too.
 
 ### Dialogue
 
