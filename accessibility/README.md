@@ -1,3 +1,3 @@
 # Accessibility
 
-Stuff about Ember!
+Keeping web content accessible to all users.

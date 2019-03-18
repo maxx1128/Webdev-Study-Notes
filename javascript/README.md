@@ -1,3 +1,3 @@
 # JavaScript
 
-Stuff about Ember!
+Everyone "favorite" programming language that's slowly devouring the web.

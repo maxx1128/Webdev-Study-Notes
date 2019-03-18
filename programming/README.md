@@ -1,3 +1,3 @@
 # General Programming
 
-Stuff about Ember!
+Non-specific programming notes that virtually every coder would find useful.

@@ -1,3 +1,3 @@
 # Ruby on Rails
 
-Stuff about Ember!
+Arguably the most popular Ruby web framework, and my favorite back-end one.

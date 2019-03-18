@@ -1,3 +1,3 @@
 # React.JS
 
-Stuff about Ember!
+The ever-popular JavaScript view library. Not a framework!

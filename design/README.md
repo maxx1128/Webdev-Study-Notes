@@ -1,3 +1,3 @@
 # Web Design
 
-Stuff about Ember!
+Making the web look pretty!

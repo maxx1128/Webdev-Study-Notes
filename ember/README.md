@@ -1,3 +1,3 @@
 # Ember.JS
 
-Stuff about Ember!
+Probably my favorite front-end JavaScript framework.

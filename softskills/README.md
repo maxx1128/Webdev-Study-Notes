@@ -1,3 +1,3 @@
 # Soft Skills
 
-Stuff about Ember!
+Programming is easy. Communication and living are hard.

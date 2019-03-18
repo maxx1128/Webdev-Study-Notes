@@ -1,3 +1,3 @@
 # Vue.JS
 
-Stuff about Ember!
+A lighter, better version of what Angular can do and one actually worth using.
