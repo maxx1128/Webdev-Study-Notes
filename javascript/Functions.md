@@ -4,7 +4,7 @@ Functions are the core of Javascript, allowing coders to wrap larger functionali
 
 Functions begin with the keyword `function`, followed by any `parameters` (may have multiple or none) and then the `body` with the statements the function executes. The traditional syntax always requires curly braces around the body (ES6 rules have exceptions). Two examples of different functions the book gives are below, showing some variety in parameters and complexity. Note that the first doesn't return a value (would give `undefined`) while the second does (using `return`).
 
-{% highlight javascript %}
+```
 const makeNoise = function() {
   console.log("Pling!");
 };
@@ -22,7 +22,7 @@ const power = function(base, exponent) {
 
 console.log(power(2, 10));
 // → 1024
-{% endhighlight %}
+```
 
 * **Parameters** are used in the body like regular values, but are only supplied when the function is called.
 * Each function has its own local **scope** when called. Variables declared inside a function can only be referenced inside the function, and not after. It's basically its own little world, where it can reference global values if needed (not recommended) but nothing outside the function can reference it.
@@ -35,17 +35,17 @@ Arrow functions are the new ES6 syntax for JavaScript functions. They're great f
 
 These are more similar to ES5 functions, since it gives you multiple lines and must implicitly return a value.
 
-{% highlight javascript %}
+```
 const arrowFunction = () => {
   return 'This is a string being returned!';
 }
-{% endhighlight %}
+```
 
 ### Arrow Function Without Body
 
 Without the body, arrow functions are limited to one line and implicitly return what's there. Great for simpler code so it's easier to read.
 
-{% highlight javascript %}
+```
 // Parenthesis are either blank or hold parameters
 const arrowFunction = () => 'This is a string being returned!';
 const doubleNumber = (n) => n * 2;
@@ -53,7 +53,7 @@ const doubleNumber = (n) => n * 2;
 // Can break the line for neater syntax
 const arrowFunction = () =>
   'This is a string being returned!';
-{% endhighlight %}
+```
 
 ### Return Functions in Functions
 
@@ -61,13 +61,13 @@ Functions can work with more than just straight values, they can take and return
 
 Below is a simple example:
 
-{% highlight javascript %}
+```
 function formatter(formatFn) {
   return function inner(str){
     return formatFn( str );
   };
 }
-{% endhighlight %}
+```
 
 There's three functions to look at here:
 
@@ -79,13 +79,13 @@ It looks convoluted, but the basic use of this function is to **take functions b
 
 As an example, let's say we had a function that uppercases the first letter of a string.
 
-{% highlight javascript %}
+```
 const upperFirst = (string) => `${string[0].toUpperCase()}${string.substr( 1 ).toLowerCase()}`;
-{% endhighlight %}
+```
 
 We could pass this function into `formatter` and then call it later. We can also adjust `formatter` to better show the control it gives us.
 
-{% highlight javascript %}
+```
 const formatter = (formatFn) => {
   return function inner(str){
     console.log(`Your returned string is "${formatFn( str )}."`);
@@ -98,14 +98,14 @@ logUpperFirst = formatter(upperFirst);
 
 logUpperFirst( "hello" );
 // logs 'Your returned string is "Hello."' in the console
-{% endhighlight %}
+```
 
 We can use `formatter` for any number of other ways to change strings - all lowercase, reversing them, working them into a paragraph, etc. We can write the function completely separate and pass it in, keeping the code decoupled and flexible.
 
 Note that you don't need to define your functions in a variable before passing them them, you can define them in the argument itself. The end result is the same, so it's a matter of preference.
 
-{% highlight javascript %}
+```
 const logLower = formatter( function formatting(string){
     return string.toLowerCase();
 } );
-{% endhighlight %}
+```

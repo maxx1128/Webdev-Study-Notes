@@ -12,7 +12,7 @@ There's several types of scopes to know:
 
 This is generally easy to understand, but can get confusing when you use `var`, which isn't block-scoped. Declaring a variable in the global scope, and declaring another with the same name in a block, will override the global variable since there's no block scope.
 
-{% highlight javascript %}
+```
 var myName = "Earl";
 
 if (2 === 2) {
@@ -20,7 +20,7 @@ if (2 === 2) {
 }
 
 console.log(myName); // "Crystal Soul-Eater"
-{% endhighlight %}
+```
 
 If we used `let` instead of `var`, the second declaration would be block-scoped and not overwrite the global one. The `console.log` would then return `"Earl"`.
 
@@ -40,7 +40,7 @@ Closure relates to when variables are declared within certain scopes. When calli
 
 Closure comes into play when calling a function being stored into a variable. If that function has any variables in its local scope, those values aren't destroyed once the function is done - they're saved and remembered for later. Calling this function instance that was saved executes the same operations, but it carries over the remembered values too.
 
-{% highlight javascript %}
+```
 function iWillSaveValues() {
   let number = 0;
   let increaseNumber = () => n++;
@@ -48,15 +48,15 @@ function iWillSaveValues() {
 }
 
 let closureExample = iWillSaveValues();
-{% endhighlight %}
+```
 
 `closureExample` has created a closure of this function. The `number` variable is set at zero, but changes to this variable will be remembered. You can see this if you call this function a few times:
 
-{% highlight javascript %}
+```
 closureExample(); // 1
 closureExample(); // 2
 closureExample(); // 3
-{% endhighlight %}
+```
 
 Every time it's called, it remembers the increased value of `number` from before and increases it. A non-closure example of this function would start over at `0` each time and always return `1`. A way to remember this is if a bubble _closed around_ these variables and protected them from destruction in this variable so they can keep changing as you keep using it.
 
@@ -68,30 +68,30 @@ Recursions are functions that call themselves. They can be helpful since they ca
 
 Take this example function that finds a number's factorial. This multiplies a number by every number lower than it until it returns the total product. So the factorial of `5` would be `5 * 4 * 3 * 2 * 1`.
 
-{% highlight javascript %}
+```
 const factorial = (n) => (n < 2) ? 1 : n * factorial(n - 1);
-{% endhighlight %}
+```
 
 Running `factorial(5)` leads to the following recursive function calls:
 
-{% highlight javascript %}
+```
 factorial(5) = 5 * factorial(4)
 factorial(5) = 5 * 4 * factorial(3)
 factorial(5) = 5 * 4 * 3 * factorial(2)
 factorial(5) = 5 * 4 * 3 * 2 * factorial(1)
 factorial(5) = 5 * 4 * 3 * 2 * 1
 factorial(5) = 120
-{% endhighlight %}
+```
 
 The part of the function with `(n < 2) ? 1` is crucial, since it's what stops the function from returning itself. Once the number gets down to `1`, it simply returns that without calling itself, stopping the loop. Without it, the function would simply look like this:
 
-{% highlight javascript %}
+```
 const factorial = (n) => n * factorial(n - 1);
-{% endhighlight %}
+```
 
 And would be played out this way instead:
 
-{% highlight javascript %}
+```
 factorial(5) = 5 * factorial(4)
 factorial(5) = 5 * 4 * factorial(3)
 factorial(5) = 5 * 4 * 3 * factorial(2)
@@ -101,7 +101,7 @@ factorial(5) = 5 * 4 * 3 * 2 * 1 * 0 * factorial(-1)
 factorial(5) = 5 * 4 * 3 * 2 * 1 * 0 * -1 * factorial(-2)
 factorial(5) = 5 * 4 * 3 * 2 * 1 * 0 * -1 * -2 * factorial(-3)
 // Adding more negative numbers into infinity
-{% endhighlight %}
+```
 
 Even though the result would have to be `0` since the result is being multipled by zero, the important thing is nothing's telling this function to stop calling itself. It will keep doing so until something in the code tells it through, and since nothing will, it simply goes into it creates a stack overflow.
 
@@ -110,16 +110,16 @@ Even though the result would have to be `0` since the result is being multipled 
 
 `var` declarations and value assignments can be placed anywhere on a page. However, the variable declarations are "hoisted" automatically to the top of the page. This means that any `var` doesn't necessarily need to be declared, since it will be declared when it's hoisted. A computer reading this:
 
-{% highlight javascript %}
+```
 y = 5;
-{% endhighlight %}
+```
 
 This will change to this once it gets hoisted:
 
-{% highlight javascript %}
+```
 var y;
 y = 5;
-{% endhighlight %}
+```
 
 This is why the first code sample, although it looks invalid, actually becomes valid when it becomes the second version. This isn't necessarily a good thing, since it can create unexpected complexity or bugs in the code.
 

@@ -22,7 +22,7 @@ An important caveat for these patterns is they have none of the included Rails m
 
 First, it's smart to make a base class for each Rails Pattern category. If you have lots of Services, it's good to have a base Service for any common methods used by them all. A common example is including all the application helpers, like so.
 
-{% highlight ruby %}
+```
 class BaseService
 
   private
@@ -31,26 +31,26 @@ class BaseService
     ApplicationController.helpers
   end
 end
-{% endhighlight %}
+```
 
 You can then have those methods inherited like so:
 
-{% highlight ruby %}
+```
 class SpecificService < BaseService
 end
-{% endhighlight %}
+```
 
 Finally, you can then call an instance of the class like this.
 
-{% highlight ruby %}
+```
 let variable = SpecificService.new
 
 let variable = SpecificService.new(parameter_1, parameter_2) ## In case it takes parameters
-{% endhighlight %}
+```
 
 Also if you pass in another object with other methods already defined, like a model pulled from a database, you'll need to delegate those methods to use them again. For example, if you pass in a model and want to use any values or methods without redefining them again, you'll need to delegate them like so:
 
-{% highlight ruby %}
+```
 delegate :id,
          :property,
          :another_thing,
@@ -59,7 +59,7 @@ delegate :id,
   def initialize(model = nil)
     @model = model
   end
-{% endhighlight %}
+```
 
 -------
 
@@ -79,7 +79,7 @@ There's likely data used and looped through frequently in an app, so it's useful
 
 For a list of articles, all the data can be stored in a YAML file. It can be stored in `config` or `db`, or a custom `data` folder.
 
-{% highlight ruby %}
+```
 # data/articles.yml
 
 articles:
@@ -90,13 +90,13 @@ articles:
   - name: Wall Street Journal
     author: Will McAvoy
     url: www.washingtonpost.com/fake-article-url
-{% endhighlight %}
+```
 
 You can then access and organize this data as needed in a models file. This is technically organizing and creating a data structure, which is why it'd fit well in the Models folder.
 
 There's many different approaches here, and ways to filter and modify the data. This example simply uses a Struct to get all the basic info and return an array of hashes.
 
-{% highlight ruby %}
+```
 # app/models/articles.rb
 
 module Articles
@@ -110,14 +110,14 @@ module Articles
     end
   end
 end
-{% endhighlight %}
+```
 
 Now this module can be called in a controller and passed to a template.
 
-{% highlight ruby %}
+```
 # app/controllers/press.rb
 
 def index
   @articles = Articles::AllArticles.list
 end
-{% endhighlight %}
+```

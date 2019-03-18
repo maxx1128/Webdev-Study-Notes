@@ -6,17 +6,17 @@ Useful ways to control how React templates or components are rendered
 
 `map` is one of the most common and useful ways to generate a list of elements in a component. The logic can be embedded in the JSX with an arrow function.
 
-{% highlight javascript %}
+```
 return (
   <ul>
     {users.map(user => <li>{user.name}</li>)}
   </ul>
 );
-{% endhighlight %}
+```
 
 This can even be stacked with other methods, like `filter` and [many other JS array methods](./../ArrayMethods.md).
 
-{% highlight javascript %}
+```
 return (
   <ul>
     {users
@@ -25,7 +25,7 @@ return (
     }
   </ul>
 );
-{% endhighlight %}
+```
 
 ## Returning Null
 
@@ -34,7 +34,7 @@ If part of, or the entirety of, a component is conditional, you can cancel the r
 * Returning `null` before any JSX is returned cancels the entire component. It should be in a conditional, such as returning `null` is an array to be looped through is empty.
 * Returning `null` inside the returned JSX cancels out all the JSX in the contained bit of JS where it's called.
 
-{% highlight javascript %}
+```
 return (
   <div>
     {
@@ -48,11 +48,11 @@ return (
     }
   </div>
 );
-{% endhighlight %}
+```
 
 If it's only a one-way conditional, you can adjust the operator like this so it's simpler.
 
-{% highlight javascript %}
+```
 return (
   <div>
     {
@@ -64,4 +64,4 @@ return (
     }
   </div>
 );
-{% endhighlight %}
+```

@@ -4,7 +4,7 @@
 
 CSS built entirely on helper classes, similar to bootstrap ones that adjust simple, straightforward properties.
 
-{% highlight javascript %}{% raw %}
+```
 <div class="max-w-sm mx-auto leading-normal">
 
   <p class='mb-4 font-bold'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -14,7 +14,7 @@ CSS built entirely on helper classes, similar to bootstrap ones that adjust simp
   <p class='mb-4 text-blue font-bold'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 </div>
-{% endraw %}{% endhighlight %}
+```
 
 > Examples Functional CSS libraries: **Tailwind**, Tachyons
 
@@ -41,7 +41,7 @@ Ember components let you set the classes for a component in their controller. Th
 
 However, make sure your components don't require directly passing different classes to components in order to change styles. This mixes the component abstraction with the functional CSS abstraction, which makes managing and updating the CSS tougher.
 
-{% highlight javascript %}{% raw %}
+```
 // Bad
 {{#ui-title class="bg-blue"}}
     Title here!
@@ -51,7 +51,7 @@ However, make sure your components don't require directly passing different clas
 {{#ui-title color="blue"}}
     Title here!
 {{/ui-title}}
-{% endraw %}{% endhighlight %}
+```
 
 It's easier to start with the raw output with Functional CSs, and then abstract that into different components. This helps ensure consistency and lower repetition.
 
@@ -59,7 +59,7 @@ However, one issue is that it can lead to excessive component rendering, which d
 
 A useful add-on for managing different styles and classes is the `ember-cli-ui-components` add-on (still experimental, not yet open-source), which has a future of creating different groups of classes to use and reference on components.
 
-{% highlight javascript %}{% raw %}
+```
 import { Styled, group } from 'ember-cli-ui-components';
 
 export default Component.extend(Styled, {
@@ -91,6 +91,6 @@ export default Component.extend(Styled, {
 {{#ui-button}}
 {{#ui-button style="blue"}}
 {{#ui-button style="small red"}}
-{% endraw %}{% endhighlight %}
+```
 
 This component also uses these to generate a styleguide you can reference all the different groups of styles and how they look.

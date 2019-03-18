@@ -6,29 +6,29 @@ This is a list of useful Sass/CSS code for selecting elements based on many diff
 
 This selects all sibling elements after the indicated one by using a `~` symbol. Compare it to the direct sibling selector, `+`, which only selects the sibling right next to it.
 
-{% highlight css %}
+```
 .first-element + div { ... }
 // Only the div right next to the first element
 
 .first-element ~ div { ... }
 // All divs that come after the first element
-{% endhighlight %}
+```
 
 ## Attribute Selectors
 
 You can style elements based on if an attribute is there, regardless of any value.
 
-{% highlight css %}
+```
 a[href] { ... }
 // Target all anchors with an href
 
 a:not([href]) { ... }
 // Targets all anchors without an href
-{% endhighlight %}
+```
 
 There's also several selectors that target the attribute's values in different ways. They look for different kinds of partial matches, making them more flexible and can be fine-tuned as needed.
 
-{% highlight css %}
+```
 div[class^="size"] { ... }
 // Targets divs with class names that start with "size"
 
@@ -47,18 +47,18 @@ img[src*="large"] { ... }
 div[class~="large"] { ... }
 // If the attribute has a list of space-separated values, this looks if one of the values matches the selector's value
 // In other words, this looks if "large" is one of the div's classes. It looks for a whole name match, not if it's contained as part of a larger name
-{% endhighlight %}
+```
 
 ## Select Empty Elements
 
 If there's nothing in an element, you can style it differently or even hide it altogether
 
-{% highlight css %}
+```
 div:empty { ... }
 
 // You can use the inverse too
 div:not(:empty) { ... }
-{% endhighlight %}
+```
 
 > Don't put content in here with psuedo elements! It's not accessible.
 
@@ -66,7 +66,7 @@ div:not(:empty) { ... }
 
 If you want to style items differently if there's a certain amount (such as making them smaller if there's at least five), use the below mixin.
 
-{% highlight sass %}
+```
 @mixin at-least($min) {
   &:first-child:nth-last-child(n+#{$min}),
   &:first-child:nth-last-child(n+#{$min}) ~ li {
@@ -82,11 +82,11 @@ li {
     display: inline-block;
   }
 }
-{% endhighlight %}
+```
 
 ## Select Range of Items
 
-{% highlight sass %}
+```
 // range selector mixin
 @mixin select-range($start, $end){
   &:nth-child(n+#{$start}):nth-child(-n+#{$end}){
@@ -101,7 +101,7 @@ li {
   }
 }
 
-{% endhighlight %}
+```
 
 ## Select All Items Based on Number of Siblings
 
@@ -112,7 +112,7 @@ The `mod` query, as the article I'm referencing describes it, applies styles to 
 
 See the full mixin here:
 
-{% highlight sass %}
+```
 // mod query mixin
 @mixin mod-list($mod, $remainder){
   &:nth-last-child(#{$mod}n+#{$remainder}):first-child,
@@ -134,11 +134,11 @@ li {
     // 13, 17, and 21 would work
   }
 }
-{% endhighlight %}
+```
 
 Other selectors can also be used within this, to narrow down what items to select when this criteria is met.
 
-{% highlight sass %}
+```
 li {
   @include mod-list(4, 0) {
     &:first-of-type {
@@ -156,7 +156,7 @@ li {
     }
   }
 }
-{% endhighlight %}
+```
 
 ## Child Selectors
 

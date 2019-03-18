@@ -12,7 +12,7 @@ An exercise the book mentions is one that is often used in coding interviews, so
 
 Here's my own solution to this problem:
 
-{% highlight javascript %}
+```
 let number = 1;
 
 while (number <= 100) {
@@ -24,4 +24,4 @@ while (number <= 100) {
   console.log((result === '') ? number : result)
   number++;
 }
-{% endhighlight %}
+```

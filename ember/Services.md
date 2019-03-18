@@ -6,7 +6,7 @@ Services can be created with the Ember CLI like most other things. For user sess
 
 A simple version of this service would be:
 
-{% highlight javascript %}{% raw %}
+```
 export default Ember.Service.Extend({
   current_user: null,
   login(user) {
@@ -16,13 +16,13 @@ export default Ember.Service.Extend({
     this.set('current_user', null);
   }
 });
-{% endraw %}{% endhighlight %}
+```
 
 Services can also include functions to better encapsulate all code related to a specific purpose. In this case, it's all variables and functions related to logging in and out.
 
 Services then need to be injected into controllers to be available in them and the views. Once injected, they can be accessed as normal.
 
-{% highlight javascript %}{% raw %}
+```
 export default Ember.Controller.Extend({
   session: Ember.inject.service(),
   mySession: Ember.inject.service('session'), // If the key has a different name than the service, it must be specified like this
@@ -36,11 +36,11 @@ export default Ember.Controller.Extend({
     }
   }
 });
-{% endraw %}{% endhighlight %}
+```
 
 You can then access the service value with `{{ session.current_user }}`, and also use these functions, in the view.
 
-{% highlight javascript %}{% raw %}
+```
 {{#if session.current_user}}
   <p>
     You're logged in as {{session.current_user}}. <br><br>
@@ -54,13 +54,13 @@ You can then access the service value with `{{ session.current_user }}`, and als
     Login as a random user!
   </a>
 {{/if}}
-{% endraw %}{% endhighlight %}
+```
 
 #### Using Store with Services
 
 With EmberData, you can inject the `store` service and access database records the same way you would in a route. Remember that it returns a promise when setting a value to a variable.
 
-{% highlight javascript %}{% raw %}
+```
 export default Ember.Controller.Extend({
   store: Ember.inject.service(),
   first_user: store.findRecord('user', 1)
@@ -71,7 +71,7 @@ export default Ember.Controller.Extend({
     })
   });
 });
-{% endraw %}{% endhighlight %}
+```
 
 #### Using Cookies with Services
 
@@ -79,7 +79,7 @@ Services don't normally persist with page or browser refreshes. However the ["em
 
 If you want to check for cookies when the service is called, you should set this up in the `init()` function, shown below:
 
-{% highlight javascript %}{% raw %}
+```
 export default Ember.Controller.Extend({
   cookies: Ember.inject.service(),
   cookies_service: this.get('cookies'),
@@ -105,4 +105,4 @@ export default Ember.Controller.Extend({
     }
   }
 });
-{% endraw %}{% endhighlight %}
+```

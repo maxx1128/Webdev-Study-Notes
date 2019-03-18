@@ -38,9 +38,9 @@ A useful command with a pipe is `ps aux | grep <string>`, which shows all the pr
 
 `awk` is a command for processing text files. It usually is set up like this:
 
-{% highlight script %}
+```
 awk '/<string_1>/ {<actions>}' <file_name>
-{% endhighlight %}
+```
 
 The `awk` [command processes the file line by line](https://en.wikibooks.org/wiki/An_Awk_Primer/Awk_Command-Line_Examples). By default, it looks for all lines that have `string_1` in them. The ones that match will have the `actions` executed on them, which can be MANY things (the default is just printing the entire record). It does all this in the `file_name` that's been targeted.
 
@@ -54,9 +54,9 @@ You can also use more complex logic here. If you know field three has an integer
 
 `awk` also has `BEGIN` and `END`, which denote code that will run before or after each file's line is run. An example from the above link using this shows it can even do basic calculations, like so:
 
-{% highlight script %}
+```
 awk '/gold/ {ounces += $2} END {print "value = $" 425*ounces}' coins.txt
-{% endhighlight %}
+```
 
 1. This looks for all lines with the word "gold" in them
 2. It takes the number of ounces shown in each line, which is in field two or `$2`, and adds them to an `ounces` variable
@@ -64,9 +64,9 @@ awk '/gold/ {ounces += $2} END {print "value = $" 425*ounces}' coins.txt
 
 If you wanted to add a `BEGIN` function to this, it'd look like this:
 
-{% highlight script %}
+```
 awk BEGIN {print "Runs first!"} '/gold/ {ounces += $2} END {print "value = $" 425*ounces}' coins.txt
-{% endhighlight %}
+```
 
 `awk` also has several pre-defined variables to use:
 

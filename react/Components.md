@@ -12,7 +12,7 @@ A React component requires the `React` and `React-DOM` dependencies, and then ex
     - The markup is only put for `return`. Other code can be written before it in the function.
 * The file's end should export the component so others can use it.
 
-{% highlight javascript %}
+```
 class Dropdown extends React.Component {
    constructor(props) {
       super(props);
@@ -54,11 +54,11 @@ class Dropdown extends React.Component {
 }
 
 export default Dropdown;
-{% endhighlight %}
+```
 
 Once the component is defined and exported, it can be imported and rendered like so. This is also where other properties will be passed in.
 
-{% highlight javascript %}
+```
 import Dropdown from './dropdown.js';
 
 let menu_items = [
@@ -77,7 +77,7 @@ ReactDOM.render(
     menu={menu_items}
   />,
   document.getElementById("root"));
-{% endhighlight %}
+```
 
 ## Passing Functions to Components
 
@@ -89,7 +89,7 @@ There'll likely be times where one component uses another, but the child compone
 
 For example, if we want to make a counter component with buttons that increase or decrease a count, we'd define these functions in the Counter and then pass them to the Button component.
 
-{% highlight javascript %}
+```
 class Counter extends React.Component {
    constructor(props) {
       super(props);
@@ -127,11 +127,11 @@ class Counter extends React.Component {
       );
    }
 }
-{% endhighlight %}
+```
 
 Then in the Button, we reference this function by the property we passed it as for an `OnClick` event.
 
-{% highlight javascript %}
+```
 class Button extends React.Component {
    render() {
       return (
@@ -141,20 +141,20 @@ class Button extends React.Component {
       );
    }
 }
-{% endhighlight %}
+```
 
 This way we can pass a function and needed parameters to the child component, while keeping the child component structured to accept other kinds of functions from other components that may need it. If the function your passing uses no parameters, you can just write the above like this:
 
-{% highlight javascript %}
+```
 on_click={this.decrease_number}
-{% endhighlight %}
+```
 Don't include the parenthesis at the end of the function here, or else it will be called on page load. [Here's more info on passing functions to components.](https://reactjs.org/docs/faq-functions.html)
 
 ## Wrapping Children Components
 
 Components can also be designed to yield to other HTML or components. For example, one component may create a wrapper around whatever else is passed in.
 
-{% highlight javascript %}
+```
 <Wrapper>
     <h3>
       I'm in a burrito!
@@ -162,17 +162,17 @@ Components can also be designed to yield to other HTML or components. For exampl
 
     <Burrito_Component />
 </Wrapper>
-{% endhighlight %}
+```
 
 The `Wrapper` component would need to do this so it renders what's inside:
 
-{% highlight javascript %}
+```
 render() {
     <div class="wrapper-class">
         {this.props.children}
     </div>
 }
-{% endhighlight %}
+```
 
 ## Lifecycle Hooks
 
@@ -181,7 +181,7 @@ https://reactjs.org/docs/react-component.html#the-component-lifecycle) are funct
 
 A common use would be pulling in data from an API, and setting the state before the component renders.
 
-{% highlight javascript %}
+```
 constructor(props) {
   super(props);
   this.state = {
@@ -203,6 +203,6 @@ componentWillMount() {
     .then(response => response.json())
     .then(json_response => this.setState({data: json_response}));
 }
-{% endhighlight %}
+```
 
 This way data can be pulled from an external source, use promises to wait for the response, and include all the needed data in the render cycle.

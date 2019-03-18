@@ -19,20 +19,20 @@
     * One way to manage control flow is the `isNaN` function included in JS. If the given argument isn't a number, such as `isNaN(44)`, then it skips the code. If it works, such as with `isNaN("string")`, it runs the code.
 
 Block syntax for `if` statement:
-{% highlight javascript %}
+```
 if (isNaN("string")) {
     console.log("Not a number!")
     console.log("How dare you.")
 }
-{% endhighlight %}
+```
 
 Statement syntax for `if` statement (only if one statement returned):
-{% highlight javascript %}
+```
 if (isNaN("string")) console.log("Not a number! How dare you.")
-{% endhighlight %}
+```
 
 The `if` statement can also use `else if` and/or `else` for chaining conditions:
-{% highlight javascript %}
+```
 let num = Number(prompt("Pick a number"));
 
 if (num < 10) {
@@ -42,4 +42,4 @@ if (num < 10) {
 } else {
   console.log("Large");
 }
-{% endhighlight %}
+```

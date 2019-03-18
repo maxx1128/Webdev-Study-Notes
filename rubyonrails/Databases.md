@@ -10,7 +10,7 @@ One good trick is "backfilling," or adding more default data during a migration.
 
 This is done by using a `SQL` statement, like the below:
 
-{% highlight sql %}
+```
 class CreateNewTable < ActiveRecord::Migration[5.2]
   def change
     create_table :new_Table do |t|
@@ -32,4 +32,4 @@ class CreateNewTable < ActiveRecord::Migration[5.2]
     end
   end
 end
-{% endhighlight %}
+```

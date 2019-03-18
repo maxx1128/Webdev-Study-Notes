@@ -10,30 +10,30 @@
 * Can be for width or height
 * Preferred over max-width, since it encourages mobile-first design
 
-{% highlight css %}
+```
 @media (min-width: 30em) { ... }
 @media (min-height: 30em) { ... }
-{% endhighlight %}
+```
 
 ### Maximum
 
 * Any viewports **larger** than the set size will use these styles
 * Can be for width or height
 
-{% highlight css %}
+```
 @media (max-width: 30em) { ... }
 @media (max-height: 30em) { ... }
-{% endhighlight %}
+```
 
 ### Aspect Ratio
 
 * Works on screens with a specific ratio between the viewport height and width
 
-{% highlight css %}
+```
 @media (aspect-ratio: 11/5) { ... }
   // Height of 10rem and width of 22rem
   // Also height of 22rem and width of 10rem
-{% endhighlight %}
+```
 
 ### Orientation
 
@@ -42,7 +42,7 @@
   - Portrait: the height is greater than or equal to the width
 * May be paired with `screen` media query to be sage
 
-{% highlight css %}
+```
 @media screen and (orientation: landscape) {
   .layout { flex-direction: row; } // Horizontal layout for more horizontal screens
 }
@@ -50,7 +50,7 @@
 @media screen and (orientation: portrait) {
   .layout { flex-direction: column; } // Vertical layout for more vertical screens
 }
-{% endhighlight %}
+```
 
 ## By Viewport Type
 
@@ -63,7 +63,7 @@
 * For screens with color
 * Can be for screens with any color capabilities, or specific bits per color component (way of measuring number of colors)
 
-{% highlight css %}
+```
 p { color: black } // Default, grayscale devices
 
 @media (color) {
@@ -73,7 +73,7 @@ p { color: black } // Default, grayscale devices
 @media (min-color: 8) {
   p { color: #24ba13; } // Devices with 8 bits per color component (larger color variety)
 }
-{% endhighlight %}
+```
 
 ### Resolution
 
@@ -81,7 +81,7 @@ p { color: black } // Default, grayscale devices
 * Can be a specific DPI, or a minimum or maximum DPI
 * Great for styling or layout for higher DPI devices
 
-{% highlight css %}
+```
 @media (resolution: 50dpi) { ... } // Only for devices with 50dpi
 
 @media (min-resolution: 300dpi) {
@@ -91,42 +91,42 @@ p { color: black } // Default, grayscale devices
 @media (max-resolution: 300dpi) {
   .hide-on-low-dpi { display: none } // Hides elements on low DPI devices
 }
-{% endhighlight %}
+```
 
 ### Screen
 
 * Targets typical screen devices, like phones and computers
 
-{% highlight css %}
+```
 @media screen { ... }
-{% endhighlight %}
+```
 
 ### Print
 
 * Targets pages being printed
 * Can be used for adding psuedo-elements to show shorter links, or even QR codes, in place of long links atop a printed page
 
-{% highlight css %}
+```
 @media print { ... }
-{% endhighlight %}
+```
 
 ### Speech
 
 * Targets pages being used by screen readers. This isn't always reliable however, since browsers may not always share this info.
 * Can help tell the browser how to read content
 
-{% highlight css %}
+```
 @media speech { ... }
-{% endhighlight %}
+```
 
 ### All
 
 * Is usually the default for the Type media query.
 * The cascade into other types of devices may create accidents or unintended effects, so `screen` may be a better option in many cases.
 
-{% highlight css %}
+```
 @media all { ... }
-{% endhighlight %}
+```
 
 ## Chaining Media Queries
 
@@ -138,9 +138,9 @@ You can use different logic for how CSS should apply all these queries.
 * Tells the CSS that both queries (before and after the term) must evaluate to **true**
 * Done by using the word "and" between queries
 
-{% highlight css %}
+```
 @media screen and (min-width: 30rem) { ... }
-{% endhighlight %}
+```
 
 ### "Or"
 
@@ -148,9 +148,9 @@ You can use different logic for how CSS should apply all these queries.
 * Tells the CSS that either one of the queries before or after must evauate to **true.** If one is false, the browser gets the CSS.
 * Done by using a comma between queries
 
-{% highlight css %}
+```
 @media screen, (min-width: 30rem) { ... }
-{% endhighlight %}
+```
 
 ### "Not"
 
@@ -159,11 +159,11 @@ You can use different logic for how CSS should apply all these queries.
 * Done by putting the word "not" before the query
 * When used as part of an "and" or "or" query pair, "not" only applies to the one query it's used on
 
-{% highlight css %}
+```
 @media not screen { ... }
 @media not screen and (min-width: 30rem) { ... } // Works if it's not a screen, AND the width is larger than 30rem
 @media not screen, (min-width: 30rem) { ... } // Works if it's not a screen, OR the width is larger than 30rem
-{% endhighlight %}
+```
 
 ## @supports
 
@@ -173,7 +173,7 @@ You can use different logic for how CSS should apply all these queries.
 * Needs to check a property and value
 * Older browsers that don't support `@supports` will just skip it. Usually older browsers with less feature support anyway.
 
-{% highlight css %}
+```
 .layout {
   display: block;
 }
@@ -183,4 +183,4 @@ You can use different logic for how CSS should apply all these queries.
     display: grid;
   }
 }
-{% endhighlight %}
+```

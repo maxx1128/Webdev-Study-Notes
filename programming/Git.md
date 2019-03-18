@@ -105,9 +105,9 @@ Rebasing it taking a branch that may start from the an older commit of the main 
 
 The above command only works if you're rebasing on the same command as before. If you want to rebase onto a different branch, use the `--onto` argument.
 
-{% highlight script %}
+```
 git rebase < current_parent_branch > --onto < new_parent_branch >
-{% endhighlight %}
+```
 
 All the current branches commit will be placed on top of the new branch, and any conflicts will be solved like any other git rebase.
 

@@ -6,7 +6,7 @@ Ruby collections refer to arrays or hashes, two ways to store "collections" of d
 
 There's several syntaxes for quickly making collections without getting bogged down in detail.
 
-{% highlight ruby %}
+```
 # For string arrays
 array = %w{ I am a bunch of strings! }
 # -> ["I", "am", "a", "bunch", "of", "strings!"]
@@ -18,13 +18,13 @@ hash = { "one" => 1, "two" => 2, "three" => test_var, 777 => false }
 
 # For hashes with symbol keys
 another_hash = {name: "Maxwell", editor: "Visual Studio Code", lucky_number: 33}
-{% endhighlight %}
+```
 
 ### Collections and Methods
 
 Class methods can easily add or remove collection items. This is made easier using **a parameter with a star in front of it.** This is similar to a JavaScript spread operator, in that it takes all the different values and collects them into an array.
 
-{% highlight ruby %}
+```
 class TestClass
   def initialize
     @array = []
@@ -46,13 +46,13 @@ instance.show_items
 instance.add_items('baz')
 instance.show_items
 # ["foo", "bar", "baz"]
-{% endhighlight %}
+```
 
 This makes it simpler to add anything to an array as needed. It also gives you more control over creating, managing, and deleting from arrays, since they can all be linked to different methods with parameters as needed.
 
 There's also a good shortcut for using hashes as method arguments. If a hash is the method's last argument, you don't need to wrap the hash in braces. You can go right to the hash rocket syntax.
 
-{% highlight ruby %}
+```
 class Pizza
   def initialize
     @oven = {}
@@ -71,13 +71,13 @@ anchovy_pizza = Pizza.new()
 anchovy_pizza.prepare_oven(:temperature => 300, :time => 20, :instructions => 'cook until ready')
 anchovy_pizza.check_oven
 # {:temperature=>300, :time=>20, :instructions=>"cook until ready"}
-{% endhighlight %}
+```
 
 ### Looping Through Collections
 
 Use `each` instead of `for`, since `for` basically calls the `each` method itself, creating an avoidable inefficiency.
 
-{% highlight ruby %}
+```
 list = ["item one", "item two", "item three"]
 
 # One line each loop for simpler code for item
@@ -89,11 +89,11 @@ list.each do |item|
 end
 
 # Each puts the same thing, one list item at a time
-{% endhighlight %}
+```
 
 You can do the same thing for hashes, and by default each result is a two-item array. The first item is the key or symbol, and the second is the value. You can also explicitely name the pairs to destructure them.
 
-{% highlight ruby %}
+```
 hash = { fizz: 'buzz', foo: 'bar' }
 
 # Each item is a small array
@@ -104,7 +104,7 @@ hash.each { |item| print item }
 hash.each { |key, value| puts "#{key}: #{value}" }
 # fizz: buzz
 # foo: bar
-{% endhighlight %}
+```
 
 ### Useful Collection Methods
 
@@ -114,7 +114,7 @@ hash.each { |key, value| puts "#{key}: #{value}" }
 
 To sort by different measures, you can use `sort_by` which takes a block. This block can compute a different numerical value in any way, and the array will be sorted on those returned values
 
-{% highlight ruby %}
+```
 array = [4, 2, 7, 32, 9, 3, 4, 14]
 print array.sort
 # [2, 3, 4, 4, 7, 9, 14, 32]
@@ -125,19 +125,19 @@ print array.sort.reverse
 fruits = %w{grape pineapple orange}
 print fruits.sort_by { |fruit| fruit.length }
 # ["pineapple", "orange", "grape"]
-{% endhighlight %}
+```
 
 #### index
 
 Loops through an array, and returns the index of the first object that it's true for. Can either directly look for a value, or take a block statement for more complex checking.
 
-{% highlight ruby %}
+```
 array = [1, 44, "number", "pasta"]
 
 puts array.index("number") # 2
 
 puts array.index { |item| item > 33 } # 1
-{% endhighlight %}
+```
 
 You can use `rindex` for the same check, but starting from the end of the array instead.
 
@@ -145,13 +145,13 @@ You can use `rindex` for the same check, but starting from the end of the array 
 
 Similar to JavaScript, `map` takes an array, performs a function or operation on each item, and returns a new array.
 
-{% highlight ruby %}
+```
 numbers = [2, 4, 6, 8]
 big_numbers = numbers.map { |number| number * 2 }
 
 print big_numbers
 # [4, 8, 12, 16]
-{% endhighlight %}
+```
 
 #### inject
 
@@ -165,7 +165,7 @@ print big_numbers
 
 A common example of this is finding the sum of an array of numbers.
 
-{% highlight ruby %}
+```
 numbers = [2, 4, 6, 8]
 
 # Each iteration returns the total with the next value added
@@ -173,7 +173,7 @@ numbers = [2, 4, 6, 8]
 total = numbers.inject(0) { |number, total| number + total }
 puts total
 # 20
-{% endhighlight %}
+```
 
 #### push, delete, pop, shift
 
@@ -188,20 +188,20 @@ These four methods change the array they're called on in some way. Note these ch
 
 The above four methods (and likely several others) natively can change the same variable they call. Other methods, such as `sort` or `reverse`, don't ever change the actual array they're called on. Use them on an array and call it again, and it will be the same.
 
-{% highlight ruby %}
+```
 numbers = [2, 4, 6, 8]
 numbers.reverse
 
 print numbers
 # [2, 4, 6, 8]
-{% endhighlight %}
+```
 
 Use the bang operator, however, and the array itself will change. So be cautious with the bang!
 
-{% highlight ruby %}
+```
 numbers = [2, 4, 6, 8]
 numbers.reverse!
 
 print numbers
 # [8, 6, 4, 2]
-{% endhighlight %}
+```

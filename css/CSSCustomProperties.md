@@ -4,7 +4,7 @@ CSS Custom Properties are basically **variables you can use in normal CSS.** Unl
 
 ## Syntax
 
-{% highlight css %}
+```
 // Where you can define base property values
 :root { --background-color: #eee; }
 
@@ -19,7 +19,7 @@ CSS Custom Properties are basically **variables you can use in normal CSS.** Unl
 
   background-color: var(--background-color);
 }
-{% endhighlight %}
+```
 
 ## Advantages
 
@@ -44,7 +44,7 @@ CSS Custom Properties are basically **variables you can use in normal CSS.** Unl
 
 Custom properties are best used for more dynamic values that change in different conditions. For example, we may want a slight variation on button sizes on different screen widths. This can be handled with a combination of custom properties and preprocessor variables _(1)_:
 
-{% highlight css %}
+```
 $button-sml: 1em;
 $button-med: 1.5em;
 $button-lrg: 2em;
@@ -57,7 +57,7 @@ $button-lrg: 2em;
 }
 
 .btn { font-size: var(--button-size); }
-{% endhighlight %}
+```
 
 This gives all buttons a base font-size, and adjusts the font-size value for larger ones on larger screens. All in a locally scoped custom property. **It follows a rule of static global variables and dynamic local variables.**
 
@@ -65,7 +65,7 @@ This gives all buttons a base font-size, and adjusts the font-size value for lar
 
 Another rule: **don't give one property multiple custom properties.** If you need to change a value on something like a breakpoint, do it with a dynamic, local custom property _(1)_.
 
-{% highlight css %}
+```
 .example {
   // Custom Property Values
   --example-font-size: 1.2em;
@@ -77,7 +77,7 @@ Another rule: **don't give one property multiple custom properties.** If you nee
   // Styling
   font-size: var(--example-font-size);
 }
-{% endhighlight %}
+```
 
 ### Responsive Design
 
