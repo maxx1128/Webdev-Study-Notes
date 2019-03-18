@@ -1,8 +1,0 @@
-css/main.css
-js/bundle.js
-_site
-.jekyll-metadata
-.sass-cache
-feed.xml
-node_modules
-yarn-error.log
