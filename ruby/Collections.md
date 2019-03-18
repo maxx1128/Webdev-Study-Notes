@@ -205,3 +205,7 @@ numbers.reverse!
 print numbers
 # [8, 6, 4, 2]
 ```
+
+## Resources
+
+* [Eloquent Ruby](https://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104)

@@ -70,3 +70,9 @@ A minor theme is the idea of "normal" not being real. Too often it's a status qu
 The characters' definitions of "normal" constantly change through the story as they learn more about the conspiracy and its actors. The more it changes, the more it puts them at odds with the rest of the world, and the harder it gets for them to function. It underscores both the heavy burden placed on those outside of the "normal," but also the importance for them to shatter outdated versions of it. Despite the danger they'll face in the progress.
 
 > There is a time when even reasonable men must begin to take unreasonable actions. To do anything else is to be less than human. (Deadline, 292)
+
+## Resources
+    [NewsFlesh Trilogy
+    author: Mira Grant
+    (https://www.amazon.com/gp/bookseries/B00CKBW9DS/kindle/ref=sr_bookseries_null_B00CKBW9DS
+    publisher: Orbit

@@ -88,3 +88,7 @@ Let's say we're back at the train factory, this time as the head of the budget. 
 So you set up a database as the single-source of budget information that all departments are forced to access. If anyone accidentally does something in the database to copy the data, it automatically checks and returns the current version of the data instead of making a new one. This failsafe ensures there's only one source of truth that is always accurate, no matter where it's checked from.
 
 Now you and all the departments can check balances and withdraw funds knowing that their budget info comes from the single source of truth. This database is functioning the same as a Singleton, ensuring the data source can't be copied, and this data source can be reliably accessed anywhere.
+
+## Resources
+
+* [Design Patterns, Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_2?s=books&ie=UTF8&qid=1535832017&sr=1-2&keywords=design+patterns+elements+of+reusable+object-oriented+software)

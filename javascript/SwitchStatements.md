@@ -18,3 +18,7 @@ switch (variable_here) {
 ```
 
 Note that you don't need to include `break` in every case, which executes the code but then keeps going.
+
+## Resources
+
+* [Eloquent JavaScript](http://eloquentjavascript.net/)

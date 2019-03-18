@@ -99,3 +99,7 @@ The playbook mentions many other tricks to reinforce this.
 * Sellers may ask for permission to "push you out of your comfort zone." This way if you're resistant to a big sell, they'll throw this back at you as en extra push to buy.
 * They'll also end a big sales pitch by giving testimonials. These will comfort the seller since they'll think it's evidence the program works. If this happens, remember that **the plural of anecdotes isn't data** and don't fall for it.
 * New information won't be mentioned during a sale. This only invites more questions and draws it out.
+
+## Resources
+
+* [Trump University Playbook](https://static.politico.com/25/88/783a0dca43a0a898f3973da0086f/trump-university-playbook.pdf)

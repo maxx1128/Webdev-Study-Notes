@@ -145,3 +145,7 @@ There's a sweet spot of plot threads, characters, and events. This balance is di
 ### Jokes
 
 ### Postmodernism
+
+## Resources
+
+* [How Not To Write a Novel](https://www.amazon.com/Write-Novel-Them-Misstep-Misstep/dp/0061357952)

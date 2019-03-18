@@ -12,3 +12,7 @@ Writing code that looks like Ruby
 * The only exception to any of these rules would be to make Ruby code more **readable.**
 
 * Methods that answer a yes/no or true/false question often end with a `?`, such as `valid?` to ask if a method or value is valid.
+
+## Resources
+
+* [Eloquent Ruby](https://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104)

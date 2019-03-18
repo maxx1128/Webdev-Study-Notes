@@ -717,3 +717,7 @@ Other peoples' behavior is more the result of their situation than their disposi
 > remember first impressions are mostly incorrect. Those impressions will linger until you get to know people and understand their situation and the circumstances
 
 > doesn't mean you must forgive evil, but perhaps it can help prevent it.
+
+## Resources
+
+* [You Are Not So Smart](https://www.amazon.com/You-Are-Not-So-Smart/dp/1592407366)

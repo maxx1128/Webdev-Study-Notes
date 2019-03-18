@@ -385,3 +385,7 @@ When someone is speaking publically, try to be the first to give a positive resp
 ### 92. The Great Scorecard in the Sky
 
 In any relationship with someone, there's a scorecard of whose contributed most and whose withdrawn most. Good actions add to the scorecard, and negative actions take away from it. Always keep track of this "great scorecard" to know if you're in deference to the other person and need to add a few points later on.
+
+## Resources
+
+* [92 Ways to Talk to Anyone](https://www.amazon.com/How-Talk-Anyone-Success-Relationships/dp/1511305169)

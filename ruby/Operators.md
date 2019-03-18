@@ -50,3 +50,7 @@ response = case attack
 ```
   @name ||= 'Default name!'
 ```
+
+## Resources
+
+* [Eloquent Ruby](https://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104)

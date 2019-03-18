@@ -127,3 +127,7 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
 * Attacker response: "I wonder if your X is aware of your position on this matter"
   - X is the attacker's superior or something they're accountable to
   - Is a threat, so be very careful when using it as it could invite more retaliation
+
+## Resources
+
+* [The Gentle Art of Verbal Self-Defense](https://www.amazon.com/Gentle-Art-Verbal-Self-Defense/dp/0880290307?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0880290307)

@@ -97,3 +97,8 @@ import * as props from './file.js';   // props.prop1, props.prop2, etc
 
 import { prop1, prop2 as secondProp } from './file.js';    // prop1 as normal, prop2 is assigned to secondProp
 ```
+
+## Resources
+
+* [MDN Import syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+* [MDN Export syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)

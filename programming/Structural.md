@@ -79,3 +79,8 @@ A placeholder or gatekeeper that controls access to another object. This may be 
 #### Metaphor
 
 You have a night club with all kinds of fun activities in them. However not everyone can enter it. People must meet certain age, money, and clothing requirements. So the club hires a doorman to make sure only people who meet these requirements can enter. People must interact with the doorman, and the doorman will turn them away or let them enter. Here the club is an object, and the doorman is the proxy controlling access to it and its methods.
+
+
+## Resources
+
+* [Design Patterns, Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_2?s=books&ie=UTF8&qid=1535832017&sr=1-2&keywords=design+patterns+elements+of+reusable+object-oriented+software)

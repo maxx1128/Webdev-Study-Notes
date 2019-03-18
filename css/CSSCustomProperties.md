@@ -82,3 +82,8 @@ Another rule: **don't give one property multiple custom properties.** If you nee
 ### Responsive Design
 
 If only a value changes based on screen size, use a custom variable. Best for simpler responsive design work.
+
+## Resources
+
+* [A Strategy Guide To CSS Custom Properties](https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/)
+* [It's Time To Start Using CSS Custom Properties](https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/)

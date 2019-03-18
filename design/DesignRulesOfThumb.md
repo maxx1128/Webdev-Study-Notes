@@ -55,3 +55,9 @@ Need to find good colors? Try [Dribble's Color Search](https://dribbble.com/colo
     - Aim for similar stroke weights
     - This is especially important when icons are inline with text, such as in buttons
 * Don't take icons designed to be small and increase their size too much, they'll look unnatural. Either use icons designed to be bigger, or put them in a larger shape with a background color.
+
+## Resources
+
+* [The King Vs Pawn Game of UI Design](http://alistapart.com/article/the-king-vs-pawn-game-of-ui-design)
+* [The Non-Designers Design Book](https://www.amazon.com/Non-Designers-Design-Book-4th/dp/0133966151)
+* [Seven Practical Tips for Cheating Design](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886)

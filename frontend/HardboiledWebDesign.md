@@ -50,3 +50,7 @@
 * Focus more on Design Atmosphere
 * Use Atomic Design Principles of atoms, modules, organisms, etc.
 * Guidelines should inform the use of elements, not instruct, on the site's atmosphere and goals
+
+## Resources
+
+* [Hardboiled Web Design](https://stuffandnonsense.co.uk/buy/hardboiledwebdesign)

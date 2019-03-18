@@ -25,3 +25,7 @@ while (number <= 100) {
   number++;
 }
 ```
+
+## Resources
+
+* [Eloquent JavaScript](http://eloquentjavascript.net/)

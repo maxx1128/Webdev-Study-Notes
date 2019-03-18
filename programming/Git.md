@@ -141,3 +141,7 @@ You may have bulky commits you want to split into several smaller ones, without 
 5. Run `git rebase --continue`.
 6. Repeat steps 3-5 for any other commits you want to split.
 7. All set! Happy dance.
+
+## Resources
+
+* [Learn Enough Git to be Dangerous](https://www.learnenough.com/git-tutorial)

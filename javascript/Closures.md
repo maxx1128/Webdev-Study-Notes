@@ -90,3 +90,8 @@ add666.showAddValue(); // 666
 ```
 
 This shows the core benefit of closure functions: **limiting these different to variables keeps them out of the global scope**, making them less likely to accidentally affect other code. Their closed off environments in this limited scope essentially make "private scopes" that can only be accessed through this outer function. If you removed the `showAddValue` inner function, you'd have no way to return the `x` variables stored in that scope. It'd be completely hidden away in that closure with no way to access it.
+
+## Resources
+
+* [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+* [JavaScript Scopes and Closures](https://css-tricks.com/javascript-scope-closures/)

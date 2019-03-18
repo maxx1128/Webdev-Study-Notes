@@ -175,3 +175,10 @@ There's lots of useful child selectors that can target different ranges of eleme
   - `:nth-last-child(n+3)` is the third to last item, and all items before it
 * `:nth-first-child` selects the first element
   - Same logic as the `last-child` selectors
+
+## Resources
+
+* [Using CSS Mod Queries with Range Selectors](https://alistapart.com/article/using-css-mod-queries-with-range-selectors)
+* [Solved with CSS! Logical Styling Based on the Number of Given Elements](https://css-tricks.com/solved-with-css-logical-styling-based-on-the-number-of-given-elements/)
+* [Useful :nth-child Recipes](https://css-tricks.com/useful-nth-child-recipies/)
+* [Level up your CSS selector skills](https://blog.logrocket.com/level-up-your-css-selector-skills-5d7bb45ddd37)

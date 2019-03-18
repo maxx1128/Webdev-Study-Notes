@@ -29,3 +29,7 @@ console.log(me.getJob());
 ```
 
 You'll see classes used this way a lot in JavaScript frameworks like Ember and React.
+
+## Resources
+
+* [JavaScript fundamentals before learning React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#react-javascript)

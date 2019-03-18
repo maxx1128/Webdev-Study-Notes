@@ -43,3 +43,7 @@ if (num < 10) {
   console.log("Large");
 }
 ```
+
+## Resources
+
+* [Eloquent JavaScript](http://eloquentjavascript.net/)

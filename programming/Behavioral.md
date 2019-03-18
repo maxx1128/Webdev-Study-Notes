@@ -98,3 +98,7 @@ Visitors are objects that contain a method, or set of methods, to be performed o
 #### Metaphor
 
 Let's say you're at a grocery store, gathering different items in your grocery cart. When you bring the items to the cashier, they handle scanning the items, applying the discounts to ones on sale, and adding the prices together. The cashier handles all these operations, knowing which prices to apply in the end, and what the total will be. The cashier is a visitor in this case, applying all these operations you don't know but still decide how much money you pay.
+
+## Resources
+
+* [Design Patterns, Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_2?s=books&ie=UTF8&qid=1535832017&sr=1-2&keywords=design+patterns+elements+of+reusable+object-oriented+software)

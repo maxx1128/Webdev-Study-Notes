@@ -44,3 +44,7 @@
 ### Versioning
 
 * For new component versions, duplication is preferred for more maintainence and unique naming
+
+## Resources
+
+* [Maintainable CSS](http://maintainablecss.com/)

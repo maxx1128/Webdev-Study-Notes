@@ -109,3 +109,9 @@ const logLower = formatter( function formatting(string){
     return string.toLowerCase();
 } );
 ```
+
+## Resources
+
+* [Eloquent JavaScript](http://eloquentjavascript.net/)
+* [JavaScript Fundamentals before learning React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#react-javascript)
+* [Functional JS Light](https://github.com/getify/Functional-Light-JS)

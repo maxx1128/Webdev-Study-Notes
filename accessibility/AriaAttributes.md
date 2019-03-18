@@ -34,3 +34,8 @@ ARIA attributes help add extra meaning to HTML elements in case their semantic m
 * `alt` - Has a string, used on image elements to describe the image for users who can't see it.
   * It doesn't need to start with "Photo of a ..." since the screen reader already announces it's a graphic.
   * Images inside links should use the alt text to concisely tell users what the link does or where it goes.
+
+## Resources
+
+* [Uncanny A11y](http://adrianroselli.com/2019/02/uncanny-a11y.html)
+* [Title attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title#Accessibility_concerns)

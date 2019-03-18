@@ -64,3 +64,8 @@ Keyboard shortcuts for efficient Visual Studio Code use
 * `Cmnd Optn ]` - Unfold code on selected folded bracket
 
 * `Cmnd U` - Undo last action
+
+## Resources
+
+* [Useful VS Code Keyboard Shortcuts](https://zellwk.com/blog/useful-vscode-keyboard-shortcuts/)
+* [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts)

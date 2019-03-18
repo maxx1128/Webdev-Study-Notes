@@ -35,3 +35,7 @@
 * Bonus: written in JavaScript for ability to hack it if needed.
 
 > The group behind the study created [LivingCSS](https://github.com/straker/livingcss) as a style guide generator that met all these requirements.
+
+## Resources
+
+* [Creating A Living Style Guide, A Case Study](https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/)

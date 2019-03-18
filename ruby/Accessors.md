@@ -44,3 +44,7 @@ person.name('Carl')    # Wrong!
 person.name 'Carl'     # Wrong!
 person.name = 'Carl'   # Correct!
 ```
+
+## Resources
+
+* [What is an Accessor?](http://www.rubyist.net/~slagell/ruby/accessors.html)

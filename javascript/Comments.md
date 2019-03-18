@@ -10,3 +10,9 @@ Code should aim to be self-explanatory, but that's not always possible. Comments
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cumque, laboriosam architecto culpa aliquid distinctio maxime dicta vel mollitia expedita! Et nisi debitis nam earum facere beatae eius doloremque suscipit.
 */
 ```
+
+## Resources
+
+## Resources
+
+* [Eloquent JavaScript](http://eloquentjavascript.net/)

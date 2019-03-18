@@ -110,3 +110,7 @@ Raw metrics to measure:
 #### Conclusion
 * Know that front-end architecture will take lots of iterations to get right, and these will often change from project to project
 * Know the specific strengths and weaknesses of a current project and build out the iterations from there
+
+## Resources
+
+* [Front-end Architecture for Design Systems](http://www.amazon.com/Frontend-Architecture-Design-Systems-Sustainable/dp/1491926783)

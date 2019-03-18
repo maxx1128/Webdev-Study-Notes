@@ -184,3 +184,7 @@ You can use different logic for how CSS should apply all these queries.
   }
 }
 ```
+
+## Resources
+
+* [Designing for Inclusion with Media Queries](https://noti.st/ericwbailey/QxdLmO/slides)

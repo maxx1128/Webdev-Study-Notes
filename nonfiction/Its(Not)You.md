@@ -205,3 +205,7 @@ Single people owe no explanation to another. If asked why you're single, simply 
 Life without a partner isn't some second-class life, or just a waiting period for that day. We shouldn't feed into the idea that marriage is some "permanent state of happiness that will complete us," which is crap. Which is why it's important to enjoy life irregardless of relationship status.
 
 > Enjoying things as they are but also working toward change isn’t living a second-class life; it’s living a full life—one where you clearly see what Tibetan Buddhists call “the truth of impermanence.”
+
+## Resources
+
+* [It's (Not) You - 27 (Wrong) Reasons Why You're Single](https://www.amazon.com/Its-Not-You-Reasons-Single/dp/0399162879/)

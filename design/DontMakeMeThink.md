@@ -148,3 +148,7 @@ By ”accessibility”, we mean making it so that, for example, a visually impai
 * Ensure that it’s possible to navigate by keyboard alone.
 * Be careful with javascript.
 * Use client-side image maps.
+
+## Resources
+
+* [Don't Make Me Think](https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515)

@@ -118,3 +118,7 @@ Relaxations give several perks:
 ## Networking
 
 ## Game Theory
+
+## Resources
+
+* [Algorithms to Live By](https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365)

@@ -24,3 +24,7 @@ In JavaScript, groups of bits are represented as _values._ You create them by si
     - These can be either `null` or `undefined`, and they're mostly the same.
 
 **Type Coercion** is when operators are applied to the wrong value types and quickly convert the value to what is needed, such as converting `"5"` from a string to `5` as an integer. To test for any unexpected type conversions or missing values, use the `===` and `!==` comparison operators.
+
+## Resources
+
+* [Eloquent JavaScript](http://eloquentjavascript.net/)

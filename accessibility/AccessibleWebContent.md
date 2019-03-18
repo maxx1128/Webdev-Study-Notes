@@ -36,3 +36,7 @@ These tips are for general web content, such as text, blog posts, multimedia, an
 * Users may not be able to listen to audio or video, depending on their disabilities, location, or just their preference
 * Transcripts often take longer, but are simpler, more scannable, and better for CEO
 * If it's a video dependent on the visuals, lean more towards captions
+
+## Resources
+
+* [Accessible Web Content](https://seesparkbox.com/foundry/writing_accessible_web_content)

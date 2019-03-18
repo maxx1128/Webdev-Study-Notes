@@ -57,3 +57,7 @@ There are two ways to adjust control of a loop:
 
 * A **break** statement immediately pulls you out of the current iteration, and exits the loop entirely. Even if it would have normally kept iterating.
 * A **continue** statement immediately pulls you out of the current iteration, but resumes the loop again from the start of a new iteration. Even if it would have normally stopped iterating.
+
+## Resources
+
+* [Eloquent JavaScript](http://eloquentjavascript.net/)

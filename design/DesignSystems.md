@@ -51,3 +51,7 @@ Steps for making an effective Design System:
 4. **Decide on Branding and Perceptual Patterns.** Decide what emotions you want to invoke, and tranlsate those to aesthetic choices.
 
 During all the above steps, **make decisions on and document the shared design language.**
+
+## Resources
+
+* [Design Systems](https://www.smashingmagazine.com/printed-books/design-systems/)

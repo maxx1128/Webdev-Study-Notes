@@ -106,3 +106,7 @@ Use a tool to automate as many of the above steps as possible, such as Grunt or 
 * Javascript can also be referenced dynamically in the head tag for focused references and little delays. The other created LoadJS as a reusable function to do this.
 
 The author created Enhance.js to put all the above notes for delivery together for progressive enhancement in loading assets.
+
+## Resources
+
+* [Responsible Responsive Design](https://abookapart.com/products/responsible-responsive-design)

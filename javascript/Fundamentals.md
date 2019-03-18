@@ -148,3 +148,12 @@ This distinction is important since loose equality can lead to unexpected bugs r
 ### Value and Reference Types
 
 ### this
+
+
+## Resources
+
+* [JavaScript — Double Equals vs. Triple Equals]((https://codeburst.io/javascript-double-equals-vs-triple-equals-61d4ce5a121a)
+* [JS Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
+* [Understanding the JavaScript call stack](https://medium.freecodecamp.org/understanding-the-javascript-call-stack-861e41ae61d4)
+* [I Never Understood JavaScript Closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+* [The battle between function scope and block scope](http://www.deadcoderising.com/2017-04-11-es6-var-let-and-const-the-battle-between-function-scope-and-block-scope/)

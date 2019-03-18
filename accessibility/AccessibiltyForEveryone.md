@@ -1,6 +1,6 @@
 # Accessibility for Everyone
 
-# Considering Accessibility
+## Considering Accessibility
 
 Web accessibility is the job of everyone on the web team, not just one developer meant to make a few changes based on it afterwards.
 
@@ -55,7 +55,7 @@ Other navigation hardware to remember are touchpads, touchscreens, different typ
 
 Overall, assistive tech can only do so much work. Certain needs are only met if they're part of the core design. It can't just be left up to experts each time - it falls on everyone working on the web.
 
-# Disabilities and Impairments
+## Disabilities and Impairments
 
 ### Defining Disability
 
@@ -132,7 +132,7 @@ The world-wide-web is (obviously) worldwide, so support for multiple languages i
 
 There are so many factors affecting accessibility that, realistically, it's impossible to plan for them all. That's why the best option is to plan for as many as possible.
 
-# Planning for Accessibility
+## Planning for Accessibility
 
 Making the case for accessibility planning to everyone in the start:
 
@@ -208,7 +208,7 @@ Good way to prevent these? **Get an accessibility policy!** These should be info
 
 Making this public is optional, but can show the public your commitment and what to expect.
 
-# Content and Design
+## Content and Design
 
 Accessibility decisions help everyone, since all tech is assistive.
 
@@ -384,7 +384,7 @@ If you're writing your closed captions for a custom video player, you can use a 
 
 Providing alternatives for user experiences can go a long way to being more inclusive. They can chose what works best for them. People with impairments aren't always just using an assistive technology, or it could just be someone with different preferences. We don't need to try to accommodate everyone, but they're easy ways to reach a much wider audience. This makes experiences great, not just good.
 
-# Accessibility and HTML
+## Accessibility and HTML
 
 Well-structured HTML is immediately accessible, and is the key to better web accessibility. Quickly check a page's HTML structure by stripping away all external CSS, showing how the content appears to a screen reader. This is why **HTML elements' order is important for accessibility.** It's also why screen readers benefit from headers and other structure elements (like a table of contents). It also helps SEO, since they crawl page text like screen readers do.
 
@@ -497,7 +497,7 @@ _Live regions_ can tell users when something on a page changed without disruptin
 
 ARIA doesn't help browser experience the same way semantic HTML does, so it should never be a replacement for it. **Using ARIA on an inaccessible site will not help.**
 
-# Evaluation and Testing
+## Evaluation and Testing
 
 Without tests to confirm your accessibility efforts, the effort is pointless.
 
@@ -591,7 +591,7 @@ Remember that testing is an ongoing process. It stops accessibility from being l
 
 Testing is research that happens over time, not evidence of your skill. It can be frustrating to see attempts at change fail, but the serve the goal of getting better.
 
-# Laws and Guidelines
+## Laws and Guidelines
 
 Guidelines matter, but shouldn't be the only reasons for making sites accessible. If they are, consider doing something else with tech. But knowing legal issues around accessibility are helpful, since they're clear precedents of what __not__ to do.
 
@@ -626,7 +626,7 @@ If you specifically work with CMS's or anything that lets users upload and edit 
 
 These guidelines are good frameworks and starting points, but aren't a substitute for just caring about accessibility and making sites for our users. Seeing them as just "checklists" makes us more likely to do the bare minimum, which doesn't make for good websites.
 
-# In a Nutshell Recommendations
+## In a Nutshell Recommendations
 
 1. **Be Considerate.** Caring about accessibilty is the best way to integrate it into all your planning, and applying it to everything you need.
 2. **Be Flexible.** Know where you need to make compromises, have constraints, and what lines to draw. Don't just not care at all, or dumb down each part of a site for accessibility. It's fluid, just like the web itself.
@@ -634,7 +634,7 @@ These guidelines are good frameworks and starting points, but aren't a substitut
 
 Also, talk about accessibility more! Consider it a constant consideration for how we evaluate new tech.
 
-# Resource List
+## Resource List
 
 * A11y Project - Accessibility patterns, checklists, resources
 * Paciello Group - Accessibility news
@@ -643,3 +643,7 @@ Also, talk about accessibility more! Consider it a constant consideration for ho
 * [All Technology is Assisstive: Six Design Rules on 'Disability.' By Sara Hendron.](https://www.wired.com/2014/10/all-technology-is-assistive/)
 * [5 Powerful Tips And Tricks For Print Style Sheets. By Dudley Storey.](https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/)
 * [Accessibility APIs: A Key To Web Accessibility. By Léonie Watson & Chaals McCathie Nevile.](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)
+
+## Resources
+
+* [Accessibility for Everyone](https://abookapart.com/products/accessibility-for-everyone)

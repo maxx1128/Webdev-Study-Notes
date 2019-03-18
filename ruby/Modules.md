@@ -25,3 +25,7 @@ class ExampleClass
   end
 end
 ```
+
+## Resources
+
+* [Ruby for Beginners](http://ruby-for-beginners.rubymonstas.org/advanced/modules.html)

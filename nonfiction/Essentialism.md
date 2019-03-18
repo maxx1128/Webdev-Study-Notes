@@ -345,3 +345,7 @@ Don't worry about the future. If it's tough, write it down to get the thoughts o
 | Mind is spinning about the past or the future | Mind is focused on the present |
 | Thinks about what was important yesterday or tomorrow | Tunes in to what is important right now |
 | Worries about the future or stresses about the past | Enjoys the moment |
+
+## Resources
+
+* [Essentalism](https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382/ref=sr_1_1?s=books&ie=UTF8&qid=1496610494&sr=1-1&keywords=essentialism+the+disciplined+pursuit+of+less)

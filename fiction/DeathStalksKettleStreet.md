@@ -13,3 +13,7 @@
 > I realized you shouldn't need to be heard. You shouldn't need everyone to understand. It's more important to know yourself, know what you're capable of, where your limits lie, what you can do, to quit worrying and accept there's no one to prove anything to but yourself. (331)
 
 > ...just be happy with being slightly a better version of ourselves? (362)
+
+## Resources
+
+* [Death Stalks Kettle Street](https://www.amazon.com/Death-Stalks-Kettle-Street-Bowen-ebook/dp/B01N06215V)

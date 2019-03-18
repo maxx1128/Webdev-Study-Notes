@@ -20,3 +20,7 @@
 - Specify input types so mobile keyboards can choose the best layout
   * Number inputs will show keyboards that only show numbers
 - Use simpler inputs like checkboxes or radio when possible, since they're easier for small screens
+
+## Resources
+
+* [Tips for making interactive elements accessible on mobile devices](https://bitsofco.de/tips-for-making-interactive-elements-accessible-on-mobile-devices/)

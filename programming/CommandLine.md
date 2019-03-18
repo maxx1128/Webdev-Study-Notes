@@ -82,3 +82,7 @@ This is useful if trying to run something locally but it can't start since it's 
 * `kill <PID>` will kill the process with the matching PID. If this doesn't kill it, try `kill -9 <PID>` instead.
 
 > Note about terminal instances: each new window is a different instance of a shell. This means you can change something on one terminal window that won't automatically carry to others. For example, changing the active version of Ruby in one window, switching to another, and realizing that change didn't affect that window. So if you're making terminal changes in multiple windows, be aware your changes light not be in sync with each other.
+
+## Resources
+
+* [Learn Enough Command Line to be Dangerous](https://www.learnenough.com/command-line-tutorial)
