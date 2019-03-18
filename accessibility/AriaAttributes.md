@@ -2,7 +2,7 @@
 
 ARIA attributes help add extra meaning to HTML elements in case their semantic meaning isn't enough to convey meaning to users. HTML5 usually gives a good amount of meaning to basic elements, but also may not be enough.
 
-#### Descriptive ARIA
+## Descriptive ARIA
 
 * `aria-label` - Has a string. A description for the element that is read out instead of it's content. Therefore these should not be used as a supplement or "hint" that goes with the element's content, since it will wind up replacing it!
 * `aria-expanded` - Has a boolean value. Tells if a connected menu or popup is expanded or not.
@@ -15,11 +15,11 @@ ARIA attributes help add extra meaning to HTML elements in case their semantic m
 * `aria-valuemax` - Specify an element's minumum possible value
 * `aria-valuenow` - Specifiy an element's current held value
 
-#### ARIA States
+## ARIA States
 
 * `aria-disabled` - If the basic HTML `disabled` attribute doesn't work with an element (for example it would work with `button`), this has a boolean value to convey if its disabled or not.
 
-### Aria for updates
+## Aria for updates
 
 `aria-live` controls how changes to the related element will be announced to the user. Should only be used on elements that require the user's attention, such as contents in streams of content.
 
@@ -27,7 +27,7 @@ ARIA attributes help add extra meaning to HTML elements in case their semantic m
 * `aria-live="polite"` - an area will give an update during the next available time, like when a user is done typing
 * `aria-live="assertive"` - will announce updates immediately. Only use it for real important things, like errors.
 
-### Non-ARIA attributes
+## Non-ARIA attributes
 
 * `role` - Desribes the basic purpose or function of an element. This isn't needed with proper semantic HTML5 tags. For example, a `button` element doesn't need a `role="button"` attribute since that would be redundant. But if there's no semantic tag for an element, adding a `role` attribute will help convey its meaning.
 * `title` - Gives an element a basic "label" which is heard by screen readers and appears in a tooltip on hover. _Due to inconsistent and unreliable screen reader interpretation and support, it is best avoided._ It's more reliable to use extra text (possibly hidden except for screen readers) or `aria-label`.

@@ -1,6 +1,6 @@
 # Design Rules of Thumb
 
-### Never forget C-R-A-P!
+## Never forget C-R-A-P!
 
 * **Contrast**
     - Don't go halfway with contrast. Either make elements very similar or very different to make their relationships clear.
@@ -12,18 +12,21 @@
 * **Proximity**
     - Similar with contrast, don't go halfway. Put elements close or far awy to establish their relationship.
 
-### Hierarchy
+## Hierarchy
+
 * Combine different font sizes and colors to establish a hierarchy of importance.
     - Important text is larger, bolder, and darker
     - Secondary text is smaller, thinner, and lighter
     - Aim for 2-3 different shades of gray that still contrast well against the background
     - Aim for 2 font weights, a normal and heavy one (not lower than 400!)
 
-### Typography
+## Typography
+
 * Rounded fonts pair well with rounded shapes, and squared
 * Always letter-space your uppercase text.
 
-### Colors
+## Colors
+
 * Find colors that match the same descriptors that you would give your typeface and your overall brand.
 * Think of colors in terms of Hue, Saturation, and Brightness. This makes it easier to adjust them.
     - Use base colors as a starting point, and adjust the hue for a more suitable tone.
@@ -39,7 +42,7 @@
 
 Need to find good colors? Try [Dribble's Color Search](https://dribbble.com/colors/) or [The New Defaults](https://dudleystorey.github.io/thenewdefaults/).
 
-### Borders/Shadows
+## Borders/Shadows
 
 * Borders/Shadows too close in luminosity (converted to grays of respective lightness) to their containers appear too strong. So a shadow with the same luminosity as a colored container will be too strong and look bad.
 * The less luminous a container color is, the darker a shadow or border must be
@@ -48,7 +51,7 @@ Need to find good colors? Try [Dribble's Color Search](https://dribbble.com/colo
 * Don't rely too much on borders to create contrast or space, as they can quickly feel cluttered. More often aim for box shadows, different background colors, or extra spacing.
 * Accent borders are an easy way to add visual flair, for components or entire layouts.
 
-### Icons
+## Icons
 
 * Try to "draw icons with the same pen," or have typography styles mirrored by the fonts
     - Sharp-cornered fonts shouldn't use icons with rounded edges

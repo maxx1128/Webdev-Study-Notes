@@ -1,13 +1,13 @@
 # The Gentle Art of Verbal Self-Defense
 
-### Principles
+## Principles
 
 1. Know when you're under attack
 2. Know the type of attack
 3. Know the right defense
 4. Follow through with defense
 
-### Common Speaking Patterns (Satir Modes)
+## Common Speaking Patterns (Satir Modes)
 
 * Placater - afraid of angering others
 * Blamer - Thinks others are indifferent to them, and tries to assert dominance/express anger
@@ -18,7 +18,7 @@
 
 Recognizing verbal violence = Seeing the presuppositions, or hidden/implied meaning in a statement.
 
-### Basic defense strategy
+## Basic defense strategy
 
 1. ID their Satir mode
 2. ID the presuppositions (PSP)
@@ -28,9 +28,9 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
 
 - When responding to a PSP, do so by asking about the general idea around it (computer more), or a "when the person felt this way" (later on). Don't admit to it or make it personal.
 
-### Overview of Common Attacks
+## Overview of Common Attacks
 
-#### "If you _really_ X, you wouldn't Y"
+### "If you _really_ X, you wouldn't Y"
 
 * PSPs -> You don't X
 * Y is the bait, X is the PSP. *Only respond to X!*
@@ -41,7 +41,7 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
     - Response 2: "When did you start feeling I didn't love you?" (Leveller, also not it only addresses X, not Y)
 * Attacker is Blamer Mode
 
-#### "If you _really_ X, you wouldn't want to Y"
+### "If you _really_ X, you wouldn't want to Y"
 
 * PSPs -> You don't X, and you can't control your feelings
      * Only address the first PSP in X
@@ -50,7 +50,7 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
 * Other bait is to blame others for this, don't take it.
 * Attacker is Blamer Mode
 
-#### "Do you even _care_ about X?"
+### "Do you even _care_ about X?"
 
 * PSPs -> You don't care about X, you should care about X, and you should feel bad
 * Crude response to first PSP is **No, why?**
@@ -67,7 +67,7 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
   * E.g. "Are you talking about the recent report on global poverty from X publication or Y university?"
 * Attacker is Blamer Mode
 
-#### "Even an _X_ should be able to Y"
+### "Even an _X_ should be able to Y"
 
 * PSPs -> Something is wrong with being an X, Y is common knowledge that you don't have but X does, and you should feel bad
   * Y is the bait again, do not respond to it. Only respond to X
@@ -76,7 +76,7 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
 * Aggressive counter: "Typical idea from an X in your situation"
   * Be very wary of this, is going beyond self-defense and invites more retaliation
 
-#### "_Everyone_ knows why (you) X"
+### "_Everyone_ knows why (you) X"
 
 * PSPs -> Something is wrong with you, this "wrong" is well-known, it's so wrong but everyone will forgive you, be grateful to use and ashamed of yourself
   * **Big trap:** Confess to the secret, gives attacker ammunition for later. This attack prays on the fact most people have at least one dirty secret and the victim will fill in the gap.
@@ -86,7 +86,7 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
   * If the attacker tries to be more specific and change the attack later, claim it was a "misunderstanding" and keep control of the conversation
 * Sounds like Leveler, is attacker is really Computer/Blamer
 
-#### "A person who _really_ X wouldn't Y"
+### "A person who _really_ X wouldn't Y"
 
 * PSPs -> You don't X, others do
 * Attacker is Computer Mode. **Don't take the bait and take it personally with your response!**
@@ -97,7 +97,7 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
   * Follow whatever their reasoning is without making it personal
   * Don't change any previous set stances of yours, as this would acknowledge you took it personally
 
-#### "Why don't you _ever_ X?"
+### "Why don't you _ever_ X?"
 * Can also be phrased as **"Why do you _always_ X?"**
 * PSPs -> You don't want X, and choose not to even though you can
 * **Do not make it personal and show hurt feelings, or try giving contradictory examples!** Will lead to a long, heavy fight with these examples being dismissed and such.
@@ -109,7 +109,7 @@ Recognizing verbal violence = Seeing the presuppositions, or hidden/implied mean
 * Attacker is Blamer Mode. Often an attack by those close to you, hit very sensitive spots. Harder to stay in Computer mode, but must still do so.
   * If this attack happens frequently, is a sign of a larger problem with that person or your relationship with them.
 
-#### "_Some_ X's would Y if/when Z"
+### "_Some_ X's would Y if/when Z"
 * PSPs -> It's wrong that you're Z, despite you being/doing Z I'm not going to Y in response since I'm better than other X's, be ashamed of yourself and grateful to me.
   * Is a tough attack due to all the PSPs, can be tougher to identify.
   * E.g. "Some teachers would be mad at students being late to class"

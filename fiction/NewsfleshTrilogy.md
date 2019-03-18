@@ -1,13 +1,13 @@
 # The NewsFlesh Trilogy
 
-# Fear and Control
+## Fear and Control
 
 One of the trilogy's major themes is fear, specifically with:
 
 * How prevalent it's become after the Rising
 * How it's a key part of controlling others
 
-## Chronic Fear
+### Chronic Fear
 
 While small to normal amounts of fear are still healthy, after the Rising fear has become so commonplace that it's often described as a kind of chronic illness infecting the population. Even in a world that's genuinely more scary after the Rising, it still doesn't justify the excessive fear people feel.
 
@@ -23,7 +23,7 @@ Chronic fear even has damaging effects beyond the individual, in society. Fear p
 
 > There will always be people for whom hate is easier when it's not backed up by anything but fear. And I will always do my best to hoist them by their own petards. (Feed, 134)
 
-## Fear to Control
+### Fear to Control
 
 Another major theme of fear of how it's often a crucial tool for those in power to control the masses. It's a simple yet effective method - the more fear you can instill in an enemy, the more power you can claim in the name of protecting people from that enemy. This can be very effective when there's already an enemy those in power can simply exaggerate fears of, whether it's terrorism or zombies, since the shades of truth make it harder to notice or criticize.
 
@@ -39,7 +39,7 @@ This is bad, since those in power have a responsibility to provide protection to
 
 This is a key relationship between the two themes of fear: "chronic fear" and "fear to control" can easily fuel each other, damaging our civil liberties and very society in the long run. It all drives home a warning that humans should fear being too afraid, since that's where the real horror is.
 
-# Truth
+## Truth
 
 The main theme around truth is simple - the truth hurts, but ultimately it's better than being lied to. Seek out truth, because even if it's painful and seems to be hidden for good reason, in the long-run it helps everyone.
 
@@ -61,7 +61,7 @@ A major example is Sean's struggle to accept Georgia's death. This truth is horr
 
 > One man's gospel truth is another man's blasphemous lie. The dangerous thing about people is the way we'll try to kill anyone whose truth doesn't agree with ours. (Blackout, 394)
 
-# Normal is Bullshit
+## Normal is Bullshit
 
 A minor theme is the idea of "normal" not being real. Too often it's a status quo that paralyzes us, or an illusion that keeps us in one place. Either way, clinging to ideas of "normal" blocks progress, so we should be willing to throw out what we're comfortable with and reassess our worlds. To live life in the "now," instead of the "then." But humans resist it since it puts a greater strain on our minds, so it's a reflex to overcome.
 
@@ -72,7 +72,4 @@ The characters' definitions of "normal" constantly change through the story as t
 > There is a time when even reasonable men must begin to take unreasonable actions. To do anything else is to be less than human. (Deadline, 292)
 
 ## Resources
-    [NewsFlesh Trilogy
-    author: Mira Grant
-    (https://www.amazon.com/gp/bookseries/B00CKBW9DS/kindle/ref=sr_bookseries_null_B00CKBW9DS
-    publisher: Orbit
+  * [NewsFlesh Trilogy](https://www.amazon.com/gp/bookseries/B00CKBW9DS/kindle/ref=sr_bookseries_null_B00CKBW9DS)

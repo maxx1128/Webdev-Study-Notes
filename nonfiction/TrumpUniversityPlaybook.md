@@ -1,6 +1,6 @@
 # Trump University Playbook
 
-### A Note Before Reading
+## A Note Before Reading
 
 You may wonder why I added the Trump University Sales Playbook to my notes repo. Seems totally out of place, and a poor choice of reading. But know I did have my reasons.
 

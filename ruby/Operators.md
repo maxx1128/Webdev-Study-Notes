@@ -1,6 +1,6 @@
 # Operators
 
-### If, Else, While
+## If, Else, While
 
 * The `if` statement works as you'd expect, looking for a value it'll see as `true`. If you need the opposite effect, use the `unless` statement instead. Shorter and easier to understand.
     - The `while` statement has a similar counterpoint with the `until` statement.
@@ -23,7 +23,7 @@ If you need a simple "if, else" statement for something, use the ternary operato
 greeting = name ? "Hello #{name}" : "What's your name?"
 ```
 
-### Case Statements
+## Case Statements
 
 Case statements are good for more complex code reliant on, or assigning, a range of different values. These lines can also be collap
 

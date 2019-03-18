@@ -2,7 +2,7 @@
 
 > A program is a building of thought. It is costless to build, it is weightless, and it grows easily under our typing hands.
 
-### Exercise: FizzBuzz
+## Exercise: FizzBuzz
 
 An exercise the book mentions is one that is often used in coding interviews, so is useful to solve:
 

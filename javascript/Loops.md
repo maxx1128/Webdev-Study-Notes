@@ -28,7 +28,7 @@ do {
 
 > Make sure the conditions in a While/Do loop resolve! If they continue infinitely they will crash your program.
 
-#### For Loops
+## For Loops
 
 For Loops do the same basic functions as While/Do loops, but give you more control over the iterations. You must set:
 

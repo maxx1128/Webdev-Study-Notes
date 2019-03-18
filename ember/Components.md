@@ -19,7 +19,7 @@ export default Component.extend({
 
 Like controllers, you can also define other calculated properties, such as ones with variables specific to the component.
 
-### Class Name Bindings
+## Class Name Bindings
 
 Normal class name bindings can link a class to a parameter. If you want to link multiple classes to a state in this way, you'll need to use it with a computed property.
 

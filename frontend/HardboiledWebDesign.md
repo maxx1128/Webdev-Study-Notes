@@ -1,13 +1,15 @@
 # Hardboiled Web Design
 
-### Progressive Enhancement
+## Progressive Enhancement
+
 * Build for least capable devices first, and enhance only for those with more capabilities.
 * Wide support first, new support sparingly
 * Use prefixes when needed so new technologies don't go to waste
 * It's **okay** for designs to be *different* on different browsers
 * [Modernizr](https://modernizr.com/) is a major tool for this.
 
-### 3 Elements of Design Atmosphere
+## 3 Elements of Design Atmosphere
+
 * Design Atmosphere is preserved on all different screen sizes and across most, if not all, components
 * Should balance personality with readability
 * Make sure to define your brand personality first, as they greatly influence the Design Atmosphere
@@ -38,13 +40,15 @@
         * Backgrounds
         * Images
 
-### Circles of Confusion
+## Circles of Confusion
+
 * Helps determine how important some elements are to a site's design and how to handle different experiences. The key is to *maintain a core experience, not a pixel-perfect one.*
 * **Innermost Ring** - Must always be consistent
 * **Middle Ring** - Important but not vital. Have backup styles that may differ in experience slightly
 * **Outer Ring** - Non-vital elements we don't need backups for and can degrade gracefully. No serious backups needed, if at all.
 
-### Pattern Library Tips
+## Pattern Library Tips
+
 * Be as simple as possible
 * Avoid unneeded elements and frameworks unless they're absolutely needed
 * Focus more on Design Atmosphere

@@ -2,11 +2,11 @@
 
 Keyboard shortcuts for efficient Visual Studio Code use
 
-### General Operations
+## General Operations
 
 * `Cmnd Shft R` - Bring up the command palette. You can search all possible tasks, and see any keyboard shortcuts for said tasks too
 
-### Sidebar
+## Sidebar
 
 * `Cmnd Shft F` - Search all project folders
 
@@ -19,7 +19,7 @@ Keyboard shortcuts for efficient Visual Studio Code use
 
 * ``Cntrl ` ``, `Cmnd J` - Toggle visibility of integrated terminal
 
-### Navigating Files
+## Navigating Files
 
 * `Cmnd P` - Search for file by file name in entire repository. Can include file path, and the line in the file by adding `:<line_number>` at the end
 * `Cmnd G` - Go to a specific line in a file
@@ -36,7 +36,7 @@ Keyboard shortcuts for efficient Visual Studio Code use
 
 * `Fn <up>/<down>` - Go all the way up or down the visible page. Repeat this to move around more of the file.
 
-### Managing Text
+## Managing Text
 
 - `Cmnd I` - Select all of current line
 

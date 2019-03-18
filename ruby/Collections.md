@@ -2,7 +2,7 @@
 
 Ruby collections refer to arrays or hashes, two ways to store "collections" of data. Arrays are simple lists, and hashes are lists of key-value pairings.
 
-### Making Quick Collections
+## Making Quick Collections
 
 There's several syntaxes for quickly making collections without getting bogged down in detail.
 
@@ -20,7 +20,7 @@ hash = { "one" => 1, "two" => 2, "three" => test_var, 777 => false }
 another_hash = {name: "Maxwell", editor: "Visual Studio Code", lucky_number: 33}
 ```
 
-### Collections and Methods
+## Collections and Methods
 
 Class methods can easily add or remove collection items. This is made easier using **a parameter with a star in front of it.** This is similar to a JavaScript spread operator, in that it takes all the different values and collects them into an array.
 
@@ -73,7 +73,7 @@ anchovy_pizza.check_oven
 # {:temperature=>300, :time=>20, :instructions=>"cook until ready"}
 ```
 
-### Looping Through Collections
+## Looping Through Collections
 
 Use `each` instead of `for`, since `for` basically calls the `each` method itself, creating an avoidable inefficiency.
 
@@ -106,9 +106,9 @@ hash.each { |key, value| puts "#{key}: #{value}" }
 # foo: bar
 ```
 
-### Useful Collection Methods
+## Useful Collection Methods
 
-#### sort
+### sort
 
 `sort` rearranges an array based on item values. It takes the value of numbers, and uses the length of a string for those values, and arranges them in ascending order. You can add `reverse` onto these to quickly go into descending order.
 
@@ -127,7 +127,7 @@ print fruits.sort_by { |fruit| fruit.length }
 # ["pineapple", "orange", "grape"]
 ```
 
-#### index
+### index
 
 Loops through an array, and returns the index of the first object that it's true for. Can either directly look for a value, or take a block statement for more complex checking.
 
@@ -141,7 +141,7 @@ puts array.index { |item| item > 33 } # 1
 
 You can use `rindex` for the same check, but starting from the end of the array instead.
 
-#### map
+### map
 
 Similar to JavaScript, `map` takes an array, performs a function or operation on each item, and returns a new array.
 
@@ -153,7 +153,7 @@ print big_numbers
 # [4, 8, 12, 16]
 ```
 
-#### inject
+### inject
 
 `inject` is like a normal array, but with a few differences:
 
@@ -175,7 +175,7 @@ puts total
 # 20
 ```
 
-#### push, delete, pop, shift
+### push, delete, pop, shift
 
 These four methods change the array they're called on in some way. Note these change the variable themselves, instead of limiting the change to a new variable. Use them with caution!
 
@@ -184,7 +184,7 @@ These four methods change the array they're called on in some way. Note these ch
 * `pop` removes the last element of an array, and returns the removed element. It can take a numerical argument, such as `pop(2)`, to remove multiple items at an array's end.
 * `shift` does the same as `pop`, but starting from the start of the array.
 
-##### Bang Operators
+#### Bang Operators
 
 The above four methods (and likely several others) natively can change the same variable they call. Other methods, such as `sort` or `reverse`, don't ever change the actual array they're called on. Use them on an array and call it again, and it will be the same.
 

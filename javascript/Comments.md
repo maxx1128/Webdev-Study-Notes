@@ -13,6 +13,4 @@ Code should aim to be self-explanatory, but that's not always possible. Comments
 
 ## Resources
 
-## Resources
-
 * [Eloquent JavaScript](http://eloquentjavascript.net/)

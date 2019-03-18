@@ -17,7 +17,7 @@ Therefore:
 * It should be very clear what is clickable.
 * Try and avoid “noise”.
 
-### Mindless choices are good
+## Mindless choices are good
 
 In the sense that people don’t mind clicking more, if they are confident that they’re clicking on the right thing, and the choice was easy.
 Writing for the web
@@ -28,7 +28,7 @@ Get rid of half the words, then get rid of half of what’s left.
 
 Instructions are often useless - it’s far, far better to make things self-evident.
 
-### Navigation
+## Navigation
 
 Design for both browsers, who click around to find what they want, and searchers, who go immediately for the search box.
 
@@ -50,7 +50,7 @@ Sections can also be called the “primary navigation” and are links to the ma
 
 Utilities are useful things that should be readily available, yet are not part of the hierarchy. They shouldn’t be as prominent as the sections.
 
-### Page names
+## Page names
 
 * Every page should have a name, and it should be in the right place: framing the page’s content.
 * The name should be prominent, as well as matching what you click to get there!
@@ -68,7 +68,7 @@ Tabs are a great means of doing navigation because they’re very obvious, impos
 * Where am I in relation to the rest of the site?
 * Where can I go to search?
 
-### Home page
+## Home page
 
 The home page is tough, because everyone tries to pull it in a different direction. It must accomplish/contain the following:
 
@@ -95,7 +95,7 @@ Web design arguments are often a waste of time
 
 Avoid useless debate between team members. Rather than debate what “most people like”, look at what works for your site, andtest it.
 
-### Simple, cheap usability testing
+## Simple, cheap usability testing
 
 Testing doesn’t have to be perfect, because any testing is far better than no testing. The earlier testing occurs, the better. Testing is an ongoing process - keep doing it as your site evolves. Cheaper tests are better, because they are more likely to happen at all, and happen more often.
 
@@ -114,11 +114,11 @@ Tests should consist of several parts:
 
 Once you’re done, review the results immediately - try and determine what the problems were, and how to go about fixing them. Ignore problems where the user had a little problem but then found the right way. Being unclear on the overall concept, not finding the works they seek, and being overwhelmed by too much information are common problems. If you fix something, make sure it doesn’t break other aspects of the site.
 
-### Usability - comment courtesy
+## Usability - comment courtesy
 
 Depending on their mood in any given moment, most people have a “reservoir of goodwill”. Each problem they encounter on a web site drains it (and when things work well, maybe it gets added to). When they hit their limit, they’re likely to leave your site unless they absolutely must use it.
 
-#### “Don’ts”
+### “Don’ts”
 
 * Don’t hide information users want.
 * Don’t require the user to adhere to the site’s dictats (phone numbers should be ok with our without dashes, dots or whatever).
@@ -127,7 +127,7 @@ Depending on their mood in any given moment, most people have a “reservoir of 
 * Don’t get in the way of using the site with fancy features.
 * Don’t make an amateurish looking site.
 
-#### “Do’s”
+### “Do’s”
 
 * Make the things people want easy to do, and obvious.
 * Tell people what they want to know.
@@ -138,7 +138,7 @@ Depending on their mood in any given moment, most people have a “reservoir of 
 * Make it easy to back up and try again in case of user errors.
 * Apologize, if the site simply doesn’t do something a user wants.
 
-### Accessibility
+## Accessibility
 
 By ”accessibility”, we mean making it so that, for example, a visually impaired person using a screen reader will be able to navigate and utilize your site. You should make your site accessible, because of “how extraordinarly better it makes some people’s lives”. One very simple test is to view the site with a greatly increased font size, and see if it still looks ok.
 

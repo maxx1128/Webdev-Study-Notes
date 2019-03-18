@@ -2,7 +2,7 @@
 
 Command line, the backbone of all front-end coding.
 
-### Pipes
+## Pipes
 
 Pipes are used to direct the output of one command into another.
 

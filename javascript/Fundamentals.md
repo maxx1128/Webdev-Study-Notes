@@ -1,6 +1,6 @@
 # Fundamentals
 
-### Scopes
+## Scopes
 
 Scope refers to the specific area a code of JavaScript has "access" to. If two sections of JS code are in the same scope, then they can access each other - different scope means they can't.
 
@@ -24,7 +24,7 @@ console.log(myName); // "Crystal Soul-Eater"
 
 If we used `let` instead of `var`, the second declaration would be block-scoped and not overwrite the global one. The `console.log` would then return `"Earl"`.
 
-### Call Stack
+## Call Stack
 
 The call ctack is the basic data structure JavaScript uses to execute, or call, a code's functions. Whenever JavaScript code is executed (or called), the call stack controls the method and order behind this execution. That's why understanding the call stack is essential to see how JavaScript runs, since not understanding it can lead to unexpected errors or code called in the wrong order.
 
@@ -34,7 +34,7 @@ Some key traits of the call stack:
 * **The call stack is Last In, First Out.** Function calls are added to the top of a "pile," and whatever's on top of the pile is always called before what's below it can be called next. It's similar to stacking dishes - the last one you put on the pile is the first one you use later on.
 * **A stack overflow is when the call stack limit is exceeded.** Recursive functions (functions that call themselves) can trigger a stack overflow when there's no end coded into it. Whatever's running this code will ultimately crash.
 
-### Closure
+## Closure
 
 Closure relates to when variables are declared within certain scopes. When calling a function, any variables it has are created, do their business, and are destroyed afterwards. If you call the function again, it recreates the variables in its scope all over again - all changes and operations from before are forgotten, they're redone, and then destroyed again.
 
@@ -62,7 +62,7 @@ Every time it's called, it remembers the increased value of `number` from before
 
 Understanding closure, like many things on this page, is important for avoiding accidental bugs and taking advantage of what JavaScript can do. Closure lets you keep track of if your functions can be used for longer, more complex operations without losing track of what they'll actually do.
 
-### Recursion
+## Recursion
 
 Recursions are functions that call themselves. They can be helpful since they can keep code dry, since you only write code once but can execute it as many times as needed. However recursive functions that have no end will cause a stack overflow (see Call Stack), so be sure they're used properly.
 
@@ -106,7 +106,7 @@ factorial(5) = 5 * 4 * 3 * 2 * 1 * 0 * -1 * -2 * factorial(-3)
 Even though the result would have to be `0` since the result is being multipled by zero, the important thing is nothing's telling this function to stop calling itself. It will keep doing so until something in the code tells it through, and since nothing will, it simply goes into it creates a stack overflow.
 
 
-### Variable Hoisting
+## Variable Hoisting
 
 `var` declarations and value assignments can be placed anywhere on a page. However, the variable declarations are "hoisted" automatically to the top of the page. This means that any `var` doesn't necessarily need to be declared, since it will be declared when it's hoisted. A computer reading this:
 
@@ -125,7 +125,7 @@ This is why the first code sample, although it looks invalid, actually becomes v
 
 Avoiding this is easier with ES6, since the new variable declarations `let` and `const` **are not hoisted.**
 
-### Double vs Triple Equal Signs
+## Double vs Triple Equal Signs
 
 `===` comparisons looks for **strict equality,** meaning it looks for matching "type" and "value".
 
@@ -139,16 +139,15 @@ Avoiding this is easier with ES6, since the new variable declarations `let` and 
 
 This distinction is important since loose equality can lead to unexpected bugs related to conditions returning true when they may need to be false. It's better practice to always use `===` for comparisons.
 
-### Primitive Types
+## Primitive Types
 
-### Expression VS Statement
+## Expression VS Statement
 
-### Immediately-Invoked Function Expressions
+## Immediately-Invoked Function Expressions
 
-### Value and Reference Types
+## Value and Reference Types
 
-### this
-
+## this
 
 ## Resources
 
