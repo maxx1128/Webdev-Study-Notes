@@ -1,0 +1,3 @@
+# JavaScript
+
+Stuff about Ember!
