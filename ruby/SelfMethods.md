@@ -1,10 +1,4 @@
----
-group: ruby
-layout: post
-
-title: Self Methods
-descr: Methods to call directly from classes, just in case
----
+# Self Methods
 
 Ruby classes allow you to define methods as `self`, such as `self.method`. These are methods that can be called from the class directly, not on different instances of the class.
 

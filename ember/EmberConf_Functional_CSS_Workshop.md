@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Writing Functional CSS for Ember Applications
-descr: Notes from an EmberConf 2018 Workshop
----
+# Writing Functional CSS for Ember Applications
 
 ### Functional CSS - Utility-first CSS
 

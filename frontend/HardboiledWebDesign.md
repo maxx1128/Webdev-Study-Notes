@@ -1,16 +1,4 @@
----
-group: frontend
-layout: post
-
-title: Hardboiled Web Design
-descr: Design and front-end development for the hardboiled coders
-
-resources:
-  - title: Hardboiled Web Design
-    author: Andy Clarke
-    link: https://stuffandnonsense.co.uk/buy/hardboiledwebdesign
-    publisher: Smashing Magazine
----
+# Hardboiled Web Design
 
 ### Progressive Enhancement
 * Build for least capable devices first, and enhance only for those with more capabilities.

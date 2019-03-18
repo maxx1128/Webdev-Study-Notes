@@ -1,16 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Eloquent JavaScript
-descr: Notes or exercises specific to the Eloquent JavaScript book
-
-resources:
-  - title: Eloquent JavaScript
-    author: Marijn Haverbeke
-    link: http://eloquentjavascript.net/
-    publisher: No Starch Press
----
+# Eloquent JavaScript
 
 > A program is a building of thought. It is costless to build, it is weightless, and it grows easily under our typing hands.
 

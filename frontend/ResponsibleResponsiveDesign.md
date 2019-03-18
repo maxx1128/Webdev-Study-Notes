@@ -1,16 +1,4 @@
----
-group: frontend
-layout: post
-
-title: Responsible Responsive Design
-descr: Keeping responsive front-end that's usable and sustainable for users
-
-resources:
-  - title: Responsible Responsive Design
-    author: Scott Jehl
-    link: https://abookapart.com/products/responsible-responsive-design
-    publisher: A Book Apart
----
+# Responsible Responsive Design
 
 ## Intro
 

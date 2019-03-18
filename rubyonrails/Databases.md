@@ -1,11 +1,4 @@
----
-group: rubyonrails
-layout: post
-
-incomplete: true
-title: Databases
-descr: Using and managing your SQL database in rails
----
+# Databases
 
 * Seeding - Can use ruby logic to speed up the seeding process and make it simpler
 

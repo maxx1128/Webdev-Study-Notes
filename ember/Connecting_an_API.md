@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Connecting an API
-descr: Ways to connect your Ember app to an API
----
+# Connecting an API
 
 * **Adapter** - Used to translate the endpoint locations of an API
 * **Serializer** - Used to translate the content of an API. The recommended default is the JSONAPI Serializer

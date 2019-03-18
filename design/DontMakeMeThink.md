@@ -1,16 +1,4 @@
----
-group: design
-layout: post
-
-title: Don't Make Me Think
-descr: Steve Krug's well-known book on usable web interfaces
-
-resources:
-  - title: Don't Make Me Think
-    author: Steve Krug
-    link: https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515
-    publisher: New Riders
----
+# Don't Make Me Think
 
 Things that make you think add to your brain’s workload. It might not be much, but these things add up, so every bit of clarity that can be added is welcome. Nobody likes feeling like they’re not sure what to do.
 

@@ -1,20 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Closure
-descr: How JavaScript saves secret variables in functions
-
-resources:
-  - title: Closures
-    author: Mozilla
-    link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
-    publisher: Mozilla
-  - title: JavaScript Scopes and Closures
-    author: Zell Liew
-    link: https://css-tricks.com/javascript-scope-closures/
-    publisher: CSS Tricks
----
+# Closures
 
 Imagine you have a function which also has a function inside of it.
 

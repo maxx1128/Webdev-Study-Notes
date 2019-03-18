@@ -1,10 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Spread Operator
-descr: How the spread operator lets you read over lists of values with less effort
----
+# Spread Operator
 
 The spread operator is represented by three dots, such as `...`. Its basic use is to read over lists of values or properties, such as for objects and arrays. This translates into two basic uses:
 

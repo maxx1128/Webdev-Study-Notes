@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Helpers
-descr: Using built-in and custom Ember helpers to save time
----
+# Helpers
 
 Basic `{{if}}` helper evaluates the variable/expression inside it and returns based on if it's true or false. A basic example is:
 

@@ -1,12 +1,6 @@
----
-group: ruby
-layout: post
+# Variable Scope
 
-title: Variable Scope
-descr: The different Ruby scopes and how to access them, mostly to control what's in the global scope
----
-
-## Global
+The different Ruby scopes and how to access them, mostly to control what's in the global scope.
 
 Global variables, available everywhere. Can be defined in classes and still be global, but must have `$` prepended
 

@@ -1,16 +1,4 @@
----
-group: javascript
-layout: post
-
-title: String Methods
-descr: Useful ways to manage and manipulate strings
-
-resources:
-  - title: JavaScript String Methods
-    author: Chris Coyier
-    link: https://codepen.io/chriscoyier/post/javascript-string-methods
-    publisher: CodePen
----
+# String Methods
 
 ## .length
 

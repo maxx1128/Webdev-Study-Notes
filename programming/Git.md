@@ -1,16 +1,6 @@
----
-group: programming
-layout: post
+# Git
 
-title: Git
-descr: Using one of the most popular version control systems
-
-resources:
-  - title: Learn Enough Git to be Dangerous
-    author: Michael Hartl
-    link: https://www.learnenough.com/git-tutorial
-    publisher: LearnEnough.org
----
+Using one of the most popular version control systems.
 
 ## Commands
 

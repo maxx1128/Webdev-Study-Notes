@@ -1,20 +1,4 @@
----
-group: accessibility
-layout: post
-
-title: ARIA and Other Attributes
-descr: Different aria labels and their uses in web accessibility
-
-resources:
-    - title: Uncanny A11y
-      author: Adrian Roselli
-      link: http://adrianroselli.com/2019/02/uncanny-a11y.html
-      publisher: AdrianRoselli.com
-    - title: Title attribute
-      author: Mozilla
-      link: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title#Accessibility_concerns
-      publisher: Mozilla
----
+# ARIA and Other Attributes
 
 ARIA attributes help add extra meaning to HTML elements in case their semantic meaning isn't enough to convey meaning to users. HTML5 usually gives a good amount of meaning to basic elements, but also may not be enough.
 

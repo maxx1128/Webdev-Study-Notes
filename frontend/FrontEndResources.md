@@ -1,10 +1,4 @@
----
-group: frontend
-layout: post
-
-title: Front-end Resources
-descr: Front-end is always fun, but there's tons to learn. Here's some big links to cover even more.
----
+# Front-end Resources
 
 ### General
 

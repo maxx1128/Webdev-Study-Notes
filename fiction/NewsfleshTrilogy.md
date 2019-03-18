@@ -1,16 +1,4 @@
----
-group: fiction
-layout: post
-
-title: The NewsFlesh Trilogy
-descr: Two journalists, a presidential campaign, political powerplay and conspiracies, and the zombie apocalypse
-
-resources:
-  - title: NewsFlesh Trilogy
-    author: Mira Grant
-    link: https://www.amazon.com/gp/bookseries/B00CKBW9DS/kindle/ref=sr_bookseries_null_B00CKBW9DS
-    publisher: Orbit
----
+# The NewsFlesh Trilogy
 
 # Fear and Control
 

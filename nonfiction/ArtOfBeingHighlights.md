@@ -1,17 +1,4 @@
----
-group: nonfiction
-layout: post
-
-incomplete: true
-title: The Art of Being
-descr: Notes and quotes from Erich Fromm's (awesome) book on psychology and humanism
-
-resources:
-  - title: The Art of Being
-    author: Eric Fromm
-    link: https://www.amazon.com/Art-Being-Erich-Fromm-1994-09-01/dp/B01NGZRGXZ/ref=sr_1_2?s=books
-    publisher: Bloomsbury Academic
----
+# Art of Being
 
 the awareness, realization, development, etc., of one’s self almost always mean something other than the enhancement of one’s own subjective powers.
 

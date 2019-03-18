@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Ember Resources
-descr: Large resources for learning more about Ember
----
+# Ember Resources
 
 * [Ember Observer](https://emberobserver.com/) - A categorized list of useful ember plugins
 

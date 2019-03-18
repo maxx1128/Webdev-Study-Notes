@@ -1,10 +1,6 @@
----
-group: softskills
-layout: post
+# Sleeping
 
-title: Sleeping
-descr: Rest ain't laziness when it keeps you awake on the job
----
+Rest ain't laziness when it keeps you awake on the job
 
 ### Prioritize Sleep
 

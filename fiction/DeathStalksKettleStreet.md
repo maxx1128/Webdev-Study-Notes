@@ -1,17 +1,4 @@
----
-group: fiction
-layout: post
-
-incomplete: true
-title: Death Stalks Kettle Street
-descr: Two citizens with different mental and physical struggles try to unravel several local deaths
-
-resources:
-  - title: Death Stalks Kettle Street
-    author: John Bowen
-    link: https://www.amazon.com/Death-Stalks-Kettle-Street-Bowen-ebook/dp/B01N06215V
-    publisher: John Bowen
----
+# Death Stalks Kettle Street
 
 > That was the problem with trying to explain how bad the feelings were, you had to believe the person you were telling had enough empathy to be able to understand (102)
 

@@ -1,16 +1,4 @@
----
-group: ruby
-layout: post
-
-title: Operators
-descr: Controlling the Flow of Logic
-
-resources:
-  - title: Eloquent Ruby
-    author: Russ Olsen
-    link: https://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104
-    publisher: Addison-Wesley Professional
----
+# Operators
 
 ### If, Else, While
 

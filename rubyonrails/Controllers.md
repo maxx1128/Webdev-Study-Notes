@@ -1,11 +1,4 @@
----
-group: rubyonrails
-layout: post
-
-incomplete: true
-title: Controllers
-descr: What Rails controllers are and how to use them right
----
+# Controllers
 
 Keep as simple and stupid as possible with the goal of pulling any needed data and the correct template.
 

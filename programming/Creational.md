@@ -1,16 +1,6 @@
----
-group: programming
-layout: post
+# Creational Patterns
 
-title: Creational Patterns
-descr: Patterns to create code objects independent of the application
-
-resources:
-  - title: Design Patterns, Elements of Reusable Object-Oriented Software
-    author: John Vlissides, Richard Helm, Ralph Johnson, Erich Gamma
-    link: https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_2?s=books&ie=UTF8&qid=1535832017&sr=1-2&keywords=design+patterns+elements+of+reusable+object-oriented+software
-    publisher: Addison-Wesley Professional
----
+Patterns to create code objects independent of the application
 
 Creational patterns help separate how objects are created from the rest of the system, so both systems are independent. Class information, including how they're created and composed, are all kept separate.
 

@@ -1,20 +1,4 @@
----
-group: CSS
-layout: post
-
-title: Custom Properties
-descr: An overview of CSS Custom Properties and tips for using them
-
-resources:
-  - title: A Strategy Guide To CSS Custom Properties
-    author: Michael Riethmuller
-    link: https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/
-    publisher: Smashing Magazine
-  - title: It's Time To Start Using CSS Custom Properties
-    author: Serg Hospodarets
-    link: https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
-    publisher: Smashing Magazine
----
+# Custom Properties
 
 CSS Custom Properties are basically **variables you can use in normal CSS.** Unlike Sass variables, you don't need to run it through a compiler. It's part of the standard CSS.
 

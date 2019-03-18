@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Custom Events
-descr: Writing Ember events outside of the framework's built-in functions
----
+# Custom Events
 
 Several times an app may require custom JavaScript outside of Ember's typical API. Thankfully, there's a way to implement these in vanilla JS in Ember controllers (and possibly others).
 

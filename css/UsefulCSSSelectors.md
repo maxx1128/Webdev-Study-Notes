@@ -1,28 +1,4 @@
----
-group: CSS
-layout: post
-
-title: Useful CSS Selectors
-descr: CSS Selectors that solve lots of different or unusual styling problems
-
-resources:
-    - title: Using CSS Mod Queries with Range Selectors
-      author: Patrick Clancey
-      link: https://alistapart.com/article/using-css-mod-queries-with-range-selectors
-      publisher: A List Apart
-    - title: Solved with CSS! Logical Styling Based on the Number of Given Elements
-      author: Una Kravets
-      link: https://css-tricks.com/solved-with-css-logical-styling-based-on-the-number-of-given-elements/
-      publisher: CSS Tricks
-    - title: Useful :nth-child Recipes
-      author:  Chris Coyier
-      link: https://css-tricks.com/useful-nth-child-recipies/
-      publisher: CSS Tricks
-    - title: Level up your CSS selector skills
-      author:  David Gwyer
-      link: https://blog.logrocket.com/level-up-your-css-selector-skills-5d7bb45ddd37
-      publisher: LogRocket
----
+# Useful CSS Selectors
 
 This is a list of useful Sass/CSS code for selecting elements based on many different factors, like state and number of siblings.
 

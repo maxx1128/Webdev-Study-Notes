@@ -1,16 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Comments
-descr: Some tips for when you need to comment JavaScript
-
-resources:
-  - title: Eloquent JavaScript
-    author: Marijn Haverbeke
-    link: http://eloquentjavascript.net/
-    publisher: No Starch Press
----
+# Comments
 
 Code should aim to be self-explanatory, but that's not always possible. Comments can help give extra context when needed. They can either one line or multiple lines.
 

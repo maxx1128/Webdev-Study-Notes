@@ -1,12 +1,4 @@
----
-group: ember
-layout: post
-
-title: Ember Conference 2018
-descr: Notes from speakers and presentations at EmberConf 2018
----
-
-[Check for slides here later?](https://github.com/nucleartide/emberconf-2018)
+# Ember Conference 2018
 
 ## Day 1
 

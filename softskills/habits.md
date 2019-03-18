@@ -1,10 +1,4 @@
----
-group: softskills
-layout: post
-
-title: Habits
-descr: Building and controlling that habits that unconsciously shape almost half our behavior
----
+# Habits
 
 Habits have three basic parts: a cue, an action, and a reward. Repeating these three parts repeatedly makes an action ingrained in one's mind until it happens automatically. Recognizing and controlling habits means seeing these three parts in action and knowing how to handle them.
 

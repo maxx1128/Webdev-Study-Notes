@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Pods
-descr: An explaination of Pods, encapsulated sections of Ember code
----
+# Pods
 
 Pods are more encapsulated sections of Ember code that have their own controllers, routes, and even nested pods. This makes it easy to encapsulate different sections separate from the main application and reference them.
 

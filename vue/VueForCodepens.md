@@ -1,12 +1,6 @@
----
-group: vue
-layout: post
+# Vue For CodePen
 
-title: Vue For Codepens
-descr: Using Vue for smaller CodePen projects for extra JavaScript joy
----
-
-Many of my Codepens require a JS framework for handling more complex interactions and functions. Vue is a lighter, more easily configured one that fits well. These are notes on setting up Vue specifically for Pens.
+Many of my CodePen pens require a JS framework for handling more complex interactions and functions. Vue is a lighter, more easily configured one that fits well. These are notes on setting up Vue specifically for Pens.
 
 ## Setup
 

@@ -1,16 +1,4 @@
----
-group: CSS
-layout: post
-
-title: Media Queries
-descr: Different types of useful CSS media queries for responsive styling
-
-resources:
-  - title: Designing for Inclusion with Media Queries
-    author: Eric Bailey
-    link: https://noti.st/ericwbailey/QxdLmO/slides
-    publisher: Notist
----
+# Media Queries
 
 ## By Viewport Size
 

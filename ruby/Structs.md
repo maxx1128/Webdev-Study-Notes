@@ -1,10 +1,4 @@
----
-group: ruby
-layout: post
-
-title: Structs
-descr: Structs are ready-made classes great for managing chunks of info and variables
----
+# Structs
 
 Structs are functionally the same as classes, but have lots of default functionality built in to save time. They're useful if you need objects for storing and managing variables, without the full range of class features.
 

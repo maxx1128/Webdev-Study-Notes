@@ -1,10 +1,4 @@
----
-group: rubyonrails
-layout: post
-
-title: Models
-descr: What Rails models are and how they organize database data structures
----
+# Models
 
 In relational databases, there are several different types of relationships different models can have:
 

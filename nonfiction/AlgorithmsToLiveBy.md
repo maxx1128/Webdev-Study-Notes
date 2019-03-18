@@ -1,17 +1,4 @@
----
-group: nonfiction
-layout: post
-
-incomplete: true
-title: Algorithms to Live By
-descr: Lessons on life and decisions we can take away from computer science
-
-resources:
-  - title: Algorithms to Live By
-    author: Brian Christian and Tom Griffiths
-    link: https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365
-    publisher: Henry Holt and Company
----
+# Algorithms to Live By
 
 ## Optimal Stopping
 

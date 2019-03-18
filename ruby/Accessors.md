@@ -1,16 +1,4 @@
----
-group: ruby
-layout: post
-
-title: Accessors
-descr: Make class variables more accessible quick
-
-resources:
-  - title: What is an Accessor?
-    author: Rubyist
-    link: http://www.rubyist.net/~slagell/ruby/accessors.html
-    publisher: Rubyist
----
+# Accessors
 
 Accessors are ways to quickly make a class's instance variables readable or writable. Instead of having to define specific methods for seeing or editing instance variables, these make the code simpler and more readable.
 

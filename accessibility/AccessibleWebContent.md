@@ -1,16 +1,4 @@
----
-group: accessibility
-layout: post
-
-title: Accessibile Web Content
-descr: Making different types of web content accessible
-
-resources:
-    - title: Accessible Web Content
-      author: Caralyn Green
-      link: https://seesparkbox.com/foundry/writing_accessible_web_content
-      publisher: SparkBox
----
+# Accessibile Web Content
 
 These tips are for general web content, such as text, blog posts, multimedia, and other general content. This is not advice for specific patterns like navigation and article lists. This is to make sure the actual content of each page is accessible for a range of preferences, environments, and disabilities.
 

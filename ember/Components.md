@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Components
-descr: Common and useful controller properties and tricks
----
+# Components
 
 The controllers have a few common, helpful properties.
 

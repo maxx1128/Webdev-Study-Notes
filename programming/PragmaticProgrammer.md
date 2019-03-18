@@ -1,17 +1,6 @@
----
-group: programming
-layout: post
+# The Pragmatic Programmer
 
-incomplete: true
-title: The Pragmatic Programmer
-descr: The tried-and-true, evergreen guide for being a programmer
-
-resources:
-  - title: The Pragmatic Programmer
-    author: Andrew Hunt, David Thomas
-    link: https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X
-    publisher: Addison-Wesley Professional
----
+The tried-and-true, evergreen guide for being a programmer
 
 ### Care About Your Craft
 

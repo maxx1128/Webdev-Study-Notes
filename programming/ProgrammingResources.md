@@ -1,10 +1,6 @@
----
-group: programming
-layout: post
+# Programming Resources
 
-title: Programming Resources
-descr: Some large resources to better learn programming or computer science as a whole
----
+Some large resources to better learn programming or computer science as a whole
 
 * [Base Computer Science series](https://medium.com/basecs){:target="_blank", :rel="noopener"}
   * A year's worth of posts breaking down computer science basics in plain English

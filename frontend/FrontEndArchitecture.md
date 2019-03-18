@@ -1,17 +1,4 @@
----
-group: frontend
-layout: post
-
-title: Front-end Architecture for Design Systems
-descr: A broad overview of organizing and maintaining a system's front-end code
-
-resources:
-  - title: Front-end Architecture for Design Systems
-    author: Micah Godbolt
-    link: http://www.amazon.com/Frontend-Architecture-Design-Systems-Sustainable/dp/1491926783
-    publisher: O'Reilly
-
----
+# Front-end Architecture for Design Systems
 
 ## The Four Pillars of Front-end Architecture
 

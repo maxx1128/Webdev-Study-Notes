@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Services
-descr: Using services to decouple important info and functionality in an Ember app
----
+# Services
 
 Ember Services are objects whose information persists throughout different pages of the application. A common use of this is saving info about if a user is currently logged in and showing this across the site. It can also include lots of [other functionalities](https://guides.emberjs.com/v2.1.0/applications/services/) that must be persisted, such as geolocation, third-party APIs, and server-backed events.
 

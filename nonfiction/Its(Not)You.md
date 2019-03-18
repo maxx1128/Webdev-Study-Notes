@@ -1,16 +1,4 @@
----
-group: nonfiction
-layout: post
-
-title: It's (Not) You
-descr: Common reasons one is told they're single, and why they're wrong
-
-resources:
-  - title: It's (Not) You - 27 (Wrong) Reasons Why You're Single
-    author: Sara Eckel
-    link: https://www.amazon.com/Its-Not-You-Reasons-Single/dp/0399162879/
-    publisher: TarcherPerigee
----
+# It's (Not) You
 
 ## You Have Issues
 

@@ -1,10 +1,4 @@
----
-group: rubyonrails
-layout: post
-
-title: Patterns
-descr: Extra Rails patterns that lack the magic but meet many other needs
----
+# Patterns
 
 Rails has lots of built in folders and functionality magic built in, but it's not limited to that. Like any framework, you can build on it and add extra code to meet your needs. A common way to do this with Rails is adding extra classes to better break specific functionality into different modules.
 

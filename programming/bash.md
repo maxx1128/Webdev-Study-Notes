@@ -1,10 +1,6 @@
----
-group: programming
-layout: post
+# Bash
 
-title: Bash
-descr: Using Bash and the terminal for greater computer productivity
----
+Using Bash and the terminal for greater computer productivity
 
 ## Managing Aliases
 

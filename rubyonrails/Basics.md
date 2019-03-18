@@ -1,11 +1,6 @@
----
-group: rubyonrails
-layout: post
+# Rails Basics
 
-incomplete: true
-title: Rails Basics
-descr: A high-level overview of the basic Rails patterns and commands
----
+A high-level overview of the basic Rails patterns and commands
 
 ## Basic Terms
 

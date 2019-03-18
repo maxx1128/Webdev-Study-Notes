@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Models
-descr: Using Ember models to better structure data
----
+# Models
 
 Models are how Ember manages properties of data objects. These are most frequently used with data coming from an API or other third-party, and controlled using the `ember-data` add-on. The basic setup of one looks like this:
 

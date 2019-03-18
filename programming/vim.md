@@ -1,10 +1,6 @@
----
-group: programming
-layout: post
+# VIM
 
-title: VIM
-descr: Useful VIM commands for those who don't use it
----
+Useful VIM commands for those who don't use it
 
 ### Cut, Copy, and Paste
 

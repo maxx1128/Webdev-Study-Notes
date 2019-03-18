@@ -1,16 +1,4 @@
----
-group: CSS
-layout: post
-
-title: Maintainable CSS
-descr: General notes on writing CSS that won't drive you crazy
-
-resources:
-    - title: Maintainable CSS
-      author: Adam Silver
-      link: http://maintainablecss.com/
-      publisher: Github
----
+# Maintainable CSS
 
 ### Intro
 

@@ -1,16 +1,4 @@
----
-group: ruby
-layout: post
-
-title: Modules
-descr: Breaking groups of methods apart into smaller groups
-
-resources:
-  - title: Ruby for Beginners
-    author: Ruby Monstas
-    link: http://ruby-for-beginners.rubymonstas.org/advanced/modules.html
-    publisher: Ruby Monstas
----
+# Modules
 
 Modules' main use is having a place separate from classes to store methods or variables. This is useful for:
 

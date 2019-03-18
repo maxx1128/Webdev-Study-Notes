@@ -1,16 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Switch Statements
-descr: Using switch statements to better organize complex JavaScript conditionals
-
-resources:
-  - title: Eloquent JavaScript
-    author: Marijn Haverbeke
-    link: http://eloquentjavascript.net/
-    publisher: No Starch Press
----
+# Switch Statements
 
 Large amounts of conditionals can often be awkward for `if` statements. The `switch` statement will often work better
 

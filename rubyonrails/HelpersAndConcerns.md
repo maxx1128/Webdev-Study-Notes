@@ -1,11 +1,4 @@
----
-group: rubyonrails
-layout: post
-
-incomplete: true
-title: Helpers and Concerns
-descr: How Helpers and Concerns help modularize complex logic
----
+# Helpers and Concerns
 
 Helpers and Concerns are both ways Rails lets coders bring logic into modules that can be used in multiple places.
 

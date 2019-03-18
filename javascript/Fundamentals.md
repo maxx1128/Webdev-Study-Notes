@@ -1,32 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Fundamentals
-descr: The vegetables of writing JavaScript - boring yet essential to doing it right
-
-resources:
-  - title: JavaScript — Double Equals vs. Triple Equals
-    author: Brandon Morelli
-    link: https://codeburst.io/javascript-double-equals-vs-triple-equals-61d4ce5a121a
-    publisher: CodeBurst.IO
-  - title: W3Schools
-    author: Brandon Morelli
-    link: https://www.w3schools.com/js/js_hoisting.asp
-    publisher: W3Schools
-  - title: Understanding the JavaScript call stack
-    author: Charles Freeborn
-    link: https://medium.freecodecamp.org/understanding-the-javascript-call-stack-861e41ae61d4
-    publisher: freeCodeCamp
-  - title: I Never Understood JavaScript Closures
-    author: Olivier De Meulder
-    link: https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8
-    publisher: Daily JS
-  - title: The battle between function scope and block scope
-    author: Marius Herring
-    link: http://www.deadcoderising.com/2017-04-11-es6-var-let-and-const-the-battle-between-function-scope-and-block-scope/
-    publisher: Dead Code Rising
----
+# Fundamentals
 
 ### Scopes
 

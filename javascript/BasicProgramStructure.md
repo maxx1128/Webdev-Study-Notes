@@ -1,18 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Basic Program Structure
-descr: The basic structure of a JavaScript script or program
-
-resources:
-  - title: Eloquent JavaScript
-    author: Marijn Haverbeke
-    link: http://eloquentjavascript.net/
-    publisher: No Starch Press
----
-
-## Basic Program Structure
+# Basic Program Structure
 
 **Expression:** A fragment of code that makes a value. Can be nested inside each other, or just be literal values.
 

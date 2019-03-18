@@ -1,16 +1,6 @@
----
-group: programming
-layout: post
+# Command Line
 
-title: Command Line
-descr: Command line, the backbone of all front-end coding
-
-resources:
-  - title: Learn Enough Command Line to be Dangerous
-    author: Michael Hartl
-    link: https://www.learnenough.com/command-line-tutorial
-    publisher: LearnEnough.org
----
+Command line, the backbone of all front-end coding.
 
 ### Pipes
 

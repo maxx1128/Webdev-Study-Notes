@@ -1,10 +1,4 @@
----
-group: accessibility
-layout: post
-
-title: Accessibilty Situations
-descr: This is a list of times where web accessibility can affect everyone, regardless of disability
----
+# Accessibilty Situations
 
 * Stuck in an area with slow or low-quality Internet
     - Lighter page load makes it easier to navigate

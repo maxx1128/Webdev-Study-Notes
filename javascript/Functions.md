@@ -1,24 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Functions
-descr: Using functions, the core of JavaScript code
-
-resources:
-  - title: Eloquent JavaScript
-    author: Marijn Haverbeke
-    link: http://eloquentjavascript.net/
-    publisher: No Starch Press
-  - title: JavaScript Fundamentals before learning React
-    author: Robin Wieruch
-    link: https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#react-javascript
-    publisher: robinwieruch.de
-  - title: Functional JS Light
-    author: Kyle Simpson
-    link: https://github.com/getify/Functional-Light-JS
-    publisher: LeanPub
----
+# Functions
 
 Functions are the core of Javascript, allowing coders to wrap larger functionalities inside different values. This reduces repetition and makes it easier to manage complexity.
 

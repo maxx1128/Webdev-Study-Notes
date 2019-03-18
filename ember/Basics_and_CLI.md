@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Basics and CLI
-descr: An extremely high-level look at Ember
----
+# Basics and CLI
 
 * Router - Controls where the URL requests are directed, and any parameters related to them.
 * Routes - A route is set based on where the router sends a user based on the URL. Gets the underlying data for the page.

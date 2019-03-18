@@ -1,10 +1,4 @@
----
-group: javascript
-layout: post
-
-title: JavaScript Resources
-descr: We all want more JavaScript. Some links to help drown yourself in it.
----
+# JavaScript Resources
 
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS){:target="_blank", :rel="noopener"}
   * A must-read of JavaScript basics too often overlooked by JS programmers

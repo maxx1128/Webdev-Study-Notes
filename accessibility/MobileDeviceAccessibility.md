@@ -1,16 +1,4 @@
----
-group: accessibility
-layout: post
-
-title: Mobile Device Accessibility
-descr: Ways to ensure content on smaller screens remains accessible
-
-resources:
-    - title: Tips for making interactive elements accessible on mobile devices
-      author: Ire Aderinokun
-      link: https://bitsofco.de/tips-for-making-interactive-elements-accessible-on-mobile-devices/
-      publisher: Bits of Code
----
+# Mobile Device Accessibility
 
 ### Accessing Interactive Elements
 

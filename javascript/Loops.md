@@ -1,16 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Loops
-descr: Different JavaScript loops and when to use them
-
-resources:
-  - title: Eloquent JavaScript
-    author: Marijn Haverbeke
-    link: http://eloquentjavascript.net/
-    publisher: No Starch Press
----
+# Loops
 
 ## While/Do Loops
 

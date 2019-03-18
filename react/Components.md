@@ -1,10 +1,6 @@
----
-group: react
-layout: post
+# Components
 
-title: Components
-descr: The properties and functionalities of React components
----
+The properties and functionalities of React components
 
 A React component requires the `React` and `React-DOM` dependencies, and then extends from the `React.Component` class.
 

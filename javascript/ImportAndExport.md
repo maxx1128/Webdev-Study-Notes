@@ -1,20 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Import and Export
-descr: The new ES6 way to share JavaScript code among different modules
-
-resources:
-  - title: MDN Import syntax
-    author: Mozilla
-    link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
-    publisher: Mozilla
-  - title: MDN Export syntax
-    author: Mozilla
-    link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
-    publisher: Mozilla
----
+# Import and Export
 
 ## What Import and Export Do
 

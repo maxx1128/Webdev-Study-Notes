@@ -1,10 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Reduce
-descr: How to use reduce, a versatile JavaScript tool for managing data
----
+# Reduce
 
 Reduce is a very versatile and powerful tool for controlling data structures. The general structure of one [as explained here](https://emberigniter.com/transform-any-data-structure-with-javascript-reduce/) is:
 

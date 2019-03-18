@@ -1,16 +1,4 @@
----
-group: nonfiction
-layout: post
-
-title: The Gentle Art of Verbal Self-Defense
-descr: How to recognize and properly handle verbal abuse
-
-resources:
-  - title: The Gentle Art of Verbal Self-Defense
-    author: Suzette Elgin
-    link: https://www.amazon.com/Gentle-Art-Verbal-Self-Defense/dp/0880290307?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0880290307
-    publisher: Dorset House Publishing Co Inc
----
+# The Gentle Art of Verbal Self-Defense
 
 ### Principles
 

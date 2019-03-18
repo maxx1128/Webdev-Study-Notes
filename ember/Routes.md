@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Routes
-descr: An explaination of Ember routes and their basic uses
----
+# Routes
 
 The `model` function is what's used to get info from the data source and is passed onto the controller. Reference it in the controllers and templates by using the `model` variable.
 

@@ -1,16 +1,4 @@
----
-group: design
-layout: post
-
-title: Design Systems
-descr: A book on organizing, making, and maintaining design systems like style guides
-
-resources:
-  - title: Design Systems
-    author: Alla Kholmatova
-    link: https://www.smashingmagazine.com/printed-books/design-systems/
-    publisher: Smashing Magazine
----
+# Design Systems
 
 ## Chapter 1 - Design Systems
 

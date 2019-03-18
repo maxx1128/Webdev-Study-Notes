@@ -1,21 +1,6 @@
----
-group: programming
-layout: post
+# VS Code Shortcuts
 
-title: VS Code Shortcuts
-descr: Keyboard shortcuts for efficient Visual Studio Code use
-
-resources:
-  - title: Useful VS Code Keyboard Shortcuts
-    author: Zell Liew
-    link: https://zellwk.com/blog/useful-vscode-keyboard-shortcuts/
-    publisher: Zell Liew
-  - title: Key Bindings for Visual Studio Code
-    author: VS Code
-    link: https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts
-    publisher: VS Code
-
----
+Keyboard shortcuts for efficient Visual Studio Code use
 
 ### General Operations
 

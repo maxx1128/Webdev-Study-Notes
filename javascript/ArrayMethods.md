@@ -1,10 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Array Methods
-descr: Useful ways to find and organize data in arrays
----
+# Array Methods
 
 ## .filter()
 

@@ -1,10 +1,4 @@
----
-group: CSS
-layout: post
-
-title: Architecture and Conventions
-descr: Different large-scale ways to organize CSS and Sass
----
+# Architecture and Conventions
 
 # SEM
 

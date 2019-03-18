@@ -1,24 +1,4 @@
----
-group: design
-layout: post
-
-title: Design Rules of Thumb
-descr: Design principles, in general and for the web, to always remember
-
-resources:
-  - title: The King Vs Pawn Game of UI Design
-    author: Erik Kennedy
-    link: http://alistapart.com/article/the-king-vs-pawn-game-of-ui-design
-    publisher: A List Apart
-  - title: The Non-Designers Design Book
-    author: Robin Williams
-    link: https://www.amazon.com/Non-Designers-Design-Book-4th/dp/0133966151
-    publisher: Peachpit Press
-  - title: Seven Practical Tips for Cheating Design
-    author: Adam Wathan & Steve Schoger
-    link: https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886
-    publisher: Medium
----
+# Design Rules of Thumb
 
 ### Never forget C-R-A-P!
 

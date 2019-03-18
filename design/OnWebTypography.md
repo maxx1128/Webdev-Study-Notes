@@ -1,16 +1,4 @@
----
-group: design
-layout: post
-
-title: On Web Typography
-descr: A deep look into what typography is and how to style it
-
-resources:
-  - title: On Web Typography
-    author: Jason Santa Maria
-    link: https://abookapart.com/products/on-web-typography
-    publisher: A Book Apart
----
+# On Web Typography
 
 ### Why We Should Care about Typography
 * Good typography is invisible, and bad typography is painfully visible.

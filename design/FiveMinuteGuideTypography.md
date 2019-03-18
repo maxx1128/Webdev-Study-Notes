@@ -1,17 +1,4 @@
----
-group: design
-layout: post
-
-title: Five Minute Guide to Typography
-descr: A quick article of broad typography tips
-
-resources:
-  - title: A Five Minutes Guide to Better Typography
-    author: Pierrick Calvez
-
-    link: http://pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography
-    publisher: pierrickcalvez.com
----
+# Five Minute Guide to Typography
 
 > Type is a beautiful group of letters, not a group of beautiful letters.
 > (ie it's about the different relationships b/w letters)

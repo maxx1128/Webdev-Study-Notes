@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Decorator Pattern
-descr: Use Decorators the Ember way so presented data makes use of Ember logic
----
+# Decorator Pattern
 
 Decorators (or Presenters) are a basic design pattern of taking data, adjusting it as needed for a view layer, and then giving the result to the view. This prevents the responsibility for doing this from falling on the controller (which focuses on getting the right data) and the view (which focuses on bringing the data to the markup).
 

@@ -1,10 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Object Methods
-descr: Useful ways to find and organize data in objects
----
+# Object Methods
 
 ## For X in Obj
 

@@ -1,16 +1,4 @@
----
-group: nonfiction
-layout: post
-
-title: The Trump University Playbook
-descr: How Trump University scammed people with the simple powers of language and communication
-
-resources:
-  - title: Trump University Playbook
-    author: Trump University Staff
-    link: https://static.politico.com/25/88/783a0dca43a0a898f3973da0086f/trump-university-playbook.pdf
-    publisher: US Court Document Release
----
+# Trump University Playbook
 
 ### A Note Before Reading
 

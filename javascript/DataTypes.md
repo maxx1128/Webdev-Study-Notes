@@ -1,16 +1,4 @@
----
-group: javascript
-layout: post
-
-title: Data Types
-descr: The basic types of data in JavaScript
-
-resources:
-  - title: Eloquent JavaScript
-    author: Marijn Haverbeke
-    link: http://eloquentjavascript.net/
-    publisher: No Starch Press
----
+# Data Types
 
 All data in computers can be reduced to bits, positive/negative charges expressed as ones and zeros.
 

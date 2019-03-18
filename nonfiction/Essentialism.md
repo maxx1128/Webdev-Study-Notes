@@ -1,22 +1,10 @@
----
-group: nonfiction
-layout: post
+# Essentialism
 
-title: Essentialism
-descr: The discipined pursuit of less
-
-resources:
-  - title: Essentalism
-    author: Greg McKeown
-    link: https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382/ref=sr_1_1?s=books&ie=UTF8&qid=1496610494&sr=1-1&keywords=essentialism+the+disciplined+pursuit+of+less
-    publisher: Currency
----
-
-# Essence
+## Essence
 
 Find the core Essentialist mindset
 
-## Choose
+### Choose
 
 * Don't attempt to invest in everything at once. You're spread too thin.
 * Don't surrender your ability to choose. Others will then choose for us.
@@ -31,7 +19,7 @@ This requires knowing to saying "no" to many choices.
 | "I have to." | "I choose to." |
 | Forfeits the right to choose | Exercises the power of choice |
 
-## Discern
+### Discern
 
 Some efforts yield more rewards then others. For your efforts, know the **relationship between time and results.**
 
@@ -44,7 +32,7 @@ Pareto Principle, or 80/20 rule: 20% of the efforts make 80% of the results. At 
 | Thinks almost everything is essential | Thinks almost everything is nonessential |
 | Views opportunities as basically equal | Distinguishes the vital few from the trivial many |
 
-## Trade-Offs
+### Trade-Offs
 
 Ask yourself, "Which problem do I want?"
 
@@ -59,11 +47,11 @@ Trade-offs are natural for all decisions and should be accepted - since **saying
 | Thinks, "I can do both." | Asks, "What is the trade-off I want to make?" |
 | Asks, "How can I do it?" | Asks, "What can I go big on?" |
 
-# Explore
+## Explore
 
 Find the vital few from the trivial many. Know how to explore and evaluate many options before committing to any.
 
-## Escape
+### Escape
 
 Need time to escape so you can:
 
@@ -82,9 +70,9 @@ This means setting aside time where we do nothing but think. Can also be time to
 | --------------- |--------------|
 | Is too busy to think about life | Creates space to escape and enjoy life |
 
-## Look
+### Look
 
-#### Find the signal in the noise
+##### Find the signal in the noise
 
 Don't just regurgitate the facts, think about their _point_ and the _relationships_ between them. What do they really mean to people?
 
@@ -100,7 +88,7 @@ Ask yourself, **what question are you trying to answer?** Avoid vague questions 
 | Hears everything being said | Hears what is _not_ being said |
 | Is overwhelmed by all the info | Scans to find the essence of the info |
 
-## Play
+### Play
 
 Play is **anything we do simply for the joy of doing it. Not a means to an end.** Can help everything from our personal health, to relationships, to education.
 
@@ -114,7 +102,7 @@ Play is **anything we do simply for the joy of doing it. Not a means to an end.*
 | Thinks play is trivial | Knows play is essential |
 | Thinks play is an unproductive waste of time | Knows play sparks exploration |
 
-## Sleep
+### Sleep
 
 Sleeping is how we invest back into ourselves. It's how we pace and nurture ourselves. Underinvesting in sleep is damaging our most important asset. It makes it harder to think, plan, prioritize, and see the bigger picture. It gives us reserves of energy, creativity, and problem-solving abilities.
 
@@ -136,7 +124,7 @@ Even a nap can bring us some of these benefits!
 | Sleep breeds laziness | Sleep breeds creativity |
 | Sleep gets in the way of "doing it all" | Sleep enables the highest levels of mental contribution |
 
-## Select
+### Select
 
 Only say yes to what you feel total and utter conviction for. Otherwise it's a thumbs down.
 
@@ -158,13 +146,13 @@ To do this, we must overcome the fear of missing out on opportunities that don't
 | Say yes to almost every request or opportunity | Says yes to only the top 10 percent of opportunities |
 | Uses broad, explicit criteria like "If someone I know is doing it, I should do it." | Uses narrow, explicit criteria like "Is this _exactly_ what I'm looking for?" |
 
-# Eliminate
+## Eliminate
 
 _How do we cut out the trivial many?_
 
 It's not enough to know what areas of life make the best contribution. You still have to actively eliminate the ones that don't.
 
-## Clarify
+### Clarify
 
 If you want to cut out unessential activities, you must be extremely clear about what your purpose is. Clear purpose inspires motivation and cooperation.
 
@@ -183,13 +171,13 @@ To help find it, ask "if I could be truly excellent at one thing, what would it 
 | Has concrete quarterly objectives, but ones that fail to energize or inspire people to take their efforts to the next level | Has an intent that is both meaningful and memorable |
 | Has a value set but no guiding principles for implementing them | Makes one decision that eliminates one thousand later decisions |
 
-## Dare
+### Dare
 
 Often a tension between what we feel is right and the pressure to say yes to someone. The fear of saying "no" is understandable with our herd instincts and fear of social awkwardness. We may say yes to something since we don't know the essential things we'd want to say "yes" to instead. Plus saying "yes" often makes us feel regretful, resentful, and bullied.
 
 Be willing to saw "no." Our conviction may bother people in the short-term, but will bring respect in the long-term.
 
-### Tips for Saying No
+#### Tips for Saying No
 
 * Remember that denying the request isn't the same as denying the person
 * Phrase it other ways, like "I'm overcommitted" or "I don't have the bandwidth" in a clear, polite way
@@ -198,7 +186,7 @@ Be willing to saw "no." Our conviction may bother people in the short-term, but 
 * Accept it'll often mean trading popularity for respect. Respect is more valuable anyway
 * It's better to clearly say no than giving a vague, delayed yes.
 
-### Specific "No" Alternatives
+#### Specific "No" Alternatives
 
 * _Awkward pause._ Count to three before saying no.
 * _The soft "no."_ Say "no, but" and follow up with a compromise or opportunity to say yes another time.
@@ -216,11 +204,11 @@ Be willing to saw "no." Our conviction may bother people in the short-term, but 
 | Avoids saying no to avoid feeling social awkwardness and pressure | Dares to say no firmly, resolutely, and gracefully |
 | Says yes to everything | Says yes only to the things that really matter |
 
-## Uncommit
+### Uncommit
 
 **Sunk Cost Fallacy:** Tendency to keep investing time and resources since we've already started doing this, even if we know it's a losing proposition. The more we invest, the harder it is to let go, and takes more courage and confidence to do so.
 
-### Tips to Uncommit
+#### Tips to Uncommit
 
 1. _Avoid the Endowment Effect,_ or the tendency undervalue things that aren't ours and overvalue things that are. This includes activities we do too.
 2. _Pretend you don't own something yet._ "If I didn't own it, how much would I pay for it?"
@@ -239,7 +227,7 @@ Be willing to saw "no." Our conviction may bother people in the short-term, but 
 | Thinks, "If I just keep trying, I can make this work." | Thinks, "What else could I do with this time or money if I pulled the plug now?" |
 | Hates admitting to mistakes | Comfortable with cutting losses |
 
-## Edit
+### Edit
 
 **Editing:** Strict elimination of the trivial, unimportant, or irrelevant. A good editor _makes it hard to not see what's important._ Deliberately removing what's unneeded pulls more life out of what's left.
 
@@ -256,7 +244,7 @@ Limiting options from the start makes it easier to decide, since there's fewer t
 | Thanks that making things better means adding something | Thinks that making things better means subtracting something |
 | Attached to every word, image, or details | Eliminates the distracting workds, images, and details |
 
-## Limit
+### Limit
 
 Setting boundaries is hard, but in the established areas we enjoy unambigious freedom and avoiding unneeded decisions. It's obviously tough, but it helps us better control and choose what's essential in our lives.
 
@@ -271,11 +259,11 @@ Setting boundaries is hard, but in the established areas we enjoy unambigious fr
 | Sees boundaries as constraining | Sees boundaries as liberating |
 | Exerts effot attempting the direct "no" | Sets rules in advance that eliminate the need for a direct "no" |
 
-# Execute
+## Execute
 
 Make the execution of the essential priorities effortless. These steps are the system for that execution.
 
-## Buffer
+### Buffer
 
 Prepare for worst-case scenarios, so you can respond and adapt to the unexpected. Most projects and committments tend to expand fill (or overfill) the time we give them. Never assume the worst-case scenario - put in time and resource buffers to prepare for the unseen.
 
@@ -291,7 +279,7 @@ Nonessentialists will underestimate how long a task takes, and this comes back t
 | Assumes the best-case scenario will happen | Builds in a buffer for unexpected events |
 | Forces execution at the last minute | Practices extreme and early preparation |
 
-## Subtract
+### Subtract
 
 Find the part of a process that slows every other part, and how to improve or remove it. What obstacle is holding back the biggest achievements?
 
@@ -310,7 +298,7 @@ I order to do this, you must:
 | Piles on quick-fix solutions | Removes obstacles to progress |
 | Does more | Brings forth more |
 
-## Progress
+### Progress
 
 > The more we reach for the stars, the harder it is to get off the ground.
 
@@ -325,7 +313,7 @@ Starting too large makes it more likely to abandon the project as burdonsome. St
 | Starts with a big goal and gets small results | Starts small and gets big results |
 | Goes for the flashiest wins | Celebrates small acts of progress |
 
-## Flow
+### Flow
 
 Build useful routines so doing the essential becomes an automatic "program." Let the good habits take over, so essentials don't need to be forced. **This saves energy you'd waste otherwise prioritizing things consciously.**
 
@@ -344,7 +332,7 @@ This works due to the power of our habits - nearly 40% of our choices are incons
 | Tries to execute the essentials by force | Designs a routine that enshrines what is essential, making execution almost effortless |
 | Allows nonessentials to be the defaults | Makes the essential the default position |
 
-## Focus
+### Focus
 
 **Ask "What's important now?"** Tune in to what's important in the hear and now. Don't diffuse your efforts with distractions. Know how to stop, take a deep breath, and ask what matters most and what you'd need to do to sleep peacefully.
 

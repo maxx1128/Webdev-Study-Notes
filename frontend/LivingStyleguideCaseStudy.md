@@ -1,17 +1,4 @@
----
-group: frontend
-layout: post
-
-title: Creating A Living Style Guide, A Case Study
-descr: Case study of an organizations style guide and keeping it functional
-
-resources:
-  - title: Creating A Living Style Guide, A Case Study
-    author: Steven Lambert
-    link: https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/
-    publisher: Smashing Magazine
-
----
+# Creating A Living Style Guide, A Case Study
 
 ### Intro
 * Living style guides keep designers and developers in sync, especially with complex elements and patterns.

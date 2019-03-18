@@ -1,17 +1,4 @@
----
-group: nonfiction
-layout: post
-
-incomplete: true
-title: How Not To Write a Novel
-descr: The title says it all - if you're writing a book, don't do these things.
-
-resources:
-  - title: How Not To Write a Novel
-    author: Howard Mittelmark, Sandra Newman
-    link: https://www.amazon.com/Write-Novel-Them-Misstep-Misstep/dp/0061357952
-    publisher: William Morrow Paperbacks
----
+# How (Not) To Write a Novel
 
 ## Plot
 

@@ -1,16 +1,4 @@
----
-group: accessibility
-layout: post
-
-title: Accessibilty For Everyone
-descr: My notes on Laura Kalbag's book on web accessibility as a whole
-
-resources:
-    - title: Accessibility for Everyone
-      author: Laura Kalbag
-      link: https://abookapart.com/products/accessibility-for-everyone
-      publisher: A Book Apart
----
+# Accessibility for Everyone
 
 # Considering Accessibility
 

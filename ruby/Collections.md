@@ -1,16 +1,4 @@
----
-group: ruby
-layout: post
-
-title: Collections
-descr: Arrays, Hashes, and Other Groups of Data
-
-resources:
-  - title: Eloquent Ruby
-    author: Russ Olsen
-    link: https://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104
-    publisher: Addison-Wesley Professional
----
+# Collections
 
 Ruby collections refer to arrays or hashes, two ways to store "collections" of data. Arrays are simple lists, and hashes are lists of key-value pairings.
 

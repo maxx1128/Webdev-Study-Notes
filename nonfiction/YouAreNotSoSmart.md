@@ -1,17 +1,4 @@
----
-group: nonfiction
-layout: post
-
-incomplete: true
-title: You Are Not So Smart
-descr: All the ways we mentally delude ourselves, and how to accept them
-
-resources:
-  - title: You Are Not So Smart
-    author: David McRaney
-    link: https://www.amazon.com/You-Are-Not-So-Smart/dp/1592407366
-    publisher: Avery
----
+# You Are Not So Smart
 
 Three main ways we delude ourselves:
 

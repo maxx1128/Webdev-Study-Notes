@@ -1,10 +1,6 @@
----
-group: react
-layout: post
+# JSX Rendering Tricks
 
-title: JSX Rendering Tricks
-descr: Useful ways to control how React templates or components are rendered
----
+Useful ways to control how React templates or components are rendered
 
 ## Using .map()
 

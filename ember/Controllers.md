@@ -1,10 +1,4 @@
----
-group: ember
-layout: post
-
-title: Controllers
-descr: Useful tricks for Ember Controllers
----
+# Controllers
 
 `computed` gives access to different included Ember functions for presenting or manipulating info provided by the router. A simple example:
 

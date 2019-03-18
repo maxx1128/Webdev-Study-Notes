@@ -1,10 +1,4 @@
----
-group: rubyonrails
-layout: post
-
-title: Component Helpers
-descr: A useful pattern for managing front-end patterns in a Rails app
----
+# Component Helpers
 
 Most large sites will want to abstract common front-end patterns into components, which lets them be reused in needed contexts and create a single source of truth. One way to approach this is with helpers. This will walk through the basic steps to set one up.
 

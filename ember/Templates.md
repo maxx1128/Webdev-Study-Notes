@@ -1,11 +1,4 @@
----
-group: ember
-layout: post
-
-incomplete: true
-title: Templates
-descr: Using templates to show and organize an app's actual pages
----
+# Templates
 
 ## Inputs
 
