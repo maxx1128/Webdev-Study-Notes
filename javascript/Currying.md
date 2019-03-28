@@ -116,5 +116,5 @@ It's especially useful for functional JavaScript, since it's great for quickly c
 
 ## Resources
 
-*[JavaScript ES6 curry functions with practical examples](https://medium.com/front-end-weekly/javascript-es6-curry-functions-with-practical-examples-6ba2ced003b1)
-*[A Beginner’s Guide to Currying in Functional JavaScript](https://www.sitepoint.com/currying-in-functional-javascript/)
+* [JavaScript ES6 curry functions with practical examples](https://medium.com/front-end-weekly/javascript-es6-curry-functions-with-practical-examples-6ba2ced003b1)
+* [A Beginner’s Guide to Currying in Functional JavaScript](https://www.sitepoint.com/currying-in-functional-javascript/)
