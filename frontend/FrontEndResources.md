@@ -36,5 +36,3 @@
 
 * [The New Defaults](https://dudleystorey.github.io/thenewdefaults/)
   * A large collection of pleasant, standard color swatches and hex codes for building palettes
-* [CloudFlare Accessible Color Palette Generator](https://cloudflare.design/color/)
-  * Generate accessible color schemes from random colors, generates colors, colors pulled from images, and more!
