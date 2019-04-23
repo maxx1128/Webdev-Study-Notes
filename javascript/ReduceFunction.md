@@ -2,7 +2,7 @@
 
 Reduce is a very versatile and powerful tool for controlling data structures. The general structure of one [as explained here](https://emberigniter.com/transform-any-data-structure-with-javascript-reduce/) is:
 
-```
+```javascript
 array.reduce(function(acc, value, index, array) {
   // ...
   return acc; // Can also return other values based on the array
@@ -18,21 +18,32 @@ Reduce runs through each item in the array and lets you control what happens in 
 
 A simple example the article also lists is using it to get the sum of an array
 
-```
+```javascript
 [1, 2, 3].reduce(function(acc, value) {
   return acc + value;
 }, 0);
+
+// Pointer arrow version of same function
+[1, 2, 3].reduce((acc, value) => acc + value);
 ```
 
 Here, the `0` is the default starting value for `acc`. It can be any number, value, or object. If you're iterating to add key/value pairs, for instance, you can set it to `{}`.
 
 You can also use it to return an array based on if items are even or not
 
-```
+```javascript
 const AreTheNumbersEven = [1, 2, 3, 4, 5].reduce(function(acc, value){
     (value % 2 === 0) ? acc.push(true) : acc.push(false);
     return acc; // Ensures that the new array is passed on and can be added to
 }, []);
+
+console.log(AreTheNumbersEven) // returns [ false, true, false, true, false ]
+```
+
+The above example, although possible with `reduce`, is better managed with `map`. So **remember `reduce` is best used when combining arrays into different values in more complex ways.**
+
+```javascript
+const AreTheNumbersEven = [1, 2, 3, 4, 5].map(value => value % 2 === 0);
 
 console.log(AreTheNumbersEven) // returns [ false, true, false, true, false ]
 ```
