@@ -27,6 +27,18 @@ hulk.scream(); // Hulk Smash!!!
 
 Calling `this.name` in the call-site is basically the same as calling `hulk.name` outside of it. This lets you reference code inside the call-site, letting `this` easily adjust to any data dependent on context or closure data. Just know that `this` can only be used in functions or other code definined _within_ the call site.
 
+Note that `this` won't be bound the same way with arrow functions, since they can never be bound to `this`. They'll default to the lexical scope. This variable is at the root of the file, so using an arrow function like the one below would be `undefined`.
+
+```javascript
+const hulk = {
+  name: 'Hulk',
+  attack: 'Smash',
+
+  scream: () => console.log(`${this.name} ${this.attack}!!!`)
+}
+
+hulk
+
 ## Explicit Binding
 
 If there's no implicit object for `this` to reference, one can be assigned with a few potential function calls.
@@ -78,3 +90,4 @@ MaxwellSays(announcement);
 
 * [Understanding JavaScript: This Keyword](https://hackernoon.com/understanding-javascript-the-this-keyword-4de325d77f68)
 * [Understanding the “this” Keyword in JavaScript](https://medium.com/quick-code/understanding-the-this-keyword-in-javascript-cb76d4c7c5e8)
+* [What is `this`? The Inner Workings of JavaScript Objects](https://medium.com/javascript-scene/what-is-this-the-inner-workings-of-javascript-objects-d397bfa0708a?pix=9_0_0)
