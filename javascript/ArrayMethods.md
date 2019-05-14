@@ -44,6 +44,36 @@ let squared_numbers = numbers.map(number => (number * number));
 // [4, 16, 36, 64, 100];
 ```
 
+## .sort()
+
+The `.sort()` function can be called without a callback function for simpler arrays, which arranges elements in standard ascending order alphanumerically. But for more complex sorts you can use a callback function.
+
+The catch is the callback function takes two values, compares them, and reorders them based on the comparison. The comparison should return one of three values:
+
+* -1 moves the first item before the second
+* 1 moves the first item after the second
+* 0 doesn't change them
+
+This lets you rearrange any value as needed, or arrange objects based on specific properties. The below example does this while sorting items in descending order.
+
+```javascript
+const animals = [
+  {
+    name: 'Zebra',
+    weight: 200
+  }, {
+    name: 'Badger',
+    weight: 15
+  }, {
+    name: 'Dragon',
+    weight: 1000
+  }
+];
+
+const sortedAnimals = animals.sort((a, b) => a.weight > b.potency ? -1 : 1);
+// Dragon, Zebra, Badger
+```
+
 ## .forEach()
 
 `.forEach()` applies a function to each item in an array. Unlike `.map()`, this doesn't take the result and apply them to a new array. It's better for taking action on array values that don't need a modified version.
