@@ -9,3 +9,4 @@ Colors are a major part of an accessible website, since it's a core way of conve
   * 4.5 to 1 if smaller than 18 pixels
   * 3 to 1 if equal to or larger than 18 pixels
 * **Test all used color combinations.** A color palette won't use all possible combinations in a site, but each one that is used should be checked for proper contrast. This mostly applies to text, but make sure any meaning conveyed by other contrasts is still noticeable (although this is discouraged).
+* **Avoid too much color crammed together.** It can quickly get overwhelming and nonsensical, especially for those with cognitive impairments.
