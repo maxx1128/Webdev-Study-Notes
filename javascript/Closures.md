@@ -2,7 +2,7 @@
 
 Imagine you have a function which also has a function inside of it.
 
-```
+```javascript
 function createMonster() {
   let name = 'Super Bear'
 
@@ -14,7 +14,7 @@ function createMonster() {
 
 If you call this outer function into a variable, you can then call the inner function from the variable. It will use the `name` variable declared in that outer function's scope.
 
-```
+```javascript
 let myMonster = createMonster();
 myMonster.revealName();
 // 'Super Bear'
@@ -22,7 +22,7 @@ myMonster.revealName();
 
 You could adjust this so this inner function is returned by default, so you don't need to specifically call it by name.
 
-```
+```javascript
 function createMonster() {
   let name = 'Super Bear'
 
@@ -42,7 +42,7 @@ What's important to remember is **the inner function has access to everything in
 
 The difference, and implications, are clearer when you start passing data in through the outer function.
 
-```
+```javascript
 function makeAdder(x) {
   function showAddValue() {
     return x;
@@ -58,7 +58,7 @@ This function is fairly simple: the outer function takes the first value, and th
 
 So if we did this:
 
-```
+```javascript
 const add10 = makeAdder(10);
 ```
 
@@ -66,7 +66,7 @@ This creates a _closure_ in the `addTen` variable. This is a bubble of everythin
 
 If you call the `addTen` function like so:
 
-```
+```javascript
 add10(5);
 // 15
 ```
@@ -75,7 +75,7 @@ Due to the closure formed by the function, the variable will reach into it's mem
 
 You can use this repeatedly to make lots of different adders, knowing that their closures will store the numbers and let you easily add different numbers together. This shows a practical application of closure, creating factories for functions that can be quickly customized and used when needed.
 
-```
+```javascript
 const add5 = makeAdder(5);
 const add10 = makeAdder(10);
 const add50 = makeAdder(50);
@@ -89,7 +89,7 @@ add666(334); // 1000
 add666.showAddValue(); // 666
 ```
 
-This shows the core benefit of closure functions: **limiting these different to variables keeps them out of the global scope**, making them less likely to accidentally affect other code. Their closed off environments in this limited scope essentially make "private scopes" that can only be accessed through this outer function. If you removed the `showAddValue` inner function, you'd have no way to return the `x` variables stored in that scope. It'd be completely hidden away in that closure with no way to access it.
+This shows the core benefit of closure functions: **limiting these differences to variables keeps them out of the global scope**, making them less likely to accidentally affect other code. Their closed off environments in this limited scope essentially make "private scopes" that can only be accessed through this outer function. If you removed the `showAddValue` inner function, you'd have no way to return the `x` variables stored in that scope. It'd be completely hidden away in that closure with no way to access it.
 
 ## Resources
 
