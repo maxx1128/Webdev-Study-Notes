@@ -48,11 +48,11 @@ let squared_numbers = numbers.map(number => (number * number));
 
 The `.sort()` function can be called without a callback function for simpler arrays, which arranges elements in standard ascending order alphanumerically. But for more complex sorts you can use a callback function.
 
-The catch is the callback function takes two values, compares them, and reorders them based on the comparison. The comparison should return one of three values:
+The catch is the callback function takes two values, compares them, and reorders them based on the comparison. A typical sorting function will label the values `(a, b)`. The comparison should return one of three values:
 
-* -1 moves the first item before the second
-* 1 moves the first item after the second
-* 0 doesn't change them
+* -1 moves the first item before the second (`a` wins)
+* 1 moves the first item after the second (`b` wins)
+* 0 doesn't change them (it's a draw)
 
 This lets you rearrange any value as needed, or arrange objects based on specific properties. The below example does this while sorting items in descending order.
 
@@ -70,8 +70,35 @@ const animals = [
   }
 ];
 
-const sortedAnimals = animals.sort((a, b) => a.weight > b.potency ? -1 : 1);
+const sortedAnimals = animals.sort((a, b) => b.weight - a.weight);
 // Dragon, Zebra, Badger
+```
+
+### A .sort() Gotcha
+
+Unlike many other methods here, `sort()` doesn't return a new array with the changes. It changes the current array in place and returns that same one. This is a major side effect and should usually be avoided. One way to do this is using a spread operator to create an array copy and then sorting that one.
+
+```javascript
+const array     = [4, 3, 2, 1];
+const arrayCopy = [...array].sort();
+
+console.log(array);
+// [4, 3, 2, 1]
+console.log(arrayCopy);
+// [1, 2, 3, 4]
+```
+
+### Useful Sorting Functions
+
+```javascript
+const sortNumsByAscValue = (a, b) => a - b;
+// Negative means a is smaller, and it goes first.
+// Descending order, just switch a and b
+
+const flipComparison = (fn) => (a, b) => -fn(a, b);
+// Pass a comparison function and it will give a reverse how how that'd sort an array
+// Below is a basic example of this
+const sortNumsByDescValue = flipComparison(sortNumsByAscValue);
 ```
 
 ## .forEach()
@@ -165,7 +192,7 @@ Returns the index of the given item in an array. If it's not there, it returns `
 
 Returns a shallow copy of a portion of an array. Takes two arguments, the start and end index of items in the array. Those items and everything in between are brought to the copy. Using no arguments copies the entire thing.
 
-> Shallow Copy: makes a reference for any reference data types (arrays objects, functions). This means changing the original will also change the reference, so be cautious!
+> Shallow Copy: makes a reference for any reference data types (arrays objects, functions). This means changing the original will also change the reference, so be cautious! Like with .sort(), you can avoid this by using the spread operator to make a copy.
 
 ```javascript
 [0, 1, 2, 3, 4, 5, 6].slice(1, 3); // [1, 2, 3]
@@ -212,3 +239,4 @@ If you have an array of strings, this function joins them all together via a str
 ## References
 
 * [What you should know about JavaScript arrays](http://pop.frontendweekly.co/B9pths)
+* [Level Up Your .sort() Game](https://css-tricks.com/level-up-your-sort-game/)
