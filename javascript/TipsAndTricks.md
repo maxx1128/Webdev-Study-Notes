@@ -33,3 +33,13 @@ const getClasses = (alert, small) => {
 ```
 
 This technically returns the same thing, but is harder to scale and requires more work to maintain.
+
+## Avoid Boolean Parameters
+
+Unless the parameter specifically refers to an attribute taking a boolean, avoid using parameters that take booleans. These boolean parameters are inflexible and can start to pile up fast. A collection of booleans make the component hard to manage, and instances of it with all the booleans is harder to understand.
+
+For example, don't use a boolean to trigger a certain element class. Instead use a parameter that takes in classes and pass the class itself.
+
+## Resources
+
+* [How to Avoid the “Boolean Trap” When Designing React Components](https://spicefactory.co/blog/2019/03/26/how-to-avoid-the-boolean-trap-when-designing-react-components/)
