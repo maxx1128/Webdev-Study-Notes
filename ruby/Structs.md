@@ -4,7 +4,7 @@ Structs are functionally the same as classes, but have lots of default functiona
 
 Structs can be used to just store parameters, but can also use methods with these parameters too.
 
-```
+```ruby
 ExampleStruct = Struct.new(:param1, :param2)
 
 ExampleStruct2 = Struct.new(:integer1, :integer2) do
@@ -22,7 +22,7 @@ struct_2.sum     # 3
 
 Structs are also great for organizing data within classes themselves. This is my version of the example from [this Struct explaination](https://www.leighhalliday.com/ruby-struct), using a struct to organize address info in a class for people. Notice the syntax for using variables and methods from the class itself and the struct inside it. This is a simple and more accessible syntax than hashes, so structs are useful for this reason too.
 
-```
+```ruby
 class Person
   Address = Struct.new(:street_1, :street_2, :city, :province, :country, :postal_code) do
     def full_address

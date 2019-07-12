@@ -6,7 +6,7 @@
     - The `while` statement has a similar counterpoint with the `until` statement.
 * Simple logic statements, such as those assigning variables, can be collapsed into a single line. This saves space and is easier to understand.
 
-```
+```ruby
 unless @read_only
   @title = new_title
 end
@@ -19,7 +19,7 @@ end
 
 If you need a simple "if, else" statement for something, use the ternary operator like so:
 
-```
+```ruby
 greeting = name ? "Hello #{name}" : "What's your name?"
 ```
 
@@ -27,7 +27,7 @@ greeting = name ? "Hello #{name}" : "What's your name?"
 
 Case statements are good for more complex code reliant on, or assigning, a range of different values. These lines can also be collap
 
-```
+```ruby
 case attack
 when 'punch'
     puts 'Not the face!'
@@ -47,7 +47,7 @@ response = case attack
 
 * If you want to define a value to a variable but aren't sure if it already has one, use this trick. **If `@name` is nil or false**, it'll use the following string.
 
-```
+```ruby
   @name ||= 'Default name!'
 ```
 

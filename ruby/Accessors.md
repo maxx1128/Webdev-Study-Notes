@@ -4,7 +4,7 @@ Accessors are ways to quickly make a class's instance variables readable or writ
 
 For instance, this method...
 
-```
+```ruby
 def variable
   @variable
 end
@@ -12,7 +12,7 @@ end
 
 ...can be replaced with what's below. The effect is the same.
 
-```
+```ruby
 attr_reader :variable
 ```
 
@@ -29,7 +29,7 @@ Here's a quick reference to the different accessors and what they do.
 
 Small note: I get the context of using `write` here wrong quite often. Here it is for clarity:
 
-```
+```ruby
 class ExampleClass
   attr_writer :name
 

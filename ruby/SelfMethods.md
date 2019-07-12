@@ -2,7 +2,7 @@
 
 Ruby classes allow you to define methods as `self`, such as `self.method`. These are methods that can be called from the class directly, not on different instances of the class.
 
-```
+```ruby
 class GetFruitCount
 
   def mangoes
@@ -17,14 +17,14 @@ end
 
 ### Class Instances
 
-```
+```ruby
 GetFruitCount.new.mangoes   # right
 GetFruitCount.new.types     # wrong
 ```
 
 ### Classes
 
-```
+```ruby
 GetFruitCount.mangoes   # wrong
 GetFruitCount.types     # right
 ```

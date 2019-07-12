@@ -6,7 +6,7 @@ Ruby collections refer to arrays or hashes, two ways to store "collections" of d
 
 There's several syntaxes for quickly making collections without getting bogged down in detail.
 
-```
+```ruby
 # For string arrays
 array = %w{ I am a bunch of strings! }
 # -> ["I", "am", "a", "bunch", "of", "strings!"]
@@ -24,7 +24,7 @@ another_hash = {name: "Maxwell", editor: "Visual Studio Code", lucky_number: 33}
 
 Class methods can easily add or remove collection items. This is made easier using **a parameter with a star in front of it.** This is similar to a JavaScript spread operator, in that it takes all the different values and collects them into an array.
 
-```
+```ruby
 class TestClass
   def initialize
     @array = []
@@ -52,7 +52,7 @@ This makes it simpler to add anything to an array as needed. It also gives you m
 
 There's also a good shortcut for using hashes as method arguments. If a hash is the method's last argument, you don't need to wrap the hash in braces. You can go right to the hash rocket syntax.
 
-```
+```ruby
 class Pizza
   def initialize
     @oven = {}
@@ -77,7 +77,7 @@ anchovy_pizza.check_oven
 
 Use `each` instead of `for`, since `for` basically calls the `each` method itself, creating an avoidable inefficiency.
 
-```
+```ruby
 list = ["item one", "item two", "item three"]
 
 # One line each loop for simpler code for item
@@ -93,7 +93,7 @@ end
 
 You can do the same thing for hashes, and by default each result is a two-item array. The first item is the key or symbol, and the second is the value. You can also explicitely name the pairs to destructure them.
 
-```
+```ruby
 hash = { fizz: 'buzz', foo: 'bar' }
 
 # Each item is a small array
@@ -114,7 +114,7 @@ hash.each { |key, value| puts "#{key}: #{value}" }
 
 To sort by different measures, you can use `sort_by` which takes a block. This block can compute a different numerical value in any way, and the array will be sorted on those returned values
 
-```
+```ruby
 array = [4, 2, 7, 32, 9, 3, 4, 14]
 print array.sort
 # [2, 3, 4, 4, 7, 9, 14, 32]
@@ -131,7 +131,7 @@ print fruits.sort_by { |fruit| fruit.length }
 
 Loops through an array, and returns the index of the first object that it's true for. Can either directly look for a value, or take a block statement for more complex checking.
 
-```
+```ruby
 array = [1, 44, "number", "pasta"]
 
 puts array.index("number") # 2
@@ -145,7 +145,7 @@ You can use `rindex` for the same check, but starting from the end of the array 
 
 Similar to JavaScript, `map` takes an array, performs a function or operation on each item, and returns a new array.
 
-```
+```ruby
 numbers = [2, 4, 6, 8]
 big_numbers = numbers.map { |number| number * 2 }
 
@@ -165,7 +165,7 @@ print big_numbers
 
 A common example of this is finding the sum of an array of numbers.
 
-```
+```ruby
 numbers = [2, 4, 6, 8]
 
 # Each iteration returns the total with the next value added
@@ -188,7 +188,7 @@ These four methods change the array they're called on in some way. Note these ch
 
 The above four methods (and likely several others) natively can change the same variable they call. Other methods, such as `sort` or `reverse`, don't ever change the actual array they're called on. Use them on an array and call it again, and it will be the same.
 
-```
+```ruby
 numbers = [2, 4, 6, 8]
 numbers.reverse
 
@@ -198,7 +198,7 @@ print numbers
 
 Use the bang operator, however, and the array itself will change. So be cautious with the bang!
 
-```
+```ruby
 numbers = [2, 4, 6, 8]
 numbers.reverse!
 

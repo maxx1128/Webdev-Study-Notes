@@ -8,7 +8,7 @@ Modules' main use is having a place separate from classes to store methods or va
 
 A basic module looks very similar to a class, like so:
 
-```
+```ruby
 module ExampleModule
   def true(item)
     item ? "It's true!" : "It's false!"
@@ -18,7 +18,7 @@ end
 
 The module can then be included in a class, and all its methods and whatever shall be included.
 
-```
+```ruby
 class ExampleClass
   def is_true?(var)
     true(var)
