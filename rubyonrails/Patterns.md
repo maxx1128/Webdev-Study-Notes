@@ -22,7 +22,7 @@ An important caveat for these patterns is they have none of the included Rails m
 
 First, it's smart to make a base class for each Rails Pattern category. If you have lots of Services, it's good to have a base Service for any common methods used by them all. A common example is including all the application helpers, like so.
 
-```
+```ruby
 class BaseService
 
   private
@@ -35,22 +35,22 @@ end
 
 You can then have those methods inherited like so:
 
-```
+```ruby
 class SpecificService < BaseService
 end
 ```
 
-Finally, you can then call an instance of the class like this.
+You can then call an instance of the class like this.
 
-```
+```ruby
 let variable = SpecificService.new
 
 let variable = SpecificService.new(parameter_1, parameter_2) ## In case it takes parameters
 ```
 
-Also if you pass in another object with other methods already defined, like a model pulled from a database, you'll need to delegate those methods to use them again. For example, if you pass in a model and want to use any values or methods without redefining them again, you'll need to delegate them like so:
+Another limitation is if you pass in another object with other methods already defined, like a model pulled from a database, you'll need to delegate those methods to use them again. For example, if you pass in a model and want to use any values or methods without redefining them again, you'll need to delegate them like so:
 
-```
+```ruby
 delegate :id,
          :property,
          :another_thing,
@@ -61,17 +61,7 @@ delegate :id,
   end
 ```
 
--------
-
 ## Useful Patterns
-
-### Adding Extra Classes
-
-Within the app folder, you can add more classes for managing information and objects. However it's important to remember the naming convention to make sure Rails can auto-load them properly.
-
-**Make sure the file's name and class have the same name, but the file is snake-case and the class is camel case.** For example, if you have a Presenter class called `MySuperPresenter`, then the file name must be `my_super_presenter.rb`.
-
-These extra classes can serve different uses for different purposes, such as Presenters and Services, which are also described here.
 
 ### Storing Static Content Data
 
@@ -79,7 +69,7 @@ There's likely data used and looped through frequently in an app, so it's useful
 
 For a list of articles, all the data can be stored in a YAML file. It can be stored in `config` or `db`, or a custom `data` folder.
 
-```
+```ruby
 # data/articles.yml
 
 articles:
@@ -94,9 +84,9 @@ articles:
 
 You can then access and organize this data as needed in a models file. This is technically organizing and creating a data structure, which is why it'd fit well in the Models folder.
 
-There's many different approaches here, and ways to filter and modify the data. This example simply uses a Struct to get all the basic info and return an array of hashes.
+There's many different approaches here, and ways to filter and modify the data. This example simply uses a [Struct](./../../ruby/Structs.md) to get all the basic info and return an array of hashes.
 
-```
+```ruby
 # app/models/articles.rb
 
 module Articles
@@ -114,7 +104,7 @@ end
 
 Now this module can be called in a controller and passed to a template.
 
-```
+```ruby
 # app/controllers/press.rb
 
 def index
