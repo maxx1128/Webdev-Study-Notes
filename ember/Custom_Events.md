@@ -8,7 +8,7 @@ Let's walk through the basic steps with a common example: then you click outside
 
 These functions should take an "event" parameters, and with that you can carry out a mix vanilla and Ember JS.
 
-```
+```javascript
 closeDropdownOnOutsideClick(event) {
   const clickedDropdownButton = event.path.some(element => (element.classList) ? (element.classList.contains('dropdown-button')) : false);
 
@@ -31,7 +31,7 @@ Notice that the code handling the event object devoid of any Ember code, but Emb
 
 You have the functions, now in our case they must be bound to the controller. These can usually be put in the `didInsertElement` hook so they're only added once the element is indeed in the DOM.
 
-```
+```javascript
 didInsertElement() {
   this.set('boundCloseDropdownOnOutsideClick', bind(this, this.closeDropdownOnOutsideClick));
 }
@@ -39,7 +39,7 @@ didInsertElement() {
 
 This assumes you're on the most recent version of Ember as of this writing, 3.3, and are importing the `bind` method.
 
-```
+```javascript
 import { bind } from '@ember/runloop';
 ```
 
@@ -47,7 +47,7 @@ import { bind } from '@ember/runloop';
 
 With the function bound to the controller, we're free to easily set it with a basic event listener. This event listener will usually be placed in the `didInsertElement` hook too, and it could for this.
 
-```
+```javascript
 didInsertElement() {
   this.set('boundCloseDropdownOnOutsideClick', bind(this, this.closeDropdownOnOutsideClick));
   window.addEventListener('click', this.boundCloseDropdownOnOutsideClick);
@@ -59,7 +59,7 @@ Viola, the function closing our dropdown is now called on all click events in th
 
 For this, we could try something different. If there's a likely action to toggle the dropdown's visibility, we can create the event listener after it's opened. We only need to wait for these kinds of events when the menu is open. after all.
 
-```
+```javascript
 actions: {
   toggleMenu() {
     this.toggleProperty('expandedMenu');
@@ -73,7 +73,7 @@ actions: {
 
 However, a caveat to all this is that our event listeners will persist even after we go to new pages without a dropdown. We need to remember to delete them. In this case, we could delete them whenever our menu is toggled closed, on the other side of the above conditional.
 
-```
+```javascript
 actions: {
   toggleMenu() {
     this.toggleProperty('expandedMenu');
@@ -89,7 +89,7 @@ actions: {
 
 Otherwise, and also as a general failsafe, they should be added to the `willDestroyElement` hook too,
 
-```
+```javascript
 willDestroyElement() {
   window.removeEventListener('click', this.boundCloseDropdownOnOutsideClick);
 }

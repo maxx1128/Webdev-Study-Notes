@@ -16,7 +16,7 @@
 5) Use Ember Data to pull data from the database, such as with `return this.store.findAll('items')`
 6) When setting different values to the data, remember to call the `save()` method:
 
-```
+```javascript
 import { set } from '@ember/object';
 
 actions: {
@@ -31,7 +31,7 @@ Data returned from FireBase will often be in a `promise`, or data that's waiting
 
 This example has an array of data (`users_who_answered`) given from FireBase. When each item is used while looping through it with `reduce`, `get` is used with the property to get the specific data property value. Note that using `get` requires these two arguments: the promise object, and the property key to return the value of.
 
-```
+```javascript
 import { get } from '@ember/object';
 
 const all_users = this.get('users_who_answered').reduce(function(usernames, user) {

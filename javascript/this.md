@@ -36,8 +36,7 @@ const hulk = {
 
   scream: () => console.log(`${this.name} ${this.attack}!!!`)
 }
-
-hulk
+```
 
 ## Explicit Binding
 

@@ -2,7 +2,7 @@
 
 The controllers have a few common, helpful properties.
 
-```
+```javascript
 import Component from '@ember/component';
 import { computed } from '@ember/object';
 
@@ -23,7 +23,7 @@ Like controllers, you can also define other calculated properties, such as ones 
 
 Normal class name bindings can link a class to a parameter. If you want to link multiple classes to a state in this way, you'll need to use it with a computed property.
 
-```
+```javascript
 export default Component.extend({
   tagName: 'div',
   classNames: 'element',
@@ -42,13 +42,13 @@ export default Component.extend({
 
 When using components that have params, they normally need to be explicitly named to add values to them:
 
-```
+```handlebars
 {{svg-icon src=model.src size="medium"}}
 ```
 
 However, if one or more parameters is self-explanatory/needed enough that it doesn't need to do this, one can adjust the class so the paramters can be added without them. Add `reopenClass` to the component controller like this:
 
-```
+```javascript
 import Component from '@ember/component';
 
 export default Component.extend({
@@ -60,18 +60,16 @@ export default Component.extend({
 
 Now the same component can be used like the below example. Optional params could still be added to this but not be included.
 
-```
-
-  {{svg-icon model.src "medium"}}
-
-  {{svg-icon model.src}} // If 'size' is optional
+```handlebars
+{{svg-icon model.src "medium"}}
+{{svg-icon model.src}} // If 'size' is optional
 ```
 
 ## Block Components
 
 Block components allow components to accept lines of text as a large argument for the component. They're written with two tags, like so:
 
-```
+```handlebars
 {{#my-component data=model.item class="class class-two"}}
   <h3>
     Header in the block!
@@ -85,7 +83,7 @@ Block components allow components to accept lines of text as a large argument fo
 
 In the component template, everything in the block will appear where the `yield` statement is used.
 
-```
+```handlebars
 <h2>
   I am text part of every instance of this component.
 </h2>
@@ -95,7 +93,7 @@ In the component template, everything in the block will appear where the `yield`
 
 If the block is an optional argument, there's a conditional for if one is used or not. This can be if a component will use a regular argument (as part of) text if a block isn't used, similar to the `{{link-to}}` helper.
 
-```
+```handlebars
 <h2>
   I am text part of every instance of this component.
 </h2>
@@ -113,13 +111,13 @@ If the block is an optional argument, there's a conditional for if one is used o
 
 You can also take values defined in the component and pass them into a block component. That way you can use them in your block HTML for display or logic. First the values being passed must be set in the `{{yield}}` text.
 
-```
+```handlebars
 {{yield 'static string' variable}}
 ```
 
 Then the values will be referenced, in order, in the block statement for the component.
 
-```
+```handlebars
 {{#my-component src=model.src as |string var| }}
   <p>
     After passing in other arguments the component needs above, block arguments are referenced in the pipes like so.
@@ -133,7 +131,7 @@ Then the values will be referenced, in order, in the block statement for the com
 
 You can also pass in actions from the component into the block, although it's not as simple. First define said action:
 
-```
+```javascript
 import Component from '@ember/component';
 
 export default Component.extend({
@@ -149,13 +147,13 @@ export default Component.extend({
 
 The component will then need to yield the component itself, using `this`, in addition to anything else being yielded. This example yields a component variable and then the action.
 
-```
+```handlebars
 {{yield available this}}
 ```
 
 These can then be referenced as arguments for the component block, and used in the block itself. The `action` helper will need the `target` argument to specify the action is in the component controller. Otherwise it will, by default, look for it in the current template's controller.
 
-```
+```handlebars
 {{#my-component src=model.src as |available component| }}
   <h3>
     {{if available 'Available! Hooray!' 'Sorry, not available :('}}
@@ -175,7 +173,7 @@ These can then be referenced as arguments for the component block, and used in t
 
 You can make a base component and then extend other components off it. If you have a group of components that need to have several functions in common, this lets you have a single source of truth for them all.
 
-```
+```javascript
 // my-base-component.js
 export default Ember.Component.extend({
    classNames: "my-base-component"
@@ -184,7 +182,7 @@ export default Ember.Component.extend({
 
 You can then import it and use it as the base for another.
 
-```
+```javascript
 import MyBaseComponent from 'app/components/my-base-component'; // <- import base component
 
 // my-other-component.js

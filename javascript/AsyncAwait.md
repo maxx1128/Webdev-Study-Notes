@@ -7,7 +7,7 @@ Async/Await functions are simple, effective methods for asynchronous JavaScript.
 
 An async/await function has a basic structure like this:
 
-```
+```javascript
 async function myAsyncFunction() {
   let value = await promise;
   return value;

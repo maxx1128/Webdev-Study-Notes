@@ -4,7 +4,7 @@
 
 CSS built entirely on helper classes, similar to bootstrap ones that adjust simple, straightforward properties.
 
-```
+```javascript
 <div class="max-w-sm mx-auto leading-normal">
 
   <p class='mb-4 font-bold'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -41,7 +41,7 @@ Ember components let you set the classes for a component in their controller. Th
 
 However, make sure your components don't require directly passing different classes to components in order to change styles. This mixes the component abstraction with the functional CSS abstraction, which makes managing and updating the CSS tougher.
 
-```
+```javascript
 // Bad
 {{#ui-title class="bg-blue"}}
     Title here!
@@ -59,7 +59,7 @@ However, one issue is that it can lead to excessive component rendering, which d
 
 A useful add-on for managing different styles and classes is the `ember-cli-ui-components` add-on (still experimental, not yet open-source), which has a future of creating different groups of classes to use and reference on components.
 
-```
+```javascript
 import { Styled, group } from 'ember-cli-ui-components';
 
 export default Component.extend(Styled, {

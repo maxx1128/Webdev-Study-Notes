@@ -4,7 +4,7 @@
 
 Loops through all the properties and values of an object, in case all need to be looked at.
 
-```
+```javascript
 const RWBY_colors = {
   ruby: 'red',
   yang: 'yellow',
@@ -26,7 +26,7 @@ for (let character in RWBY_colors) {
 
 Creates an array of all the object's values
 
-```
+```javascript
 const RWBY_colors = {
   ruby: 'red',
   yang: 'yellow',
@@ -42,7 +42,7 @@ const colors = Object.values(RWBY_colors);
 
 Same as `Object.values()`, but for the keys
 
-```
+```javascript
 const RWBY_colors = {
   ruby: 'red',
   yang: 'yellow',
@@ -58,7 +58,7 @@ const names = Object.keys(RWBY_colors);
 
 This is a combination of the above. All key-value pairs are returned as arrays, all as an item inside another array. Any objects set as values here stay as objects.
 
-```
+```javascript
 const RWBY_colors = {
   ruby: 'red',
   yang: 'yellow',
@@ -79,7 +79,7 @@ const huntresses = Object.entries(RWBY_colors);
 
 Object spreading lets you add key-value pairs into an object without mutation (it's a new object).
 
-```
+```javascript
 const RWBY_colors = {
   ruby: 'red',
   yang: 'yellow',
@@ -106,7 +106,7 @@ const two_team_colors = {
 
 Prevents an object from being modified or added to again. Useful since `const` doesn't actually do this.
 
-```
+```javascript
 const RWBY_colors = {
   ruby: 'red',
   yang: 'yellow',
@@ -127,7 +127,7 @@ RWBY_colors.nora = 'pink';
 
 Prevents an object from being added to, but existing properties can be changed.
 
-```
+```javascript
 const RWBY_colors = {
   ruby: 'red',
   yang: 'yellow',

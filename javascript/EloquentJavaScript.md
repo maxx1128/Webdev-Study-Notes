@@ -12,7 +12,7 @@ An exercise the book mentions is one that is often used in coding interviews, so
 
 Here's my own solution to this problem:
 
-```
+```javascript
 let number = 1;
 
 while (number <= 100) {

@@ -4,7 +4,7 @@ The `model` function is what's used to get info from the data source and is pass
 
 Get any current parameters in the URL by referencing them in the `model()` function.
 
-```
+```javascript
 import Route from '@ember/routing/route';
 
 export default Route.extend({
@@ -17,7 +17,7 @@ export default Route.extend({
 
 Specific routes can be [assigned to certain paths](https://emberigniter.com/building-user-interface-around-ember-data-app/) in the main router file:
 
-```
+```javascript
 Router.map(function() {
   this.route('books', { path: '/' });
   this.route('author', { path: '/author/:author_id' });
@@ -26,7 +26,7 @@ Router.map(function() {
 
 Route parameters are the ones with the colon prepended. They can be accessed in the model by including the `params` argument in the function.
 
-```
+```javascript
 model(params) {
   return this.store.findRecord('author', params.author_id);
 }
@@ -34,7 +34,7 @@ model(params) {
 
 You can also grab values set or computed in the controller with the below method. This is great for creating router actions bound to values calculated in the controller, such as calculating if all items in a model have been displayed.
 
-```
+```javascript
 this.controllerFor('<controller_name>').get('<property_name>');
 ```
 
@@ -42,7 +42,7 @@ this.controllerFor('<controller_name>').get('<property_name>');
 
 If you need to load multiple models as a single promise object, the `RSVP.hash` tool lets you do this. It accepts a hash, where each value is a promise. This way you can have a promise activate once all the promises are resolved, such as a loading screen being toggled off.
 
-```
+```javascript
 import { hash } from 'rsvp';
 
 model(params) {

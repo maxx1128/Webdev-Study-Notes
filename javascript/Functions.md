@@ -4,7 +4,7 @@ Functions are the core of Javascript, allowing coders to wrap larger functionali
 
 Functions begin with the keyword `function`, followed by any `parameters` (may have multiple or none) and then the `body` with the statements the function executes. The traditional syntax always requires curly braces around the body (ES6 rules have exceptions). Two examples of different functions the book gives are below, showing some variety in parameters and complexity. Note that the first doesn't return a value (would give `undefined`) while the second does (using `return`).
 
-```
+```javascript
 const makeNoise = function() {
   console.log("Pling!");
 };
@@ -35,7 +35,7 @@ Arrow functions are the new ES6 syntax for JavaScript functions. They're great f
 
 These are more similar to ES5 functions, since it gives you multiple lines and must implicitly return a value.
 
-```
+```javascript
 const arrowFunction = () => {
   return 'This is a string being returned!';
 }
@@ -45,7 +45,7 @@ const arrowFunction = () => {
 
 Without the body, arrow functions are limited to one line and implicitly return what's there. Great for simpler code so it's easier to read.
 
-```
+```javascript
 // Parenthesis are either blank or hold parameters
 const arrowFunction = () => 'This is a string being returned!';
 const doubleNumber = (n) => n * 2;
@@ -61,7 +61,7 @@ Functions can work with more than just straight values, they can take and return
 
 Below is a simple example:
 
-```
+```javascript
 function formatter(formatFn) {
   return function inner(str){
     return formatFn( str );
@@ -79,13 +79,13 @@ It looks convoluted, but the basic use of this function is to **take functions b
 
 As an example, let's say we had a function that uppercases the first letter of a string.
 
-```
+```javascript
 const upperFirst = (string) => `${string[0].toUpperCase()}${string.substr( 1 ).toLowerCase()}`;
 ```
 
 We could pass this function into `formatter` and then call it later. We can also adjust `formatter` to better show the control it gives us.
 
-```
+```javascript
 const formatter = (formatFn) => {
   return function inner(str){
     console.log(`Your returned string is "${formatFn( str )}."`);
@@ -104,7 +104,7 @@ We can use `formatter` for any number of other ways to change strings - all lowe
 
 Note that you don't need to define your functions in a variable before passing them them, you can define them in the argument itself. The end result is the same, so it's a matter of preference.
 
-```
+```javascript
 const logLower = formatter( function formatting(string){
     return string.toLowerCase();
 } );

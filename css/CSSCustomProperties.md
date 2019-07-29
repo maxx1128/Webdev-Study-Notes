@@ -4,7 +4,7 @@ CSS Custom Properties are basically **variables you can use in normal CSS.** Unl
 
 ## Syntax
 
-```
+```css
 // Where you can define base property values
 :root { --background-color: #eee; }
 
@@ -44,7 +44,7 @@ CSS Custom Properties are basically **variables you can use in normal CSS.** Unl
 
 Custom properties are best used for more dynamic values that change in different conditions. For example, we may want a slight variation on button sizes on different screen widths. This can be handled with a combination of custom properties and preprocessor variables _(1)_:
 
-```
+```css
 $button-sml: 1em;
 $button-med: 1.5em;
 $button-lrg: 2em;
@@ -65,7 +65,7 @@ This gives all buttons a base font-size, and adjusts the font-size value for lar
 
 Another rule: **don't give one property multiple custom properties.** If you need to change a value on something like a breakpoint, do it with a dynamic, local custom property _(1)_.
 
-```
+```css
 .example {
   // Custom Property Values
   --example-font-size: 1.2em;

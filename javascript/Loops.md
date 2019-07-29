@@ -4,7 +4,7 @@
 
 Sometimes code must be repeated so often that the above approach won't work. **While loops** make this easier, as they constantly repeat code under a certain condition. Logging all number in a certain range (between 10 and 100) works this way:
 
-```
+```javascript
 let number = 10;
 
 while (number <= 100) {
@@ -17,7 +17,7 @@ Notice how this demonstrates how binding can control the execution of a code.
 
 **Do loops** are the same, but are set up so they execute their code at least once. In the below example, even if `number` is set `100`, it will still run at least once.
 
-```
+```javascript
 let number = 100;
 
 do {
@@ -38,7 +38,7 @@ For Loops do the same basic functions as While/Do loops, but give you more contr
 
 The example below using the loop variable in all three areas, but note that anything else could be used if wanted.
 
-```
+```javascript
 let result = 1;
 for (let counter = 0; counter < 10; counter = counter + 1) {
   result = result * 2;

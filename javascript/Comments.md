@@ -2,7 +2,7 @@
 
 Code should aim to be self-explanatory, but that's not always possible. Comments can help give extra context when needed. They can either one line or multiple lines.
 
-```
+```javascript
 // One line comment!
 
 /*

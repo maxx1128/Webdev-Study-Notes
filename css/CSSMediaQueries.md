@@ -10,7 +10,7 @@
 * Can be for width or height
 * Preferred over max-width, since it encourages mobile-first design
 
-```
+```css
 @media (min-width: 30em) { ... }
 @media (min-height: 30em) { ... }
 ```
@@ -20,7 +20,7 @@
 * Any viewports **larger** than the set size will use these styles
 * Can be for width or height
 
-```
+```css
 @media (max-width: 30em) { ... }
 @media (max-height: 30em) { ... }
 ```
@@ -29,7 +29,7 @@
 
 * Works on screens with a specific ratio between the viewport height and width
 
-```
+```css
 @media (aspect-ratio: 11/5) { ... }
   // Height of 10rem and width of 22rem
   // Also height of 22rem and width of 10rem
@@ -42,7 +42,7 @@
   - Portrait: the height is greater than or equal to the width
 * May be paired with `screen` media query to be sage
 
-```
+```css
 @media screen and (orientation: landscape) {
   .layout { flex-direction: row; } // Horizontal layout for more horizontal screens
 }
@@ -63,7 +63,7 @@
 * For screens with color
 * Can be for screens with any color capabilities, or specific bits per color component (way of measuring number of colors)
 
-```
+```css
 p { color: black } // Default, grayscale devices
 
 @media (color) {
@@ -81,7 +81,7 @@ p { color: black } // Default, grayscale devices
 * Can be a specific DPI, or a minimum or maximum DPI
 * Great for styling or layout for higher DPI devices
 
-```
+```css
 @media (resolution: 50dpi) { ... } // Only for devices with 50dpi
 
 @media (min-resolution: 300dpi) {
@@ -97,7 +97,7 @@ p { color: black } // Default, grayscale devices
 
 * Targets typical screen devices, like phones and computers
 
-```
+```css
 @media screen { ... }
 ```
 
@@ -106,7 +106,7 @@ p { color: black } // Default, grayscale devices
 * Targets pages being printed
 * Can be used for adding psuedo-elements to show shorter links, or even QR codes, in place of long links atop a printed page
 
-```
+```css
 @media print { ... }
 ```
 
@@ -115,7 +115,7 @@ p { color: black } // Default, grayscale devices
 * Targets pages being used by screen readers. This isn't always reliable however, since browsers may not always share this info.
 * Can help tell the browser how to read content
 
-```
+```css
 @media speech { ... }
 ```
 
@@ -124,7 +124,7 @@ p { color: black } // Default, grayscale devices
 * Is usually the default for the Type media query.
 * The cascade into other types of devices may create accidents or unintended effects, so `screen` may be a better option in many cases.
 
-```
+```css
 @media all { ... }
 ```
 
@@ -138,7 +138,7 @@ You can use different logic for how CSS should apply all these queries.
 * Tells the CSS that both queries (before and after the term) must evaluate to **true**
 * Done by using the word "and" between queries
 
-```
+```css
 @media screen and (min-width: 30rem) { ... }
 ```
 
@@ -148,7 +148,7 @@ You can use different logic for how CSS should apply all these queries.
 * Tells the CSS that either one of the queries before or after must evauate to **true.** If one is false, the browser gets the CSS.
 * Done by using a comma between queries
 
-```
+```css
 @media screen, (min-width: 30rem) { ... }
 ```
 
@@ -159,7 +159,7 @@ You can use different logic for how CSS should apply all these queries.
 * Done by putting the word "not" before the query
 * When used as part of an "and" or "or" query pair, "not" only applies to the one query it's used on
 
-```
+```css
 @media not screen { ... }
 @media not screen and (min-width: 30rem) { ... } // Works if it's not a screen, AND the width is larger than 30rem
 @media not screen, (min-width: 30rem) { ... } // Works if it's not a screen, OR the width is larger than 30rem
@@ -173,7 +173,7 @@ You can use different logic for how CSS should apply all these queries.
 * Needs to check a property and value
 * Older browsers that don't support `@supports` will just skip it. Usually older browsers with less feature support anyway.
 
-```
+```css
 .layout {
   display: block;
 }

@@ -7,7 +7,7 @@ Many of my CodePen pens require a JS framework for handling more complex interac
 1. Add `https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js` to the JS imports
 2. Use the following boilerplate for Vue:
 
-```
+```javascript
 new Vue({
   el: '#elName',
   date: {}, // App data, such as state and results
@@ -23,7 +23,7 @@ new Vue({
 <p data-height="265" data-theme-id="0" data-slug-hash="Mqyazo" data-default-tab="js,result" data-user="max1128" data-pen-title="Vue Template" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/max1128/pen/Mqyazo/">Vue Template</a> by Maxwell Antonucci (<a href="https://codepen.io/max1128">@max1128</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-```
+```javascript
 new Vue({
   el: '#vuePen',
 
@@ -56,7 +56,7 @@ Use double brackets, such as `{{number}}`.
 
 Use `v-for` for standard for loops on an HTML template. The HTML element will be repeated for each item from `data`.
 
-```
+```html
 <div v-for="(door) in doors"></div>
 
 <div v-for="(door, index) in doors"></div>
@@ -67,7 +67,7 @@ Use `v-for` for standard for loops on an HTML template. The HTML element will be
 
 Use `v-bind:class` to bind one or more classes based on other values or calculations
 
-```
+```html
 <div v-bind:class="{ active: isActive }"></div>
 <!-- If isActive is true, the 'active' class is added. First class, then value! -->
 
@@ -82,7 +82,7 @@ Use `v-bind:class` to bind one or more classes based on other values or calculat
 
 Use `v-if` on an HTML template to render it only if the included JavaScript evaluates to true.
 
-```
+```html
 <h2 v-if="finished === false">
   The Monty Hall Dilemma
 </h2>
@@ -103,7 +103,7 @@ Use `v-if` on an HTML template to render it only if the included JavaScript eval
 
 Methods can be attached to HTML objects, and then linked to certain events. A basic one shown below is the click event on a button.
 
-```
+```html
 <button class="btn btn-success" href="javascript:void(0)" role="button" v-on:click="reset()">
   Reset the game!
 </button>

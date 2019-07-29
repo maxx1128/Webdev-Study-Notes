@@ -10,7 +10,7 @@ Define variables accessible to the view with the `@` sign, also known as *Instan
 
 Here's a simple example of a controller action that grabs some database info and passes it on to a template.
 
-``` ruby
+```ruby
 def show
   # Using an abstraction like ActiveRecord to get needed data for template
   @categories_desc = Category.all.order({ created_at: :desc })

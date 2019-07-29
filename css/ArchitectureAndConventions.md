@@ -20,7 +20,7 @@ SEM stands for **Scalable, Extensible, Maintainable.** It's a high-level CSS phi
 
 BEM stands for **Block, Element, Modifier.** It's a CSS naming convention that helps keep specificity low and classes easily identifiable.
 
-```
+```css
 <div class="o-layout">
   <header class="o-layout__item o-layout__header">
     ...
@@ -37,7 +37,7 @@ BEM stands for **Block, Element, Modifier.** It's a CSS naming convention that h
 </div>
 ```
 
-```
+```css
 .o-layout { ... }
 .o-layout__item { ... }
 .o-layout__header { ... }

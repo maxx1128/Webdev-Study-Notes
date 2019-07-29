@@ -4,7 +4,7 @@ Classes are a staple of object-oriented programming, and allow coders to create 
 
 An important part of classes that carries over to JS classes is `inheritance`. The below example shows that `Coder` is an extension of `Person`, so it inherits everything from it and can add/overwrite other methods too. A common practice is defining a base class that sets up frequent methods, especially ones that talk with an API, and extend different portions of the application off of this. This way developers can quickly scale up new functionality that can interface with the core app.
 
-```
+```javascript
 class Person {
   constructor(firstname, lastname) {
     this.firstname = firstname;

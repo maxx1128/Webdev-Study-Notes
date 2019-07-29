@@ -4,7 +4,7 @@
 
 Get the length of a string, spaces and all. Doesn't count just letters, it goes the inclusive route and counts them all!
 
-```
+```javascript
 let str = "Nightmare Bonnie hates the flashlight.";
 
 console.log(str.length);
@@ -15,7 +15,7 @@ console.log(str.length);
 
 Removes the whitespace at the beginning and end of a string. **Not the white space between characters!**
 
-```
+```javascript
 let str = "    Shine the light on Plushtrap. Be careful...      ",
     trimmedStr = str.trim();
 
@@ -27,7 +27,7 @@ console.log(trimmedStr);
 
 Returns a true or false value if a string contains a substring.
 
-```
+```javascript
 let str = "What was The Bite of 87?";
 
 console.log(str.includes("Bite"));
@@ -40,7 +40,7 @@ console.log(str.includes("Golden Freddy"));
 
 Get the string index (starting from 0) of where a substring first occurs in a longer string. If the substring isn't there, it returns `-1`.
 
-```
+```javascript
 let alphabet = "abcdefg";
 
 console.log(alphabet.indexOf('d'));
@@ -55,7 +55,7 @@ console.log(alphabet.indexOf('h'));
 
 These respective functions turn a string to all lowercase and uppercase letters. Pretty self-explanatory.
 
-```
+```javascript
 let lowercaseString = "was that breathing?!",
     uppercaseString = "I HAVE TO LISTEN QUIETLY...";
 
@@ -67,7 +67,7 @@ console.log(uppercaseString.toLowerCase());
 
 There's no included method for capitalizing a string, but you can make a function to do this instead. Several string methods used here are explained further on.
 
-```
+```javascript
 let lowercaseString = "was that breathing?!";
 
 function toCapitalizeString(string) {
@@ -87,7 +87,7 @@ console.log(capitalizedSentence);
 
 Self-explanatory too, it replaces the first instance of a substring with another one. If you want to replace all instances, the string will need to be put within the global regex like this: `/<substring>/b`.
 
-```
+```javascript
 let str1 = "Nightmare Bonnie is down the hall!",
     str2 = "Was that Nightmare Bonnie? It must have been Nightmare Bonnie!";
 
@@ -106,7 +106,7 @@ Slice takes a substring out of a string, cutting it out by specifying the starti
 * You can use a negative number to count the index, starting from _the end of the string_
 * Just using -1 gives the last character in the string
 
-```
+```javascript
 let str = 'Nightmare Bonnie';
 
 console.log(str.slice(10));
@@ -125,7 +125,7 @@ console.log(str.slice(-1));
 
 Turns a string into an array by breaking it apart by the specificied substring. Using an empty string, or `''`, breaks the string apart by each character (including spaces).
 
-```
+```javascript
 let str = "Freddy Bonnie Chica Foxy";
 
 console.log(str.split(' '));
@@ -138,7 +138,7 @@ console.log(str.split(''));
 
 Takes a string and copies it a set number of times into a new string. Best used with `.trim()` to remove leftover white space.
 
-```
+```javascript
 let str = "What was that?! ";
 
 console.log(str.repeat(3).trim());
@@ -151,7 +151,7 @@ Checks to see if a substring is matched in a string, and returns the matched str
 
 Using a regex lets you look for multiple matches and see the specific ones in the array.
 
-```
+```javascript
 let str = "Was that Bonnie or Chica?! I think it was Chica...",
     bonnieMatches = str.match(/Bonnie/g),
     chicaMatches = str.match(/Chica/g),
@@ -169,7 +169,7 @@ console.log(capitalMatches);
 
 Gets the string character at a specific index. Will only accept positive numbers, can't use negative ones to start from the end.
 
-```
+```javascript
 let str = "Freddy";
 
 console.log(str.charAt(0));

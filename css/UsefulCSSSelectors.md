@@ -6,7 +6,7 @@ This is a list of useful Sass/CSS code for selecting elements based on many diff
 
 This selects all sibling elements after the indicated one by using a `~` symbol. Compare it to the direct sibling selector, `+`, which only selects the sibling right next to it.
 
-```
+```css
 .first-element + div { ... }
 // Only the div right next to the first element
 
@@ -18,7 +18,7 @@ This selects all sibling elements after the indicated one by using a `~` symbol.
 
 You can style elements based on if an attribute is there, regardless of any value.
 
-```
+```css
 a[href] { ... }
 // Target all anchors with an href
 
@@ -28,7 +28,7 @@ a:not([href]) { ... }
 
 There's also several selectors that target the attribute's values in different ways. They look for different kinds of partial matches, making them more flexible and can be fine-tuned as needed.
 
-```
+```css
 div[class^="size"] { ... }
 // Targets divs with class names that start with "size"
 
@@ -53,7 +53,7 @@ div[class~="large"] { ... }
 
 If there's nothing in an element, you can style it differently or even hide it altogether
 
-```
+```css
 div:empty { ... }
 
 // You can use the inverse too
@@ -66,7 +66,7 @@ div:not(:empty) { ... }
 
 If you want to style items differently if there's a certain amount (such as making them smaller if there's at least five), use the below mixin.
 
-```
+```css
 @mixin at-least($min) {
   &:first-child:nth-last-child(n+#{$min}),
   &:first-child:nth-last-child(n+#{$min}) ~ li {
@@ -86,7 +86,7 @@ li {
 
 ## Select Range of Items
 
-```
+```css
 // range selector mixin
 @mixin select-range($start, $end){
   &:nth-child(n+#{$start}):nth-child(-n+#{$end}){
@@ -100,7 +100,6 @@ li {
     // Styles here apply to items four to seven in the list
   }
 }
-
 ```
 
 ## Select All Items Based on Number of Siblings
@@ -112,7 +111,7 @@ The `mod` query, as the article I'm referencing describes it, applies styles to 
 
 See the full mixin here:
 
-```
+```css
 // mod query mixin
 @mixin mod-list($mod, $remainder){
   &:nth-last-child(#{$mod}n+#{$remainder}):first-child,
@@ -138,7 +137,7 @@ li {
 
 Other selectors can also be used within this, to narrow down what items to select when this criteria is met.
 
-```
+```css
 li {
   @include mod-list(4, 0) {
     &:first-of-type {

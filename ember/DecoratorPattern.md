@@ -8,7 +8,7 @@ How one constructs decorators will vary by program, framework, and language. Thi
 
 The Decorator here will be a basic Ember Object, which brings all the usual Ember functionality and magic as components and controllers. In a folder such as `app/decorators`, a basic setup would look like this:
 
-```
+```javascript
 // app/decorators/comment.js
 import EmberObject from '@ember/object';
 
@@ -23,13 +23,13 @@ Before specifying what the decorator does, let's look at how it'll be used. It's
 
 Let's say this decorator is being called in the `comments` controller. Importing it requires this line at the top:
 
-```
+```javascript
 import CommentDecorator from './../decorators/comment';
 ```
 
 Next, we need to create an instance of this Ember Object and pass it the comment data. This could be in a computed property, where we map over each comment object and pass it into the presenter.
 
-```
+```javascript
 allComments: computed('comments', function() {
   return this.comments.map(comment => CommentDecorator.create(comment));
 })
@@ -39,7 +39,7 @@ Each comment will now become an Ember object, with any additional properties add
 
 Presenters don't need to be mapped over. If there were a single comment to be decorated instead, it could just be this:
 
-```
+```javascript
 topComment: computed('comment', function() {
   return CommentDecorator.create(this.comment);
 })
@@ -51,7 +51,7 @@ With the decorator up and running with our data, now we can make adjustments as 
 
 Need to copy one attribute but with a different name? Use `reads`!
 
-```
+```javascript
 import { reads } from `@ember/object/computed`
 
 export default EmberObject.extend({
@@ -61,7 +61,7 @@ export default EmberObject.extend({
 
 Need to make a new property based on other info and it take some logic? Use a `computed` property!
 
-```
+```javascript
 import { computed } from `@ember/object`
 
 export default EmberObject.extend({

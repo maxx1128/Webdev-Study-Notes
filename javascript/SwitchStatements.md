@@ -2,7 +2,7 @@
 
 Large amounts of conditionals can often be awkward for `if` statements. The `switch` statement will often work better
 
-```
+```javascript
 switch (variable_here) {
     case (10):
         console.log("It's ten!");

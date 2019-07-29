@@ -2,7 +2,7 @@
 
 `computed` gives access to different included Ember functions for presenting or manipulating info provided by the router. A simple example:
 
-```
+```javascript
 import { computed } from '@ember/object';
 import Controller from '@ember/controller';
 
@@ -18,7 +18,7 @@ export default Controller.extend({
 
 It also lets you `filter` or `map` results to narrow them down or manipulate large amounts at once.
 
-```
+```javascript
 import { computed } from '@ember/object';
 
 english: computed.filter('model.entries', function(entry) { // Entry is each item in "model.entries"
@@ -37,7 +37,7 @@ A simpler option for filtering is the `filterBy` option, which doesn't take a fu
 2. The property of each item in the array to check for the filter
 3. The value each selected property needs to be included. Otherwise it gets filtered out.
 
-```
+```javascript
 import { filterBy } from '@ember/object/computed';
 
   livingRelatives: filterBy('model', 'alive', true)
@@ -45,7 +45,7 @@ import { filterBy } from '@ember/object/computed';
 
 If you need to return a basic property of another object, you can use the `alias` macro.
 
-```
+```javascript
 import { alias } from '@ember/object/computed';
 
   members: ["Jeff", "Joe", "John", "Jim", "Jed"],
@@ -54,7 +54,7 @@ import { alias } from '@ember/object/computed';
 
 To input an array of items from an object for a computed property, you can use `@each`.
 
-```
+```javascript
 import { computed } from '@ember/object';
 
   average_number: computed('data.@each.number', function(){
@@ -84,7 +84,7 @@ This is a controller tool to move to different routes after an action. For examp
 
 Another good use case: after deleting an item, go to the page with the list of remaining items.
 
-```
+```javascript
 this.transitionToRoute('fighters.fighter', this.get('model.id'));
 ```
 
@@ -92,7 +92,7 @@ this.transitionToRoute('fighters.fighter', this.get('model.id'));
 
 In controllers, you can use Ember's `toggleProperty` method to quickly change a boolean value to its opposite. It works for both controller or Ember object values, like so:
 
-```
+```javascript
 actions: {
   propertyName: false,
 
@@ -110,7 +110,7 @@ actions: {
 
 For child or parent controllers, you need to `inject` them into the controller. Then you access them through the namespace you select.
 
-```
+```javascript
 // Application controller
 export default Controller.extend({
   testInteger: 1,

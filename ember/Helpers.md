@@ -2,14 +2,14 @@
 
 Basic `{{if}}` helper evaluates the variable/expression inside it and returns based on if it's true or false. A basic example is:
 
-```
+```handlebars
 {{if var 'TRUE STRING' 'FALSE STRING'}}
 ```
 
 The resulting string for if it's false is optional.
 
 There's also a block version of this helper with the following syntax (the `else` is optional).
-```
+```handlebars
 {{#if var}}
   Show me if true!
 {{else}}
@@ -19,10 +19,12 @@ There's also a block version of this helper with the following syntax (the `else
 
 The `action` helper is used for triggering interactivity. The first argument is a string that names the action linked to the controller. The controller has an `actions` hash, where functions with those names contain the action's functionality.
 
-```
+```handlebars
 // Template
 <button {{action 'buttonClick'}}>Click me!</button>
+```
 
+```javascript
 // Controller
 import Controller from '@ember/controller';
 
@@ -41,7 +43,7 @@ The controller's function can contain arguments. These arguments are added to th
 
 The `{{link-to}}` helper is an Ember tool included for linking between different pages. It works for both static and dynamic urls, lettings you include as needed parameters.
 
-```
+```handlebars
 {{link-to <text> <route path> <route parameter values>...}}
 
 {{link-to "Homepage" home}} // Assumes an existing route called home
@@ -55,13 +57,13 @@ Links that match the route currently being visited (it goes up the path to match
 
 The "active" class can be changed like so:
 
-```
+```handlebars
 {{link-to "Homepage" home activeClass="custom_active_class"}}
 ```
 
 If you need a wrapper around a link to have the active class, use the [Ember Active Link Wrapper](https://github.com/alexspeller/ember-cli-active-link-wrapper) add-on. It can also have a custom active class, and the wrapping tag can be set too.
 
-```
+```handlebars
 {{#active-link tagName="div" activeClass="custom_active_class"}}
   Link below!
   {{link-to "some page" page.link}}
@@ -78,7 +80,7 @@ An example generating command and helper:
 
 In the `helpers/equals.js` file, you can define how the params input into the helper will be evaluated. They can evaluate to any output a JS function can, including true/false ones to be used in conditionals.
 
-```
+```javascript
 import { helper } from '@ember/component/helper';
 
 export function equals(params/*, hash*/) {
@@ -90,20 +92,20 @@ export default helper(equals);
 
 This will take two arguments, check if they equal each other, and evaluate from there. A good example is using the above helper to control if a button is disabled or not. This button decreases a rating variable, and will disable the button if the rating is zero to keep it from getting any lower.
 
-```
+```handlebars
 <button {{action 'updateRating' rating -1}} disabled={{equals rating 0}}>-</button>
 ```
 
 Custom helpers can also be used as arguments for components, with the following syntax, using parenthesis when inside the component's double brackets (subexpressions).
 
-```
+```handlebars
 {{#complex-input
     inputShown=(equals rating 0)}}
 ```
 
 This also works for conditionals in `if` helpers.
 
-```
+```handlebars
 {{#if (equals total_score 100)}}
   You got a perfect score!
 {{else}}
@@ -113,7 +115,7 @@ This also works for conditionals in `if` helpers.
 
 Subexpressions can also be stacked.
 
-```
+```handlebars
 (equals (rounded test_score) 95) // Rounds a value, then sees if it equals 95
 ```
 
@@ -121,14 +123,15 @@ Subexpressions can also be stacked.
 
 You can better organize a helper's parameters using ES6 Destructuring, giving them names and defaults. The above one comparing values could be rewritten as this, with the second having a default.
 
-```
+```javascript
 export function equals([value_1, value_2 = 0]) {
   return value_1 == value_2;
 }
 ```
 
 The last parameter in the helper function can be a hash, which is great for having optional arguments. They will be added by name in the helper, and can also have defaults.
-```
+
+```javascript
 export function equals([value_1, value_2 = 0], {item_1, item_2 = 'Lorem'}) {
   return value_1 == value_2;
 }
@@ -141,7 +144,7 @@ export function equals([value_1, value_2 = 0], {item_1, item_2 = 'Lorem'}) {
 
 Ember has a helper for returning HTML, which can be used in custom helpers like below:
 
-```
+```javascript
 import { htmlSafe } from '@ember/string';
 
 export function heading([text, heading_size = 2], {class}) {
