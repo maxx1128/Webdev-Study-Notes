@@ -144,6 +144,8 @@ export function equals([value_1, value_2 = 0], {item_1, item_2 = 'Lorem'}) {
 
 Ember has a helper for returning HTML, which can be used in custom helpers like below:
 
+This can be risky however, since it leaves you open to cross-scripting attacks. If the HTML is composed of anything based off user-input, they could write custom scripts that your app will sanitize and run, even if they're damaging to the page. So be careful to spot when this may be the case.
+
 ```javascript
 import { htmlSafe } from '@ember/string';
 
