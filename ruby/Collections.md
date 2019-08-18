@@ -141,6 +141,25 @@ puts array.index { |item| item > 33 } # 1
 
 You can use `rindex` for the same check, but starting from the end of the array instead.
 
+### sample
+
+Sample gets one or more random items from an array.
+
+With no argument, it gets one item.
+
+With an integer argument, it returns an array of that length with that number of random items. It does not get multiples and cannot return an array longer than the original.
+
+```ruby
+numbers = [1, 2, 3, 4, 5]
+random_number = numbers.sample
+random_numbers = numbers.sample(3)
+
+puts random_number
+# 5
+puts random_numbers
+# [2, 4, 3]
+```
+
 ### map
 
 Similar to JavaScript, `map` takes an array, performs a function or operation on each item, and returns a new array.
