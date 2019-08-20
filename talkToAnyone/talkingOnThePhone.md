@@ -6,7 +6,7 @@ When on the phone, take all physical, nonverbal gestures and translate them into
 
 ## Name Shower
 
-Using names more often over the phne helps keep someone's attention and reinforce a connection.
+Using names more often over the phone helps keep someone's attention and reinforce a connection.
 
 ## "Oh Wow, It's You!"
 
