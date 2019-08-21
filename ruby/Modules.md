@@ -20,6 +20,8 @@ The module can then be included in a class, and all its methods and whatever sha
 
 ```ruby
 class ExampleClass
+  include ExampleModule
+
   def is_true?(var)
     true(var)
   end
