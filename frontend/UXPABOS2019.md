@@ -365,6 +365,10 @@ Design decisions often reflec exist hierarchies unless the work to change them, 
 
 ## Tweets
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Real-life usability issue? I&#39;ve just found this one <a href="https://twitter.com/hashtag/UXPABOS19?src=hash&amp;ref_src=twsrc%5Etfw">#UXPABOS19</a> <a href="https://twitter.com/hashtag/accessibility?src=hash&amp;ref_src=twsrc%5Etfw">#accessibility</a> <a href="https://twitter.com/hashtag/readability?src=hash&amp;ref_src=twsrc%5Etfw">#readability</a> <a href="https://twitter.com/hashtag/dexterity?src=hash&amp;ref_src=twsrc%5Etfw">#dexterity</a> cc <a href="https://twitter.com/uxpaboston?ref_src=twsrc%5Etfw">@uxpaboston</a> <a href="https://t.co/HvsswPdMhj">pic.twitter.com/HvsswPdMhj</a></p>&mdash; Michal Maňák (@manakmichal) <a href="https://twitter.com/manakmichal/status/1126830421034008579?ref_src=twsrc%5Etfw">May 10, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 * UX nametag issue - https://twitter.com/manakmichal/status/1126830421034008579
 * Inconsistent colors - https://twitter.com/kirstenrobinson/status/1126835694486413314
 * Small WiFi text - https://twitter.com/kirstenrobinson/status/1126835845238067200
