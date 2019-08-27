@@ -54,3 +54,16 @@ testfunction() {
 testfunction foo!
 // "Parameter #1 is $foo!"
 ```
+
+## Fixing an Old Command
+
+If you want to change a command you just ran, running this pops it back with some characters replaced. Note that only the first instance of the string is replaced, not each one.
+
+```
+ls foo
+^foo^bar
+
+ls bar
+```
+
+Running the first two commands makes the last one pop back up. You can make a few more tweaks or run it again.
