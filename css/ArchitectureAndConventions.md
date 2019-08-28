@@ -1,6 +1,6 @@
 # Architecture and Conventions
 
-# SEM
+## SEM
 
 SEM stands for **Scalable, Extensible, Maintainable.** It's a high-level CSS philosophy meant to inform all CSS written in a repository.
 
@@ -16,7 +16,7 @@ SEM stands for **Scalable, Extensible, Maintainable.** It's a high-level CSS phi
   - Give components a single source of truth
   - Set specific standards to follow, such as with a linting tool
 
-# BEM
+## BEM
 
 BEM stands for **Block, Element, Modifier.** It's a CSS naming convention that helps keep specificity low and classes easily identifiable.
 
@@ -52,7 +52,7 @@ BEM stands for **Block, Element, Modifier.** It's a CSS naming convention that h
 
 The CSS for each class is not nested, affected by parent selectors, or influencing any child selectors. At most you'd need to nest 1-2 levels on, for rare cases. Usually things can be kept at a single class level, keeping CSS specificity low.
 
-# ITCSS
+## ITCSS
 
 ITCSS is **Inverted Triangle CSS,** and is a file architecture to **better organize CSS files so it's easier to scale and maintain.** It works best with a preprocessor like Sass, but can be used without it.
 
@@ -68,7 +68,7 @@ ITCSS requires importing or referencing all your CSS files in the following orde
 
 Note that as you go down the reference list, CSS specificity gradually increases. This fits with the cascading nature of CSS, so specificity is easier to manage and there's less leaking styles. Classes expected to override others, like Components overriding Objects, will override predictably and help make the CSS maintainable and extensible.
 
-# OOCSS
+## OOCSS
 
 OOCSS is **Object Oriented CSS,** and is a methodology for structuring CSS components. It approaches components like lego blocks: **each component is built out entirely separate from each other, then combined to make larger ones.**
 
