@@ -11,7 +11,20 @@ Some large resources to better learn programming or computer science as a whole
 * [Learn X in Y Minutes](https://learnxinyminutes.com/)
   * A long list of free crash courses in languages, tools, and other CS topics
 
-### Miscellaneous
+## API
+
+APIs, or Application Programming Interfaces, which provide lots of information and data to play around with and build programs off of.
+
+* [Programmable Web APIs](https://www.programmableweb.com/category/all/apis)
+  * A directory with hundreds of APIs you can search through. Quality not guaranteed, may or may not be free.
+* [Public APIs](https://github.com/public-apis/public-apis)
+  * Lots of free APIs you can play with. Ranges from the serious to the silly.
+* [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
+  * Lots of public datasets, in datasets or other downloadable/viewable forms
+* [PokeAPI](https://pokeapi.co/)
+  * An API full of Pokemon data. Good for making a Pokedex as a starter project.
+
+## Miscellaneous
 
 * [So You Just Learned](https://github.com/sublimemarch/so-you-just-learned)
   * So you learned there's systemic problems around gender, race, and other areas with the tech industry. What now? Great article resource for educating yourself.
