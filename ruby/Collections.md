@@ -194,18 +194,29 @@ puts total
 # 20
 ```
 
-### push, delete, pop, shift
+## Mutating Collections
 
-These four methods change the array they're called on in some way. Note these change the variable themselves, instead of limiting the change to a new variable. Use them with caution!
+The following methods change the array they're called on in some way. Note these change the variable themselves, instead of limiting the change to a new variable. Use them with caution!
 
-* `push` adds an item to the end of an array, and returns the changed array (with added elements). It can take multiple arguments, each of which are added in that order.
-* `delete` deletes any items from an array that matches the given value (can be multiple). If it finds no match, it returns `nil`. It can also take a block, which will run instead if there's no match.
-* `pop` removes the last element of an array, and returns the removed element. It can take a numerical argument, such as `pop(2)`, to remove multiple items at an array's end.
-* `shift` does the same as `pop`, but starting from the start of the array.
+### delete
 
-#### Bang Operators
+`delete` deletes any items from an array that matches the given value (can be multiple). If it finds no match, it returns `nil`. It can also take a block, which will run instead if there's no match.
 
-The above four methods (and likely several others) natively can change the same variable they call. Other methods, such as `sort` or `reverse`, don't ever change the actual array they're called on. Use them on an array and call it again, and it will be the same.
+### pop, shift
+
+`pop` removes the last element of an array, and returns the removed element. It can take a numerical argument, such as `pop(2)`, to remove multiple items at an array's end. The removed value can be saved to a variable and used for future actions. You can also add it back to the end of the array with `push` to undo this if needed.
+
+`shift` does the same thing but instead starts from the start of the array.
+
+### push, unshift
+
+`push` adds an item to the end of an array, and returns the changed array (with added elements). It can take multiple arguments, each of which are added in that order.
+
+`unshift` does the same thing but instead adds to the start of the array.
+
+### Bang Operators
+
+The above mutation methods (and likely several others) natively can change the same variable they call. Other methods, such as `sort` or `reverse`, don't ever change the actual array they're called on. Use them on an array and call it again, and it will be the same. These values are meant to be saved to new variables.
 
 ```ruby
 numbers = [2, 4, 6, 8]
