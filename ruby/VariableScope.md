@@ -2,7 +2,9 @@
 
 The different Ruby scopes and how to access them, mostly to control what's in the global scope.
 
-Global variables, available everywhere. Can be defined in classes and still be global, but must have `$` prepended
+## Global
+
+Global variables, available everywhere. Can be defined in classes and still be global, but must have `$` prepended. Best avoided.
 
 ```ruby
 puts global
@@ -19,8 +21,15 @@ puts $global
 Instance variables (`@`), only available to instances of specific classes
 
 ```ruby
-Object = Class.new('string')   # would be initialized as "@string" in the class
-puts Object.string
+class NewClass
+  initialize(string) do
+    @string = string
+  end
+end
+
+NewClassInstance = NewClass.new('I is a string')   # would be initialized as "@string" in the class
+puts NewClassInstance.string
+# I is a string
 ```
 
 ## Class
@@ -37,4 +46,5 @@ class NewClass
 end
 
 puts NewClass.show_class_var
+# hello!
 ```
