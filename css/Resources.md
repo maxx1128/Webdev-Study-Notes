@@ -23,3 +23,5 @@ Learn tougher CSS tools and concepts with dedicated resources and/or interactive
   * Learn Flexbox by setting up tower defenses against invaders
 * [CSS Grid Garden](https://cssgridgarden.com/)
   * Learn Grid by moving gardening materials around to maintain your garden
+* [Every Layout](https://every-layout.dev/)
+  * All the fundamental CSS layout designs, with how they solve certain problems and code solutions.
