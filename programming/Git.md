@@ -27,6 +27,10 @@ For taking all tracked changes and saving them as a single commit. Include the `
 * `git commit -a` commits all changes currently made in existing files.
 * `git commit -am` commits all changes currently made in existing files and takes the argument for adding a message.
 
+### `git show <commit>`
+
+Show the basic metadata of a commit and all the included changes. Just good for seeing what happened in a specific commit.
+
 ### `git reset`
 
 * `git reset HEAD --` removes all staged file changes, but keeps them as unchanged.
@@ -37,6 +41,12 @@ For taking all tracked changes and saving them as a single commit. Include the `
 
 If you need to forcibly clear out all changes in the working directory, run this command. Be warned that they'll be gone for good, short of a `reflog` retrieval.
 
+### `git pull`
+
+If there's any extra commits on the remote repo you don't have locally, it pulls them down and applies them locally.
+
+If there's a lot of changes that you're worried could conflict with changes you've made locally, `git fetch` downloads the new commits without applying them to your local code.
+
 ### `git branch`
 
 Create a branch to add commits and new changes, and later merge them into the main branch. This is a great way to add changes freely without affecting a live, or fully accepted, version of the site. You can create a branch off an existing one by:
@@ -46,6 +56,8 @@ Create a branch to add commits and new changes, and later merge them into the ma
 * Make commits as desired
 * Checkout the main branch again
 * Merge the new branch into this one with `git merge <new_branch_name>`
+
+If you no longer need or want this branch, you can use `git branch -d <branch_name>` to remove it locally. To remove the branch on a remote repo, you'll need to also run `git push <remote_repo> --delete <branch_name>`.
 
 #### Sort through lots of branches
 
@@ -61,9 +73,13 @@ Shows the changes between the last commit and all untracked changes. Also visual
 * `git diff <commit_id> HEAD` shows all changes between the **end of the selected commit** and a current state
     - So to find the different between HEAD and a commit, use the ID of the commit before that one
 
+### `git status`
+
+Show all current untracked and unstaged changes, and all tracked and staged changes as well. Great for making sense of large amounts of changes made without a commit.
+
 ### `git log`
 
-Shows a record of all the commits in a repo
+Shows a record of all the commits in a repo. Each entry includes the name, date, commit hash, and other basic meta data.
 
 * To show the history of a specific file, use `git log -- <path/to/file>`
 
