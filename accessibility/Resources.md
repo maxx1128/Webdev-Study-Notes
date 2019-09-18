@@ -19,3 +19,7 @@
 
 * [Patterns & Strategies for accessible web-apps](https://accessible-app.com/)
   * This guide gives good rules to follow for JavaScript applications in general, and specific code patterns to follow for some frameworks.
+* [Include Components](https://inclusive-components.design/)
+  * A blog/style guide breaking down common components with walkthroughs on making them inclusively
+* [Accessible Components with JS](https://github.com/scottaohara/accessible_components)
+  * Simple and useful accessible components with needed JavaScript
