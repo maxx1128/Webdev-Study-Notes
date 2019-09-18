@@ -176,7 +176,9 @@ print big_numbers
 
 `inject` is like a normal array, but with a few differences:
 
-* The loop takes two variable declaration. The first is the same as before, the current item in the loop. The second is a value that's carried over from the previous iteration, which I call the "carried variable." Each one can be used in the loop's code.
+* The loop takes two variable declaration.
+  1. The first is a value that's carried over from the previous iteration, which I call the "carried variable." Each one can be used in the loop's code.
+  2. The second the current item in the loop.
 * The return value replaces the carried variable in each iteration
 * It also takes an argument when called, which is the initial value of the carried variable. If you don't include this, it instead does:
   * Takes the first array value as the initial value.
@@ -189,7 +191,7 @@ numbers = [2, 4, 6, 8]
 
 # Each iteration returns the total with the next value added
 # Not including the initial value of '0' gives the same result
-total = numbers.inject(0) { |number, total| number + total }
+total = numbers.inject(0) { |total, number| number + total }
 puts total
 # 20
 ```
