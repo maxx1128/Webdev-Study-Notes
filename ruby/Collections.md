@@ -106,6 +106,89 @@ hash.each { |key, value| puts "#{key}: #{value}" }
 # foo: bar
 ```
 
+### `next`
+
+Calling `next` in an interation tells the code to stop right there and restart on the next collection item. You can attach conditions to it so you only run certain code for some of the interations.
+
+```ruby
+numbers = [1, 2, 3, 4, 5]
+
+numbers.each do |num|
+  next if num < 3 # Skips the below code if the condition is met
+  puts num
+end
+
+# 3, 4, 5
+```
+
+You can also reverse the effect with `unless`.
+
+```ruby
+numbers = [1, 2, 3, 4, 5]
+
+numbers.each do |num|
+  next unless num < 3 # Skips the below code unless the condition is met
+  puts num
+end
+
+# 1, 2
+```
+
+`next` also takes a value that will be returned if it kicks in. It could also run a method if you wanted it too.
+
+```ruby
+numbers = [1, 2, 3, 4, 5]
+
+numbers.each do |num|
+  next puts 'too low!' if num < 3
+  puts num
+end
+```
+
+Don't forget that `next` can also be used when mapping values, and can return or skip values when it kicks in.
+
+```ruby
+numbers = [1, 2, 3, 4, 5]
+
+new_numbers = numbers.map do |num|
+  next 'too low!' if num < 3
+  num
+end
+
+puts new_numbers
+# ["too low!", "too low!", 3, 4, 5]
+```
+
+If the above code just used `next if num < 3`, it would leave empty values in the array instead of the strings.
+
+### `break`
+
+`break` has all the same basic functionality as `next`, with the exception that instead of going to the next item in the collection, it cancels out the loop entirely. Good if you can't go past a certain point or need to just bail depending on how some data turned out.
+
+```ruby
+numbers = [1, 2, 3, 4, 5]
+
+numbers.map do |num|
+  break if num > 3
+  puts num
+end
+
+# 1, 2, 3
+```
+
+You can also pass in a value or method to call when `break` kicks in, like with `next`.
+
+```ruby
+numbers = [1, 2, 3, 4, 5]
+
+numbers.map do |num|
+  break puts 'STOP!' if num > 3
+  puts num
+end
+
+# 1, 2, 3, 'STOP!'
+```
+
 ## Useful Collection Methods
 
 ### sort
