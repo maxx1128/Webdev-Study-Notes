@@ -23,6 +23,10 @@ APIs, or Application Programming Interfaces, which provide lots of information a
   * Lots of public datasets, in datasets or other downloadable/viewable forms
 * [PokeAPI](https://pokeapi.co/)
   * An API full of Pokemon data. Good for making a Pokedex as a starter project.
+* [Wrap API](https://wrapapi.com/)
+  * A service to build APIs on top of different sites and connect them to different hooks
+* [Rapid API](https://rapidapi.com/collection/list-of-free-apis)
+  * 30 free and interesting API for developers
 
 ## Miscellaneous
 
