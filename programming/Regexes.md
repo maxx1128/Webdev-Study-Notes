@@ -91,3 +91,17 @@ Use a question mark if a single instance of a character may or may not appear in
 ```
 00? = 0, 00
 ```
+
+You can also use it to include optional ranges of characters
+
+```
+\d  = optional digit
+\w  = optional letter, number, or the underscore
+\s? = optional space
+```
+
+You can also use a question mark with the `.*` selector. It will match the string if nothing or anything all appears between them.
+
+```
+value-(.*?)-more = value-some-more, value-any-more, value-3847wef-more, value--more
+```
