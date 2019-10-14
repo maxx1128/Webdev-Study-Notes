@@ -4,17 +4,13 @@
 
 > If you want to gather honey, don't kick over the beehive.
 
-People never criticize themselves, since criticism itself always puts them on the defensive. It hurts their pride and sense of importance and makes them resentful. Correcting and condemning others with usually evokes this reaction and simply have them justify themselves without change.
+People never criticize others, since criticism itself always puts them on the defensive. It hurts their pride and sense of importance and makes them resentful. Correcting and condemning others usually evokes the same reaction - they simply justify themselves without change (also known as the Backfire Effect).
 
-It's because as rational as we think we are, at our core humans are creatures of emotion, prejudice, pride, and vanity. That's why criticism stings, regardless of if it's warranted.
+It's because as rational as we think we are, at their core humans are creatures of emotion, prejudice, pride, and vanity. That's why criticism stings, regardless of if it's warranted.
 
 Sharp criticism and rebukes shut another down instead of getting them to listen, so don't do it.
 
-Remember that under another's circumstances we would likely do the same thing, so unfair criticism isn't warranted anyway.
-
-Instead, focus on improving yourself before trying to improve others. Show understanding, self-control, and forgiveness.
-
-Framing criticism in a positive light, and from the other's perspective for how it benefits them, is more productive.
+Remember that under another's circumstances we would likely do the same thing, so unfair criticism isn't warranted anyway. Instead, focus on improving yourself before trying to improve others. Show understanding, self-control, and forgiveness. Framing criticism in a positive light, and from the other's perspective for how it benefits them, is more productive.
 
 ## Give Honest and Sincere Appreciation
 
@@ -26,7 +22,7 @@ Much of a person's character and identity is determined by how they get their fe
 
 Remember the difference between flattery and appreciation - flattery is insincere and deceitful, from the teeth and not the heart. Appreciation is honest, sincere, and based on actual feelings. Flattery is telling others precisely what they already think of themselves. Appreciation comes from thinking of someone's genuine good points we enjoy and sharing it with them.
 
-Leave along trails of gratitude when around new people. Remember every person you meet is superior in one way, and appreciate this while learning from them.
+Leave along trails of gratitude when around new people. Remember every person you meet is superior in at least one way, and appreciate what they are while learning from them.
 
 ## Arouse an Eager Want in Others
 
