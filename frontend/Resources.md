@@ -36,6 +36,8 @@
   * Free vector art
 * [Illlustrations](https://illlustrations.co/)
   * 100 fancy illustrations done in the 100 days of illustration challenge.
+* [Generated Photos](https://generated.photos/)
+  * Realistic images of people that aren't real. They're made by AI.
 
 ## Colors
 
@@ -43,3 +45,5 @@
   * A large collection of pleasant, standard color swatches and hex codes for building palettes
 * [Colors & Fonts](https://www.colorsandfonts.com/)
   * Curated library of colors and fonts for web developers & digital designers
+* [Image Color Picker](https://image-color.com/)
+  * An easy online tool to pick individual colors from images
