@@ -1,6 +1,11 @@
 # Ember Resources
 
-* [Ember Observer](https://emberobserver.com/) - A categorized list of useful ember plugins
+* [Ember Observer](https://emberobserver.com/)
+  * A categorized list of useful ember plugins
+* [Ember Component Patterns](https://melsumner.gitbook.io/ember-component-patterns/)
+  * A guide with patterns and principles to build durable, accessible Ember components
+
+## Ember Add-ons
 
 * ember-modal-dialog - Simple way to create basic modals
 * ember-xselect - Ember component for basic select/dropdown items
