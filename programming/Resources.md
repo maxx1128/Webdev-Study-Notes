@@ -10,6 +10,8 @@ Some large resources to better learn programming or computer science as a whole
   * The folks at crash course dedicate an entire series to how modern computing got to where it is today
 * [Learn X in Y Minutes](https://learnxinyminutes.com/)
   * A long list of free crash courses in languages, tools, and other CS topics
+* [free-for.dev](https://free-for.dev/#/)
+  * A truly massive list of free resources for all levels of programming
 
 ## API
 
