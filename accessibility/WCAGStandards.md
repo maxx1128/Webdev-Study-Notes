@@ -32,7 +32,7 @@ Info and interfaces must be understandable.  Stress cases don't prevent users fr
 * Help users avoid and correct mistakes, such as inputs with descriptions and autocorrect helpers.
 * Avoid design assumptions, such as thinking users will know what certain icons stand for without an explanation. An extra line of explanatory text is better than implied symbolism.
 
-## Robust
+### Robust
 
 Content should be robust enough that a wide array of user agents, like assistive tech, can reliably interpret it. Stress cases don't prevent users from accessing the content from a wide variety of devices.
 
