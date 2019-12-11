@@ -13,6 +13,16 @@
 * [Dev Doodles](https://www.instagram.com/dev_doodles/)
   * A charming collection of illustrated explainations for different front-end coding concepts
 
+## Code
+
+* [HTML Head](https://htmlhead.dev/)
+  * A free guide to HTML5 `<head>` elements and managing their many tag options
+
+## Layout
+
+* [CSS Layout Patterns](https://csslayout.io/patterns/)
+  * A collection of large and small CSS layout patterns with source code
+
 ## Design Systems
 
 * [Design System Playground](https://design-system-playground.netlify.com/)
