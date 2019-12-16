@@ -1,4 +1,4 @@
-# Accessibile Web Content
+# Accessible Web Content
 
 These tips are for general web content, such as text, blog posts, multimedia, and other general content. This is not advice for specific patterns like navigation and article lists. This is to make sure the actual content of each page is accessible for a range of preferences, environments, and disabilities.
 
@@ -6,11 +6,11 @@ These tips are for general web content, such as text, blog posts, multimedia, an
 
 Make the writing clear, succint, scannable, and action-oriented. This also helps those with cognitive disabilities or impairments.
 
-Avoid obscure jargon or unexplained acronyms. Related to this, don't replace letters with numbers or symbols
+Avoid obscure jargon or unexplained acronyms. Related to this, don't replace letters with numbers or symbols.
 
-Avoid all caps, and all unneeded capitalization. Always align text to the left to ensure even spacing. Limit the use of italics
+Avoid all caps, and all unneeded capitalization. Always align text to the left to ensure even spacing. Limit the use of italics.
 
-Write for **screen readability** too. Break content content into logical chunks separated by headers Use the inverted pyramid format and don't bury the lead.
+Write for **screen readability** too. Break content content into logical chunks separated by headers. Use the inverted pyramid format and don't bury the lead.
 
 ## Include Links to Skip to Content
 
@@ -38,7 +38,7 @@ Decorative images can use a blank alt tag, such as `alt=""`, so screen readers w
 
 ## Add Text to Icons
 
-Icons should either have text built for screen readers (such as `aria-label`), or preferably additional text written beneath it. Either way, the icon itself shouldn't be the only source of meaning or understanding. There's no gaurantee everyone will understand it the same, if at all.
+Icons should either have text built for screen readers (such as `aria-label`), or preferably additional text written beneath it. Either way, the icon itself shouldn't be the only source of meaning or understanding. There's no guarantee everyone will understand it the same, if at all.
 
 ## Give Transcripts or Captions for Audio and Video
 

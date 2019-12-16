@@ -62,13 +62,13 @@ Keyboard shortcuts implemented by hitting a single letter or character should me
 
 Ensure users have enough time to read the content.
 
-Users should we told about the amount of time that needs to pass until a timeout that would cause any form of data loss. The limit should be conveyed in real-time if possible. The exception is if it preserves data for at least 20 hours afterward.
+Users should be told about the amount of time that needs to pass until a timeout that would cause any form of data loss. The limit should be conveyed in real-time if possible. The exception is if it preserves data for at least 20 hours afterward.
 
 ### Seizures and Physical Reactions
 
 Content shouldn't cause these things. Duh.
 
-Users should be able to disable any content with any kind of motion animation unless it is essential to function or information
+Users should be able to disable any content with any kind of motion animation unless it is essential to function or information.
 
 ### Input Modalities
 

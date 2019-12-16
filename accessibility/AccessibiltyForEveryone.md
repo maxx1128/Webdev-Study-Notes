@@ -33,7 +33,7 @@ For a website, the difference is like adding a button that makes text larger (ac
 
 **The ability to share the feelings of others.**
 
-It's easy to solve our own problems, but this is problematic since most people in tech are similar. We forget about different people trying to solve the same issues. Understanding and caring about different needs makes our products better.
+It's easy to solve our own problems, but this is problematic since most people in tech are similar. We forget about different people when we're trying to solve the same issues without them. Understanding and caring about different needs makes our products better.
 
 It's also part of why diversity matters in web teams, it increases empathy which makes our products better. You can't "other" the user as stupid - another way to avoid this is referring to them as "people" or "humans." Don't patronize users.
 
@@ -49,9 +49,9 @@ There's also keyboard navigation, using only a keyboard to access a website. Als
 
 Other navigation hardware to remember are touchpads, touchscreens, different types of mice, or foot-operated mice. Most of these are easy to take into account.
 
-* **Switch devices** let users interact via a switch, going through options and triggering the switch on certain ones. Macs make this easy with Switch Control, in the accessibility settings.
-* **Eye trackers** track eye movements to let people navigate screens with just their eyes. Real expensive.
-* **Screen magnifiers** give zooming functionality and are in most OSs. Often used by people with visual impairments.
+* **Switch devices** - let users interact via a switch, going through options and triggering the switch on certain ones. Macs make this easy with Switch Control, in the accessibility settings.
+* **Eye trackers** - track eye movements to let people navigate screens with just their eyes. They're also quite expensive.
+* **Screen magnifiers** - give zooming functionality and are in most OSs. Often used by people with visual impairments.
 
 Overall, assistive tech can only do so much work. Certain needs are only met if they're part of the core design. It can't just be left up to experts each time - it falls on everyone working on the web.
 
@@ -69,9 +69,9 @@ Can be helpful to think of it as "X _has a disability_" instead of "X _is disabl
     * Wide spectrum, include near- and far-sightedness, and astigmatism. Some vary from day to day.
     * _Color blindness_ includes not seeing particular colors or distinguishing certain ones. Several different versions causes certain colors to look lighter, makes colors looks similar, or not seeing some colors at all.
         - Designing for these can include ensuring strong color contrast, and not using color to signify meaning.
-    * _Eyesight loss_ can also make people not see everything in their field of vision. Beaten with readable text sizes, clear labels, text alternative to images and video, and high text/background contrast. They may use screen readers
+    * _Eyesight loss_ can also make people not see everything in their field of vision. Beaten with readable text sizes, clear labels, text alternative to images and video, and high text/background contrast. They may use screen readers.
 2. **Auditory:**
-    * _Hearing Loss,_ which could be partial or complete. Due to inner-ear blockage, nerve damage, aging
+    * _Hearing Loss,_ which could be partial or complete. Due to inner-ear blockage, nerve damage, aging.
     * Affects video and audio content. Add subtitles or written transcripts!
         - I personally prefer transcripts due to preference, and not wanting to disturb others without pulling out headphones. Another example of how accessibility is good for business.
 3. **Motor:**
@@ -86,6 +86,7 @@ Can be helpful to think of it as "X _has a disability_" instead of "X _is disabl
     * _Visual Processing,_ for interpreting visual info/representations (icons)
     * People with learning disabilities can have a hard time processing info. Helpful to give extra context and info, and avoid unneeded info in whatever medium they use.
     * People may be illiterate due to limited education, learning difficulties, or living in an area with a different primary language. Helpful to give simple copy, headings in content, and multiple-choice answers over open-ended ones.
+    * This could also affect anyone in certain places or circumstances - lack of sleep, medication, acute injuries, etc.
 5. **Vestibular Disorders and Seizures:**
     * Caused by damage to the parts of the inner ear and brain controlling balance and spatial orientation. Can cause dizziness, vertigo, confusion, hearing/visual issues. On the web, often is motion sensitivity.
     * Affects 35% of adults aged 40+.
@@ -93,19 +94,17 @@ Can be helpful to think of it as "X _has a disability_" instead of "X _is disabl
 
 ### Environmental Factors
 
-accessibility affects everyone, not just those with impairments, since environmental factors can affect us all, now and in the future.
+Accessibility affects everyone, not just those with impairments, since environmental factors can affect us all, now and in the future.
 
 #### Legacy Browsers
 
-Many organizations (public or non-profit ones) are stuck with older browsers. Simply checking for basic performance on other browsers is a form of accessibility checking.
-
-This can apply to anyone in a job stuck with older browsers, or temporarily working in a place with them too.
+Many organizations (public or non-profit ones) are stuck with older browsers. Simply checking for basic performance on other browsers is a form of accessibility checking. This can apply to anyone in a job stuck with older browsers, or temporarily working in a place with them too.
 
 #### Devices
 
 Devices can vary widely in size, touch gestures, browser availability, how the content is presented, or how many people view them at once. Phones, game consoles, web-enabled TVs, smart-watches, VR headsets, etc.
 
-People don't just use mobile "on the go," people access the web at their homes all the time. Don't focus only on what info people may need when traveling for mobile devices.
+People don't just use mobile "on the go," people access the web at their homes all the time. Don't focus only on what info people may need when traveling for mobile devices, focus on everything.
 
 There's no reliable metrics to measure these kinds of things are device width, everything else is either not widely tracked or could be misled by browsers. The only real option is building for as many sizes and devices as possible, building for the unknown. Tough, but it gives our sites a much longer lifespan.
 

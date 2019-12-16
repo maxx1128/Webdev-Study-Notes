@@ -4,7 +4,7 @@ Buttons are a common and important element for user interaction. Keeping them ac
 
 ## Use `button`, not `role='button'`
 
-Buttons have lots of accessible functionality built in from the start with semantic meaning (screan readers know it's a button) and being usable by keyboards (with the `enter` and `space` keys). Many will put `role="button"` on a `div` or `span` thinking it is now a button. Don't do this. It has the same semantics but a button's native functionality must be remade with custom JavaScript. This is brittle and unneeded since a regular button element already has it.
+Buttons have lots of accessible functionality built in from the start with semantic meaning (screen readers know it's a button) and being usable by keyboards (with the `enter` and `space` keys). Many will put `role="button"` on a `div` or `span` thinking it is now a button. Don't do this. It has the same semantics but a button's native functionality must be remade with custom JavaScript. This is brittle and unneeded since a regular button element already has it.
 
 Write the few lines of CSS needed to change the button's style if needed, but never think a `role` attribute is the same as a real button.
 
