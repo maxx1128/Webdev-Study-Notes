@@ -1,17 +1,30 @@
 # Programming Resources
 
-Some large resources to better learn programming or computer science as a whole
+## General
 
-* [Base Computer Science series](https://medium.com/basecs)
-  * A year's worth of posts breaking down computer science basics in plain English
 * [Learn Enough to Be Dangerous](https://www.learnenough.com/courses)
   * Several online books with fundamental knowledge on everything from the command line to JavaScript and Ruby
-* [Crash Course Computer Science](https://www.youtube.com/playlist?list=PLME-KWdxI8dcaHSzzRsNuOLXtM2Ep_C7a)
-  * The folks at crash course dedicate an entire series to how modern computing got to where it is today
 * [Learn X in Y Minutes](https://learnxinyminutes.com/)
   * A long list of free crash courses in languages, tools, and other CS topics
 * [free-for.dev](https://free-for.dev/#/)
   * A truly massive list of free resources for all levels of programming
+* [Project Guidelines](https://github.com/elsewhencode/project-guidelines)
+  * A list of general guidelines to follow for (JavaScript) projects, frmo source control to code architecture
+* [The Hansel Minutes Podcast](https://www.hanselminutes.com/)
+  * An accessible podcast on a huge variety of topics across the programming spectrum
+
+## Computer Science
+
+* [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+  * A list of important CS concepts to learn with good resources to learn them with.
+* [Base Computer Science series](https://medium.com/basecs)
+  * A year's worth of posts breaking down computer science basics in plain English
+* [Crash Course Computer Science](https://www.youtube.com/playlist?list=PLME-KWdxI8dcaHSzzRsNuOLXtM2Ep_C7a)
+  * The folks at crash course dedicate an entire series to how modern computing got to where it is today
+* [Computer Science in JavaScript](https://github.com/davidshariff/computer-science)
+  * The basic fundamental data structures and algorithms a front-end engineer should know (written all in JavaScript)
+* [Data Structures](https://www.geeksforgeeks.org/data-structures/)
+  * A giant explanation of different data structures and their uses
 
 ## API
 

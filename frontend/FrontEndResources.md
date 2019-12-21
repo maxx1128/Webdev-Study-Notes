@@ -12,6 +12,10 @@
   * An archive of useful posts, tricks, and tutorials for all things front-end
 * [Dev Doodles](https://www.instagram.com/dev_doodles/)
   * A charming collection of illustrated explainations for different front-end coding concepts
+* [The Grab Front-end Guide](https://github.com/grab/front-end-guide)
+  * Study guide and introduction to the modern front end stack
+* [The Web Almanac](https://almanac.httparchive.org/en/2019/table-of-contents)
+  * A giant, thorough report on all aspects of the modern web (mostly the front-end).
 
 ## Code
 
@@ -23,10 +27,17 @@
 * [CSS Layout Patterns](https://csslayout.io/patterns/)
   * A collection of large and small CSS layout patterns with source code
 
-## Design Systems
+## Design
 
 * [Design System Playground](https://design-system-playground.netlify.com/)
   * Play around with colors and fonts to see how they'd look in a boilerplate design system
+* [Laws of UX](https://lawsofux.com/)
+  * Core principles and rules to follow for user experiences
+
+## Performance
+
+* [Front-End Performance Checklist 2019](https://www.smashingmagazine.com/2019/01/front-end-performance-checklist-2019-pdf-pages/)
+  * Everything you need to know to create fast front-end web experiences today
 
 ## Images
 

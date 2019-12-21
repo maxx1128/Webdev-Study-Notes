@@ -1,7 +1,5 @@
 # CSS Resources
 
-Resources for further reading and understanding of CSS
-
 ## Inspiration
 
 See lots of amazing examples of CSS in action to inspire you.
