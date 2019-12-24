@@ -9,6 +9,11 @@ See lots of amazing examples of CSS in action to inspire you.
 * [CSS Zen Garden](http://www.csszengarden.com/)
   * One website, one markup file, lots of different CSS files for amazing results
 
+## In-Depth Guides
+
+* [Wrapping long words with CSS or HTML](https://www.cjcid.com/articles/wrapping-long-words-css-html/)
+  * Looking at all the possible ways to wrap and break long stretches of text. Including the varies to do so with CSS.
+
 ## Learning Resources and Games
 
 Learn tougher CSS tools and concepts with dedicated resources and/or interactive games.

@@ -28,6 +28,8 @@
 
 * [Modules for Impatient Developers](https://exploringjs.com/impatient-js/ch_modules.html)
   * A brief yet thorough guide to how JS modules work
+* [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+  * A look at what problem ES modules solve and how they are different from modules in other module systems. With cartoons.
 * [The Art of Node](https://github.com/maxogden/art-of-node)
   * A short introduction to Node.JS for JavaScript programmers
 * [You Don't Need Lodash/Underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)

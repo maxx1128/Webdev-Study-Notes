@@ -1,5 +1,10 @@
 # Accessibility Resources
 
+## General
+
+* [Using Progressive Enhancement to Design for Accessibility](https://www.sitepen.com/blog/using-progressive-enhancement-to-design-for-accessibility/)
+  * A progressive enhancement approach for designing accessible components from a strong baseline.
+
 ## Colors
 
 * [Accessible Color Generator](https://learnui.design/tools/accessible-color-generator.html)
@@ -25,3 +30,6 @@
   * Simple and useful accessible components with needed JavaScript
 * [Accessibility Guidelines Posters](https://github.com/UKHomeOffice/posters/blob/master/accessibility/dos-donts/posters_en-UK/accessibility-posters-set.pdf)
   * Several posters with broad principles to guide you with designing and development accessible websites.
+* [Web Accessibility Guide](https://webaccessibility.guide/)
+  * A curated collection of web accessibility tips, tricks, and best practices.
+Let's make the web a better place for everyone.

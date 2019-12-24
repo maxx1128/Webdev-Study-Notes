@@ -12,6 +12,10 @@
   * A list of general guidelines to follow for (JavaScript) projects, frmo source control to code architecture
 * [The Hansel Minutes Podcast](https://www.hanselminutes.com/)
   * An accessible podcast on a huge variety of topics across the programming spectrum
+* [Learn](https://web.dev/learn/)
+  * Explore our structured learning paths to discover everything you need to know about building for the modern web
+* [The System Design Primer](https://github.com/donnemartin/system-design-primer)
+  * Learn how to design large-scale systems. Useful for application development and architecture
 
 ## Computer Science
 
