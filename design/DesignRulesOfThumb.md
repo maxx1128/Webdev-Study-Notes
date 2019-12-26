@@ -24,16 +24,21 @@
 
 * Rounded fonts pair well with rounded shapes, and squared
 * Always letter-space your uppercase text.
+* Save "display fonts" for headers, since their extra design personality only really works for large, short lines of text. Use simpler, more common font families for body text since they're built to be more readable and decrease eye strain.
+* Use unitless measures for line-heights, since it better scales with different font sizes. For example, a `1.25` line-height for an `16px` font size will create a line-height of `20px`.
+* Keep text lines between 45 and 75 characters long (including spaces and punctuation).
 
 ## Colors
 
 * Find colors that match the same descriptors that you would give your typeface and your overall brand.
 * Think of colors in terms of Hue, Saturation, and Brightness. This makes it easier to adjust them.
-    - Use base colors as a starting point, and adjust the hue for a more suitable tone.
+    - **Use one of more base colors as a starting point**, and adjust the hue for a more suitable tone.
     - Modify saturation and brightness in opposite directions to increase contrast.
         - White text = more saturation, less brightness
         - Dark text = less saturation, more brightness
-* Colors of two adjacent hues (red and orange) with high saturation don't look well together
+* Be wise when selecting supporting colors.
+    - Colors of two adjacent hues (red and orange) with high saturation don't look well together.
+    - Find [the base color's triad color scheme](https://color-wheel-artist.com/triad-color-scheme/) on the color wheel (adjacent colors to the base complimentary color), since they're different but not too different.
 * When matching colors to fonts, start by defining different adjectives and emotions. Pair everything else from there.
 * When laying translucent black on other colors: the less luminous the color is, the more opaque the black must be to appear.
 * Never use gray text on colored backgrounds to reduce contrast and importance! It's better to just make it slightly closer to the background color (either pick a specific color or white/black with reduced opacity)
@@ -64,3 +69,4 @@ Need to find good colors? Try [Dribble's Color Search](https://dribbble.com/colo
 * [The King Vs Pawn Game of UI Design](http://alistapart.com/article/the-king-vs-pawn-game-of-ui-design)
 * [The Non-Designers Design Book](https://www.amazon.com/Non-Designers-Design-Book-4th/dp/0133966151)
 * [Seven Practical Tips for Cheating Design](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886)
+* [Design Principles for Developers: Processes and CSS Tips for Better Web Design](https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/)
