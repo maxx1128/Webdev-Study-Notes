@@ -50,7 +50,7 @@ return (
 );
 ```
 
-If it's only a one-way conditional, you can adjust the operator like this so it's simpler.
+If it's only a one-way conditional, you can adjust the operator like this so it's simpler. But make sure the value being tested is a boolean, since you may expect something like `0` to not render but React will try so anyway.
 
 ```javascript
 return (
