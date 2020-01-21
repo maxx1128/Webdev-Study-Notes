@@ -11,7 +11,9 @@
 * [JavaScript Tips and Tidbits](https://github.com/nas5w/javascript-tips-and-tidbits/blob/master/README.md)
   * A continuously-evolving compendium of JavaScript tips based on common areas of confusion or misunderstanding
 * [The Modern JavaScript Tutorial](https://javascript.info/)
-  * How JavaScript is done now. From the basics to advanced topics with simple, but detailed explanations.
+  * How JavaScript is done now. From the basics to advanced topics with simple, but detailed explanations
+* [Modern JavaScript Explained For Dinosaurs](https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70)
+  * How modern JavaScript is used and compiled for a front-end workflow, from plain script tags to Webpack and Babel
 
 ## Fundamentals
 
