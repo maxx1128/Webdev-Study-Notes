@@ -16,6 +16,8 @@
   * Explore our structured learning paths to discover everything you need to know about building for the modern web
 * [The System Design Primer](https://github.com/donnemartin/system-design-primer)
   * Learn how to design large-scale systems. Useful for application development and architecture
+* [Tiny Helpers](https://tiny-helpers.dev/color/)
+  * From colors to security to Regex, a growing list of useful, single-purpose tools for developers
 
 ## Computer Science
 
