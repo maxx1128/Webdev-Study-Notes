@@ -6,15 +6,15 @@ Dialogue helps a novel chiefly by:
 
 * Creating space in the page, since huge blocks of text turn readers away
 * It brings life and emotional appeal to characters
-  * Reveals motives and opposite agendas
-  * Show internal stress and tension
-  * Kicks their stories into high gear
+ * Reveals motives and opposite agendas
+ * Show internal stress and tension
+ * Kicks their stories into high gear
 
 ### Characterizes, Reveals Motives
 
 We learn about others through interaction, and the root of it is dialogue. Readers use it to tell if they like our characters or not.
 
-The way a characters speaks reveals a lot about their internal state, like speaking rapidly shows they're running from something. It can also show motives and why they're doing anything at all in this story, making it arguably one of the most important elements. Effective dialogue lets these things rise up straight from the source, the character's internal world, that's shown and realistic to readers.
+The way a character speaks reveals a lot about their internal state, like speaking rapidly shows they're running from something. It can also show motives and why they're doing anything at all in this story, making it arguably one of the most important elements. Effective dialogue lets these things rise up straight from the source, the character's internal world, that's shown and realistic to readers.
 
 It can be indirect for much of the story. Characters can hem and haw, deny, and lie about their motives. Others can unreliably describe them from their perspectives. All this drives a story and is rooted in dialogue.
 
@@ -28,13 +28,13 @@ Dialogue conveys what the character wants and the obstacles they face. Each exch
 
 ### Create Tension and Suspense
 
-Dialogue should show something at stake. Tension and suspense should always be a dialogue element in some way. It can be conveying difficult goals, conflict between characters, fighting against tough odds, or more. Without this, it's mundane and not worth reading.
+Dialogue should show something at stake. Tension and suspense should always be a dialogue element in some way. It can be conveying difficult goals, a conflict between characters, fighting against tough odds, or more. Without this, it's mundane and not worth reading.
 
 ### Speeds up Scenes
 
-Description and narrative move the story more slowly. Action and (effective) dialogue speed it up. It conveys more info about where the story goes and the involved characters with fewer words and time needed to read it. This is from the back-and-forth nature of dialogue.
+The description and narrative move the story more slowly. Action and (effective) dialogue speed it up. It conveys more info about where the story goes and the involved characters with fewer words and time needed to read it. This is from the back-and-forth nature of the dialogue.
 
-Remember balancing fast and slow elements is needed to vary the rhythm and let readers catch their breath.
+Remember balancing fast and slow elements are needed to vary the rhythm and let readers catch their breath.
 
 ### Add Bits of Setting or Background
 
@@ -42,7 +42,7 @@ Instead of giving lots of exposition before the action, dialogue more quickly ad
 
 ### Communicates the Theme
 
-Theme is carefully woven into different story elements, and dialogue is a great way to do this that's better than simply spelling it out. It's more emotional and upfront with the reader (as long as it's not preached obnoxiously or patronizingly).
+The theme is carefully woven into different story elements, and dialogue is a great way to do this that's better than simply spelling it out. It's more emotional and upfront with the reader (as long as it's not preached obnoxiously or patronizingly).
 
 ## Common Fears of Writing Dialogue
 
@@ -50,43 +50,43 @@ Theme is carefully woven into different story elements, and dialogue is a great 
 
 No one sounds 100% brilliant or 100% stupid all the time, so characters sounding stupid sometimes just makes them more human. Stupidity is subjective, so regardless of how stupid you think they sound, they may not and just keep talking since that's what they do.
 
-The more you know your characters, the less likely this is to happen. Also try reading your dialogue aloud on your own or with others to get a better perspective.
+The more you know your characters, the less likely this is to happen. Also, try reading your dialogue aloud on your own or with others to get a better perspective.
 
 Plus, stupid dialogue can always be fixed in the second draft. Don't let it stop you.
 
 ### What if my characters all sound the same?
 
-Part of preventing this is intimitely knowing your characters.
+Part of preventing this is intimately knowing your characters.
 
 Another part is remembering we all have different voices for different situations, even though our personality is pretty constant. Getting into your character's head to see their perspective is key. Hang around or watch people who would have similar voices. Write the scene several times, each time focusing on a different character's POV.
 
-One trick is getting a new page and writing a stream of consciouness as that character to fully immerse yourself in their head and language. It can especially help with antagonists so they're not one-dimensional.
+One trick is getting a new page and writing a stream of consciousness as that character to fully immerse yourself in their head and language. It can especially help with antagonists so they're not one-dimensional.
 
 Also give your characters varieties in lives, careers, and experiences (if possible). Develop characters right to give them all enough variety.
 
 ### What if my characters don't sound as the readers expect them too?
 
-Make your characters talk as soon as possible, since what they say has a direct effect on our first impression of them. Otherwise their dialogue can crush whatever altnernative impression they've built up.
+Make your characters talk as soon as possible since what they say has a direct effect on our first impression of them. Otherwise, their dialogue can crush whatever alternative impression they've built up.
 
-Also make sure the physical description matches their speaking closely enough. If they deliberately break their appearance's stereotype or expectations, there should be some indication of that (including in their background).
+Also, make sure the physical description matches their speaking closely enough. If they deliberately break their appearance's stereotype or expectations, there should be some indication of that (including in their background).
 
 ### What if the dialogue is flat and boring?
 
-The more you know your character's story, the more interesting you can make their dialogue. Make sure you dialogue contributes to some aspect of the plot at all times. Editing out dialogue like this is a second-draft concern since it's about tightening the focus.
+The more you know your character's story, the more interesting you can make their dialogue. Make sure your dialogue contributes to some aspect of the plot at all times. Editing out dialogue like this is a second-draft concern since it's about tightening the focus.
 
 ### What if the dialogue sounds stilted and formal?
 
 The dialogue needs to emerge from the character's identity and needs, not the writer's needs. Stilted dialogue happens when the writer is too focused on what the story needs. The solution is not trying to control the story too much. Let the word inhibitions go.
 
-### What if character's dialogue make them run away with the scene?
+### What if the character's dialogue makes them run away with the scene?
 
-This is good, since it means your characters are fleshed out and driving more of the story. It's okay to rework your story around where your characters take you, since that makes the story more realistic to their characters and usually adds more conflict. A good character is like a real person in that they often say things you don't expect.
+This is good since it means your characters are fleshed out and driving more of the story. It's okay to rework your story around where your characters take you, since that makes the story more realistic to their characters and usually adds more conflict. A good character is like a real person in that they often say things you don't expect.
 
 ### What if there's not enough narrative to let readers follow the dialogue?
 
-Pacing dialogue is tricky, since some scenes call for more or less narrative elements around the words. Striking this balance simply takes practice.
+Pacing dialogue is tricky since some scenes call for more or less narrative elements around the words. Striking this balance simply takes practice.
 
-## The Genrea, Mainstream, and Literary Story - the Dialogue Matters
+## The Genre, Mainstream, and Literary Story - the Dialogue Matters
 
 Make sure the dialogues' voices suit the kind of story we're telling. Below are several common dialogue types, often related to certain genres. Sometimes they overlap, sometimes they don't.
 
@@ -96,17 +96,17 @@ Magical dialogue often has more built-in drama, no contractions, extra eloquence
 
 ### Cryptic
 
-Cryptic dialogue has double-meanings or abstract concepts that aren't clear at first. But once the full scope and info of the story is brought to light it suddenly gets a lot clearer. They can subliminally convey ideas to the reader too. It's indirect, subtle ambiguious. People can interpret them differently based on what they know or want to know.
+Cryptic dialogue has double-meanings or abstract concepts that aren't clear at first. But once the full scope and info of the story are brought to light it suddenly gets a lot clearer. They can subliminally convey ideas to the reader too. It's indirect, subtle ambiguous. People can interpret them differently based on what they know or want to know.
 
 It helps to see the world from multiple perspectives, to better see the ways it can be read. It's also often more enjoyable to the reader since it's not preachy, respects their intelligence, and requires work to find the meaning behind it. It also makes readers more receptive to ideas they may normally push back against.
 
 ### Descriptive
 
-Descriptive dialogue is basically spoken exposition. It can still add tension and action between characters when done right. Showing the history and context through banter stops it from feeling like a documentary. Don't forget narrative thoughts and reactions from characters. Also break it up into multiple sections or conversations so it doesn't drag too long.
+Descriptive dialogue is basically spoken exposition. It can still add tension and action between characters when done right. Showing the history and context through banter stops it from feeling like a documentary. Don't forget narrative thoughts and reactions from characters. Also, break it up into multiple sections or conversations so it doesn't drag too long.
 
 ### Shadowy
 
-This dialogue fills readers with dread, suspense, or even terror. It foreshadows terrible things to come. An example is cryptic dialgoue from someone we may not trust, so there's suspense and anxiety if they're threatening another or not.
+This dialogue fills readers with dread, suspense, or even terror. It foreshadows terrible things to come. An example is a cryptic dialogue from someone we may not trust, so there's suspense and anxiety if they're threatening another or not.
 
 Good shadowy dialogue also keeps readers "in the dark" of what's real or important, potentially about the supernatural, so there's anxiety over what to believe. Our greatest fears are often in our own imagination, and this dialogue leaves room for those fears to fester and grow.
 
@@ -149,11 +149,11 @@ Seeing the stakes rise for the characters right before our eyes ramps up suspens
 * Things suddenly don't go as expected
 * Any character is surprised, threatened, or attacked
 
-As long as the character inteprets the events like the above, suspense is raised.
+As long as the character interprets the events like the above, suspense is raised.
 
 ### Furthers the Theme
 
-Announcing themes in dialogue takes creativity, and gives other characters a chance to respond. The character's responses to the theme are usually what push the story forward. It also, consciously or unconsciously, registers with the reader and keeps their interest (if not overdone).
+Announcing themes in dialogue takes creativity, and gives other characters a chance to respond. The character's responses to the theme are usually what pushes the story forward. It also, consciously or unconsciously, registers with the reader and keeps their interest (if not overdone).
 
 ### Shows Character Transformation
 
@@ -165,7 +165,7 @@ The protagonist has goals in each scene, and dialogue is a great way to reveal t
 
 ### Keeping Your Characters in Social Settings
 
-Solo scenes are inevitable now and again, but scenes with at least two characters talking are more compelling. Structuring your story around social settings and dialogues helps keep dialogue flowing, and therefore the plot moving.
+Solo scenes are inevitable now and again, but scenes with at least two characters talking are more compelling. Structuring your story around social settings and dialogues helps keep the dialogue flowing, and therefore the plot moving.
 
 ## Narrative, Action, and Dialogue - Weaving the Spoken Word
 
