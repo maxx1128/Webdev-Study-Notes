@@ -59,6 +59,8 @@
   * 100 fancy illustrations done in the 100 days of illustration challenge.
 * [Generated Photos](https://generated.photos/)
   * Realistic images of people that aren't real. They're made by AI.
+* [Humaaans](https://www.humaaans.com/)
+  * SVG stock images of people you can customize the traits of. Great if you need stock images with a personalized touch.
 
 ## Colors
 
