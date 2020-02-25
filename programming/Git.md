@@ -119,10 +119,10 @@ Rebasing it taking a branch that may start from the an older commit of the main 
 
 #### Rebasing onto a new branch
 
-The above command only works if you're rebasing on the same command as before. If you want to rebase onto a different branch, use the `--onto` argument.
+The above command only works if you're rebasing on the same branch as before. If you want to rebase onto a different branch, use the `--onto` argument.
 
 ```
-git rebase < current_parent_branch > --onto < new_parent_branch >
+git rebase --onto <new_parent_branch> <current_parent_branch> <child_branch>
 ```
 
 All the current branches commit will be placed on top of the new branch, and any conflicts will be solved like any other git rebase.
