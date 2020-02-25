@@ -13,6 +13,8 @@ See lots of amazing examples of CSS in action to inspire you.
 
 * [Wrapping long words with CSS or HTML](https://www.cjcid.com/articles/wrapping-long-words-css-html/)
   * Looking at all the possible ways to wrap and break long stretches of text. Including the varies to do so with CSS.
+* [Selectors Explained](https://hugogiraudel.github.io/selectors-explained/)
+  * Put in a complex CSS selector and this tool will break down the rules and logic behind it.
 
 ## Learning Resources and Games
 

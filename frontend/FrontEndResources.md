@@ -68,3 +68,5 @@
   * Curated library of colors and fonts for web developers & digital designers
 * [Image Color Picker](https://image-color.com/)
   * An easy online tool to pick individual colors from images
+* [Canva Color Wheel](https://www.canva.com/colors/color-wheel/)
+  * A color wheel tool to quickly make color palettes based on basic color rules
