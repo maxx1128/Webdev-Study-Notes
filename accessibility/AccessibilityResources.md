@@ -20,6 +20,11 @@
 * [CloudFlare Accessible Color Palette Generator](https://cloudflare.design/color/)
   * Generate accessible color schemes from random colors, generates colors, colors pulled from images, and more!
 
+## In-depth Articles
+
+* [Defining Toast Messages](https://adrianroselli.com/2020/01/defining-toast-messages.html)
+  * A deep dive into defining "toast" components and handling their many accessibility concerns
+
 ## Guides and Patterns
 
 * [Patterns & Strategies for accessible web-apps](https://accessible-app.com/)
@@ -31,5 +36,4 @@
 * [Accessibility Guidelines Posters](https://github.com/UKHomeOffice/posters/blob/master/accessibility/dos-donts/posters_en-UK/accessibility-posters-set.pdf)
   * Several posters with broad principles to guide you with designing and development accessible websites.
 * [Web Accessibility Guide](https://webaccessibility.guide/)
-  * A curated collection of web accessibility tips, tricks, and best practices.
-Let's make the web a better place for everyone.
+  * A curated collection of web accessibility tips, tricks, and best practices. Let's make the web a better place for everyone.
