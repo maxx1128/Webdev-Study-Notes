@@ -82,3 +82,5 @@
   * A color wheel tool to quickly make color palettes based on basic color rules
 * [Colors and Fonts](https://www.colorsandfonts.com/)
   * A curated library of colors, fonts and resources for web developers & digital designers
+* [100 Color Combinations](https://www.canva.com/learn/100-color-combinations/)
+  * 100 color combinations and how to apply them to your designs
