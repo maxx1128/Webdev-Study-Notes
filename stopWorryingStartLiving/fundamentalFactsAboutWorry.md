@@ -19,7 +19,7 @@ As this chapter frequently states, **businessmen who do not know how to fight wo
 
 ## Live in Day-tight Compartments
 
-Focus on what is clearly visible today, not what is in the past or present. The past and present are eternities we either can do nothing about or know nothing for certain about. Focusing on them too much will drain us. It's best to focus on the only time we can realistically lie in, the present.
+Focus on what is clearly visible today, not what is in the past or future. The past and future are eternities we either can do nothing about or know nothing for certain about. Focusing on them too much will drain us. It's best to focus on the only time we can realistically lie in, the present.
 
 This doesn't mean not thinking about tomorrow at all. But the best possible preparation for tomorrow is handling today well. Plan for tomorrow as best as you can but don't stress over it, since we ultimately have little control over most of it. This helps bring your focus back to logical, constructive planning.
 
