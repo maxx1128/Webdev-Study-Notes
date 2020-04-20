@@ -15,7 +15,7 @@ Our mental and physical health have powerful links that shouldn't be overlooked.
 
 As this chapter frequently states, **businessmen who do not know how to fight worry die young.** This is why the two core methods to manage it below are so important.
 
-QUOTE: *What shall it profit a man if he gains the whole world and loses his health? Even if he owned the whole world, he could sleep in only one bed at a time and eat only three meals a day. Even a ditch-digger can do that and probably sleep more soundly and enjoy his food more than a high-powered executive. Frankly, I would rather be a share-cropper down in Alabama with a banjo on my knee than wreck my health at forty-five by trying to run a railroad or cigarette company.*
+> What shall it profit a man if he gains the whole world and loses his health? Even if he owned the whole world, he could sleep in only one bed at a time and eat only three meals a day. Even a ditch-digger can do that and probably sleep more soundly and enjoy his food more than a high-powered executive. Frankly, I would rather be a share-cropper down in Alabama with a banjo on my knee than wreck my health at forty-five by trying to run a railroad or cigarette company.
 
 ## Live in Day-tight Compartments
 
