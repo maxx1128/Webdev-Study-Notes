@@ -2,6 +2,8 @@
 
 ## Remember the Price of Worry
 
+> Business men who do not know how to fight worry die young
+
 The benefits of removing worry affect our physical health too. High worry and anxiety are connected to ailments such as:
 
 * Nervous indigestion
