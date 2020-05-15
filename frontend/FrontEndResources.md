@@ -35,6 +35,8 @@
   * Play around with colors and fonts to see how they'd look in a boilerplate design system
 * [Laws of UX](https://lawsofux.com/)
   * Core principles and rules to follow for user experiences
+* [Collect UI](http://collectui.com/designs)
+  * Daily inspiration collected from the Daily UI archive and beyond, updated daily. Great for design inspiration sorted by components and patterns.
 
 ## Performance
 
@@ -63,6 +65,10 @@
   * Realistic images of people that aren't real. They're made by AI.
 * [Humaaans](https://www.humaaans.com/)
   * SVG stock images of people you can customize the traits of. Great if you need stock images with a personalized touch.
+* [Ouch!](https://icons8.com/ouch)
+  * Free vector illustrations grouped by patterns and their distinctive styles
+* [Free Illustrations](https://lukaszadam.com/illustrations)
+  * An independent designers' free collection of vector art illustrations and icons
 
 ## Colors
 
@@ -76,3 +82,5 @@
   * A color wheel tool to quickly make color palettes based on basic color rules
 * [Geenes](https://geenes.app/user-interface)
   * Generate and apply accessible color palettes to your UI, then export it to sketch or the most used programming languages
+* [100 Color Combinations](https://www.canva.com/learn/100-color-combinations/)
+  * 100 color combinations and how to apply them to your designs

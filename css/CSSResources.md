@@ -15,6 +15,8 @@ See lots of amazing examples of CSS in action to inspire you.
   * Looking at all the possible ways to wrap and break long stretches of text. Including the varies to do so with CSS.
 * [Selectors Explained](https://hugogiraudel.github.io/selectors-explained/)
   * Put in a complex CSS selector and this tool will break down the rules and logic behind it.
+* [In Defense of Utility-First CSS](https://frontstuff.io/in-defense-of-utility-first-css)
+  * A detailed look at all the common arguments against utility-first styling and why they're wrong.
 
 ## Learning Resources and Games
 
