@@ -10,6 +10,8 @@ It's common knowledge that checking off tasks keeps motivation up, so having rou
 
 Get the tough stuff out of the way, so the stress doesn't build up over time as you procrastinate. Most people have higher energy in the morning for better tackling tough tasks too.
 
+This also holds true for work you want to do but worry about time for later. Making time for it in the start can do a lot in easing your mind about it throughout the day.
+
 ## Go Outside for a Few Minutes
 
 Walking around gets your blood flowing and stretches your muscles. Daylight also helps wake you up and reset your biological clock, lowering drowsiness. Best used around lunchtime before the afternoon slump.
@@ -19,6 +21,12 @@ Also take a few minutes to stretch your muscles, which keeps them loose and prev
 ## Listen to White Noise or other Background Music
 
 Videos or podcasts split your attention too much when trying to do serious work. Music without lyrics, like electronic or instrumental tracks, are much better for focus.
+
+There's also sites that give background noise that get one's mind into a productive zone even faster. Below are some good examples.
+
+* [The Sound of Colleagues](https://soundofcolleagues.com/#)
+* [Noises.online](https://noises.online/)
+* [MyNoise](https://mynoise.net/)
 
 ## Eat Protein for Lunch, not Carbs
 
