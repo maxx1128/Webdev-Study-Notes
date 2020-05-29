@@ -7,7 +7,7 @@ Follow these four steps to help manage or remove most worries:
 3. Decide what to do
 4. Immediately act to carry out that decision
 
-For the first step, ee can't solve a problem intelligently without all the facts. Confusion is a chief cause of worry and more knowledge resolves this. Get the facts in an impartial, objective way. So writing down your worry and all the related facts around them are key.
+For the first step, we can't solve a problem intelligently without all the facts. Confusion is a chief cause of worry and more knowledge resolves this. Get the facts in an impartial, objective way. So writing down your worry and all the related facts around them are key.
 
 Find these even if they don't fit your biases or they conflict with your emotions. Pretend you're collecting the facts for someone else, or are a lawyer arguing the other side.
 
