@@ -8,7 +8,7 @@ Let's say we want to make a dropdown menu component. It'll need text for the tri
 
 First we need the HTML. Let's use the Material Web Components HTML as an example.
 
-```
+```html
 # app/views/components/dropdown.html.erb
 
 <div id="demo-menu" class="mdc-menu-anchor">
@@ -35,7 +35,7 @@ First we need the HTML. Let's use the Material Web Components HTML as an example
 
 That's the easy part. But the static info here must be replaced with variables we'll want to change for each use. This can be done with normal `.erb` syntax. They can have whatever names and structures you want, but you'll need to remember them for later.
 
-```
+```html
 <%= content_tag(:div, id: wrapper_id, class: "mdc-menu-anchor") do %>
   <% button_tag(type: button, id: button_id) do %>
     <%= button_text %>
@@ -59,7 +59,7 @@ We have the template, now we need some way to pull it when needed. We could refe
 
 In the helper folder let's make a `components_helper.rb` file and set up the basics.
 
-```
+```ruby
 # app/helpers/components_helper.rb
 
 module ComponentsHelper
@@ -71,7 +71,7 @@ end
 
 Let's focus on the `dropdown_component` method. First is to set up the render and list all the values it will need. These will be the variables we referenced in the template. These must be passed into the method as arguments, and then assigned to their respective values in the template.
 
-```
+```ruby
 def dropdown_component(button_text, menu_items, wrapper_id, button_id)
 
   render(
@@ -86,7 +86,7 @@ end
 
 This is a straight 1-1 rendering of the variables, but using it as a helper lets us simplify it. For instance, both IDs are going to be random IDs, so we can default them to random strings by default. The method to create this random string can be defined elsewhere in the helper if you don't already have a method like this.
 
-```
+```ruby
 def random_string
   (0...25).map { (65 + rand(26)).chr }.join
 end
@@ -104,7 +104,7 @@ end
 
 Now when we call the helper for the component, we only need the first two arguments. So we could call it like so.
 
-```
+```ruby
 # Passing needed values directly
 <%= dropdown_component("Menu button",
                       [ { text: "", href: ": },
@@ -122,7 +122,7 @@ For the wrapper, we may need to add additional classes and properties based on t
 
 Obviously we need an argument to pass the options into. We'll call it `wrapper_options` and set it to `nil` by default since it's optional.
 
-```
+```ruby
 def dropdown_component(button_text, menu_items, wrapper_id=random_string, button_id=random_string,
                        wrapper_options=nil)
   render(
@@ -140,7 +140,7 @@ end
 
 One obstacle you'll hit is that the wrapper needs a default class, `"mdc-menu-anchor"`. We want this class to always be there, and not be over-written by new classes. We can create a method that will take the classes from `wrapper_options` and merge them into a default. We'll call it `class_merge`, and include it in the helper module.
 
-```
+```ruby
 def class_merge(options, default_classes)
   options ||= {}
   options[:class] = "#{default_classes} #{options[:class]}".strip
@@ -152,7 +152,7 @@ This accepts our `wrapper_options` object and a set of default classes to preser
 
 ### 3c) Add the Method to the Template
 
-```
+```html
 # Wrapper in the Template
 <%= content_tag(:div, id: wrapper_id, class: "mdc-menu-anchor") do %>
 
