@@ -1,5 +1,7 @@
 # The NewsFlesh Trilogy
 
+The NewsFlesh Trilogy is a fiction series following several bloggers covering the presidential campaign during the zombie apocalypse. But as the campaign goes on, they begin uncovering a conspiracy that threatens their careers, lives, and ability to keep spreading the truth.
+
 ## Fear and Control
 
 One of the trilogy's major themes is fear, specifically with:
