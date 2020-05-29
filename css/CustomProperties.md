@@ -36,13 +36,13 @@ CSS Custom Properties are basically **variables you can use in normal CSS.** Unl
   * However they can be used as part of shorthands or with `calc()`.
 * They're virtually always static.
 
-> I strongly recommend using preprocessors for global (static) variables. This not only ensures that they are always static, but it visually denotes them within the code. This can make CSS a whole lot more readable and easier to maintain. _(1)_
+> I strongly recommend using preprocessors for global (static) variables. This not only ensures that they are always static, but it visually denotes them within the code. This can make CSS a whole lot more readable and easier to maintain.
 
 ## Tips for Custom Properties
 
 ### Limit to Local Use
 
-Custom properties are best used for more dynamic values that change in different conditions. For example, we may want a slight variation on button sizes on different screen widths. This can be handled with a combination of custom properties and preprocessor variables _(1)_:
+Custom properties are best used for more dynamic values that change in different conditions. For example, we may want a slight variation on button sizes on different screen widths. This can be handled with a combination of custom properties and preprocessor variables.
 
 ```css
 $button-sml: 1em;
@@ -63,7 +63,7 @@ This gives all buttons a base font-size, and adjusts the font-size value for lar
 
 ### Change the Value, Not the Variable
 
-Another rule: **don't give one property multiple custom properties.** If you need to change a value on something like a breakpoint, do it with a dynamic, local custom property _(1)_.
+Another rule: **don't give one property multiple custom properties.** If you need to change a value on something like a breakpoint, do it with a dynamic, local custom property.
 
 ```css
 .example {
