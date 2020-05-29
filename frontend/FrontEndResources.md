@@ -80,5 +80,7 @@
   * An easy online tool to pick individual colors from images
 * [Canva Color Wheel](https://www.canva.com/colors/color-wheel/)
   * A color wheel tool to quickly make color palettes based on basic color rules
+* [Geenes](https://geenes.app/user-interface)
+  * Generate and apply accessible color palettes to your UI, then export it to sketch or the most used programming languages
 * [100 Color Combinations](https://www.canva.com/learn/100-color-combinations/)
   * 100 color combinations and how to apply them to your designs
