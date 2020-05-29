@@ -1,3 +1,3 @@
-# Non-fiction
+# Nonfiction
 
-General non-fiction books covering any number of topics, all of which I consider helpful.
+General nonfiction books covering any number of topics, all of which I consider helpful.
