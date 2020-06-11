@@ -1,4 +1,8 @@
-# The Exocortex
+## Archived Repo
+
+This version of my Exocortex has been archived. You can see [the up-to-date version here on my personal site](https://www.maxwellantonucci.com/exocortex.html).
+
+## The Exocortex
 
 An Exocortex is a theoretical augmentation to a person's brain. It's basically extra functions and memory you could add to a brain to make people smarter.
 
